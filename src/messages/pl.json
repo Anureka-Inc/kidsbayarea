@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "Kids Bay Area - Przewodnik Rodzinnej Zabawy",
+    "description": "Odkryj najlepsze place zabaw, restauracje przyjazne dzieciom, zajecia, sklepy i weekendowe przygody dla rodzin w San Francisco Bay Area."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "Strona Główna",
+    "play": "Zabawa",
+    "eat": "Jedzenie",
+    "learn": "Nauka",
+    "shop": "Zakupy",
+    "explore": "Odkrywaj",
+    "darkMode": "Tryb Ciemny",
+    "lightMode": "Tryb Jasny",
+    "language": "Język",
+    "backToTop": "Powrót na górę",
+    "menu": "Menu",
+    "close": "Zamknij",
+    "viewAll": "Zobacz wszystko",
+    "readMore": "Czytaj więcej",
+    "indoor": "Wewnątrz",
+    "outdoor": "Na Zewnątrz",
+    "both": "Wewnątrz i Na Zewnątrz",
+    "ages": "Wiek {range}",
+    "rating": "{score} gwiazdek"
+  },
+  "nav": {
+    "home": "Strona Główna",
+    "play": "Zabawa",
+    "eat": "Jedzenie",
+    "learn": "Nauka",
+    "shop": "Zakupy",
+    "explore": "Odkrywaj"
+  },
+  "hero": {
+    "title": "Rodzinny Przewodnik po Bay Area",
+    "subtitle": "Odkryj najlepsze place zabaw, restauracje przyjazne dzieciom, zajęcia, sklepy i weekendowe przygody dla rodzin w San Francisco Bay Area.",
+    "cta": "Odkrywaj Teraz",
+    "search_placeholder": "Szukaj placów zabaw, restauracji, zajęć...",
+    "searchPlaceholder": "Szukaj placów zabaw, restauracji, zajęć...",
+    "searchButton": "Szukaj",
+    "quickSearch": "Popularne:"
+  },
+  "categories": {
+    "section_title": "Przeglądaj według Kategorii",
+    "play": {
+      "title": "Zabawa i Rozrywka",
+      "description": "Place zabaw, parki rozrywki, ogrody zoologiczne, muzea i ciekawe zajęcia dla dzieci w każdym wieku.",
+      "cta": "Znajdź Atrakcje"
+    },
+    "eat": {
+      "title": "Jedzenie i Picie",
+      "description": "Restauracje przyjazne dzieciom z krzesełkami, menu dla dzieci, strefami zabaw i jedzeniem rodzinnym.",
+      "cta": "Znajdź Restauracje"
+    },
+    "learn": {
+      "title": "Nauka i Rozwój",
+      "description": "Obozy STEM, zajęcia plastyczne, lekcje muzyki, szkoły chińskie i programy rozwojowe.",
+      "cta": "Znajdź Zajęcia"
+    },
+    "shop": {
+      "title": "Zakupy",
+      "description": "Sklepy z zabawkami, księgarnie, artykuły edukacyjne i sklepy z odzieżą używaną dla dzieci.",
+      "cta": "Znajdź Sklepy"
+    },
+    "explore": {
+      "title": "Odkrywaj i Podróżuj",
+      "description": "Jednodniowe wycieczki, wydarzenia sezonowe, przygody na łonie natury i rodzinne podróże z Bay Area.",
+      "cta": "Zaplanuj Wycieczkę"
+    }
+  },
+  "todaysPick": {
+    "title": "Wybór Dnia",
+    "random": "Zaskocz Mnie",
+    "reroll": "Pokaż inny",
+    "viewDetails": "Zobacz Szczegóły"
+  },
+  "map": {
+    "title": "Odkrywaj Bay Area",
+    "loading": "Ładowanie mapy...",
+    "all": "Wszystko",
+    "play": "Zabawa",
+    "eat": "Jedzenie",
+    "learn": "Nauka",
+    "shop": "Zakupy",
+    "explore": "Odkrywaj",
+    "viewDetails": "Zobacz szczegóły"
+  },
+  "placeFilters": {
+    "all": "Wszystko",
+    "allAreas": "Wszystkie Obszary",
+    "allAges": "Wszystkie Wieki",
+    "indoor": "Wewnątrz",
+    "outdoor": "Na Zewnątrz",
+    "both": "Wewnątrz/Na Zewnątrz",
+    "free": "Bezpłatne",
+    "showing": "Wyświetlanie {count} z {total} miejsc",
+    "noResults": "Żadne miejsca nie pasują do filtrów",
+    "noResultsHint": "Spróbuj dostosować filtry, aby zobaczyć więcej wyników.",
+    "sortRating": "Najwyżej Oceniane",
+    "sortName": "Nazwa A-Z"
+  },
+  "placeDetail": {
+    "backToList": "Wstecz",
+    "about": "O Tym Miejscu",
+    "location": "Lokalizacja",
+    "getDirections": "Wyznacz Trasę",
+    "info": "Informacje",
+    "parking": "Parking",
+    "tips": "Wskazówki",
+    "bestTime": "Najlepsza Pora",
+    "website": "Oficjalna Strona",
+    "ageRange": "Przedział Wiekowy",
+    "indoorOutdoor": "Typ Miejsca",
+    "priceLevel": "Poziom Cen",
+    "strollerFriendly": "Przyjazne dla Wózków",
+    "changingStation": "Przewijak",
+    "diningOnSite": "Jedzenie na Miejscu",
+    "needsReservation": "Wymagana Rezerwacja",
+    "yes": "Tak",
+    "no": "Nie",
+    "home": "Strona Główna",
+    "similarPlaces": "Podobne Miejsca",
+    "share": "Udostępnij",
+    "copyLink": "Kopiuj Link",
+    "linkCopied": "Link skopiowany!",
+    "tags": "Tagi",
+    "notFound": "Miejsce nie znalezione",
+    "notFoundDesc": "Szukane miejsce nie istnieje."
+  },
+  "mobileNav": {
+    "home": "Główna",
+    "play": "Zabawa",
+    "eat": "Jedzenie",
+    "learn": "Nauka",
+    "more": "Więcej"
+  },
+  "play": {
+    "title": "Place Zabaw i Atrakcje",
+    "subtitle": "Najlepsze place zabaw, muzea, parki, aquaparki i atrakcje dla dzieci w Bay Area."
+  },
+  "eat": {
+    "title": "Restauracje Przyjazne Dzieciom",
+    "subtitle": "Restauracje rodzinne z krzesełkami, menu dla dzieci, strefami zabaw i zdrowymi opcjami."
+  },
+  "learn": {
+    "title": "Zajęcia i Edukacja",
+    "subtitle": "Obozy STEM, zajęcia plastyczne, lekcje muzyki, szkoły chińskie, programowanie i zajęcia rozwojowe."
+  },
+  "shop": {
+    "title": "Zakupy Rodzinne",
+    "subtitle": "Sklepy z zabawkami, księgarnie, artykuły edukacyjne, odzież dziecięca i sklepy z używanymi rzeczami."
+  },
+  "explore": {
+    "title": "Wycieczki Jednodniowe i Przygody",
+    "subtitle": "Weekendowe wypady, wydarzenia sezonowe, wędrówki przyrodnicze i rodzinne podróże z Bay Area."
+  },
+  "contact": {
+    "title": "Skontaktuj Się",
+    "subtitle": "Masz sugestię lub pytanie? Chętnie od Ciebie usłyszymy!",
+    "description": "Masz sugestię dotyczącą świetnego miejsca dla dzieci? Chcesz z nami współpracować? Wyślij nam wiadomość!",
+    "name": "Twoje Imię",
+    "namePlaceholder": "Wpisz swoje imię",
+    "email": "Twój E-mail",
+    "emailPlaceholder": "ty@przyklad.com",
+    "message": "Wiadomość",
+    "messagePlaceholder": "Opowiedz nam o świetnym miejscu dla dzieci...",
+    "send": "Wyślij Wiadomość",
+    "success": "Wiadomość wysłana pomyślnie!",
+    "error": "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+    "required": "To pole jest wymagane"
+  },
+  "NotFound": {
+    "title": "Ups! Ta strona się zgubiła!",
+    "description": "Strona, której szukasz, nie istnieje. Wróćmy do odkrywania!",
+    "goHome": "Powrót do Strony Głównej",
+    "explorePlay": "Znajdź Atrakcje",
+    "backHome": "Powrót do Strony Głównej"
+  },
+  "notFound": {
+    "title": "Ups! Ta strona się zgubiła!",
+    "description": "Strona, której szukasz, nie istnieje. Wróćmy do odkrywania!",
+    "goHome": "Powrót do Strony Głównej",
+    "explorePlay": "Znajdź Atrakcje"
+  },
+  "Footer": {
+    "tagline": "Pomagamy rodzinom z Bay Area wspólnie odkrywać zabawę.",
+    "copyright": "Kids Bay Area. Wszelkie prawa zastrzeżone.",
+    "about": "O Nas",
+    "contact": "Kontakt",
+    "privacy": "Polityka Prywatności",
+    "terms": "Regulamin",
+    "description": "Twój kompletny przewodnik po atrakcjach rodzinnych w Bay Area."
+  },
+  "footer": {
+    "tagline": "Pomagamy rodzinom z Bay Area wspólnie odkrywać zabawę.",
+    "about": "O Nas",
+    "contact": "Kontakt",
+    "privacy": "Prywatność",
+    "terms": "Regulamin",
+    "copyright": "Kids Bay Area. Wszelkie prawa zastrzeżone."
+  },
+  "seasonal": {
+    "spring_title": "Wiosenna Zabawa!",
+    "spring_tip": "Kwitną wiśnie! Odwiedź Japanese Tea Garden, odkryj ogrody botaniczne i ciesz się rodzinnymi wędrówkami. Nie przegap poszukiwań jajek wielkanocnych i festiwali wiosennych.",
+    "spring": "Wiosna jest tutaj! Idealny czas na place zabaw na świeżym powietrzu, ogrody botaniczne i pikniki w parku.",
+    "summer_title": "Letnie Przygody",
+    "summer_tip": "Aquaparki, wycieczki na plażę i obozy na świeżym powietrzu w pełni! Stosuj krem z filtrem, pij dużo wody i odkryj najlepsze letnie atrakcje Bay Area!",
+    "summer": "Letnia zabawa! Udaj się do aquaparków, na plaże i festiwale plenerowe w Bay Area.",
+    "fall_title": "Jesienne Atrakcje",
+    "fall_tip": "Pola dyniowe, zbieranie jabłek i festiwale dożynkowe! Idealna pogoda na rodzinne wędrówki i zabawę na świeżym powietrzu. Sprawdź dynie z Half Moon Bay!",
+    "fall": "Jesienne przygody czekają! Ciesz się polami dyniowymi, festiwalami dożynkowymi i przytulnymi wizytami w muzeum.",
+    "winter_title": "Zimowa Kraina Czarów",
+    "winter_tip": "Muzea w pomieszczeniach, łyżwy, świąteczne pokazy świetlne i zabawy na śniegu w Tahoe! Świetny czas na atrakcje wewnętrzne i przytulne rodzinne wyjścia.",
+    "winter": "Zimowa kraina czarów! Odkryj sale zabaw, wydarzenia świąteczne i muzea na deszczowe dni.",
+    "explore": "Znajdź Atrakcje",
+    "cta": "Odkryj atrakcje"
+  },
+  "search": {
+    "title": "Szukaj",
+    "placeholder": "Szukaj miejsc, atrakcji...",
+    "hint": "Wpisz co najmniej 2 znaki, aby wyszukać",
+    "noResults": "Nie znaleziono wyników.",
+    "escHint": "Naciśnij Esc, aby zamknąć",
+    "results": "Znaleziono {count} wyników",
+    "close": "Zamknij"
+  },
+  "newsletter": {
+    "title": "Bądź na Bieżąco",
+    "subtitle": "Otrzymuj cotygodniowe wybory najlepszych atrakcji rodzinnych, ukrytych perełek i wydarzeń sezonowych w Bay Area.",
+    "placeholder": "Twój e-mail",
+    "subscribe": "Subskrybuj",
+    "success": "Dziękujemy za subskrypcję!"
+  },
+  "share": {
+    "linkCopied": "Link skopiowany!"
+  },
+  "breadcrumbs": {
+    "home": "Strona Główna",
+    "play": "Zabawa",
+    "eat": "Jedzenie",
+    "learn": "Nauka",
+    "shop": "Zakupy",
+    "explore": "Odkrywaj"
+  },
+  "guides": {
+    "title": "Szukaj według wieku i sytuacji",
+    "subtitle": "Znajdź idealną aktywność na podstawie wieku dziecka lub pogody.",
+    "babies": {
+      "title": "Niemowlęta 0-2",
+      "subtitle": "Bezpieczne i delikatne"
+    },
+    "toddlers": {
+      "title": "Maluchy 2-5",
+      "subtitle": "Zabawa interaktywna"
+    },
+    "kids": {
+      "title": "Dzieci 5-8",
+      "subtitle": "Ucz się i odkrywaj"
+    },
+    "tweens": {
+      "title": "Nastolatki 8-12",
+      "subtitle": "Czas na przygodę"
+    },
+    "rainyDay": {
+      "title": "Deszczowy dzień",
+      "subtitle": "Zabawa w pomieszczeniu"
+    },
+    "favorites": {
+      "title": "Najwyżej oceniane",
+      "subtitle": "Ulubione rodzin"
+    }
+  },
+  "community": {
+    "title": "Dołącz do naszej społeczności",
+    "subtitle": "Nawiąż kontakt z rodzicami z Bay Area, podziel się ulubionymi miejscami i otrzymuj cotygodniowe pomysły na atrakcje.",
+    "submitSpot": "Zaproponuj miejsce",
+    "submitDesc": "Znasz świetne miejsce dla dzieci? Powiedz nam o nim!",
+    "weekendPlanner": "Planer weekendowy",
+    "plannerDesc": "Wygeneruj idealny plan rodzinnego dnia w kilka sekund.",
+    "guides": "Przewodniki wiekowe",
+    "guidesDesc": "Znajdź atrakcje dopasowane do grupy wiekowej Twojego dziecka."
+  }
+}

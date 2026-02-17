@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "Kids Bay Area – Perheen hauskuusopas",
+    "description": "Löydä parhaat leikkipuistot, lapsiystävälliset ravintolat, kurssit, kaupat ja viikonloppuseikkailut perheille San Franciscon Bay Arealla."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "Etusivu",
+    "play": "Leikki",
+    "eat": "Ruokailu",
+    "learn": "Oppiminen",
+    "shop": "Kaupat",
+    "explore": "Tutustu",
+    "darkMode": "Tumma tila",
+    "lightMode": "Vaalea tila",
+    "language": "Kieli",
+    "backToTop": "Takaisin ylös",
+    "menu": "Valikko",
+    "close": "Sulje",
+    "viewAll": "Näytä kaikki",
+    "readMore": "Lue lisää",
+    "indoor": "Sisätila",
+    "outdoor": "Ulkotila",
+    "both": "Sisä- ja ulkotila",
+    "ages": "Ikä {range}",
+    "rating": "{score} tähteä"
+  },
+  "nav": {
+    "home": "Etusivu",
+    "play": "Leikki",
+    "eat": "Ruokailu",
+    "learn": "Oppiminen",
+    "shop": "Kaupat",
+    "explore": "Tutustu"
+  },
+  "hero": {
+    "title": "Perheesi opas Bay Arealle",
+    "subtitle": "Löydä parhaat leikkipuistot, lapsiystävälliset ravintolat, kurssit, kaupat ja viikonloppuseikkailut perheille San Franciscon Bay Arealla.",
+    "cta": "Tutustu nyt",
+    "search_placeholder": "Hae leikkipuistoja, ravintoloita, kursseja...",
+    "searchPlaceholder": "Hae leikkipuistoja, ravintoloita, kursseja...",
+    "searchButton": "Hae",
+    "quickSearch": "Suositut:"
+  },
+  "categories": {
+    "section_title": "Selaa kategorioittain",
+    "play": {
+      "title": "Leikki ja huvi",
+      "description": "Leikkipuistot, huvipuistot, eläintarhat, museot ja hauskaa tekemistä kaikenikäisille lapsille.",
+      "cta": "Etsi aktiviteetteja"
+    },
+    "eat": {
+      "title": "Ruoka ja juoma",
+      "description": "Lapsiystävälliset ravintolat syöttötuoleineen, lasten ruokalistoineen, leikkialueineen ja perheruokailuineen.",
+      "cta": "Etsi ravintoloita"
+    },
+    "learn": {
+      "title": "Oppiminen ja kasvu",
+      "description": "STEM-leirit, taidekurssit, musiikkitunnit, kiinankielen koulut ja kehittävät ohjelmat.",
+      "cta": "Etsi kursseja"
+    },
+    "shop": {
+      "title": "Kaupat",
+      "description": "Lelukaupat, kirjakaupat, opetustarvikkeet ja lasten kirpputorikaupat.",
+      "cta": "Etsi kauppoja"
+    },
+    "explore": {
+      "title": "Tutustu ja matkusta",
+      "description": "Päiväretket, kausitapahtumat, luontoseikkailut ja perheautomatkat Bay Arealta.",
+      "cta": "Suunnittele retki"
+    }
+  },
+  "todaysPick": {
+    "title": "Päivän valinta",
+    "random": "Yllätä minut",
+    "reroll": "Näytä toinen",
+    "viewDetails": "Näytä tiedot"
+  },
+  "map": {
+    "title": "Tutustu Bay Areaan",
+    "loading": "Ladataan karttaa...",
+    "all": "Kaikki",
+    "play": "Leikki",
+    "eat": "Ruokailu",
+    "learn": "Oppiminen",
+    "shop": "Kaupat",
+    "explore": "Tutustu",
+    "viewDetails": "Näytä tiedot"
+  },
+  "placeFilters": {
+    "all": "Kaikki",
+    "allAreas": "Kaikki alueet",
+    "allAges": "Kaikki iät",
+    "indoor": "Sisätila",
+    "outdoor": "Ulkotila",
+    "both": "Sisä-/ulkotila",
+    "free": "Ilmainen",
+    "showing": "Näytetään {count}/{total} kohdetta",
+    "noResults": "Suodattimet eivät tuottaneet tuloksia",
+    "noResultsHint": "Kokeile muuttaa suodattimia nähdäksesi lisää tuloksia.",
+    "sortRating": "Parhaat arviot",
+    "sortName": "Nimi A–Ö"
+  },
+  "placeDetail": {
+    "backToList": "Takaisin",
+    "about": "Tietoa tästä paikasta",
+    "location": "Sijainti",
+    "getDirections": "Hae reittiohjeet",
+    "info": "Tiedot",
+    "parking": "Pysäköinti",
+    "tips": "Vinkit",
+    "bestTime": "Paras aika",
+    "website": "Virallinen verkkosivu",
+    "ageRange": "Ikähaarukka",
+    "indoorOutdoor": "Tilatyyppi",
+    "priceLevel": "Hintataso",
+    "strollerFriendly": "Rattaatystävällinen",
+    "changingStation": "Hoitopöytä",
+    "diningOnSite": "Ruokailu paikan päällä",
+    "needsReservation": "Varaus tarpeen",
+    "yes": "Kyllä",
+    "no": "Ei",
+    "home": "Etusivu",
+    "similarPlaces": "Samankaltaisia paikkoja",
+    "share": "Jaa",
+    "copyLink": "Kopioi linkki",
+    "linkCopied": "Linkki kopioitu!",
+    "tags": "Tunnisteet",
+    "notFound": "Paikkaa ei löytynyt",
+    "notFoundDesc": "Etsimääsi paikkaa ei ole olemassa."
+  },
+  "mobileNav": {
+    "home": "Etusivu",
+    "play": "Leikki",
+    "eat": "Ruokailu",
+    "learn": "Oppiminen",
+    "more": "Lisää"
+  },
+  "play": {
+    "title": "Leikkipuistot ja aktiviteetit",
+    "subtitle": "Parhaat leikkipuistot, museot, puistot, vesipuistot ja aktiviteetit lapsille Bay Arealla."
+  },
+  "eat": {
+    "title": "Lapsiystävälliset ravintolat",
+    "subtitle": "Perheystävälliset ravintolat syöttötuoleineen, lasten ruokalistoineen, leikkialueineen ja terveellisine vaihtoehtoineen."
+  },
+  "learn": {
+    "title": "Kurssit ja koulutus",
+    "subtitle": "STEM-leirit, taidekurssit, musiikkitunnit, kiinankielen koulut, ohjelmointikurssit ja kehittävät aktiviteetit."
+  },
+  "shop": {
+    "title": "Perheen ostokset",
+    "subtitle": "Lelukaupat, kirjakaupat, opetustarvikkeet, lastenvaatteet ja kirpputorikaupat."
+  },
+  "explore": {
+    "title": "Päiväretket ja seikkailut",
+    "subtitle": "Viikonloppumatkat, kausitapahtumat, luontoretket ja perheautomatkat Bay Arealta."
+  },
+  "contact": {
+    "title": "Ota yhteyttä",
+    "subtitle": "Onko sinulla ehdotus tai kysymys? Kuulemme mielellämme sinusta!",
+    "description": "Onko sinulla ehdotus loistavasta lapsiystävällisestä paikasta? Haluatko tehdä yhteistyötä kanssamme? Lähetä meille viesti!",
+    "name": "Nimesi",
+    "namePlaceholder": "Kirjoita nimesi",
+    "email": "Sähköpostisi",
+    "emailPlaceholder": "sinä@esimerkki.fi",
+    "message": "Viesti",
+    "messagePlaceholder": "Kerro meille loistavasta paikasta lapsille...",
+    "send": "Lähetä viesti",
+    "success": "Viesti lähetetty onnistuneesti!",
+    "error": "Viestin lähetys epäonnistui. Yritä uudelleen.",
+    "required": "Tämä kenttä on pakollinen"
+  },
+  "NotFound": {
+    "title": "Hups! Tämä sivu on kadonnut!",
+    "description": "Etsimääsi sivua ei ole olemassa. Palataan tutkimaan!",
+    "goHome": "Takaisin etusivulle",
+    "explorePlay": "Etsi aktiviteetteja",
+    "backHome": "Takaisin etusivulle"
+  },
+  "notFound": {
+    "title": "Hups! Tämä sivu on kadonnut!",
+    "description": "Etsimääsi sivua ei ole olemassa. Palataan tutkimaan!",
+    "goHome": "Takaisin etusivulle",
+    "explorePlay": "Etsi aktiviteetteja"
+  },
+  "Footer": {
+    "tagline": "Autamme Bay Arean perheitä löytämään hauskuutta yhdessä.",
+    "copyright": "Kids Bay Area. Kaikki oikeudet pidätetään.",
+    "about": "Tietoa",
+    "contact": "Yhteystiedot",
+    "privacy": "Tietosuojakäytäntö",
+    "terms": "Käyttöehdot",
+    "description": "Täydellinen oppaasi perheaktiviteetteihin Bay Arealla."
+  },
+  "footer": {
+    "tagline": "Autamme Bay Arean perheitä löytämään hauskuutta yhdessä.",
+    "about": "Tietoa",
+    "contact": "Yhteystiedot",
+    "privacy": "Tietosuoja",
+    "terms": "Ehdot",
+    "copyright": "Kids Bay Area. Kaikki oikeudet pidätetään."
+  },
+  "seasonal": {
+    "spring_title": "Keväthauskuutta!",
+    "spring_tip": "Kirsikankukat kukkivat! Vieraile Japanilaisessa teepuutarhassa, tutustu kasvitieteellisiin puutarhoihin ja nauti perhevaelluksista. Älä missaa pääsiäismunajahdit ja kevätfestivaalit.",
+    "spring": "Kevät on täällä! Täydellinen aika ulkoleikkipuistoille, kasvitieteellisille puutarhoille ja puistopiknikeille.",
+    "summer_title": "Kesäseikkailut",
+    "summer_tip": "Vesipuistot, rantaretket ja ulkoleirit ovat täydessä vauhdissa. Laita aurinkovoidetta, juo riittävästi ja tutustu Bay Arean parhaaseen kesätekemiseen!",
+    "summer": "Kesähauskuutta! Suuntaa vesipuistoihin, rannoille ja ulkofestivaaleille ympäri Bay Areaa.",
+    "fall_title": "Syysaktiviteetit",
+    "fall_tip": "Kurpitsapeltoja, omenanpoimintaa ja sadonkorjuujuhlia! Täydellinen sää perhevaelluksille ja ulkoilulle. Tutustu Half Moon Bayn kurpitsoihin!",
+    "fall": "Syysseikkailut odottavat! Nauti kurpitsapelloista, sadonkorjuujuhlista ja tunnelmallisista museovierailuista.",
+    "winter_title": "Talven ihmemaa",
+    "winter_tip": "Sisämuseot, luistelu, jouluvalonäytökset ja Tahoen lumileikit! Loistava aika sisäaktiviteeteille ja kodikkaille perheretaille.",
+    "winter": "Talven ihmemaa! Löydä sisäleikkipaikkoja, joulutapahtumia ja sadeajan museoita.",
+    "explore": "Etsi aktiviteetteja",
+    "cta": "Tutustu aktiviteetteihin"
+  },
+  "search": {
+    "title": "Haku",
+    "placeholder": "Hae paikkoja, aktiviteetteja...",
+    "hint": "Kirjoita vähintään 2 merkkiä hakeaksesi",
+    "noResults": "Tuloksia ei löytynyt.",
+    "escHint": "Paina Esc sulkeaksesi",
+    "results": "{count} tulosta löydetty",
+    "close": "Sulje"
+  },
+  "newsletter": {
+    "title": "Pysy ajan tasalla",
+    "subtitle": "Saat viikoittain parhaat perheaktiviteetit, piilotetut helmet ja kausitapahtumat Bay Arealla.",
+    "placeholder": "Sähköpostisi",
+    "subscribe": "Tilaa",
+    "success": "Kiitos tilauksesta!"
+  },
+  "share": {
+    "linkCopied": "Linkki kopioitu!"
+  },
+  "breadcrumbs": {
+    "home": "Etusivu",
+    "play": "Leikki",
+    "eat": "Ruokailu",
+    "learn": "Oppiminen",
+    "shop": "Kaupat",
+    "explore": "Tutustu"
+  },
+  "guides": {
+    "title": "Selaa iän ja tilanteen mukaan",
+    "subtitle": "Löydä täydellinen aktiviteetti lapsesi iän tai sään perusteella.",
+    "babies": {
+      "title": "Vauvat 0-2",
+      "subtitle": "Turvallista ja hellävaraista"
+    },
+    "toddlers": {
+      "title": "Taaperot 2-5",
+      "subtitle": "Vuorovaikutteista leikkiä"
+    },
+    "kids": {
+      "title": "Lapset 5-8",
+      "subtitle": "Opi ja tutki"
+    },
+    "tweens": {
+      "title": "Tweenit 8-12",
+      "subtitle": "Seikkailuaika"
+    },
+    "rainyDay": {
+      "title": "Sadepäivä",
+      "subtitle": "Sisähauskuutta"
+    },
+    "favorites": {
+      "title": "Parhaat arviot",
+      "subtitle": "Perheen suosikit"
+    }
+  },
+  "community": {
+    "title": "Liity yhteisöömme",
+    "subtitle": "Verkostoidu Bay Arean vanhempien kanssa, jaa suosikkipaikkasi ja saa viikoittaisia aktiviteetti-ideoita.",
+    "submitSpot": "Ehdota paikkaa",
+    "submitDesc": "Tiedätkö loistavan lapsiystävällisen paikan? Kerro meille!",
+    "weekendPlanner": "Viikonloppusuunnittelija",
+    "plannerDesc": "Luo täydellinen perhepäiväohjelma muutamassa sekunnissa.",
+    "guides": "Ikäoppaat",
+    "guidesDesc": "Löydä lapsesi ikäryhmälle sopivia aktiviteetteja."
+  }
+}

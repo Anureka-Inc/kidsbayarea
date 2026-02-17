@@ -243,5 +243,43 @@
     "learn": "배우기",
     "shop": "쇼핑",
     "explore": "탐험"
+  },
+  "guides": {
+    "title": "연령 및 상황별 찾기",
+    "subtitle": "아이의 나이나 날씨에 맞는 완벽한 활동을 찾아보세요.",
+    "babies": {
+      "title": "영아 0-2세",
+      "subtitle": "안전하고 부드러운"
+    },
+    "toddlers": {
+      "title": "유아 2-5세",
+      "subtitle": "체험 놀이"
+    },
+    "kids": {
+      "title": "어린이 5-8세",
+      "subtitle": "배우고 탐험하기"
+    },
+    "tweens": {
+      "title": "트윈 8-12세",
+      "subtitle": "모험의 시간"
+    },
+    "rainyDay": {
+      "title": "비 오는 날",
+      "subtitle": "실내 재미"
+    },
+    "favorites": {
+      "title": "최고 평점",
+      "subtitle": "가족 인기 장소"
+    }
+  },
+  "community": {
+    "title": "커뮤니티에 참여하세요",
+    "subtitle": "베이에리어 부모님들과 소통하고, 좋아하는 장소를 공유하고, 매주 활동 아이디어를 받아보세요.",
+    "submitSpot": "장소 추천하기",
+    "submitDesc": "아이들에게 좋은 장소를 알고 계신가요? 알려주세요!",
+    "weekendPlanner": "주말 플래너",
+    "plannerDesc": "몇 초 만에 완벽한 가족 나들이 일정을 만들어 보세요.",
+    "guides": "연령별 가이드",
+    "guidesDesc": "자녀의 연령대에 맞는 활동을 찾아보세요."
   }
 }

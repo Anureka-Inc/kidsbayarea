@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "Kids Bay Area – Panduan Keseronokan Keluarga",
+    "description": "Temui taman permainan, restoran mesra kanak-kanak, kelas, kedai dan pengembaraan hujung minggu terbaik untuk keluarga di San Francisco Bay Area."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "Laman Utama",
+    "play": "Bermain",
+    "eat": "Makan",
+    "learn": "Belajar",
+    "shop": "Beli-belah",
+    "explore": "Terokai",
+    "darkMode": "Mod Gelap",
+    "lightMode": "Mod Cerah",
+    "language": "Bahasa",
+    "backToTop": "Kembali ke atas",
+    "menu": "Menu",
+    "close": "Tutup",
+    "viewAll": "Lihat semua",
+    "readMore": "Baca lagi",
+    "indoor": "Dalaman",
+    "outdoor": "Luaran",
+    "both": "Dalaman & Luaran",
+    "ages": "Umur {range}",
+    "rating": "{score} bintang"
+  },
+  "nav": {
+    "home": "Laman Utama",
+    "play": "Bermain",
+    "eat": "Makan",
+    "learn": "Belajar",
+    "shop": "Beli-belah",
+    "explore": "Terokai"
+  },
+  "hero": {
+    "title": "Panduan Keluarga Anda ke Bay Area",
+    "subtitle": "Temui taman permainan, restoran mesra kanak-kanak, kelas, kedai dan pengembaraan hujung minggu terbaik untuk keluarga di San Francisco Bay Area.",
+    "cta": "Terokai Sekarang",
+    "search_placeholder": "Cari taman permainan, restoran, kelas...",
+    "searchPlaceholder": "Cari taman permainan, restoran, kelas...",
+    "searchButton": "Cari",
+    "quickSearch": "Popular:"
+  },
+  "categories": {
+    "section_title": "Terokai mengikut Kategori",
+    "play": {
+      "title": "Bermain & Seronok",
+      "description": "Taman permainan, taman tema, zoo, muzium dan aktiviti menyeronokkan untuk kanak-kanak semua peringkat umur.",
+      "cta": "Cari Aktiviti"
+    },
+    "eat": {
+      "title": "Makan & Minum",
+      "description": "Restoran mesra kanak-kanak dengan kerusi tinggi, menu kanak-kanak, ruang permainan dan jamuan keluarga.",
+      "cta": "Cari Restoran"
+    },
+    "learn": {
+      "title": "Belajar & Berkembang",
+      "description": "Kem STEM, kelas seni, pelajaran muzik, sekolah bahasa Cina dan program pengayaan.",
+      "cta": "Cari Kelas"
+    },
+    "shop": {
+      "title": "Beli-belah",
+      "description": "Kedai mainan, kedai buku, bekalan pendidikan dan kedai barangan terpakai kanak-kanak.",
+      "cta": "Cari Kedai"
+    },
+    "explore": {
+      "title": "Terokai & Melancong",
+      "description": "Lawatan sehari, acara bermusim, pengembaraan alam semula jadi dan perjalanan jalan raya keluarga dari Bay Area.",
+      "cta": "Rancang Perjalanan"
+    }
+  },
+  "todaysPick": {
+    "title": "Pilihan Hari Ini",
+    "random": "Kejutkan Saya",
+    "reroll": "Tunjuk yang lain",
+    "viewDetails": "Lihat Butiran"
+  },
+  "map": {
+    "title": "Terokai Bay Area",
+    "loading": "Memuatkan peta...",
+    "all": "Semua",
+    "play": "Bermain",
+    "eat": "Makan",
+    "learn": "Belajar",
+    "shop": "Beli-belah",
+    "explore": "Terokai",
+    "viewDetails": "Lihat butiran"
+  },
+  "placeFilters": {
+    "all": "Semua",
+    "allAreas": "Semua Kawasan",
+    "allAges": "Semua Umur",
+    "indoor": "Dalaman",
+    "outdoor": "Luaran",
+    "both": "Dalaman/Luaran",
+    "free": "Percuma",
+    "showing": "Menunjukkan {count} daripada {total} tempat",
+    "noResults": "Tiada tempat sepadan dengan penapis anda",
+    "noResultsHint": "Cuba laraskan penapis anda untuk melihat lebih banyak hasil.",
+    "sortRating": "Penilaian Tertinggi",
+    "sortName": "Nama A-Z"
+  },
+  "placeDetail": {
+    "backToList": "Kembali",
+    "about": "Mengenai Tempat Ini",
+    "location": "Lokasi",
+    "getDirections": "Dapatkan Arah",
+    "info": "Maklumat",
+    "parking": "Tempat Letak Kereta",
+    "tips": "Tips",
+    "bestTime": "Masa Terbaik",
+    "website": "Laman Web Rasmi",
+    "ageRange": "Lingkungan Umur",
+    "indoorOutdoor": "Jenis Tempat",
+    "priceLevel": "Tahap Harga",
+    "strollerFriendly": "Mesra Stroller",
+    "changingStation": "Stesen Tukar Lampin",
+    "diningOnSite": "Tempat Makan di Lokasi",
+    "needsReservation": "Tempahan Diperlukan",
+    "yes": "Ya",
+    "no": "Tidak",
+    "home": "Laman Utama",
+    "similarPlaces": "Tempat Serupa",
+    "share": "Kongsi",
+    "copyLink": "Salin Pautan",
+    "linkCopied": "Pautan disalin!",
+    "tags": "Tag",
+    "notFound": "Tempat tidak ditemui",
+    "notFoundDesc": "Tempat yang anda cari tidak wujud."
+  },
+  "mobileNav": {
+    "home": "Utama",
+    "play": "Bermain",
+    "eat": "Makan",
+    "learn": "Belajar",
+    "more": "Lagi"
+  },
+  "play": {
+    "title": "Taman Permainan & Aktiviti",
+    "subtitle": "Taman permainan, muzium, taman, taman air dan aktiviti terbaik untuk kanak-kanak di Bay Area."
+  },
+  "eat": {
+    "title": "Restoran Mesra Kanak-kanak",
+    "subtitle": "Restoran mesra keluarga dengan kerusi tinggi, menu kanak-kanak, ruang permainan dan pilihan sihat."
+  },
+  "learn": {
+    "title": "Kelas & Pendidikan",
+    "subtitle": "Kem STEM, kelas seni, pelajaran muzik, sekolah bahasa Cina, program pengekodan dan aktiviti pengayaan."
+  },
+  "shop": {
+    "title": "Beli-belah Keluarga",
+    "subtitle": "Kedai mainan, kedai buku, bekalan pendidikan, pakaian kanak-kanak dan kedai barangan terpakai."
+  },
+  "explore": {
+    "title": "Lawatan Sehari & Pengembaraan",
+    "subtitle": "Percutian hujung minggu, acara bermusim, mendaki alam semula jadi dan perjalanan jalan raya keluarga dari Bay Area."
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Ada cadangan atau soalan? Kami ingin mendengar daripada anda!",
+    "description": "Ada cadangan tempat mesra kanak-kanak yang hebat? Ingin bekerjasama dengan kami? Hantarkan mesej kepada kami!",
+    "name": "Nama Anda",
+    "namePlaceholder": "Masukkan nama anda",
+    "email": "E-mel Anda",
+    "emailPlaceholder": "anda@contoh.com",
+    "message": "Mesej",
+    "messagePlaceholder": "Ceritakan kepada kami tentang tempat yang bagus untuk kanak-kanak...",
+    "send": "Hantar Mesej",
+    "success": "Mesej berjaya dihantar!",
+    "error": "Gagal menghantar mesej. Sila cuba lagi.",
+    "required": "Medan ini diperlukan"
+  },
+  "NotFound": {
+    "title": "Oops! Halaman ini telah sesat!",
+    "description": "Halaman yang anda cari tidak wujud. Jom kembali meneroka!",
+    "goHome": "Kembali ke Laman Utama",
+    "explorePlay": "Cari Aktiviti",
+    "backHome": "Kembali ke Laman Utama"
+  },
+  "notFound": {
+    "title": "Oops! Halaman ini telah sesat!",
+    "description": "Halaman yang anda cari tidak wujud. Jom kembali meneroka!",
+    "goHome": "Kembali ke Laman Utama",
+    "explorePlay": "Cari Aktiviti"
+  },
+  "Footer": {
+    "tagline": "Membantu keluarga Bay Area menemui keseronokan bersama.",
+    "copyright": "Kids Bay Area. Hak cipta terpelihara.",
+    "about": "Mengenai",
+    "contact": "Hubungi",
+    "privacy": "Dasar Privasi",
+    "terms": "Terma Perkhidmatan",
+    "description": "Panduan utama anda untuk aktiviti keluarga di Bay Area."
+  },
+  "footer": {
+    "tagline": "Membantu keluarga Bay Area menemui keseronokan bersama.",
+    "about": "Mengenai",
+    "contact": "Hubungi",
+    "privacy": "Privasi",
+    "terms": "Terma",
+    "copyright": "Kids Bay Area. Hak cipta terpelihara."
+  },
+  "seasonal": {
+    "spring_title": "Keseronokan Musim Bunga!",
+    "spring_tip": "Bunga sakura sedang mekar! Lawati Taman Teh Jepun, terokai taman botani dan nikmati mendaki bersama keluarga. Jangan lepaskan memburu telur Paskah dan festival musim bunga.",
+    "spring": "Musim bunga tiba! Masa yang sempurna untuk taman permainan luar, taman botani dan berkelah di taman.",
+    "summer_title": "Pengembaraan Musim Panas",
+    "summer_tip": "Taman air, perjalanan ke pantai dan kem luar sedang rancak. Sapukan pelindung matahari, kekal terhidrat dan terokai aktiviti musim panas terbaik Bay Area!",
+    "summer": "Keseronokan musim panas! Pergi ke taman air, pantai dan festival luar di seluruh Bay Area.",
+    "fall_title": "Aktiviti Musim Luruh",
+    "fall_tip": "Ladang labu, petik epal dan festival menuai! Cuaca sempurna untuk mendaki bersama keluarga dan aktiviti luar. Lihat labu Half Moon Bay!",
+    "fall": "Pengembaraan musim luruh menanti! Nikmati ladang labu, festival menuai dan lawatan muzium yang selesa.",
+    "winter_title": "Negeri Ajaib Musim Sejuk",
+    "winter_tip": "Muzium dalaman, luncur ais, pertunjukan lampu perayaan dan bermain salji di Tahoe! Masa yang bagus untuk aktiviti dalaman dan keluar bersama keluarga yang selesa.",
+    "winter": "Negeri ajaib musim sejuk! Temui ruang permainan dalaman, acara perayaan dan muzium hari hujan.",
+    "explore": "Cari Aktiviti",
+    "cta": "Terokai aktiviti"
+  },
+  "search": {
+    "title": "Carian",
+    "placeholder": "Cari tempat, aktiviti...",
+    "hint": "Taip sekurang-kurangnya 2 aksara untuk mencari",
+    "noResults": "Tiada hasil ditemui.",
+    "escHint": "Tekan Esc untuk tutup",
+    "results": "{count} hasil ditemui",
+    "close": "Tutup"
+  },
+  "newsletter": {
+    "title": "Kekal Terkini",
+    "subtitle": "Dapatkan pilihan mingguan aktiviti keluarga terbaik, permata tersembunyi dan acara bermusim di Bay Area.",
+    "placeholder": "E-mel anda",
+    "subscribe": "Langgan",
+    "success": "Terima kasih kerana melanggan!"
+  },
+  "share": {
+    "linkCopied": "Pautan disalin!"
+  },
+  "breadcrumbs": {
+    "home": "Laman Utama",
+    "play": "Bermain",
+    "eat": "Makan",
+    "learn": "Belajar",
+    "shop": "Beli-belah",
+    "explore": "Terokai"
+  },
+  "guides": {
+    "title": "Cari mengikut umur dan situasi",
+    "subtitle": "Cari aktiviti yang sempurna berdasarkan umur anak anda atau cuaca.",
+    "babies": {
+      "title": "Bayi 0-2",
+      "subtitle": "Selamat dan lembut"
+    },
+    "toddlers": {
+      "title": "Kanak-kanak kecil 2-5",
+      "subtitle": "Permainan interaktif"
+    },
+    "kids": {
+      "title": "Kanak-kanak 5-8",
+      "subtitle": "Belajar dan terokai"
+    },
+    "tweens": {
+      "title": "Praremaja 8-12",
+      "subtitle": "Masa pengembaraan"
+    },
+    "rainyDay": {
+      "title": "Hari hujan",
+      "subtitle": "Keseronokan dalaman"
+    },
+    "favorites": {
+      "title": "Penilaian tertinggi",
+      "subtitle": "Kegemaran keluarga"
+    }
+  },
+  "community": {
+    "title": "Sertai komuniti kami",
+    "subtitle": "Berhubung dengan ibu bapa di Bay Area, kongsi tempat kegemaran anda dan dapatkan idea aktiviti mingguan.",
+    "submitSpot": "Cadangkan tempat",
+    "submitDesc": "Tahu tempat mesra kanak-kanak yang hebat? Beritahu kami!",
+    "weekendPlanner": "Perancang hujung minggu",
+    "plannerDesc": "Jana jadual hari keluarga yang sempurna dalam beberapa saat.",
+    "guides": "Panduan mengikut umur",
+    "guidesDesc": "Cari aktiviti yang sesuai dengan kumpulan umur anak anda."
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "Kids Bay Area - Cẩm Nang Vui Chơi Gia Đình",
+    "description": "Khám phá những sân chơi, nhà hàng thân thiện với trẻ em, lớp học, cửa hàng và chuyến phiêu lưu cuối tuần tốt nhất cho gia đình tại vùng Vịnh San Francisco."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "Trang chủ",
+    "play": "Vui chơi",
+    "eat": "Ăn uống",
+    "learn": "Học tập",
+    "shop": "Mua sắm",
+    "explore": "Khám phá",
+    "darkMode": "Chế độ tối",
+    "lightMode": "Chế độ sáng",
+    "language": "Ngôn ngữ",
+    "backToTop": "Lên đầu trang",
+    "menu": "Menu",
+    "close": "Đóng",
+    "viewAll": "Xem tất cả",
+    "readMore": "Xem thêm",
+    "indoor": "Trong nhà",
+    "outdoor": "Ngoài trời",
+    "both": "Trong nhà & Ngoài trời",
+    "ages": "Độ tuổi {range}",
+    "rating": "{score} sao"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "play": "Vui chơi",
+    "eat": "Ăn uống",
+    "learn": "Học tập",
+    "shop": "Mua sắm",
+    "explore": "Khám phá"
+  },
+  "hero": {
+    "title": "Cẩm Nang Gia Đình Vùng Vịnh",
+    "subtitle": "Khám phá những sân chơi, nhà hàng thân thiện với trẻ em, lớp học, cửa hàng và chuyến phiêu lưu cuối tuần tốt nhất cho gia đình tại vùng Vịnh San Francisco.",
+    "cta": "Khám phá ngay",
+    "search_placeholder": "Tìm sân chơi, nhà hàng, lớp học...",
+    "searchPlaceholder": "Tìm sân chơi, nhà hàng, lớp học...",
+    "searchButton": "Tìm kiếm",
+    "quickSearch": "Phổ biến:"
+  },
+  "categories": {
+    "section_title": "Khám phá theo danh mục",
+    "play": {
+      "title": "Vui chơi giải trí",
+      "description": "Sân chơi, công viên giải trí, sở thú, bảo tàng và các hoạt động vui nhộn cho trẻ em mọi lứa tuổi.",
+      "cta": "Tìm hoạt động"
+    },
+    "eat": {
+      "title": "Ăn uống",
+      "description": "Nhà hàng thân thiện với trẻ em có ghế cao, thực đơn cho bé, khu vui chơi và không gian dành cho gia đình.",
+      "cta": "Tìm nhà hàng"
+    },
+    "learn": {
+      "title": "Học hỏi và phát triển",
+      "description": "Trại hè STEM, lớp mỹ thuật, lớp nhạc, trường tiếng Hoa và các chương trình bổ trợ.",
+      "cta": "Tìm lớp học"
+    },
+    "shop": {
+      "title": "Mua sắm",
+      "description": "Cửa hàng đồ chơi, hiệu sách, đồ dùng học tập và cửa hàng đồ trẻ em secondhand.",
+      "cta": "Tìm cửa hàng"
+    },
+    "explore": {
+      "title": "Khám phá và du lịch",
+      "description": "Chuyến đi trong ngày, sự kiện theo mùa, phiêu lưu thiên nhiên và chuyến đi gia đình từ vùng Vịnh.",
+      "cta": "Lên kế hoạch"
+    }
+  },
+  "todaysPick": {
+    "title": "Gợi ý hôm nay",
+    "random": "Gợi ý ngẫu nhiên",
+    "reroll": "Hiện địa điểm khác",
+    "viewDetails": "Xem chi tiết"
+  },
+  "map": {
+    "title": "Khám phá vùng Vịnh",
+    "loading": "Đang tải bản đồ...",
+    "all": "Tất cả",
+    "play": "Vui chơi",
+    "eat": "Ăn uống",
+    "learn": "Học tập",
+    "shop": "Mua sắm",
+    "explore": "Khám phá",
+    "viewDetails": "Xem chi tiết"
+  },
+  "placeFilters": {
+    "all": "Tất cả",
+    "allAreas": "Tất cả khu vực",
+    "allAges": "Mọi lứa tuổi",
+    "indoor": "Trong nhà",
+    "outdoor": "Ngoài trời",
+    "both": "Trong nhà/Ngoài trời",
+    "free": "Miễn phí",
+    "showing": "Hiển thị {count} trên {total} địa điểm",
+    "noResults": "Không có địa điểm nào phù hợp với bộ lọc",
+    "noResultsHint": "Hãy thử điều chỉnh bộ lọc để xem thêm kết quả.",
+    "sortRating": "Đánh giá cao nhất",
+    "sortName": "Tên A-Z"
+  },
+  "placeDetail": {
+    "backToList": "Quay lại",
+    "about": "Giới thiệu",
+    "location": "Vị trí",
+    "getDirections": "Chỉ đường",
+    "info": "Thông tin",
+    "parking": "Bãi đỗ xe",
+    "tips": "Mẹo hay",
+    "bestTime": "Thời gian tốt nhất",
+    "website": "Trang web chính thức",
+    "ageRange": "Độ tuổi phù hợp",
+    "indoorOutdoor": "Loại địa điểm",
+    "priceLevel": "Mức giá",
+    "strollerFriendly": "Phù hợp xe đẩy",
+    "changingStation": "Phòng thay tã",
+    "diningOnSite": "Có chỗ ăn uống",
+    "needsReservation": "Cần đặt trước",
+    "yes": "Có",
+    "no": "Không",
+    "home": "Trang chủ",
+    "similarPlaces": "Địa điểm tương tự",
+    "share": "Chia sẻ",
+    "copyLink": "Sao chép liên kết",
+    "linkCopied": "Đã sao chép liên kết!",
+    "tags": "Thẻ",
+    "notFound": "Không tìm thấy địa điểm",
+    "notFoundDesc": "Địa điểm bạn đang tìm kiếm không tồn tại."
+  },
+  "mobileNav": {
+    "home": "Trang chủ",
+    "play": "Vui chơi",
+    "eat": "Ăn uống",
+    "learn": "Học tập",
+    "more": "Thêm"
+  },
+  "play": {
+    "title": "Sân chơi và hoạt động",
+    "subtitle": "Những sân chơi, bảo tàng, công viên, công viên nước và hoạt động tốt nhất cho trẻ em tại vùng Vịnh."
+  },
+  "eat": {
+    "title": "Nhà hàng thân thiện với trẻ em",
+    "subtitle": "Nhà hàng gia đình có ghế cao, thực đơn cho bé, khu vui chơi và các lựa chọn lành mạnh."
+  },
+  "learn": {
+    "title": "Lớp học và giáo dục",
+    "subtitle": "Trại hè STEM, lớp mỹ thuật, lớp nhạc, trường tiếng Hoa, chương trình lập trình và hoạt động bổ trợ."
+  },
+  "shop": {
+    "title": "Mua sắm gia đình",
+    "subtitle": "Cửa hàng đồ chơi, hiệu sách, đồ dùng học tập, quần áo trẻ em và cửa hàng đồ secondhand."
+  },
+  "explore": {
+    "title": "Chuyến đi trong ngày và phiêu lưu",
+    "subtitle": "Du lịch cuối tuần, sự kiện theo mùa, đi bộ đường dài và chuyến đi gia đình từ vùng Vịnh."
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "subtitle": "Bạn có gợi ý hoặc câu hỏi? Chúng tôi rất muốn nghe từ bạn!",
+    "description": "Muốn giới thiệu một địa điểm tuyệt vời cho trẻ em? Muốn hợp tác với chúng tôi? Hãy gửi tin nhắn!",
+    "name": "Họ tên",
+    "namePlaceholder": "Nhập họ tên của bạn",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "message": "Tin nhắn",
+    "messagePlaceholder": "Chia sẻ về một địa điểm tuyệt vời cho trẻ em...",
+    "send": "Gửi tin nhắn",
+    "success": "Gửi tin nhắn thành công!",
+    "error": "Gửi tin nhắn thất bại. Vui lòng thử lại.",
+    "required": "Trường này là bắt buộc"
+  },
+  "NotFound": {
+    "title": "Ôi! Trang này đã đi lạc!",
+    "description": "Trang bạn đang tìm kiếm không tồn tại. Hãy quay lại khám phá nào!",
+    "goHome": "Về trang chủ",
+    "explorePlay": "Tìm hoạt động",
+    "backHome": "Về trang chủ"
+  },
+  "notFound": {
+    "title": "Ôi! Trang này đã đi lạc!",
+    "description": "Trang bạn đang tìm kiếm không tồn tại. Hãy quay lại khám phá nào!",
+    "goHome": "Về trang chủ",
+    "explorePlay": "Tìm hoạt động"
+  },
+  "Footer": {
+    "tagline": "Giúp các gia đình vùng Vịnh khám phá niềm vui cùng nhau.",
+    "copyright": "Kids Bay Area. Bảo lưu mọi quyền.",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản dịch vụ",
+    "description": "Cẩm nang toàn diện cho các hoạt động gia đình tại vùng Vịnh."
+  },
+  "footer": {
+    "tagline": "Giúp các gia đình vùng Vịnh khám phá niềm vui cùng nhau.",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "privacy": "Bảo mật",
+    "terms": "Điều khoản",
+    "copyright": "Kids Bay Area. Bảo lưu mọi quyền."
+  },
+  "seasonal": {
+    "spring_title": "Vui xuân!",
+    "spring_tip": "Hoa anh đào đang nở! Ghé thăm Japanese Tea Garden, khám phá vườn thực vật và tận hưởng chuyến đi bộ gia đình. Đừng bỏ lỡ săn trứng Phục Sinh và lễ hội mùa xuân.",
+    "spring": "Mùa xuân đã đến! Thời điểm lý tưởng cho sân chơi ngoài trời, vườn thực vật và dã ngoại trong công viên.",
+    "summer_title": "Phiêu lưu mùa hè",
+    "summer_tip": "Công viên nước, đi biển và trại hè ngoài trời đang vào mùa cao điểm. Thoa kem chống nắng, uống nhiều nước và khám phá những hoạt động mùa hè tuyệt nhất vùng Vịnh!",
+    "summer": "Mùa hè sôi động! Đến công viên nước, bãi biển và lễ hội ngoài trời khắp vùng Vịnh.",
+    "fall_title": "Hoạt động mùa thu",
+    "fall_tip": "Vườn bí ngô, hái táo và lễ hội mùa thu! Thời tiết hoàn hảo cho đi bộ gia đình và vui chơi ngoài trời. Đừng quên ghé xem bí ngô ở Half Moon Bay!",
+    "fall": "Phiêu lưu mùa thu đang chờ! Tận hưởng vườn bí ngô, lễ hội mùa thu và tham quan bảo tàng ấm cúng.",
+    "winter_title": "Xứ sở mùa đông",
+    "winter_tip": "Bảo tàng trong nhà, trượt băng, trình diễn ánh sáng ngày lễ và chơi tuyết ở Tahoe! Thời gian tuyệt vời cho hoạt động trong nhà và dạo chơi gia đình ấm áp.",
+    "winter": "Mùa đông kỳ diệu! Khám phá khu vui chơi trong nhà, sự kiện ngày lễ và bảo tàng cho ngày mưa.",
+    "explore": "Tìm hoạt động",
+    "cta": "Khám phá hoạt động"
+  },
+  "search": {
+    "title": "Tìm kiếm",
+    "placeholder": "Tìm địa điểm, hoạt động...",
+    "hint": "Nhập ít nhất 2 ký tự để tìm kiếm",
+    "noResults": "Không tìm thấy kết quả.",
+    "escHint": "Nhấn Esc để đóng",
+    "results": "Tìm thấy {count} kết quả",
+    "close": "Đóng"
+  },
+  "newsletter": {
+    "title": "Cập nhật thông tin",
+    "subtitle": "Nhận gợi ý hàng tuần về hoạt động gia đình, địa điểm ẩn giấu và sự kiện theo mùa tốt nhất tại vùng Vịnh.",
+    "placeholder": "Email của bạn",
+    "subscribe": "Đăng ký",
+    "success": "Cảm ơn bạn đã đăng ký!"
+  },
+  "share": {
+    "linkCopied": "Đã sao chép liên kết!"
+  },
+  "breadcrumbs": {
+    "home": "Trang chủ",
+    "play": "Vui chơi",
+    "eat": "Ăn uống",
+    "learn": "Học tập",
+    "shop": "Mua sắm",
+    "explore": "Khám phá"
+  },
+  "guides": {
+    "title": "Tìm theo độ tuổi và tình huống",
+    "subtitle": "Tìm hoạt động phù hợp dựa trên độ tuổi của bé hoặc thời tiết.",
+    "babies": {
+      "title": "Trẻ sơ sinh 0-2",
+      "subtitle": "An toàn và nhẹ nhàng"
+    },
+    "toddlers": {
+      "title": "Trẻ nhỏ 2-5",
+      "subtitle": "Chơi tương tác"
+    },
+    "kids": {
+      "title": "Trẻ em 5-8",
+      "subtitle": "Học và khám phá"
+    },
+    "tweens": {
+      "title": "Thiếu niên 8-12",
+      "subtitle": "Thời gian phiêu lưu"
+    },
+    "rainyDay": {
+      "title": "Ngày mưa",
+      "subtitle": "Vui chơi trong nhà"
+    },
+    "favorites": {
+      "title": "Đánh giá cao nhất",
+      "subtitle": "Yêu thích của gia đình"
+    }
+  },
+  "community": {
+    "title": "Tham gia cộng đồng của chúng tôi",
+    "subtitle": "Kết nối với các bậc phụ huynh vùng Vịnh, chia sẻ địa điểm yêu thích và nhận ý tưởng hoạt động hàng tuần.",
+    "submitSpot": "Giới thiệu địa điểm",
+    "submitDesc": "Bạn biết một địa điểm tuyệt vời cho trẻ em? Hãy cho chúng tôi biết!",
+    "weekendPlanner": "Lên kế hoạch cuối tuần",
+    "plannerDesc": "Tạo lịch trình ngày gia đình hoàn hảo chỉ trong vài giây.",
+    "guides": "Hướng dẫn theo độ tuổi",
+    "guidesDesc": "Tìm hoạt động phù hợp với nhóm tuổi của bé."
+  }
+}

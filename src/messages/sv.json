@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "Kids Bay Area - Familjenöjesguide",
+    "description": "Upptäck de bästa lekplatserna, barnvänliga restaurangerna, kurserna, butikerna och helgäventyren för familjer i San Francisco Bay Area."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "Hem",
+    "play": "Leka",
+    "eat": "Äta",
+    "learn": "Lära",
+    "shop": "Handla",
+    "explore": "Utforska",
+    "darkMode": "Mörkt Läge",
+    "lightMode": "Ljust Läge",
+    "language": "Språk",
+    "backToTop": "Tillbaka till toppen",
+    "menu": "Meny",
+    "close": "Stäng",
+    "viewAll": "Visa alla",
+    "readMore": "Läs mer",
+    "indoor": "Inomhus",
+    "outdoor": "Utomhus",
+    "both": "Inomhus & Utomhus",
+    "ages": "Ålder {range}",
+    "rating": "{score} stjärnor"
+  },
+  "nav": {
+    "home": "Hem",
+    "play": "Leka",
+    "eat": "Äta",
+    "learn": "Lära",
+    "shop": "Handla",
+    "explore": "Utforska"
+  },
+  "hero": {
+    "title": "Din Familjs Guide till Bay Area",
+    "subtitle": "Upptäck de bästa lekplatserna, barnvänliga restaurangerna, kurserna, butikerna och helgäventyren för familjer i San Francisco Bay Area.",
+    "cta": "Utforska Nu",
+    "search_placeholder": "Sök lekplatser, restauranger, kurser...",
+    "searchPlaceholder": "Sök lekplatser, restauranger, kurser...",
+    "searchButton": "Sök",
+    "quickSearch": "Populärt:"
+  },
+  "categories": {
+    "section_title": "Utforska efter Kategori",
+    "play": {
+      "title": "Lek & Nöje",
+      "description": "Lekplatser, nöjesparker, djurparker, museer och roliga aktiviteter för barn i alla åldrar.",
+      "cta": "Hitta Aktiviteter"
+    },
+    "eat": {
+      "title": "Äta & Dricka",
+      "description": "Barnvänliga restauranger med barnstolar, barnmenyer, lekområden och familjemiddagar.",
+      "cta": "Hitta Restauranger"
+    },
+    "learn": {
+      "title": "Lära & Växa",
+      "description": "STEM-läger, konstkurser, musiklektioner, kinesiska skolor och berikande program.",
+      "cta": "Hitta Kurser"
+    },
+    "shop": {
+      "title": "Handla",
+      "description": "Leksaksaffärer, bokhandlar, utbildningsmaterial och secondhand-butiker för barn.",
+      "cta": "Hitta Butiker"
+    },
+    "explore": {
+      "title": "Utforska & Resa",
+      "description": "Dagsutflykter, säsongsbetonade evenemang, naturäventyr och familjeresor från Bay Area.",
+      "cta": "Planera en Resa"
+    }
+  },
+  "todaysPick": {
+    "title": "Dagens Val",
+    "random": "Överraska Mig",
+    "reroll": "Visa en annan",
+    "viewDetails": "Visa Detaljer"
+  },
+  "map": {
+    "title": "Utforska Bay Area",
+    "loading": "Laddar karta...",
+    "all": "Alla",
+    "play": "Leka",
+    "eat": "Äta",
+    "learn": "Lära",
+    "shop": "Handla",
+    "explore": "Utforska",
+    "viewDetails": "Visa detaljer"
+  },
+  "placeFilters": {
+    "all": "Alla",
+    "allAreas": "Alla Områden",
+    "allAges": "Alla Åldrar",
+    "indoor": "Inomhus",
+    "outdoor": "Utomhus",
+    "both": "Inomhus/Utomhus",
+    "free": "Gratis",
+    "showing": "Visar {count} av {total} platser",
+    "noResults": "Inga platser matchar dina filter",
+    "noResultsHint": "Prova att justera dina filter för att se fler resultat.",
+    "sortRating": "Högst Betyg",
+    "sortName": "Namn A-Ö"
+  },
+  "placeDetail": {
+    "backToList": "Tillbaka",
+    "about": "Om Denna Plats",
+    "location": "Plats",
+    "getDirections": "Vägbeskrivning",
+    "info": "Info",
+    "parking": "Parkering",
+    "tips": "Tips",
+    "bestTime": "Bästa Tiden",
+    "website": "Officiell Webbplats",
+    "ageRange": "Åldersgrupp",
+    "indoorOutdoor": "Typ av Plats",
+    "priceLevel": "Prisnivå",
+    "strollerFriendly": "Barnvagnsvänligt",
+    "changingStation": "Skötbord",
+    "diningOnSite": "Mat på Plats",
+    "needsReservation": "Bokning Krävs",
+    "yes": "Ja",
+    "no": "Nej",
+    "home": "Hem",
+    "similarPlaces": "Liknande Platser",
+    "share": "Dela",
+    "copyLink": "Kopiera Länk",
+    "linkCopied": "Länk kopierad!",
+    "tags": "Taggar",
+    "notFound": "Platsen hittades inte",
+    "notFoundDesc": "Platsen du letar efter finns inte."
+  },
+  "mobileNav": {
+    "home": "Hem",
+    "play": "Leka",
+    "eat": "Äta",
+    "learn": "Lära",
+    "more": "Mer"
+  },
+  "play": {
+    "title": "Lekplatser & Aktiviteter",
+    "subtitle": "De bästa lekplatserna, museerna, parkerna, vattenparkerna och aktiviteterna för barn i Bay Area."
+  },
+  "eat": {
+    "title": "Barnvänliga Restauranger",
+    "subtitle": "Familjvänliga restauranger med barnstolar, barnmenyer, lekområden och hälsosamma alternativ."
+  },
+  "learn": {
+    "title": "Kurser & Utbildning",
+    "subtitle": "STEM-läger, konstkurser, musiklektioner, kinesiska skolor, programmeringskurser och berikande aktiviteter."
+  },
+  "shop": {
+    "title": "Familjeshopping",
+    "subtitle": "Leksaksaffärer, bokhandlar, utbildningsmaterial, barnkläder och secondhand-butiker."
+  },
+  "explore": {
+    "title": "Dagsutflykter & Äventyr",
+    "subtitle": "Helgutflykter, säsongsbetonade evenemang, naturvandringar och familjeresor från Bay Area."
+  },
+  "contact": {
+    "title": "Kontakta Oss",
+    "subtitle": "Har du ett förslag eller en fråga? Vi vill gärna höra från dig!",
+    "description": "Har du ett förslag på ett fantastiskt barnvänligt ställe? Vill du samarbeta med oss? Skicka oss ett meddelande!",
+    "name": "Ditt Namn",
+    "namePlaceholder": "Ange ditt namn",
+    "email": "Din E-post",
+    "emailPlaceholder": "du@exempel.se",
+    "message": "Meddelande",
+    "messagePlaceholder": "Berätta om ett fantastiskt ställe för barn...",
+    "send": "Skicka Meddelande",
+    "success": "Meddelandet har skickats!",
+    "error": "Det gick inte att skicka meddelandet. Försök igen.",
+    "required": "Detta fält är obligatoriskt"
+  },
+  "NotFound": {
+    "title": "Hoppsan! Den här sidan har gått vilse!",
+    "description": "Sidan du letar efter finns inte. Låt oss börja utforska igen!",
+    "goHome": "Tillbaka till Hem",
+    "explorePlay": "Hitta Aktiviteter",
+    "backHome": "Tillbaka till Hem"
+  },
+  "notFound": {
+    "title": "Hoppsan! Den här sidan har gått vilse!",
+    "description": "Sidan du letar efter finns inte. Låt oss börja utforska igen!",
+    "goHome": "Tillbaka till Hem",
+    "explorePlay": "Hitta Aktiviteter"
+  },
+  "Footer": {
+    "tagline": "Vi hjälper Bay Area-familjer att upptäcka nöjen tillsammans.",
+    "copyright": "Kids Bay Area. Alla rättigheter förbehållna.",
+    "about": "Om Oss",
+    "contact": "Kontakt",
+    "privacy": "Integritetspolicy",
+    "terms": "Användarvillkor",
+    "description": "Din ultimata guide för familjeaktiviteter i Bay Area."
+  },
+  "footer": {
+    "tagline": "Vi hjälper Bay Area-familjer att upptäcka nöjen tillsammans.",
+    "about": "Om Oss",
+    "contact": "Kontakt",
+    "privacy": "Integritet",
+    "terms": "Villkor",
+    "copyright": "Kids Bay Area. Alla rättigheter förbehållna."
+  },
+  "seasonal": {
+    "spring_title": "Vårkul!",
+    "spring_tip": "Körsbärsblommorna blommar! Besök Japanese Tea Garden, utforska botaniska trädgårdar och njut av familjevandringar. Missa inte påskäggsjakter och vårfestivaler.",
+    "spring": "Våren är här! Perfekt tid för utomhuslekplatser, botaniska trädgårdar och picknick i parken.",
+    "summer_title": "Sommaräventyr",
+    "summer_tip": "Vattenparker, strandutflykter och utomhusläger är i full gång. Använd solskydd, håll dig hydrerad och utforska Bay Areas bästa sommaraktiviteter!",
+    "summer": "Sommarkul! Besök vattenparker, stränder och utomhusfestivaler i Bay Area.",
+    "fall_title": "Höstaktiviteter",
+    "fall_tip": "Pumpafält, äppelplockning och skördefester! Perfekt väder för familjevandringar och utomhusnöje. Kolla in pumporna i Half Moon Bay!",
+    "fall": "Höstäventyr väntar! Njut av pumpafält, skördefester och mysiga museibesök.",
+    "winter_title": "Vinterundervärld",
+    "winter_tip": "Inomhusmuseer, skridskoåkning, julljusshower och snölek i Tahoe! Perfekt tid för inomhusaktiviteter och mysiga familjeutflykter.",
+    "winter": "Vinterundervärld! Upptäck inomhuslekplatser, högtidsevenemang och regniga-dags-museer.",
+    "explore": "Hitta Aktiviteter",
+    "cta": "Utforska aktiviteter"
+  },
+  "search": {
+    "title": "Sök",
+    "placeholder": "Sök platser, aktiviteter...",
+    "hint": "Skriv minst 2 tecken för att söka",
+    "noResults": "Inga resultat hittades.",
+    "escHint": "Tryck Esc för att stänga",
+    "results": "{count} resultat hittade",
+    "close": "Stäng"
+  },
+  "newsletter": {
+    "title": "Håll Dig Uppdaterad",
+    "subtitle": "Få veckovisa tips om de bästa familjeaktiviteterna, dolda pärlor och säsongsbetonade evenemang i Bay Area.",
+    "placeholder": "Din e-post",
+    "subscribe": "Prenumerera",
+    "success": "Tack för din prenumeration!"
+  },
+  "share": {
+    "linkCopied": "Länk kopierad!"
+  },
+  "breadcrumbs": {
+    "home": "Hem",
+    "play": "Leka",
+    "eat": "Äta",
+    "learn": "Lära",
+    "shop": "Handla",
+    "explore": "Utforska"
+  },
+  "guides": {
+    "title": "Sök efter ålder och situation",
+    "subtitle": "Hitta den perfekta aktiviteten baserat på ditt barns ålder eller vädret.",
+    "babies": {
+      "title": "Bebisar 0-2",
+      "subtitle": "Säkert och mjukt"
+    },
+    "toddlers": {
+      "title": "Småbarn 2-5",
+      "subtitle": "Interaktiv lek"
+    },
+    "kids": {
+      "title": "Barn 5-8",
+      "subtitle": "Lär och utforska"
+    },
+    "tweens": {
+      "title": "Tweens 8-12",
+      "subtitle": "Äventyrstid"
+    },
+    "rainyDay": {
+      "title": "Regnig dag",
+      "subtitle": "Inomhusnöje"
+    },
+    "favorites": {
+      "title": "Högst betyg",
+      "subtitle": "Familjefavoriter"
+    }
+  },
+  "community": {
+    "title": "Gå med i vår community",
+    "subtitle": "Anslut dig till föräldrar i Bay Area, dela dina favoritplatser och få veckovisa aktivitetsidéer.",
+    "submitSpot": "Föreslå en plats",
+    "submitDesc": "Känner du till en fantastisk barnvänlig plats? Berätta för oss!",
+    "weekendPlanner": "Helgplanerare",
+    "plannerDesc": "Skapa den perfekta familjdagen på bara några sekunder.",
+    "guides": "Åldersguider",
+    "guidesDesc": "Hitta aktiviteter anpassade till ditt barns åldersgrupp."
+  }
+}

@@ -243,5 +243,43 @@
     "learn": "Aprender",
     "shop": "Comprar",
     "explore": "Explorar"
+  },
+  "guides": {
+    "title": "Buscar por edad y situación",
+    "subtitle": "Encuentra la actividad perfecta según la edad de tu hijo o el clima.",
+    "babies": {
+      "title": "Bebés 0-2",
+      "subtitle": "Seguro y suave"
+    },
+    "toddlers": {
+      "title": "Pequeños 2-5",
+      "subtitle": "Juego interactivo"
+    },
+    "kids": {
+      "title": "Niños 5-8",
+      "subtitle": "Aprende y explora"
+    },
+    "tweens": {
+      "title": "Preadolescentes 8-12",
+      "subtitle": "Hora de aventura"
+    },
+    "rainyDay": {
+      "title": "Día lluvioso",
+      "subtitle": "Diversión interior"
+    },
+    "favorites": {
+      "title": "Mejor valorados",
+      "subtitle": "Favoritos de la familia"
+    }
+  },
+  "community": {
+    "title": "Únete a nuestra comunidad",
+    "subtitle": "Conéctate con padres del Área de la Bahía, comparte tus lugares favoritos y recibe ideas de actividades semanales.",
+    "submitSpot": "Sugerir un lugar",
+    "submitDesc": "¿Conoces un lugar genial para niños? ¡Cuéntanos!",
+    "weekendPlanner": "Planificador de fin de semana",
+    "plannerDesc": "Genera el itinerario perfecto para un día en familia en segundos.",
+    "guides": "Guías por edad",
+    "guidesDesc": "Encuentra actividades adaptadas al grupo de edad de tu hijo."
   }
 }

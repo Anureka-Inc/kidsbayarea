@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
@@ -8,6 +8,7 @@ import {
   Baby,
   Menu,
   X,
+  Search,
   Gamepad2,
   UtensilsCrossed,
   GraduationCap,
@@ -15,6 +16,7 @@ import {
   Compass,
 } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import SearchOverlay from "./SearchOverlay";
 
 const localeLabels: Record<string, string> = {
   en: "English",
@@ -49,6 +51,12 @@ const localeLabels: Record<string, string> = {
   el: "Ελληνικά",
 };
 
+const languageGroups = [
+  { label: "Popular", locales: ["en", "zh", "es", "ja", "ko"] },
+  { label: "Europe", locales: ["fr", "de", "pt", "it", "nl", "pl", "sv", "da", "nb", "fi", "cs", "ro", "hu", "el", "uk"] },
+  { label: "Asia & Middle East", locales: ["ru", "ar", "hi", "th", "vi", "id", "ms", "tl", "he", "tr"] },
+];
+
 const navIcons = {
   play: Gamepad2,
   eat: UtensilsCrossed,
@@ -62,8 +70,21 @@ export default function Header() {
   const tc = useTranslations("Common");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
+
+  // Cmd/Ctrl+K to open search
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        setSearchOpen(true);
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   const navItems = [
     { href: "/play" as const, label: t("play"), key: "play" },
@@ -114,6 +135,18 @@ export default function Header() {
 
         {/* Right side controls */}
         <div className="flex items-center gap-2">
+          {/* Search button */}
+          <button
+            onClick={() => setSearchOpen(true)}
+            className="flex items-center gap-1.5 rounded-lg p-2 text-gray-600 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
+            aria-label="Search"
+          >
+            <Search className="h-5 w-5" />
+            <kbd className="hidden rounded border border-gray-300 px-1.5 py-0.5 text-[10px] font-medium text-gray-400 sm:inline dark:border-gray-600">
+              ⌘K
+            </kbd>
+          </button>
+
           <ThemeToggle />
 
           {/* Language selector */}
@@ -133,15 +166,22 @@ export default function Header() {
                   className="fixed inset-0 z-40"
                   onClick={() => setLangOpen(false)}
                 />
-                <div className="absolute right-0 z-50 mt-2 max-h-80 w-48 overflow-y-auto rounded-xl border border-gray-200 bg-white py-1 shadow-xl dark:border-gray-700 dark:bg-gray-900">
-                  {routing.locales.map((locale) => (
-                    <button
-                      key={locale}
-                      onClick={() => handleLocaleChange(locale)}
-                      className="block w-full px-4 py-2 text-left text-sm text-gray-700 transition-colors hover:bg-cyan-50 hover:text-cyan-700 dark:text-gray-300 dark:hover:bg-cyan-950 dark:hover:text-cyan-300"
-                    >
-                      {localeLabels[locale] || locale}
-                    </button>
+                <div className="absolute right-0 z-50 mt-2 max-h-96 w-52 overflow-y-auto rounded-xl border border-gray-200 bg-white py-1 shadow-xl dark:border-gray-700 dark:bg-gray-900">
+                  {languageGroups.map((group) => (
+                    <div key={group.label}>
+                      <p className="px-4 pt-3 pb-1 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">
+                        {group.label}
+                      </p>
+                      {group.locales.map((loc) => (
+                        <button
+                          key={loc}
+                          onClick={() => handleLocaleChange(loc)}
+                          className="block w-full px-4 py-1.5 text-left text-sm text-gray-700 transition-colors hover:bg-cyan-50 hover:text-cyan-700 dark:text-gray-300 dark:hover:bg-cyan-950 dark:hover:text-cyan-300"
+                        >
+                          {localeLabels[loc] || loc}
+                        </button>
+                      ))}
+                    </div>
                   ))}
                 </div>
               </>
@@ -190,6 +230,8 @@ export default function Header() {
           </ul>
         </div>
       )}
+
+      <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
     </header>
   );
 }

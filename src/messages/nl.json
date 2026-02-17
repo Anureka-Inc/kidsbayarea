@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "Kids Bay Area - Gezinsplezier Gids",
+    "description": "Ontdek de beste speeltuinen, kindvriendelijke restaurants, lessen, winkels en weekendavonturen voor gezinnen in de San Francisco Bay Area."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "Home",
+    "play": "Spelen",
+    "eat": "Eten",
+    "learn": "Leren",
+    "shop": "Winkelen",
+    "explore": "Ontdekken",
+    "darkMode": "Donkere Modus",
+    "lightMode": "Lichte Modus",
+    "language": "Taal",
+    "backToTop": "Terug naar boven",
+    "menu": "Menu",
+    "close": "Sluiten",
+    "viewAll": "Alles bekijken",
+    "readMore": "Lees meer",
+    "indoor": "Binnen",
+    "outdoor": "Buiten",
+    "both": "Binnen & Buiten",
+    "ages": "Leeftijd {range}",
+    "rating": "{score} sterren"
+  },
+  "nav": {
+    "home": "Home",
+    "play": "Spelen",
+    "eat": "Eten",
+    "learn": "Leren",
+    "shop": "Winkelen",
+    "explore": "Ontdekken"
+  },
+  "hero": {
+    "title": "De Gezinsgids voor de Bay Area",
+    "subtitle": "Ontdek de beste speeltuinen, kindvriendelijke restaurants, lessen, winkels en weekendavonturen voor gezinnen in de San Francisco Bay Area.",
+    "cta": "Nu Ontdekken",
+    "search_placeholder": "Zoek speeltuinen, restaurants, lessen...",
+    "searchPlaceholder": "Zoek speeltuinen, restaurants, lessen...",
+    "searchButton": "Zoeken",
+    "quickSearch": "Populair:"
+  },
+  "categories": {
+    "section_title": "Ontdek per Categorie",
+    "play": {
+      "title": "Spelen & Plezier",
+      "description": "Speeltuinen, pretparken, dierentuinen, musea en leuke activiteiten voor kinderen van alle leeftijden.",
+      "cta": "Activiteiten Vinden"
+    },
+    "eat": {
+      "title": "Eten & Drinken",
+      "description": "Kindvriendelijke restaurants met kinderstoelen, kindermenu's, speelruimtes en gezinsdiner.",
+      "cta": "Restaurants Vinden"
+    },
+    "learn": {
+      "title": "Leren & Groeien",
+      "description": "STEM-kampen, kunstlessen, muziekles, Chinese scholen en verrijkingsprogramma's.",
+      "cta": "Lessen Vinden"
+    },
+    "shop": {
+      "title": "Winkelen",
+      "description": "Speelgoedwinkels, boekhandels, educatieve benodigdheden en tweedehands kinderwinkels.",
+      "cta": "Winkels Vinden"
+    },
+    "explore": {
+      "title": "Ontdekken & Reizen",
+      "description": "Dagtrips, seizoensgebonden evenementen, natuuravonturen en gezinsuitstapjes vanuit de Bay Area.",
+      "cta": "Reis Plannen"
+    }
+  },
+  "todaysPick": {
+    "title": "Tip van Vandaag",
+    "random": "Verras Me",
+    "reroll": "Laat een ander zien",
+    "viewDetails": "Details Bekijken"
+  },
+  "map": {
+    "title": "Ontdek de Bay Area",
+    "loading": "Kaart laden...",
+    "all": "Alles",
+    "play": "Spelen",
+    "eat": "Eten",
+    "learn": "Leren",
+    "shop": "Winkelen",
+    "explore": "Ontdekken",
+    "viewDetails": "Details bekijken"
+  },
+  "placeFilters": {
+    "all": "Alles",
+    "allAreas": "Alle Gebieden",
+    "allAges": "Alle Leeftijden",
+    "indoor": "Binnen",
+    "outdoor": "Buiten",
+    "both": "Binnen/Buiten",
+    "free": "Gratis",
+    "showing": "{count} van {total} plekken weergegeven",
+    "noResults": "Geen plekken komen overeen met uw filters",
+    "noResultsHint": "Probeer uw filters aan te passen om meer resultaten te zien.",
+    "sortRating": "Best Beoordeeld",
+    "sortName": "Naam A-Z"
+  },
+  "placeDetail": {
+    "backToList": "Terug",
+    "about": "Over Deze Plek",
+    "location": "Locatie",
+    "getDirections": "Routebeschrijving",
+    "info": "Info",
+    "parking": "Parkeren",
+    "tips": "Tips",
+    "bestTime": "Beste Tijd",
+    "website": "Officiële Website",
+    "ageRange": "Leeftijdscategorie",
+    "indoorOutdoor": "Type Locatie",
+    "priceLevel": "Prijsniveau",
+    "strollerFriendly": "Kinderwagenvriendelijk",
+    "changingStation": "Verschoontafel",
+    "diningOnSite": "Eten Ter Plaatse",
+    "needsReservation": "Reservering Nodig",
+    "yes": "Ja",
+    "no": "Nee",
+    "home": "Home",
+    "similarPlaces": "Vergelijkbare Plekken",
+    "share": "Delen",
+    "copyLink": "Link Kopiëren",
+    "linkCopied": "Link gekopieerd!",
+    "tags": "Tags",
+    "notFound": "Plek niet gevonden",
+    "notFoundDesc": "De plek die u zoekt bestaat niet."
+  },
+  "mobileNav": {
+    "home": "Home",
+    "play": "Spelen",
+    "eat": "Eten",
+    "learn": "Leren",
+    "more": "Meer"
+  },
+  "play": {
+    "title": "Speeltuinen & Activiteiten",
+    "subtitle": "De beste speeltuinen, musea, parken, waterparken en activiteiten voor kinderen in de Bay Area."
+  },
+  "eat": {
+    "title": "Kindvriendelijke Restaurants",
+    "subtitle": "Gezinsvriendelijke restaurants met kinderstoelen, kindermenu's, speelruimtes en gezonde opties."
+  },
+  "learn": {
+    "title": "Lessen & Onderwijs",
+    "subtitle": "STEM-kampen, kunstlessen, muziekles, Chinese scholen, programmeerlessen en verrijkingsactiviteiten."
+  },
+  "shop": {
+    "title": "Gezinswinkelen",
+    "subtitle": "Speelgoedwinkels, boekhandels, educatieve benodigdheden, kinderkleding en tweedehands winkels."
+  },
+  "explore": {
+    "title": "Dagtrips & Avonturen",
+    "subtitle": "Weekenduitjes, seizoensgebonden evenementen, natuurwandelingen en gezinsuitstapjes vanuit de Bay Area."
+  },
+  "contact": {
+    "title": "Neem Contact Op",
+    "subtitle": "Heeft u een suggestie of vraag? We horen graag van u!",
+    "description": "Heeft u een suggestie voor een geweldige kindvriendelijke plek? Wilt u met ons samenwerken? Stuur ons een bericht!",
+    "name": "Uw Naam",
+    "namePlaceholder": "Voer uw naam in",
+    "email": "Uw E-mail",
+    "emailPlaceholder": "u@voorbeeld.com",
+    "message": "Bericht",
+    "messagePlaceholder": "Vertel ons over een geweldige plek voor kinderen...",
+    "send": "Bericht Versturen",
+    "success": "Bericht succesvol verzonden!",
+    "error": "Bericht verzenden mislukt. Probeer het opnieuw.",
+    "required": "Dit veld is verplicht"
+  },
+  "NotFound": {
+    "title": "Oeps! Deze pagina is verdwaald!",
+    "description": "De pagina die u zoekt bestaat niet. Laten we weer gaan ontdekken!",
+    "goHome": "Terug naar Home",
+    "explorePlay": "Activiteiten Vinden",
+    "backHome": "Terug naar Home"
+  },
+  "notFound": {
+    "title": "Oeps! Deze pagina is verdwaald!",
+    "description": "De pagina die u zoekt bestaat niet. Laten we weer gaan ontdekken!",
+    "goHome": "Terug naar Home",
+    "explorePlay": "Activiteiten Vinden"
+  },
+  "Footer": {
+    "tagline": "We helpen Bay Area-gezinnen samen plezier te ontdekken.",
+    "copyright": "Kids Bay Area. Alle rechten voorbehouden.",
+    "about": "Over Ons",
+    "contact": "Contact",
+    "privacy": "Privacybeleid",
+    "terms": "Servicevoorwaarden",
+    "description": "Uw ultieme gids voor gezinsactiviteiten in de Bay Area."
+  },
+  "footer": {
+    "tagline": "We helpen Bay Area-gezinnen samen plezier te ontdekken.",
+    "about": "Over Ons",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden",
+    "copyright": "Kids Bay Area. Alle rechten voorbehouden."
+  },
+  "seasonal": {
+    "spring_title": "Lenteplezier!",
+    "spring_tip": "De kersenbloesems bloeien! Bezoek de Japanese Tea Garden, ontdek botanische tuinen en geniet van gezinswandelingen. Mis de paaseierenzoektocht en lentefestivals niet.",
+    "spring": "De lente is hier! Perfecte tijd voor buitenspeeltuinen, botanische tuinen en picknicken in het park.",
+    "summer_title": "Zomeravonturen",
+    "summer_tip": "Waterparken, stranduitjes en buitenkampen zijn in volle gang. Smeer zonnebrand, drink genoeg water en ontdek de beste zomeractiviteiten in de Bay Area!",
+    "summer": "Zomerplezier! Ga naar waterparken, stranden en buitenfestivals door de Bay Area.",
+    "fall_title": "Herfstactiviteiten",
+    "fall_tip": "Pompoenvelden, appels plukken en oogstfestivals! Perfect weer voor gezinswandelingen en buitenplezier. Bekijk de pompoenen van Half Moon Bay!",
+    "fall": "Herfstavonturen wachten! Geniet van pompoenvelden, oogstfestivals en gezellige museumbezoeken.",
+    "winter_title": "Winterwonderland",
+    "winter_tip": "Binnenmusea, schaatsen, feestelijke lichtshows en sneeuwpret in Tahoe! Geweldige tijd voor binnenactiviteiten en gezellige gezinsuitjes.",
+    "winter": "Winterwonderland! Ontdek binnenspeelruimtes, feestelijke evenementen en regendag-musea.",
+    "explore": "Activiteiten Vinden",
+    "cta": "Activiteiten ontdekken"
+  },
+  "search": {
+    "title": "Zoeken",
+    "placeholder": "Zoek plekken, activiteiten...",
+    "hint": "Typ minstens 2 tekens om te zoeken",
+    "noResults": "Geen resultaten gevonden.",
+    "escHint": "Druk op Esc om te sluiten",
+    "results": "{count} resultaten gevonden",
+    "close": "Sluiten"
+  },
+  "newsletter": {
+    "title": "Blijf Op de Hoogte",
+    "subtitle": "Ontvang wekelijkse tips over de beste gezinsactiviteiten, verborgen pareltjes en seizoensgebonden evenementen in de Bay Area.",
+    "placeholder": "Uw e-mail",
+    "subscribe": "Abonneren",
+    "success": "Bedankt voor uw inschrijving!"
+  },
+  "share": {
+    "linkCopied": "Link gekopieerd!"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "play": "Spelen",
+    "eat": "Eten",
+    "learn": "Leren",
+    "shop": "Winkelen",
+    "explore": "Ontdekken"
+  },
+  "guides": {
+    "title": "Zoek op leeftijd en situatie",
+    "subtitle": "Vind de perfecte activiteit op basis van de leeftijd van uw kind of het weer.",
+    "babies": {
+      "title": "Baby's 0-2",
+      "subtitle": "Veilig en zacht"
+    },
+    "toddlers": {
+      "title": "Peuters 2-5",
+      "subtitle": "Interactief spel"
+    },
+    "kids": {
+      "title": "Kinderen 5-8",
+      "subtitle": "Leren en ontdekken"
+    },
+    "tweens": {
+      "title": "Tweens 8-12",
+      "subtitle": "Avonturentijd"
+    },
+    "rainyDay": {
+      "title": "Regendag",
+      "subtitle": "Binnenpret"
+    },
+    "favorites": {
+      "title": "Best beoordeeld",
+      "subtitle": "Familiefavorieten"
+    }
+  },
+  "community": {
+    "title": "Word lid van onze community",
+    "subtitle": "Maak contact met ouders uit de Bay Area, deel uw favoriete plekken en ontvang wekelijkse activiteitsideeën.",
+    "submitSpot": "Stel een plek voor",
+    "submitDesc": "Kent u een geweldige kindvriendelijke plek? Vertel het ons!",
+    "weekendPlanner": "Weekendplanner",
+    "plannerDesc": "Genereer in enkele seconden het perfecte gezinsdagprogramma.",
+    "guides": "Leeftijdsgidsen",
+    "guidesDesc": "Vind activiteiten afgestemd op de leeftijdsgroep van uw kind."
+  }
+}

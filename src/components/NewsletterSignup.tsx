@@ -52,6 +52,7 @@ export default function NewsletterSignup() {
               <input
                 type="email"
                 required
+                aria-label={t("placeholder")}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t("placeholder")}

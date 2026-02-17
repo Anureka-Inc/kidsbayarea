@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "Kids Bay Area – Průvodce rodinnou zábavou",
+    "description": "Objevte nejlepší hřiště, restaurace vhodné pro děti, kroužky, obchody a víkendová dobrodružství pro rodiny v San Francisco Bay Area."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "Domů",
+    "play": "Hraní",
+    "eat": "Jídlo",
+    "learn": "Učení",
+    "shop": "Obchody",
+    "explore": "Objevování",
+    "darkMode": "Tmavý režim",
+    "lightMode": "Světlý režim",
+    "language": "Jazyk",
+    "backToTop": "Zpět nahoru",
+    "menu": "Menu",
+    "close": "Zavřít",
+    "viewAll": "Zobrazit vše",
+    "readMore": "Číst více",
+    "indoor": "Vnitřní",
+    "outdoor": "Venkovní",
+    "both": "Vnitřní i venkovní",
+    "ages": "Věk {range}",
+    "rating": "{score} hvězdiček"
+  },
+  "nav": {
+    "home": "Domů",
+    "play": "Hraní",
+    "eat": "Jídlo",
+    "learn": "Učení",
+    "shop": "Obchody",
+    "explore": "Objevování"
+  },
+  "hero": {
+    "title": "Váš rodinný průvodce po Bay Area",
+    "subtitle": "Objevte nejlepší hřiště, restaurace vhodné pro děti, kroužky, obchody a víkendová dobrodružství pro rodiny v San Francisco Bay Area.",
+    "cta": "Objevujte",
+    "search_placeholder": "Hledejte hřiště, restaurace, kroužky...",
+    "searchPlaceholder": "Hledejte hřiště, restaurace, kroužky...",
+    "searchButton": "Hledat",
+    "quickSearch": "Oblíbené:"
+  },
+  "categories": {
+    "section_title": "Procházejte podle kategorie",
+    "play": {
+      "title": "Hraní a zábava",
+      "description": "Hřiště, zábavní parky, zoo, muzea a zábavné aktivity pro děti všech věkových kategorií.",
+      "cta": "Najít aktivity"
+    },
+    "eat": {
+      "title": "Jídlo a pití",
+      "description": "Restaurace vhodné pro děti s dětskými židličkami, dětským menu, herními koutky a rodinným stolováním.",
+      "cta": "Najít restaurace"
+    },
+    "learn": {
+      "title": "Učení a rozvoj",
+      "description": "STEM tábory, výtvarné kroužky, hodiny hudby, čínské školy a vzdělávací programy.",
+      "cta": "Najít kroužky"
+    },
+    "shop": {
+      "title": "Obchody",
+      "description": "Hračkářství, knihkupectví, vzdělávací pomůcky a dětské second-handy.",
+      "cta": "Najít obchody"
+    },
+    "explore": {
+      "title": "Objevování a cestování",
+      "description": "Jednodenní výlety, sezónní akce, přírodní dobrodružství a rodinné výlety z Bay Area.",
+      "cta": "Naplánovat výlet"
+    }
+  },
+  "todaysPick": {
+    "title": "Dnešní tip",
+    "random": "Překvapte mě",
+    "reroll": "Zobrazit další",
+    "viewDetails": "Zobrazit podrobnosti"
+  },
+  "map": {
+    "title": "Prozkoumejte Bay Area",
+    "loading": "Načítání mapy...",
+    "all": "Vše",
+    "play": "Hraní",
+    "eat": "Jídlo",
+    "learn": "Učení",
+    "shop": "Obchody",
+    "explore": "Objevování",
+    "viewDetails": "Zobrazit podrobnosti"
+  },
+  "placeFilters": {
+    "all": "Vše",
+    "allAreas": "Všechny oblasti",
+    "allAges": "Všechny věkové kategorie",
+    "indoor": "Vnitřní",
+    "outdoor": "Venkovní",
+    "both": "Vnitřní/venkovní",
+    "free": "Zdarma",
+    "showing": "Zobrazeno {count} z {total} míst",
+    "noResults": "Žádná místa neodpovídají vašim filtrům",
+    "noResultsHint": "Zkuste upravit filtry pro zobrazení více výsledků.",
+    "sortRating": "Nejlépe hodnocené",
+    "sortName": "Název A–Z"
+  },
+  "placeDetail": {
+    "backToList": "Zpět",
+    "about": "O tomto místě",
+    "location": "Poloha",
+    "getDirections": "Navigovat",
+    "info": "Informace",
+    "parking": "Parkování",
+    "tips": "Tipy",
+    "bestTime": "Nejlepší čas",
+    "website": "Oficiální web",
+    "ageRange": "Věkové rozmezí",
+    "indoorOutdoor": "Typ místa",
+    "priceLevel": "Cenová úroveň",
+    "strollerFriendly": "Vhodné pro kočárky",
+    "changingStation": "Přebalovací pult",
+    "diningOnSite": "Stravování na místě",
+    "needsReservation": "Nutná rezervace",
+    "yes": "Ano",
+    "no": "Ne",
+    "home": "Domů",
+    "similarPlaces": "Podobná místa",
+    "share": "Sdílet",
+    "copyLink": "Kopírovat odkaz",
+    "linkCopied": "Odkaz zkopírován!",
+    "tags": "Štítky",
+    "notFound": "Místo nenalezeno",
+    "notFoundDesc": "Místo, které hledáte, neexistuje."
+  },
+  "mobileNav": {
+    "home": "Domů",
+    "play": "Hraní",
+    "eat": "Jídlo",
+    "learn": "Učení",
+    "more": "Více"
+  },
+  "play": {
+    "title": "Hřiště a aktivity",
+    "subtitle": "Nejlepší hřiště, muzea, parky, aquaparky a aktivity pro děti v Bay Area."
+  },
+  "eat": {
+    "title": "Restaurace vhodné pro děti",
+    "subtitle": "Rodinně přátelské restaurace s dětskými židličkami, dětským menu, herními koutky a zdravými variantami."
+  },
+  "learn": {
+    "title": "Kroužky a vzdělávání",
+    "subtitle": "STEM tábory, výtvarné kroužky, hodiny hudby, čínské školy, programování a vzdělávací aktivity."
+  },
+  "shop": {
+    "title": "Rodinné nákupy",
+    "subtitle": "Hračkářství, knihkupectví, vzdělávací pomůcky, dětské oblečení a second-handy."
+  },
+  "explore": {
+    "title": "Jednodenní výlety a dobrodružství",
+    "subtitle": "Víkendové výlety, sezónní akce, turistika v přírodě a rodinné cesty z Bay Area."
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "subtitle": "Máte návrh nebo otázku? Rádi se ozveme!",
+    "description": "Máte tip na skvělé místo vhodné pro děti? Chcete s námi spolupracovat? Napište nám!",
+    "name": "Vaše jméno",
+    "namePlaceholder": "Zadejte své jméno",
+    "email": "Váš e-mail",
+    "emailPlaceholder": "vy@priklad.cz",
+    "message": "Zpráva",
+    "messagePlaceholder": "Řekněte nám o skvělém místě pro děti...",
+    "send": "Odeslat zprávu",
+    "success": "Zpráva byla úspěšně odeslána!",
+    "error": "Odeslání zprávy se nezdařilo. Zkuste to prosím znovu.",
+    "required": "Toto pole je povinné"
+  },
+  "NotFound": {
+    "title": "Jejda! Tato stránka se zatoulala!",
+    "description": "Stránka, kterou hledáte, neexistuje. Vraťme se k objevování!",
+    "goHome": "Zpět na úvodní stránku",
+    "explorePlay": "Najít aktivity",
+    "backHome": "Zpět na úvodní stránku"
+  },
+  "notFound": {
+    "title": "Jejda! Tato stránka se zatoulala!",
+    "description": "Stránka, kterou hledáte, neexistuje. Vraťme se k objevování!",
+    "goHome": "Zpět na úvodní stránku",
+    "explorePlay": "Najít aktivity"
+  },
+  "Footer": {
+    "tagline": "Pomáháme rodinám v Bay Area objevovat zábavu společně.",
+    "copyright": "Kids Bay Area. Všechna práva vyhrazena.",
+    "about": "O nás",
+    "contact": "Kontakt",
+    "privacy": "Zásady ochrany osobních údajů",
+    "terms": "Podmínky služby",
+    "description": "Váš nejlepší průvodce rodinnými aktivitami v Bay Area."
+  },
+  "footer": {
+    "tagline": "Pomáháme rodinám v Bay Area objevovat zábavu společně.",
+    "about": "O nás",
+    "contact": "Kontakt",
+    "privacy": "Soukromí",
+    "terms": "Podmínky",
+    "copyright": "Kids Bay Area. Všechna práva vyhrazena."
+  },
+  "seasonal": {
+    "spring_title": "Jarní zábava!",
+    "spring_tip": "Třešně kvetou! Navštivte Japonskou čajovou zahradu, prozkoumejte botanické zahrady a užijte si rodinné výšlapy. Nenechte si ujít velikonoční hledání vajíček a jarní festivaly.",
+    "spring": "Jaro je tady! Ideální čas na venkovní hřiště, botanické zahrady a pikniky v parku.",
+    "summer_title": "Letní dobrodružství",
+    "summer_tip": "Aquaparky, výlety na pláž a letní tábory jsou v plném proudu. Namažte se opalovacím krémem, pijte dostatek tekutin a objevte nejlepší letní aktivity v Bay Area!",
+    "summer": "Letní zábava! Vyražte do aquaparků, na pláže a na venkovní festivaly po celém Bay Area.",
+    "fall_title": "Podzimní aktivity",
+    "fall_tip": "Dýňová pole, sběr jablek a sklizňové slavnosti! Ideální počasí na rodinné výšlapy a venkovní zábavu. Podívejte se na dýně v Half Moon Bay!",
+    "fall": "Podzimní dobrodružství čekají! Užijte si dýňová pole, sklizňové slavnosti a útulné návštěvy muzeí.",
+    "winter_title": "Zimní pohádka",
+    "winter_tip": "Muzea, bruslení, vánoční světelné show a sněhové radovánky v Tahoe! Skvělý čas na vnitřní aktivity a útulné rodinné výlety.",
+    "winter": "Zimní pohádka! Objevte vnitřní herny, vánoční akce a muzea na deštivé dny.",
+    "explore": "Najít aktivity",
+    "cta": "Prozkoumat aktivity"
+  },
+  "search": {
+    "title": "Hledat",
+    "placeholder": "Hledejte místa, aktivity...",
+    "hint": "Zadejte alespoň 2 znaky pro vyhledávání",
+    "noResults": "Nebyly nalezeny žádné výsledky.",
+    "escHint": "Stiskněte Esc pro zavření",
+    "results": "Nalezeno {count} výsledků",
+    "close": "Zavřít"
+  },
+  "newsletter": {
+    "title": "Buďte v obraze",
+    "subtitle": "Dostávejte týdenní výběr nejlepších rodinných aktivit, skrytých pokladů a sezónních akcí v Bay Area.",
+    "placeholder": "Váš e-mail",
+    "subscribe": "Odebírat",
+    "success": "Děkujeme za odběr!"
+  },
+  "share": {
+    "linkCopied": "Odkaz zkopírován!"
+  },
+  "breadcrumbs": {
+    "home": "Domů",
+    "play": "Hraní",
+    "eat": "Jídlo",
+    "learn": "Učení",
+    "shop": "Obchody",
+    "explore": "Objevování"
+  },
+  "guides": {
+    "title": "Hledejte podle věku a situace",
+    "subtitle": "Najděte ideální aktivitu podle věku vašeho dítěte nebo počasí.",
+    "babies": {
+      "title": "Miminka 0-2",
+      "subtitle": "Bezpečné a jemné"
+    },
+    "toddlers": {
+      "title": "Batolata 2-5",
+      "subtitle": "Interaktivní hra"
+    },
+    "kids": {
+      "title": "Děti 5-8",
+      "subtitle": "Uč se a objevuj"
+    },
+    "tweens": {
+      "title": "Tweens 8-12",
+      "subtitle": "Čas na dobrodružství"
+    },
+    "rainyDay": {
+      "title": "Deštivý den",
+      "subtitle": "Zábava uvnitř"
+    },
+    "favorites": {
+      "title": "Nejlépe hodnocené",
+      "subtitle": "Oblíbené rodin"
+    }
+  },
+  "community": {
+    "title": "Přidejte se k naší komunitě",
+    "subtitle": "Spojte se s rodiči z Bay Area, sdílejte svá oblíbená místa a získávejte týdenní nápady na aktivity.",
+    "submitSpot": "Navrhnout místo",
+    "submitDesc": "Znáte skvělé místo pro děti? Řekněte nám o něm!",
+    "weekendPlanner": "Plánovač víkendu",
+    "plannerDesc": "Vytvořte ideální plán rodinného dne během několika sekund.",
+    "guides": "Průvodce podle věku",
+    "guidesDesc": "Najděte aktivity vhodné pro věkovou skupinu vašeho dítěte."
+  }
+}

@@ -243,5 +243,43 @@
     "learn": "Apprendre",
     "shop": "Boutiques",
     "explore": "Explorer"
+  },
+  "guides": {
+    "title": "Parcourir par âge et situation",
+    "subtitle": "Trouvez l'activité parfaite en fonction de l'âge de votre enfant ou de la météo.",
+    "babies": {
+      "title": "Bébés 0-2 ans",
+      "subtitle": "Sûr et doux"
+    },
+    "toddlers": {
+      "title": "Tout-petits 2-5 ans",
+      "subtitle": "Jeu interactif"
+    },
+    "kids": {
+      "title": "Enfants 5-8 ans",
+      "subtitle": "Apprendre et explorer"
+    },
+    "tweens": {
+      "title": "Préados 8-12 ans",
+      "subtitle": "L'heure de l'aventure"
+    },
+    "rainyDay": {
+      "title": "Jour de pluie",
+      "subtitle": "Amusement en intérieur"
+    },
+    "favorites": {
+      "title": "Les mieux notés",
+      "subtitle": "Favoris des familles"
+    }
+  },
+  "community": {
+    "title": "Rejoignez notre communauté",
+    "subtitle": "Connectez-vous avec les parents de la Bay Area, partagez vos endroits préférés et recevez des idées d'activités chaque semaine.",
+    "submitSpot": "Proposer un lieu",
+    "submitDesc": "Vous connaissez un super endroit pour les enfants ? Parlez-nous en !",
+    "weekendPlanner": "Planificateur de week-end",
+    "plannerDesc": "Générez un itinéraire familial parfait en quelques secondes.",
+    "guides": "Guides par âge",
+    "guidesDesc": "Trouvez des activités adaptées au groupe d'âge de votre enfant."
   }
 }

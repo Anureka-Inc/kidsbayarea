@@ -138,23 +138,28 @@
   },
   "play": {
     "title": "Playgrounds & Activities",
-    "subtitle": "The best playgrounds, museums, parks, water parks, and activities for kids in the Bay Area."
+    "subtitle": "The best playgrounds, museums, parks, water parks, and activities for kids in the Bay Area.",
+    "intro": "From world-class children's museums like the Exploratorium and Bay Area Discovery Museum, to sprawling outdoor playgrounds and splash pads, the San Francisco Bay Area is a paradise for families with kids. Whether you're looking for a rainy-day indoor play space, a nature-filled adventure, or a hands-on STEM experience, our curated guide covers playgrounds and activities across San Francisco, the East Bay, South Bay, North Bay, and the Peninsula. Filter by your child's age, location, and budget to find the perfect outing."
   },
   "eat": {
     "title": "Kid-Friendly Restaurants",
-    "subtitle": "Family-friendly restaurants with high chairs, kids menus, play areas, and healthy options."
+    "subtitle": "Family-friendly restaurants with high chairs, kids menus, play areas, and healthy options.",
+    "intro": "Finding a great restaurant that welcomes families with kids can be a challenge. Our guide features the Bay Area's best kid-friendly restaurants, from casual cafes with play areas to sit-down restaurants with dedicated kids menus. We note which spots have high chairs, changing stations, outdoor seating, and even play zones to keep little ones entertained. Whether you're craving dim sum in San Francisco, pizza in the South Bay, or brunch in the East Bay, discover family dining spots that make eating out with kids enjoyable."
   },
   "learn": {
     "title": "Classes & Education",
-    "subtitle": "STEM camps, art classes, music lessons, Chinese schools, coding programs, and enrichment activities."
+    "subtitle": "STEM camps, art classes, music lessons, Chinese schools, coding programs, and enrichment activities.",
+    "intro": "The Bay Area offers an incredible variety of educational programs for children of all ages. From coding bootcamps and robotics workshops in Silicon Valley to music classes, swim lessons, art studios, and Chinese language schools, there's something for every young learner. Our guide covers drop-in classes, seasonal camps, and year-round programs across the region, with details on age ranges, pricing, and registration requirements to help you find the perfect enrichment activity."
   },
   "shop": {
     "title": "Family Shopping",
-    "subtitle": "Toy stores, bookstores, educational supplies, kids clothing, and consignment shops."
+    "subtitle": "Toy stores, bookstores, educational supplies, kids clothing, and consignment shops.",
+    "intro": "Discover the Bay Area's best family shopping destinations, from beloved independent toy stores and children's bookshops to educational supply retailers and consignment shops for gently-used kids clothing. Many stores feature play areas where children can try before you buy, making shopping a fun family activity rather than a chore. Find unique gifts, educational toys, and great deals on kids gear across the region."
   },
   "explore": {
     "title": "Day Trips & Adventures",
-    "subtitle": "Weekend getaways, seasonal events, nature hikes, and family road trips from the Bay Area."
+    "subtitle": "Weekend getaways, seasonal events, nature hikes, and family road trips from the Bay Area.",
+    "intro": "Take the family on an unforgettable adventure beyond the city limits. From the Monterey Bay Aquarium and Santa Cruz Beach Boardwalk to redwood forests and coastal tidepools, the Bay Area is surrounded by incredible day trip destinations. Our guide covers family-friendly hikes, train rides, farm visits, berry picking, and seasonal activities, with driving times, best seasons to visit, and age-appropriate recommendations to help you plan the perfect family outing."
   },
   "contact": {
     "title": "Contact Us",
@@ -243,5 +248,43 @@
     "learn": "Learn",
     "shop": "Shop",
     "explore": "Explore"
+  },
+  "guides": {
+    "title": "Browse by Age & Situation",
+    "subtitle": "Find the perfect activity based on your child's age or the weather.",
+    "babies": {
+      "title": "Babies 0-2",
+      "subtitle": "Safe & gentle"
+    },
+    "toddlers": {
+      "title": "Toddlers 2-5",
+      "subtitle": "Interactive play"
+    },
+    "kids": {
+      "title": "Kids 5-8",
+      "subtitle": "Learn & explore"
+    },
+    "tweens": {
+      "title": "Tweens 8-12",
+      "subtitle": "Adventure time"
+    },
+    "rainyDay": {
+      "title": "Rainy Day",
+      "subtitle": "Indoor fun"
+    },
+    "favorites": {
+      "title": "Top Rated",
+      "subtitle": "Family favorites"
+    }
+  },
+  "community": {
+    "title": "Join Our Community",
+    "subtitle": "Connect with Bay Area parents, share your favorite spots, and get weekly activity ideas.",
+    "submitSpot": "Submit a Spot",
+    "submitDesc": "Know a great kid-friendly place? Tell us about it!",
+    "weekendPlanner": "Weekend Planner",
+    "plannerDesc": "Generate a perfect family day itinerary in seconds.",
+    "guides": "Age Guides",
+    "guidesDesc": "Find activities matched to your child's age group."
   }
 }

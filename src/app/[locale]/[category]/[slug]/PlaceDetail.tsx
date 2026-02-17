@@ -370,6 +370,7 @@ export default function PlaceDetail({ place }: PlaceDetailProps) {
             <MapInner
               places={[place]}
               filteredCategory={place.category}
+              locale={locale}
             />
           </div>
           <div className="mt-3 flex items-center gap-3">

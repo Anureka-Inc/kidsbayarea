@@ -243,5 +243,43 @@
     "learn": "学ぶ",
     "shop": "買う",
     "explore": "探検"
+  },
+  "guides": {
+    "title": "年齢・シーンで探す",
+    "subtitle": "お子さまの年齢やお天気に合わせて、ぴったりのアクティビティを見つけましょう。",
+    "babies": {
+      "title": "赤ちゃん 0-2歳",
+      "subtitle": "安全でやさしい"
+    },
+    "toddlers": {
+      "title": "幼児 2-5歳",
+      "subtitle": "ふれあい遊び"
+    },
+    "kids": {
+      "title": "子ども 5-8歳",
+      "subtitle": "学んで探検"
+    },
+    "tweens": {
+      "title": "プレティーン 8-12歳",
+      "subtitle": "冒険の時間"
+    },
+    "rainyDay": {
+      "title": "雨の日",
+      "subtitle": "屋内で楽しもう"
+    },
+    "favorites": {
+      "title": "高評価",
+      "subtitle": "家族のお気に入り"
+    }
+  },
+  "community": {
+    "title": "コミュニティに参加しよう",
+    "subtitle": "ベイエリアの親御さんとつながり、お気に入りスポットを共有し、毎週のアクティビティアイデアを受け取りましょう。",
+    "submitSpot": "スポットを投稿",
+    "submitDesc": "子連れにぴったりの場所をご存知ですか？ぜひ教えてください！",
+    "weekendPlanner": "週末プランナー",
+    "plannerDesc": "数秒で完璧な家族の一日プランを作成できます。",
+    "guides": "年齢別ガイド",
+    "guidesDesc": "お子さまの年齢に合ったアクティビティを見つけましょう。"
   }
 }

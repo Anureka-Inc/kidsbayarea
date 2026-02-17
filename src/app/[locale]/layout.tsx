@@ -19,11 +19,17 @@ export function generateStaticParams() {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.kidsbayarea.com"),
   title: {
-    default: "Kids Bay Area - Family Activity Guide",
+    default: "Kids Bay Area - Family Activity Guide | 湾区遛娃指南",
     template: "%s | Kids Bay Area",
   },
   description:
-    "The ultimate guide for family activities in the Bay Area. Find playgrounds, kid-friendly restaurants, classes, and weekend adventures.",
+    "The ultimate guide for family activities in the San Francisco Bay Area. Find playgrounds, kid-friendly restaurants, classes, and weekend adventures. 湾区亲子活动全指南。",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/favicon.svg",
+  },
   openGraph: {
     siteName: "Kids Bay Area",
     type: "website",
@@ -75,8 +81,11 @@ export default async function LocaleLayout({
     ],
   };
 
+  const rtlLocales = ["ar", "he"];
+  const dir = rtlLocales.includes(locale) ? "rtl" : "ltr";
+
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} dir={dir} suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -89,11 +98,17 @@ export default async function LocaleLayout({
         />
       </head>
       <body className="min-h-screen bg-white text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-teal-600 focus:px-4 focus:py-2 focus:text-white focus:shadow-lg"
+        >
+          Skip to content
+        </a>
         <GoogleAnalytics GA_MEASUREMENT_ID="G-XXXXXXXXXX" />
         <NextIntlClientProvider messages={messages}>
           <FavoritesProvider>
             <Header />
-            <main className="min-h-screen">{children}</main>
+            <main id="main-content" className="min-h-screen">{children}</main>
             <Footer />
             <BackToTop />
             <MobileNav />

@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "Kids Bay Area - Aile Eğlence Rehberi",
+    "description": "San Francisco Bay Area'daki en iyi oyun alanlarını, çocuk dostu restoranları, kursları, mağazaları ve aileler için hafta sonu maceralarını keşfedin."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "Ana Sayfa",
+    "play": "Oyna",
+    "eat": "Ye",
+    "learn": "Öğren",
+    "shop": "Alışveriş",
+    "explore": "Keşfet",
+    "darkMode": "Karanlık Mod",
+    "lightMode": "Aydınlık Mod",
+    "language": "Dil",
+    "backToTop": "Başa dön",
+    "menu": "Menü",
+    "close": "Kapat",
+    "viewAll": "Tümünü gör",
+    "readMore": "Devamını oku",
+    "indoor": "Kapalı Alan",
+    "outdoor": "Açık Alan",
+    "both": "Kapalı ve Açık Alan",
+    "ages": "Yaş {range}",
+    "rating": "{score} yıldız"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "play": "Oyna",
+    "eat": "Ye",
+    "learn": "Öğren",
+    "shop": "Alışveriş",
+    "explore": "Keşfet"
+  },
+  "hero": {
+    "title": "Ailenizin Bay Area Rehberi",
+    "subtitle": "San Francisco Bay Area'daki en iyi oyun alanlarını, çocuk dostu restoranları, kursları, mağazaları ve aileler için hafta sonu maceralarını keşfedin.",
+    "cta": "Şimdi Keşfet",
+    "search_placeholder": "Oyun alanları, restoranlar, kurslar ara...",
+    "searchPlaceholder": "Oyun alanları, restoranlar, kurslar ara...",
+    "searchButton": "Ara",
+    "quickSearch": "Popüler:"
+  },
+  "categories": {
+    "section_title": "Kategoriye Göre Keşfet",
+    "play": {
+      "title": "Oyna ve Eğlen",
+      "description": "Her yaştan çocuk için oyun alanları, tema parkları, hayvanat bahçeleri, müzeler ve eğlenceli etkinlikler.",
+      "cta": "Etkinlik Bul"
+    },
+    "eat": {
+      "title": "Ye ve İç",
+      "description": "Mama sandalyeli, çocuk menülü, oyun alanılı ve aile yemekleri sunan çocuk dostu restoranlar.",
+      "cta": "Restoran Bul"
+    },
+    "learn": {
+      "title": "Öğren ve Geliş",
+      "description": "STEM kampları, sanat kursları, müzik dersleri, Çince okulları ve zenginleştirme programları.",
+      "cta": "Kurs Bul"
+    },
+    "shop": {
+      "title": "Alışveriş",
+      "description": "Oyuncak mağazaları, kitapçılar, eğitim malzemeleri ve çocuk ikinci el mağazaları.",
+      "cta": "Mağaza Bul"
+    },
+    "explore": {
+      "title": "Keşfet ve Gez",
+      "description": "Günübirlik geziler, mevsimsel etkinlikler, doğa maceraları ve Bay Area'dan aile yol gezileri.",
+      "cta": "Gezi Planla"
+    }
+  },
+  "todaysPick": {
+    "title": "Günün Seçimi",
+    "random": "Beni Şaşırt",
+    "reroll": "Başka göster",
+    "viewDetails": "Detayları Gör"
+  },
+  "map": {
+    "title": "Bay Area'yı Keşfet",
+    "loading": "Harita yükleniyor...",
+    "all": "Tümü",
+    "play": "Oyna",
+    "eat": "Ye",
+    "learn": "Öğren",
+    "shop": "Alışveriş",
+    "explore": "Keşfet",
+    "viewDetails": "Detayları gör"
+  },
+  "placeFilters": {
+    "all": "Tümü",
+    "allAreas": "Tüm Bölgeler",
+    "allAges": "Tüm Yaşlar",
+    "indoor": "Kapalı Alan",
+    "outdoor": "Açık Alan",
+    "both": "Kapalı/Açık Alan",
+    "free": "Ücretsiz",
+    "showing": "{total} mekandan {count} tanesi gösteriliyor",
+    "noResults": "Filtrelerinize uyan mekan bulunamadı",
+    "noResultsHint": "Daha fazla sonuç görmek için filtrelerinizi ayarlamayı deneyin.",
+    "sortRating": "En Yüksek Puan",
+    "sortName": "İsim A-Z"
+  },
+  "placeDetail": {
+    "backToList": "Geri",
+    "about": "Bu Mekan Hakkında",
+    "location": "Konum",
+    "getDirections": "Yol Tarifi Al",
+    "info": "Bilgi",
+    "parking": "Otopark",
+    "tips": "İpuçları",
+    "bestTime": "En İyi Zaman",
+    "website": "Resmi Web Sitesi",
+    "ageRange": "Yaş Aralığı",
+    "indoorOutdoor": "Mekan Türü",
+    "priceLevel": "Fiyat Seviyesi",
+    "strollerFriendly": "Bebek Arabası Uygun",
+    "changingStation": "Bebek Bakım Odası",
+    "diningOnSite": "Yerinde Yemek",
+    "needsReservation": "Rezervasyon Gerekli",
+    "yes": "Evet",
+    "no": "Hayır",
+    "home": "Ana Sayfa",
+    "similarPlaces": "Benzer Mekanlar",
+    "share": "Paylaş",
+    "copyLink": "Bağlantıyı Kopyala",
+    "linkCopied": "Bağlantı kopyalandı!",
+    "tags": "Etiketler",
+    "notFound": "Mekan bulunamadı",
+    "notFoundDesc": "Aradığınız mekan mevcut değil."
+  },
+  "mobileNav": {
+    "home": "Ana Sayfa",
+    "play": "Oyna",
+    "eat": "Ye",
+    "learn": "Öğren",
+    "more": "Daha Fazla"
+  },
+  "play": {
+    "title": "Oyun Alanları ve Etkinlikler",
+    "subtitle": "Bay Area'daki çocuklar için en iyi oyun alanları, müzeler, parklar, su parkları ve etkinlikler."
+  },
+  "eat": {
+    "title": "Çocuk Dostu Restoranlar",
+    "subtitle": "Mama sandalyeli, çocuk menülü, oyun alanılı ve sağlıklı seçenekler sunan aile dostu restoranlar."
+  },
+  "learn": {
+    "title": "Kurslar ve Eğitim",
+    "subtitle": "STEM kampları, sanat kursları, müzik dersleri, Çince okulları, kodlama programları ve zenginleştirme etkinlikleri."
+  },
+  "shop": {
+    "title": "Aile Alışverişi",
+    "subtitle": "Oyuncak mağazaları, kitapçılar, eğitim malzemeleri, çocuk kıyafetleri ve ikinci el mağazaları."
+  },
+  "explore": {
+    "title": "Günübirlik Geziler ve Maceralar",
+    "subtitle": "Hafta sonu kaçamakları, mevsimsel etkinlikler, doğa yürüyüşleri ve Bay Area'dan aile yol gezileri."
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "subtitle": "Bir öneriniz veya sorunuz mu var? Sizden haber almak isteriz!",
+    "description": "Harika bir çocuk dostu mekan öneriniz mi var? Bizimle iş birliği yapmak ister misiniz? Bize mesaj gönderin!",
+    "name": "Adınız",
+    "namePlaceholder": "Adınızı girin",
+    "email": "E-posta Adresiniz",
+    "emailPlaceholder": "siz@ornek.com",
+    "message": "Mesaj",
+    "messagePlaceholder": "Çocuklar için harika bir mekan hakkında bilgi verin...",
+    "send": "Mesaj Gönder",
+    "success": "Mesaj başarıyla gönderildi!",
+    "error": "Mesaj gönderilemedi. Lütfen tekrar deneyin.",
+    "required": "Bu alan zorunludur"
+  },
+  "NotFound": {
+    "title": "Hay aksi! Bu sayfa kaybolmuş!",
+    "description": "Aradığınız sayfa mevcut değil. Keşfetmeye geri dönelim!",
+    "goHome": "Ana Sayfaya Dön",
+    "explorePlay": "Etkinlik Bul",
+    "backHome": "Ana Sayfaya Dön"
+  },
+  "notFound": {
+    "title": "Hay aksi! Bu sayfa kaybolmuş!",
+    "description": "Aradığınız sayfa mevcut değil. Keşfetmeye geri dönelim!",
+    "goHome": "Ana Sayfaya Dön",
+    "explorePlay": "Etkinlik Bul"
+  },
+  "Footer": {
+    "tagline": "Bay Area ailelerinin birlikte eğlence keşfetmesine yardımcı oluyoruz.",
+    "copyright": "Kids Bay Area. Tüm hakları saklıdır.",
+    "about": "Hakkında",
+    "contact": "İletişim",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları",
+    "description": "Bay Area'daki aile etkinlikleri için nihai rehberiniz."
+  },
+  "footer": {
+    "tagline": "Bay Area ailelerinin birlikte eğlence keşfetmesine yardımcı oluyoruz.",
+    "about": "Hakkında",
+    "contact": "İletişim",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar",
+    "copyright": "Kids Bay Area. Tüm hakları saklıdır."
+  },
+  "seasonal": {
+    "spring_title": "Bahar Eğlencesi!",
+    "spring_tip": "Kiraz çiçekleri açıyor! Japon Çay Bahçesi'ni ziyaret edin, botanik bahçeleri keşfedin ve aile yürüyüşlerinin tadını çıkarın. Paskalya yumurta avlarını ve bahar festivallerini kaçırmayın.",
+    "spring": "Bahar geldi! Açık hava oyun alanları, botanik bahçeleri ve parkta piknik için mükemmel zaman.",
+    "summer_title": "Yaz Maceraları",
+    "summer_tip": "Su parkları, plaj gezileri ve açık hava kampları tüm hızıyla devam ediyor. Güneş kremi sürün, bol su için ve Bay Area'nın en iyi yaz etkinliklerini keşfedin!",
+    "summer": "Yaz eğlencesi! Bay Area genelinde su parklarına, plajlara ve açık hava festivallerine gidin.",
+    "fall_title": "Sonbahar Etkinlikleri",
+    "fall_tip": "Balkabağı tarlaları, elma toplama ve hasat festivalleri! Aile yürüyüşleri ve açık hava eğlencesi için mükemmel hava. Half Moon Bay balkabağlarına göz atın!",
+    "fall": "Sonbahar maceraları sizi bekliyor! Balkabağı tarlalarının, hasat festivallerinin ve müze ziyaretlerinin tadını çıkarın.",
+    "winter_title": "Kış Masalı",
+    "winter_tip": "Kapalı alan müzeleri, buz pateni, tatil ışık gösterileri ve Tahoe kar eğlencesi! Kapalı alan etkinlikleri ve sıcak aile gezileri için harika bir dönem.",
+    "winter": "Kış masalı! Kapalı oyun alanlarını, tatil etkinliklerini ve yağmurlu gün müzelerini keşfedin.",
+    "explore": "Etkinlik Bul",
+    "cta": "Etkinlikleri keşfet"
+  },
+  "search": {
+    "title": "Ara",
+    "placeholder": "Mekan, etkinlik ara...",
+    "hint": "Aramak için en az 2 karakter yazın",
+    "noResults": "Sonuç bulunamadı.",
+    "escHint": "Kapatmak için Esc tuşuna basın",
+    "results": "{count} sonuç bulundu",
+    "close": "Kapat"
+  },
+  "newsletter": {
+    "title": "Haberdar Olun",
+    "subtitle": "Bay Area'daki en iyi aile etkinlikleri, gizli hazineler ve mevsimsel etkinlikler hakkında haftalık seçimler alın.",
+    "placeholder": "E-posta adresiniz",
+    "subscribe": "Abone Ol",
+    "success": "Abone olduğunuz için teşekkürler!"
+  },
+  "share": {
+    "linkCopied": "Bağlantı kopyalandı!"
+  },
+  "breadcrumbs": {
+    "home": "Ana Sayfa",
+    "play": "Oyna",
+    "eat": "Ye",
+    "learn": "Öğren",
+    "shop": "Alışveriş",
+    "explore": "Keşfet"
+  },
+  "guides": {
+    "title": "Yaş ve duruma göre ara",
+    "subtitle": "Çocuğunuzun yaşına veya hava durumuna göre mükemmel aktiviteyi bulun.",
+    "babies": {
+      "title": "Bebekler 0-2",
+      "subtitle": "Güvenli ve nazik"
+    },
+    "toddlers": {
+      "title": "Küçük Çocuklar 2-5",
+      "subtitle": "Etkileşimli oyun"
+    },
+    "kids": {
+      "title": "Çocuklar 5-8",
+      "subtitle": "Öğren ve keşfet"
+    },
+    "tweens": {
+      "title": "Ergenlik öncesi 8-12",
+      "subtitle": "Macera zamanı"
+    },
+    "rainyDay": {
+      "title": "Yağmurlu Gün",
+      "subtitle": "Kapalı alan eğlencesi"
+    },
+    "favorites": {
+      "title": "En Yüksek Puan",
+      "subtitle": "Aile favorileri"
+    }
+  },
+  "community": {
+    "title": "Topluluğumuza katılın",
+    "subtitle": "Bay Area'daki ebeveynlerle bağlantı kurun, favori mekanlarınızı paylaşın ve haftalık etkinlik fikirleri alın.",
+    "submitSpot": "Mekan önerin",
+    "submitDesc": "Harika bir çocuk dostu mekan mı biliyorsunuz? Bize anlatın!",
+    "weekendPlanner": "Hafta sonu planlayıcı",
+    "plannerDesc": "Birkaç saniyede mükemmel bir aile günü planı oluşturun.",
+    "guides": "Yaş rehberleri",
+    "guidesDesc": "Çocuğunuzun yaş grubuna uygun etkinlikleri bulun."
+  }
+}

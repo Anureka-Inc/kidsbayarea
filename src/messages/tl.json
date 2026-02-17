@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "Kids Bay Area – Gabay sa Kasiyahan ng Pamilya",
+    "description": "Tuklasin ang pinakamahusay na mga palaruan, mga restawrang na angkop sa bata, mga klase, mga tindahan, at mga pakikipagsapalaran sa katapusan ng linggo para sa mga pamilya sa San Francisco Bay Area."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "Home",
+    "play": "Laro",
+    "eat": "Kain",
+    "learn": "Aral",
+    "shop": "Pamili",
+    "explore": "Tuklas",
+    "darkMode": "Madilim na Mode",
+    "lightMode": "Maliwanag na Mode",
+    "language": "Wika",
+    "backToTop": "Bumalik sa itaas",
+    "menu": "Menu",
+    "close": "Isara",
+    "viewAll": "Tingnan lahat",
+    "readMore": "Magbasa pa",
+    "indoor": "Panloob",
+    "outdoor": "Panlabas",
+    "both": "Panloob at Panlabas",
+    "ages": "Edad {range}",
+    "rating": "{score} na bituin"
+  },
+  "nav": {
+    "home": "Home",
+    "play": "Laro",
+    "eat": "Kain",
+    "learn": "Aral",
+    "shop": "Pamili",
+    "explore": "Tuklas"
+  },
+  "hero": {
+    "title": "Ang Gabay ng Inyong Pamilya sa Bay Area",
+    "subtitle": "Tuklasin ang pinakamahusay na mga palaruan, mga restawrang na angkop sa bata, mga klase, mga tindahan, at mga pakikipagsapalaran sa katapusan ng linggo para sa mga pamilya sa San Francisco Bay Area.",
+    "cta": "Tuklasin Ngayon",
+    "search_placeholder": "Maghanap ng mga palaruan, restawrang, klase...",
+    "searchPlaceholder": "Maghanap ng mga palaruan, restawrang, klase...",
+    "searchButton": "Hanapin",
+    "quickSearch": "Sikat:"
+  },
+  "categories": {
+    "section_title": "Tuklasin ayon sa Kategorya",
+    "play": {
+      "title": "Laro at Kasiyahan",
+      "description": "Mga palaruan, theme park, zoo, museo, at masasayang aktibidad para sa mga bata sa lahat ng edad.",
+      "cta": "Maghanap ng Aktibidad"
+    },
+    "eat": {
+      "title": "Kain at Inumin",
+      "description": "Mga restawrang na angkop sa bata na may mataas na upuan, menu para sa bata, lugar na laruan, at kainan ng pamilya.",
+      "cta": "Maghanap ng Restawrang"
+    },
+    "learn": {
+      "title": "Aral at Paglago",
+      "description": "Mga STEM camp, klase sa sining, aralin sa musika, mga paaralang Tsino, at mga programa ng pagpapayaman.",
+      "cta": "Maghanap ng Klase"
+    },
+    "shop": {
+      "title": "Pamili",
+      "description": "Mga tindahan ng laruan, tindahan ng libro, kagamitang pang-edukasyon, at mga tindahan ng mga gamit na pangalawang kamay para sa bata.",
+      "cta": "Maghanap ng Tindahan"
+    },
+    "explore": {
+      "title": "Tuklas at Lakbay",
+      "description": "Mga day trip, pana-panahong kaganapan, pakikipagsapalaran sa kalikasan, at road trip ng pamilya mula sa Bay Area.",
+      "cta": "Magplano ng Biyahe"
+    }
+  },
+  "todaysPick": {
+    "title": "Pili Ngayong Araw",
+    "random": "Sorpresahin Mo Ako",
+    "reroll": "Ipakita ang iba",
+    "viewDetails": "Tingnan ang Detalye"
+  },
+  "map": {
+    "title": "Tuklasin ang Bay Area",
+    "loading": "Naglo-load ng mapa...",
+    "all": "Lahat",
+    "play": "Laro",
+    "eat": "Kain",
+    "learn": "Aral",
+    "shop": "Pamili",
+    "explore": "Tuklas",
+    "viewDetails": "Tingnan ang detalye"
+  },
+  "placeFilters": {
+    "all": "Lahat",
+    "allAreas": "Lahat ng Lugar",
+    "allAges": "Lahat ng Edad",
+    "indoor": "Panloob",
+    "outdoor": "Panlabas",
+    "both": "Panloob/Panlabas",
+    "free": "Libre",
+    "showing": "Ipinapakita ang {count} sa {total} na lugar",
+    "noResults": "Walang lugar na tumugma sa iyong mga filter",
+    "noResultsHint": "Subukang baguhin ang iyong mga filter para makakita ng mas maraming resulta.",
+    "sortRating": "Pinakamataas na Rating",
+    "sortName": "Pangalan A-Z"
+  },
+  "placeDetail": {
+    "backToList": "Bumalik",
+    "about": "Tungkol sa Lugar na Ito",
+    "location": "Lokasyon",
+    "getDirections": "Kumuha ng Direksyon",
+    "info": "Impormasyon",
+    "parking": "Paradahan",
+    "tips": "Mga Tip",
+    "bestTime": "Pinakamabuting Oras",
+    "website": "Opisyal na Website",
+    "ageRange": "Saklaw ng Edad",
+    "indoorOutdoor": "Uri ng Lugar",
+    "priceLevel": "Antas ng Presyo",
+    "strollerFriendly": "Angkop sa Stroller",
+    "changingStation": "Lugar ng Pagpapalit ng Diaper",
+    "diningOnSite": "Kainan sa Lugar",
+    "needsReservation": "Kailangan ng Reserbasyon",
+    "yes": "Oo",
+    "no": "Hindi",
+    "home": "Home",
+    "similarPlaces": "Mga Katulad na Lugar",
+    "share": "Ibahagi",
+    "copyLink": "Kopyahin ang Link",
+    "linkCopied": "Nakopya ang link!",
+    "tags": "Mga Tag",
+    "notFound": "Hindi nahanap ang lugar",
+    "notFoundDesc": "Ang lugar na hinahanap mo ay hindi umiiral."
+  },
+  "mobileNav": {
+    "home": "Home",
+    "play": "Laro",
+    "eat": "Kain",
+    "learn": "Aral",
+    "more": "Higit Pa"
+  },
+  "play": {
+    "title": "Mga Palaruan at Aktibidad",
+    "subtitle": "Ang pinakamahusay na mga palaruan, museo, park, water park, at aktibidad para sa mga bata sa Bay Area."
+  },
+  "eat": {
+    "title": "Mga Restawrang na Angkop sa Bata",
+    "subtitle": "Mga restawrang na angkop sa pamilya na may mataas na upuan, menu para sa bata, lugar na laruan, at masusustansyang pagpipilian."
+  },
+  "learn": {
+    "title": "Mga Klase at Edukasyon",
+    "subtitle": "Mga STEM camp, klase sa sining, aralin sa musika, paaralang Tsino, programa sa coding, at aktibidad na nagpapayaman."
+  },
+  "shop": {
+    "title": "Pamimili ng Pamilya",
+    "subtitle": "Mga tindahan ng laruan, tindahan ng libro, kagamitang pang-edukasyon, damit ng bata, at mga tindahan ng pangalawang kamay."
+  },
+  "explore": {
+    "title": "Mga Day Trip at Pakikipagsapalaran",
+    "subtitle": "Mga weekend getaway, pana-panahong kaganapan, hiking sa kalikasan, at road trip ng pamilya mula sa Bay Area."
+  },
+  "contact": {
+    "title": "Makipag-ugnayan sa Amin",
+    "subtitle": "May suhestyon o tanong? Gusto naming marinig mula sa iyo!",
+    "description": "May suhestyon para sa isang magandang lugar na angkop sa bata? Gusto mong makipagtulungan sa amin? Magpadala ng mensahe sa amin!",
+    "name": "Iyong Pangalan",
+    "namePlaceholder": "Ilagay ang iyong pangalan",
+    "email": "Iyong Email",
+    "emailPlaceholder": "ikaw@halimbawa.com",
+    "message": "Mensahe",
+    "messagePlaceholder": "Sabihin sa amin ang tungkol sa isang magandang lugar para sa mga bata...",
+    "send": "Ipadala ang Mensahe",
+    "success": "Matagumpay na naipadala ang mensahe!",
+    "error": "Hindi naipadala ang mensahe. Pakisubukang muli.",
+    "required": "Kinakailangan ang field na ito"
+  },
+  "NotFound": {
+    "title": "Oops! Naligaw ang pahinang ito!",
+    "description": "Ang pahinang hinahanap mo ay hindi umiiral. Bumalik tayo sa pagtuklas!",
+    "goHome": "Bumalik sa Home",
+    "explorePlay": "Maghanap ng Aktibidad",
+    "backHome": "Bumalik sa Home"
+  },
+  "notFound": {
+    "title": "Oops! Naligaw ang pahinang ito!",
+    "description": "Ang pahinang hinahanap mo ay hindi umiiral. Bumalik tayo sa pagtuklas!",
+    "goHome": "Bumalik sa Home",
+    "explorePlay": "Maghanap ng Aktibidad"
+  },
+  "Footer": {
+    "tagline": "Tinutulungan ang mga pamilya sa Bay Area na matuklasan ang kasiyahan nang magkasama.",
+    "copyright": "Kids Bay Area. Lahat ng karapatan ay nakalaan.",
+    "about": "Tungkol",
+    "contact": "Makipag-ugnayan",
+    "privacy": "Patakaran sa Privacy",
+    "terms": "Mga Tuntunin ng Serbisyo",
+    "description": "Ang iyong pinakahuling gabay para sa mga aktibidad ng pamilya sa Bay Area."
+  },
+  "footer": {
+    "tagline": "Tinutulungan ang mga pamilya sa Bay Area na matuklasan ang kasiyahan nang magkasama.",
+    "about": "Tungkol",
+    "contact": "Makipag-ugnayan",
+    "privacy": "Privacy",
+    "terms": "Mga Tuntunin",
+    "copyright": "Kids Bay Area. Lahat ng karapatan ay nakalaan."
+  },
+  "seasonal": {
+    "spring_title": "Kasiyahan sa Tagsibol!",
+    "spring_tip": "Namumulaklak ang mga cherry blossom! Bisitahin ang Japanese Tea Garden, tuklasin ang mga botanical garden, at mag-enjoy ng family hike. Huwag palampasin ang Easter egg hunt at mga spring festival.",
+    "spring": "Nandito na ang tagsibol! Perpektong oras para sa mga panlabas na palaruan, botanical garden, at piknik sa park.",
+    "summer_title": "Mga Pakikipagsapalaran sa Tag-init",
+    "summer_tip": "Mga water park, biyahe sa beach, at mga outdoor camp ay nasa kasagsagan. Maglagay ng sunscreen, uminom ng maraming tubig, at tuklasin ang pinakamahusay na aktibidad sa tag-init ng Bay Area!",
+    "summer": "Kasiyahan sa tag-init! Pumunta sa mga water park, beach, at outdoor festival sa buong Bay Area.",
+    "fall_title": "Mga Aktibidad sa Taglagas",
+    "fall_tip": "Mga pumpkin patch, pamimitas ng mansanas, at harvest festival! Perpektong panahon para sa family hike at panlabas na kasiyahan. Tingnan ang mga kalabasa sa Half Moon Bay!",
+    "fall": "Naghihintay ang mga pakikipagsapalaran sa taglagas! Mag-enjoy ng mga pumpkin patch, harvest festival, at mga komportableng pagbisita sa museo.",
+    "winter_title": "Winter Wonderland",
+    "winter_tip": "Mga panloob na museo, ice skating, holiday light show, at paglalaro sa niyebe sa Tahoe! Magandang oras para sa mga panloob na aktibidad at komportableng lakad ng pamilya.",
+    "winter": "Winter wonderland! Tuklasin ang mga panloob na lugar ng laro, holiday event, at mga museo sa maulan na araw.",
+    "explore": "Maghanap ng Aktibidad",
+    "cta": "Tuklasin ang mga aktibidad"
+  },
+  "search": {
+    "title": "Paghahanap",
+    "placeholder": "Maghanap ng mga lugar, aktibidad...",
+    "hint": "Mag-type ng hindi bababa sa 2 karakter para maghanap",
+    "noResults": "Walang nakitang resulta.",
+    "escHint": "Pindutin ang Esc para isara",
+    "results": "{count} na resulta ang nahanap",
+    "close": "Isara"
+  },
+  "newsletter": {
+    "title": "Manatiling Updated",
+    "subtitle": "Makatanggap ng lingguhang pili ng pinakamahusay na aktibidad ng pamilya, mga nakatagong yaman, at pana-panahong kaganapan sa Bay Area.",
+    "placeholder": "Iyong email",
+    "subscribe": "Mag-subscribe",
+    "success": "Salamat sa pag-subscribe!"
+  },
+  "share": {
+    "linkCopied": "Nakopya ang link!"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "play": "Laro",
+    "eat": "Kain",
+    "learn": "Aral",
+    "shop": "Pamili",
+    "explore": "Tuklas"
+  },
+  "guides": {
+    "title": "Maghanap ayon sa edad at sitwasyon",
+    "subtitle": "Hanapin ang perpektong aktibidad batay sa edad ng iyong anak o sa lagay ng panahon.",
+    "babies": {
+      "title": "Sanggol 0-2",
+      "subtitle": "Ligtas at malambot"
+    },
+    "toddlers": {
+      "title": "Paslit 2-5",
+      "subtitle": "Interactive na laro"
+    },
+    "kids": {
+      "title": "Bata 5-8",
+      "subtitle": "Matuto at tuklasin"
+    },
+    "tweens": {
+      "title": "Tweens 8-12",
+      "subtitle": "Oras ng pakikipagsapalaran"
+    },
+    "rainyDay": {
+      "title": "Maulan na araw",
+      "subtitle": "Kasiyahang panloob"
+    },
+    "favorites": {
+      "title": "Pinakamataas na rating",
+      "subtitle": "Mga paborito ng pamilya"
+    }
+  },
+  "community": {
+    "title": "Sumali sa aming komunidad",
+    "subtitle": "Makipag-ugnayan sa mga magulang sa Bay Area, ibahagi ang iyong mga paboritong lugar, at makatanggap ng lingguhang ideya sa aktibidad.",
+    "submitSpot": "Magrekomenda ng lugar",
+    "submitDesc": "May alam kang magandang lugar para sa mga bata? Sabihin sa amin!",
+    "weekendPlanner": "Tagaplano ng weekend",
+    "plannerDesc": "Gumawa ng perpektong itinerary para sa araw ng pamilya sa ilang segundo.",
+    "guides": "Mga gabay ayon sa edad",
+    "guidesDesc": "Maghanap ng mga aktibidad na angkop sa edad ng iyong anak."
+  }
+}

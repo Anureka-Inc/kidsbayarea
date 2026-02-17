@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "Kids Bay Area - Családi Szórakozási Útmutató",
+    "description": "Fedezd fel a legjobb játszótereket, gyerekbarát éttermeket, tanfolyamokat, boltokat és hétvégi kalandokat családok számára a San Francisco Bay Area-ban."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "Főoldal",
+    "play": "Játék",
+    "eat": "Étkezés",
+    "learn": "Tanulás",
+    "shop": "Vásárlás",
+    "explore": "Felfedezés",
+    "darkMode": "Sötét Mód",
+    "lightMode": "Világos Mód",
+    "language": "Nyelv",
+    "backToTop": "Vissza a tetejére",
+    "menu": "Menü",
+    "close": "Bezárás",
+    "viewAll": "Összes megtekintése",
+    "readMore": "Tovább olvasom",
+    "indoor": "Beltéri",
+    "outdoor": "Kültéri",
+    "both": "Beltéri és Kültéri",
+    "ages": "Életkor {range}",
+    "rating": "{score} csillag"
+  },
+  "nav": {
+    "home": "Főoldal",
+    "play": "Játék",
+    "eat": "Étkezés",
+    "learn": "Tanulás",
+    "shop": "Vásárlás",
+    "explore": "Felfedezés"
+  },
+  "hero": {
+    "title": "Családod Útmutatója a Bay Area-hoz",
+    "subtitle": "Fedezd fel a legjobb játszótereket, gyerekbarát éttermeket, tanfolyamokat, boltokat és hétvégi kalandokat családok számára a San Francisco Bay Area-ban.",
+    "cta": "Felfedezés Most",
+    "search_placeholder": "Keresés játszóterek, éttermek, tanfolyamok...",
+    "searchPlaceholder": "Keresés játszóterek, éttermek, tanfolyamok...",
+    "searchButton": "Keresés",
+    "quickSearch": "Népszerű:"
+  },
+  "categories": {
+    "section_title": "Felfedezés Kategória Szerint",
+    "play": {
+      "title": "Játék és Szórakozás",
+      "description": "Játszóterek, vidámparkok, állatkertek, múzeumok és szórakoztató tevékenységek minden korosztályú gyereknek.",
+      "cta": "Tevékenységek Keresése"
+    },
+    "eat": {
+      "title": "Étkezés és Italok",
+      "description": "Gyerekbarát éttermek etetőszékekkel, gyerekmenüvel, játszótérrel és családi étkezéssel.",
+      "cta": "Éttermek Keresése"
+    },
+    "learn": {
+      "title": "Tanulás és Fejlődés",
+      "description": "STEM táborok, művészeti tanfolyamok, zenei órák, kínai iskolák és fejlesztő programok.",
+      "cta": "Tanfolyamok Keresése"
+    },
+    "shop": {
+      "title": "Vásárlás",
+      "description": "Játékboltok, könyvesboltok, oktatási kellékek és gyermek használtruha boltok.",
+      "cta": "Boltok Keresése"
+    },
+    "explore": {
+      "title": "Felfedezés és Utazás",
+      "description": "Egynapos kirándulások, szezonális események, természeti kalandok és családi autós utak a Bay Area-ból.",
+      "cta": "Kirándulás Tervezése"
+    }
+  },
+  "todaysPick": {
+    "title": "A Nap Választása",
+    "random": "Lepj meg!",
+    "reroll": "Mutass másikat",
+    "viewDetails": "Részletek Megtekintése"
+  },
+  "map": {
+    "title": "Fedezd Fel a Bay Area-t",
+    "loading": "Térkép betöltése...",
+    "all": "Összes",
+    "play": "Játék",
+    "eat": "Étkezés",
+    "learn": "Tanulás",
+    "shop": "Vásárlás",
+    "explore": "Felfedezés",
+    "viewDetails": "Részletek megtekintése"
+  },
+  "placeFilters": {
+    "all": "Összes",
+    "allAreas": "Minden Terület",
+    "allAges": "Minden Korosztály",
+    "indoor": "Beltéri",
+    "outdoor": "Kültéri",
+    "both": "Beltéri/Kültéri",
+    "free": "Ingyenes",
+    "showing": "{count} / {total} hely megjelenítése",
+    "noResults": "Nincs a szűrőknek megfelelő hely",
+    "noResultsHint": "Próbáld módosítani a szűrőket, hogy több eredményt láss.",
+    "sortRating": "Legjobban Értékelt",
+    "sortName": "Név A-Z"
+  },
+  "placeDetail": {
+    "backToList": "Vissza",
+    "about": "Erről a Helyről",
+    "location": "Helyszín",
+    "getDirections": "Útvonaltervezés",
+    "info": "Információ",
+    "parking": "Parkolás",
+    "tips": "Tippek",
+    "bestTime": "Legjobb Időpont",
+    "website": "Hivatalos Weboldal",
+    "ageRange": "Korosztály",
+    "indoorOutdoor": "Helyszín Típusa",
+    "priceLevel": "Árszint",
+    "strollerFriendly": "Babakocsival Járható",
+    "changingStation": "Pelenkázó",
+    "diningOnSite": "Helyszíni Étkezés",
+    "needsReservation": "Foglalás Szükséges",
+    "yes": "Igen",
+    "no": "Nem",
+    "home": "Főoldal",
+    "similarPlaces": "Hasonló Helyek",
+    "share": "Megosztás",
+    "copyLink": "Link Másolása",
+    "linkCopied": "Link másolva!",
+    "tags": "Címkék",
+    "notFound": "Hely nem található",
+    "notFoundDesc": "A keresett hely nem létezik."
+  },
+  "mobileNav": {
+    "home": "Főoldal",
+    "play": "Játék",
+    "eat": "Étkezés",
+    "learn": "Tanulás",
+    "more": "Továbbiak"
+  },
+  "play": {
+    "title": "Játszóterek és Tevékenységek",
+    "subtitle": "A legjobb játszóterek, múzeumok, parkok, vízi parkok és tevékenységek gyerekeknek a Bay Area-ban."
+  },
+  "eat": {
+    "title": "Gyerekbarát Éttermek",
+    "subtitle": "Családbarát éttermek etetőszékekkel, gyerekmenüvel, játszótérrel és egészséges lehetőségekkel."
+  },
+  "learn": {
+    "title": "Tanfolyamok és Oktatás",
+    "subtitle": "STEM táborok, művészeti tanfolyamok, zenei órák, kínai iskolák, programozási tanfolyamok és fejlesztő tevékenységek."
+  },
+  "shop": {
+    "title": "Családi Vásárlás",
+    "subtitle": "Játékboltok, könyvesboltok, oktatási kellékek, gyerekruhák és használtruha boltok."
+  },
+  "explore": {
+    "title": "Egynapos Kirándulások és Kalandok",
+    "subtitle": "Hétvégi kikapcsolódás, szezonális események, természetjárás és családi autós utak a Bay Area-ból."
+  },
+  "contact": {
+    "title": "Kapcsolat",
+    "subtitle": "Van javaslatod vagy kérdésed? Szívesen hallanánk rólad!",
+    "description": "Van javaslatod egy nagyszerű gyerekbarát helyről? Szeretnél velünk együttműködni? Küldj nekünk üzenetet!",
+    "name": "Neved",
+    "namePlaceholder": "Írd be a neved",
+    "email": "Email Címed",
+    "emailPlaceholder": "te@pelda.com",
+    "message": "Üzenet",
+    "messagePlaceholder": "Mesélj nekünk egy nagyszerű helyről gyerekeknek...",
+    "send": "Üzenet Küldése",
+    "success": "Üzenet sikeresen elküldve!",
+    "error": "Az üzenet küldése sikertelen. Kérjük, próbáld újra.",
+    "required": "Ez a mező kötelező"
+  },
+  "NotFound": {
+    "title": "Hoppá! Ez az oldal elkóborolt!",
+    "description": "A keresett oldal nem létezik. Térjünk vissza a felfedezéshez!",
+    "goHome": "Vissza a Főoldalra",
+    "explorePlay": "Tevékenységek Keresése",
+    "backHome": "Vissza a Főoldalra"
+  },
+  "notFound": {
+    "title": "Hoppá! Ez az oldal elkóborolt!",
+    "description": "A keresett oldal nem létezik. Térjünk vissza a felfedezéshez!",
+    "goHome": "Vissza a Főoldalra",
+    "explorePlay": "Tevékenységek Keresése"
+  },
+  "Footer": {
+    "tagline": "Segítünk a Bay Area családjainak együtt felfedezni a szórakozást.",
+    "copyright": "Kids Bay Area. Minden jog fenntartva.",
+    "about": "Rólunk",
+    "contact": "Kapcsolat",
+    "privacy": "Adatvédelmi Irányelvek",
+    "terms": "Felhasználási Feltételek",
+    "description": "A végső útmutatód a családi tevékenységekhez a Bay Area-ban."
+  },
+  "footer": {
+    "tagline": "Segítünk a Bay Area családjainak együtt felfedezni a szórakozást.",
+    "about": "Rólunk",
+    "contact": "Kapcsolat",
+    "privacy": "Adatvédelem",
+    "terms": "Feltételek",
+    "copyright": "Kids Bay Area. Minden jog fenntartva."
+  },
+  "seasonal": {
+    "spring_title": "Tavaszi Szórakozás!",
+    "spring_tip": "A cseresznyefák virágoznak! Látogasd meg a Japán Teakertet, fedezd fel a botanikus kerteket és élvezd a családi túrákat. Ne hagyd ki a húsvéti tojáskeresést és a tavaszi fesztiválokat.",
+    "spring": "Itt a tavasz! Tökéletes idő a szabadtéri játszóterekhez, botanikus kertekhez és piknikekhez a parkban.",
+    "summer_title": "Nyári Kalandok",
+    "summer_tip": "A vízi parkok, strandkirándulások és szabadtéri táborok javában zajlanak. Kenj be naptejjel, igyál eleget és fedezd fel a Bay Area legjobb nyári tevékenységeit!",
+    "summer": "Nyári szórakozás! Irány a vízi parkok, strandok és szabadtéri fesztiválok a Bay Area-ban.",
+    "fall_title": "Őszi Tevékenységek",
+    "fall_tip": "Tökföldek, almaszüret és betakarítási fesztiválok! Tökéletes idő családi túrákhoz és szabadtéri szórakozáshoz. Nézd meg a Half Moon Bay tökeit!",
+    "fall": "Őszi kalandok várnak! Élvezd a tökföldeket, betakarítási fesztiválokat és hangulatos múzeumlátogatásokat.",
+    "winter_title": "Téli Csodaország",
+    "winter_tip": "Beltéri múzeumok, korcsolyapálya, ünnepi fényjátékok és hójáték Tahoe-nál! Remek idő beltéri tevékenységekhez és hangulatos családi kirándulásokhoz.",
+    "winter": "Téli csodaország! Fedezd fel a beltéri játszótereket, ünnepi rendezvényeket és esős napi múzeumokat.",
+    "explore": "Tevékenységek Keresése",
+    "cta": "Tevékenységek felfedezése"
+  },
+  "search": {
+    "title": "Keresés",
+    "placeholder": "Helyek, tevékenységek keresése...",
+    "hint": "Írj be legalább 2 karaktert a kereséshez",
+    "noResults": "Nincs találat.",
+    "escHint": "Nyomd meg az Esc-et a bezáráshoz",
+    "results": "{count} találat",
+    "close": "Bezárás"
+  },
+  "newsletter": {
+    "title": "Maradj Képben",
+    "subtitle": "Kapj heti válogatást a legjobb családi tevékenységekből, rejtett kincsekből és szezonális eseményekből a Bay Area-ban.",
+    "placeholder": "Email címed",
+    "subscribe": "Feliratkozás",
+    "success": "Köszönjük a feliratkozást!"
+  },
+  "share": {
+    "linkCopied": "Link másolva!"
+  },
+  "breadcrumbs": {
+    "home": "Főoldal",
+    "play": "Játék",
+    "eat": "Étkezés",
+    "learn": "Tanulás",
+    "shop": "Vásárlás",
+    "explore": "Felfedezés"
+  },
+  "guides": {
+    "title": "Keresés kor és helyzet szerint",
+    "subtitle": "Találd meg a tökéletes tevékenységet gyermeked kora vagy az időjárás alapján.",
+    "babies": {
+      "title": "Babák 0-2",
+      "subtitle": "Biztonságos és gyengéd"
+    },
+    "toddlers": {
+      "title": "Kicsik 2-5",
+      "subtitle": "Interaktív játék"
+    },
+    "kids": {
+      "title": "Gyerekek 5-8",
+      "subtitle": "Tanulj és fedezz fel"
+    },
+    "tweens": {
+      "title": "Tweens 8-12",
+      "subtitle": "Kalandidő"
+    },
+    "rainyDay": {
+      "title": "Esős nap",
+      "subtitle": "Beltéri szórakozás"
+    },
+    "favorites": {
+      "title": "Legjobban értékelt",
+      "subtitle": "Családi kedvencek"
+    }
+  },
+  "community": {
+    "title": "Csatlakozz a közösségünkhöz",
+    "subtitle": "Lépj kapcsolatba Bay Area-i szülőkkel, oszd meg kedvenc helyeidet és kapj heti aktivitásötleteket.",
+    "submitSpot": "Hely ajánlása",
+    "submitDesc": "Tudsz egy nagyszerű gyerekbarát helyről? Mesélj nekünk róla!",
+    "weekendPlanner": "Hétvégi tervező",
+    "plannerDesc": "Készítsd el a tökéletes családi napi programot másodpercek alatt.",
+    "guides": "Korosztályos útmutatók",
+    "guidesDesc": "Találj gyermeked korosztályához illő tevékenységeket."
+  }
+}

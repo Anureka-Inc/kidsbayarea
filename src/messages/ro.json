@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "Kids Bay Area - Ghid de Distracție pentru Familie",
+    "description": "Descoperă cele mai bune locuri de joacă, restaurante prietenoase cu copiii, cursuri, magazine și aventuri de weekend pentru familii în zona San Francisco Bay Area."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "Acasă",
+    "play": "Joacă",
+    "eat": "Mâncare",
+    "learn": "Învață",
+    "shop": "Cumpărături",
+    "explore": "Explorează",
+    "darkMode": "Mod Întunecat",
+    "lightMode": "Mod Luminos",
+    "language": "Limbă",
+    "backToTop": "Înapoi sus",
+    "menu": "Meniu",
+    "close": "Închide",
+    "viewAll": "Vezi tot",
+    "readMore": "Citește mai mult",
+    "indoor": "Interior",
+    "outdoor": "Exterior",
+    "both": "Interior și Exterior",
+    "ages": "Vârste {range}",
+    "rating": "{score} stele"
+  },
+  "nav": {
+    "home": "Acasă",
+    "play": "Joacă",
+    "eat": "Mâncare",
+    "learn": "Învață",
+    "shop": "Cumpărături",
+    "explore": "Explorează"
+  },
+  "hero": {
+    "title": "Ghidul Familiei Tale pentru Bay Area",
+    "subtitle": "Descoperă cele mai bune locuri de joacă, restaurante prietenoase cu copiii, cursuri, magazine și aventuri de weekend pentru familii în zona San Francisco Bay Area.",
+    "cta": "Explorează Acum",
+    "search_placeholder": "Caută locuri de joacă, restaurante, cursuri...",
+    "searchPlaceholder": "Caută locuri de joacă, restaurante, cursuri...",
+    "searchButton": "Caută",
+    "quickSearch": "Popular:"
+  },
+  "categories": {
+    "section_title": "Explorează pe Categorii",
+    "play": {
+      "title": "Joacă și Distracție",
+      "description": "Locuri de joacă, parcuri tematice, grădini zoologice, muzee și activități distractive pentru copii de toate vârstele.",
+      "cta": "Găsește Activități"
+    },
+    "eat": {
+      "title": "Mâncare și Băutură",
+      "description": "Restaurante prietenoase cu copiii, cu scaune înalte, meniuri pentru copii, zone de joacă și dining în familie.",
+      "cta": "Găsește Restaurante"
+    },
+    "learn": {
+      "title": "Învață și Crește",
+      "description": "Tabere STEM, cursuri de artă, lecții de muzică, școli chineze și programe de îmbogățire.",
+      "cta": "Găsește Cursuri"
+    },
+    "shop": {
+      "title": "Cumpărături",
+      "description": "Magazine de jucării, librării, materiale educaționale și magazine second-hand pentru copii.",
+      "cta": "Găsește Magazine"
+    },
+    "explore": {
+      "title": "Explorează și Călătorește",
+      "description": "Excursii de o zi, evenimente sezoniere, aventuri în natură și călătorii cu mașina din Bay Area.",
+      "cta": "Planifică o Excursie"
+    }
+  },
+  "todaysPick": {
+    "title": "Alegerea Zilei",
+    "random": "Surprinde-mă",
+    "reroll": "Arată altul",
+    "viewDetails": "Vezi Detalii"
+  },
+  "map": {
+    "title": "Explorează Bay Area",
+    "loading": "Se încarcă harta...",
+    "all": "Toate",
+    "play": "Joacă",
+    "eat": "Mâncare",
+    "learn": "Învață",
+    "shop": "Cumpărături",
+    "explore": "Explorează",
+    "viewDetails": "Vezi detalii"
+  },
+  "placeFilters": {
+    "all": "Toate",
+    "allAreas": "Toate Zonele",
+    "allAges": "Toate Vârstele",
+    "indoor": "Interior",
+    "outdoor": "Exterior",
+    "both": "Interior/Exterior",
+    "free": "Gratuit",
+    "showing": "Se afișează {count} din {total} locuri",
+    "noResults": "Niciun loc nu corespunde filtrelor tale",
+    "noResultsHint": "Încearcă să ajustezi filtrele pentru a vedea mai multe rezultate.",
+    "sortRating": "Cele Mai Bine Cotate",
+    "sortName": "Nume A-Z"
+  },
+  "placeDetail": {
+    "backToList": "Înapoi",
+    "about": "Despre Acest Loc",
+    "location": "Locație",
+    "getDirections": "Obține Indicații",
+    "info": "Informații",
+    "parking": "Parcare",
+    "tips": "Sfaturi",
+    "bestTime": "Cel Mai Bun Moment",
+    "website": "Site Oficial",
+    "ageRange": "Interval de Vârstă",
+    "indoorOutdoor": "Tipul Locației",
+    "priceLevel": "Nivel de Preț",
+    "strollerFriendly": "Accesibil cu Căruciorul",
+    "changingStation": "Masă de Înfășat",
+    "diningOnSite": "Restaurant la Fața Locului",
+    "needsReservation": "Necesită Rezervare",
+    "yes": "Da",
+    "no": "Nu",
+    "home": "Acasă",
+    "similarPlaces": "Locuri Similare",
+    "share": "Distribuie",
+    "copyLink": "Copiază Link",
+    "linkCopied": "Link copiat!",
+    "tags": "Etichete",
+    "notFound": "Locul nu a fost găsit",
+    "notFoundDesc": "Locul pe care îl cauți nu există."
+  },
+  "mobileNav": {
+    "home": "Acasă",
+    "play": "Joacă",
+    "eat": "Mâncare",
+    "learn": "Învață",
+    "more": "Mai mult"
+  },
+  "play": {
+    "title": "Locuri de Joacă și Activități",
+    "subtitle": "Cele mai bune locuri de joacă, muzee, parcuri, parcuri acvatice și activități pentru copii din Bay Area."
+  },
+  "eat": {
+    "title": "Restaurante Prietenoase cu Copiii",
+    "subtitle": "Restaurante prietenoase cu familia, cu scaune înalte, meniuri pentru copii, zone de joacă și opțiuni sănătoase."
+  },
+  "learn": {
+    "title": "Cursuri și Educație",
+    "subtitle": "Tabere STEM, cursuri de artă, lecții de muzică, școli chineze, programe de programare și activități de îmbogățire."
+  },
+  "shop": {
+    "title": "Cumpărături pentru Familie",
+    "subtitle": "Magazine de jucării, librării, materiale educaționale, îmbrăcăminte pentru copii și magazine second-hand."
+  },
+  "explore": {
+    "title": "Excursii de o Zi și Aventuri",
+    "subtitle": "Escapade de weekend, evenimente sezoniere, drumeții în natură și călătorii cu mașina din Bay Area."
+  },
+  "contact": {
+    "title": "Contactează-ne",
+    "subtitle": "Ai o sugestie sau o întrebare? Ne-ar plăcea să auzim de la tine!",
+    "description": "Ai o sugestie pentru un loc grozav potrivit copiilor? Vrei să colaborezi cu noi? Trimite-ne un mesaj!",
+    "name": "Numele Tău",
+    "namePlaceholder": "Introdu numele tău",
+    "email": "Email-ul Tău",
+    "emailPlaceholder": "tu@exemplu.com",
+    "message": "Mesaj",
+    "messagePlaceholder": "Spune-ne despre un loc minunat pentru copii...",
+    "send": "Trimite Mesajul",
+    "success": "Mesajul a fost trimis cu succes!",
+    "error": "Nu s-a putut trimite mesajul. Te rugăm să încerci din nou.",
+    "required": "Acest câmp este obligatoriu"
+  },
+  "NotFound": {
+    "title": "Ups! Această pagină s-a rătăcit!",
+    "description": "Pagina pe care o cauți nu există. Hai să ne întoarcem la explorat!",
+    "goHome": "Înapoi Acasă",
+    "explorePlay": "Găsește Activități",
+    "backHome": "Înapoi Acasă"
+  },
+  "notFound": {
+    "title": "Ups! Această pagină s-a rătăcit!",
+    "description": "Pagina pe care o cauți nu există. Hai să ne întoarcem la explorat!",
+    "goHome": "Înapoi Acasă",
+    "explorePlay": "Găsește Activități"
+  },
+  "Footer": {
+    "tagline": "Ajutăm familiile din Bay Area să descopere distracția împreună.",
+    "copyright": "Kids Bay Area. Toate drepturile rezervate.",
+    "about": "Despre",
+    "contact": "Contact",
+    "privacy": "Politica de Confidențialitate",
+    "terms": "Termeni și Condiții",
+    "description": "Ghidul tău complet pentru activități în familie în Bay Area."
+  },
+  "footer": {
+    "tagline": "Ajutăm familiile din Bay Area să descopere distracția împreună.",
+    "about": "Despre",
+    "contact": "Contact",
+    "privacy": "Confidențialitate",
+    "terms": "Termeni",
+    "copyright": "Kids Bay Area. Toate drepturile rezervate."
+  },
+  "seasonal": {
+    "spring_title": "Distracție de Primăvară!",
+    "spring_tip": "Cireșii sunt în floare! Vizitează Grădina Japoneză de Ceai, explorează grădinile botanice și bucură-te de drumeții în familie. Nu rata vânătoarea de ouă de Paște și festivalurile de primăvară.",
+    "spring": "Primăvara e aici! Moment perfect pentru locuri de joacă în aer liber, grădini botanice și picnicuri în parc.",
+    "summer_title": "Aventuri de Vară",
+    "summer_tip": "Parcurile acvatice, excursiile la plajă și taberele în aer liber sunt în toi. Aplică protecție solară, menține-te hidratat și explorează cele mai bune activități de vară din Bay Area!",
+    "summer": "Distracție de vară! Mergi la parcuri acvatice, plaje și festivaluri în aer liber din Bay Area.",
+    "fall_title": "Activități de Toamnă",
+    "fall_tip": "Câmpuri de dovleci, cules de mere și festivaluri de recoltă! Vreme perfectă pentru drumeții în familie și distracție în aer liber. Nu rata dovlecii din Half Moon Bay!",
+    "fall": "Aventuri de toamnă te așteaptă! Bucură-te de câmpuri de dovleci, festivaluri de recoltă și vizite la muzeu.",
+    "winter_title": "Tărâm de Iarnă",
+    "winter_tip": "Muzee interioare, patinoar, spectacole de lumini de sărbătoare și joacă în zăpadă la Tahoe! Moment excelent pentru activități de interior și ieșiri cozy în familie.",
+    "winter": "Tărâm de iarnă! Descoperă spații de joacă interioare, evenimente de sărbătoare și muzee pentru zilele ploioase.",
+    "explore": "Găsește Activități",
+    "cta": "Explorează activități"
+  },
+  "search": {
+    "title": "Caută",
+    "placeholder": "Caută locuri, activități...",
+    "hint": "Tastează cel puțin 2 caractere pentru a căuta",
+    "noResults": "Nu s-au găsit rezultate.",
+    "escHint": "Apasă Esc pentru a închide",
+    "results": "{count} rezultate găsite",
+    "close": "Închide"
+  },
+  "newsletter": {
+    "title": "Fii la Curent",
+    "subtitle": "Primește selecțiile săptămânale cu cele mai bune activități pentru familie, locuri ascunse și evenimente sezoniere din Bay Area.",
+    "placeholder": "Email-ul tău",
+    "subscribe": "Abonează-te",
+    "success": "Mulțumim pentru abonare!"
+  },
+  "share": {
+    "linkCopied": "Link copiat!"
+  },
+  "breadcrumbs": {
+    "home": "Acasă",
+    "play": "Joacă",
+    "eat": "Mâncare",
+    "learn": "Învață",
+    "shop": "Cumpărături",
+    "explore": "Explorează"
+  },
+  "guides": {
+    "title": "Caută după vârstă și situație",
+    "subtitle": "Găsește activitatea perfectă în funcție de vârsta copilului tău sau de vreme.",
+    "babies": {
+      "title": "Bebeluși 0-2",
+      "subtitle": "Sigur și blând"
+    },
+    "toddlers": {
+      "title": "Copii mici 2-5",
+      "subtitle": "Joc interactiv"
+    },
+    "kids": {
+      "title": "Copii 5-8",
+      "subtitle": "Învață și explorează"
+    },
+    "tweens": {
+      "title": "Preadolescenți 8-12",
+      "subtitle": "Timp de aventură"
+    },
+    "rainyDay": {
+      "title": "Zi ploioasă",
+      "subtitle": "Distracție în interior"
+    },
+    "favorites": {
+      "title": "Cele mai bine cotate",
+      "subtitle": "Favoritele familiei"
+    }
+  },
+  "community": {
+    "title": "Alătură-te comunității noastre",
+    "subtitle": "Conectează-te cu părinții din Bay Area, împărtășește locurile tale preferate și primește idei de activități săptămânale.",
+    "submitSpot": "Sugerează un loc",
+    "submitDesc": "Cunoști un loc grozav pentru copii? Spune-ne despre el!",
+    "weekendPlanner": "Planificator de weekend",
+    "plannerDesc": "Generează itinerariul perfect pentru o zi în familie în câteva secunde.",
+    "guides": "Ghiduri pe vârste",
+    "guidesDesc": "Găsește activități potrivite grupei de vârstă a copilului tău."
+  }
+}

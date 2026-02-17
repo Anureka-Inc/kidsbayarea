@@ -31,3 +31,41 @@ html {
 .animate-fade-in {
   animation: fade-in 0.6s ease-out forwards;
 }
+
+/* Print-friendly styles */
+@media print {
+  header,
+  footer,
+  nav[aria-label="Mobile navigation"],
+  .back-to-top,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  a {
+    color: black !important;
+    text-decoration: underline;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  .dark {
+    background: white !important;
+    color: black !important;
+  }
+}
