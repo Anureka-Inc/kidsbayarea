@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "title": "Kids Bay Area - Family Fun Guide",
+    "description": "Discover the best playgrounds, kid-friendly restaurants, classes, shops, and weekend adventures for families in the San Francisco Bay Area."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "Home",
+    "play": "Play",
+    "eat": "Eat",
+    "learn": "Learn",
+    "shop": "Shop",
+    "explore": "Explore",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "language": "Language",
+    "backToTop": "Back to top",
+    "menu": "Menu",
+    "close": "Close",
+    "viewAll": "View all",
+    "readMore": "Read more",
+    "indoor": "Indoor",
+    "outdoor": "Outdoor",
+    "both": "Indoor & Outdoor",
+    "ages": "Ages {range}",
+    "rating": "{score} stars"
+  },
+  "nav": {
+    "home": "Home",
+    "play": "Play",
+    "eat": "Eat",
+    "learn": "Learn",
+    "shop": "Shop",
+    "explore": "Explore"
+  },
+  "hero": {
+    "title": "Your Family's Guide to the Bay Area",
+    "subtitle": "Discover the best playgrounds, kid-friendly restaurants, classes, shops, and weekend adventures for families in the San Francisco Bay Area.",
+    "cta": "Explore Now",
+    "search_placeholder": "Search playgrounds, restaurants, classes...",
+    "searchPlaceholder": "Search playgrounds, restaurants, classes...",
+    "searchButton": "Search",
+    "quickSearch": "Popular:"
+  },
+  "categories": {
+    "section_title": "Explore by Category",
+    "play": {
+      "title": "Play & Fun",
+      "description": "Playgrounds, theme parks, zoos, museums, and fun activities for kids of all ages.",
+      "cta": "Find Activities"
+    },
+    "eat": {
+      "title": "Eat & Drink",
+      "description": "Kid-friendly restaurants with high chairs, kids menus, play areas, and family dining.",
+      "cta": "Find Restaurants"
+    },
+    "learn": {
+      "title": "Learn & Grow",
+      "description": "STEM camps, art classes, music lessons, Chinese schools, and enrichment programs.",
+      "cta": "Find Classes"
+    },
+    "shop": {
+      "title": "Shop",
+      "description": "Toy stores, bookstores, educational supplies, and kids consignment shops.",
+      "cta": "Find Shops"
+    },
+    "explore": {
+      "title": "Explore & Travel",
+      "description": "Day trips, seasonal events, nature adventures, and family road trips from the Bay Area.",
+      "cta": "Plan a Trip"
+    }
+  },
+  "todaysPick": {
+    "title": "Today's Pick",
+    "random": "Surprise Me",
+    "reroll": "Show another",
+    "viewDetails": "View Details"
+  },
+  "map": {
+    "title": "Explore the Bay Area",
+    "loading": "Loading map...",
+    "all": "All",
+    "play": "Play",
+    "eat": "Eat",
+    "learn": "Learn",
+    "shop": "Shop",
+    "explore": "Explore",
+    "viewDetails": "View details"
+  },
+  "placeFilters": {
+    "all": "All",
+    "allAreas": "All Areas",
+    "allAges": "All Ages",
+    "indoor": "Indoor",
+    "outdoor": "Outdoor",
+    "both": "Indoor/Outdoor",
+    "free": "Free",
+    "showing": "Showing {count} of {total} places",
+    "noResults": "No places match your filters",
+    "noResultsHint": "Try adjusting your filters to see more results.",
+    "sortRating": "Top Rated",
+    "sortName": "Name A-Z"
+  },
+  "placeDetail": {
+    "backToList": "Back",
+    "about": "About This Place",
+    "location": "Location",
+    "getDirections": "Get Directions",
+    "info": "Info",
+    "parking": "Parking",
+    "tips": "Tips",
+    "bestTime": "Best Time",
+    "website": "Official Website",
+    "ageRange": "Age Range",
+    "strollerFriendly": "Stroller Friendly",
+    "changingStation": "Changing Station",
+    "diningOnSite": "Dining On Site",
+    "needsReservation": "Reservation Needed",
+    "yes": "Yes",
+    "no": "No",
+    "home": "Home"
+  },
+  "mobileNav": {
+    "home": "Home",
+    "play": "Play",
+    "eat": "Eat",
+    "learn": "Learn",
+    "more": "More"
+  },
+  "play": {
+    "title": "Playgrounds & Activities",
+    "subtitle": "The best playgrounds, museums, parks, water parks, and activities for kids in the Bay Area."
+  },
+  "eat": {
+    "title": "Kid-Friendly Restaurants",
+    "subtitle": "Family-friendly restaurants with high chairs, kids menus, play areas, and healthy options."
+  },
+  "learn": {
+    "title": "Classes & Education",
+    "subtitle": "STEM camps, art classes, music lessons, Chinese schools, coding programs, and enrichment activities."
+  },
+  "shop": {
+    "title": "Family Shopping",
+    "subtitle": "Toy stores, bookstores, educational supplies, kids clothing, and consignment shops."
+  },
+  "explore": {
+    "title": "Day Trips & Adventures",
+    "subtitle": "Weekend getaways, seasonal events, nature hikes, and family road trips from the Bay Area."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have a suggestion or question? We'd love to hear from you!",
+    "description": "Have a suggestion for a great kid-friendly spot? Want to partner with us? Send us a message!",
+    "name": "Your Name",
+    "namePlaceholder": "Enter your name",
+    "email": "Your Email",
+    "emailPlaceholder": "you@example.com",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about a great place for kids...",
+    "send": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again.",
+    "required": "This field is required"
+  },
+  "NotFound": {
+    "title": "Oops! This page wandered off!",
+    "description": "The page you're looking for doesn't exist. Let's get back to exploring!",
+    "goHome": "Back to Home",
+    "explorePlay": "Find Activities",
+    "backHome": "Back to Home"
+  },
+  "notFound": {
+    "title": "Oops! This page wandered off!",
+    "description": "The page you're looking for doesn't exist. Let's get back to exploring!",
+    "goHome": "Back to Home",
+    "explorePlay": "Find Activities"
+  },
+  "Footer": {
+    "tagline": "Helping Bay Area families discover fun together.",
+    "copyright": "Kids Bay Area. All rights reserved.",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "description": "Your ultimate guide for family activities in the Bay Area."
+  },
+  "footer": {
+    "tagline": "Helping Bay Area families discover fun together.",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "copyright": "Kids Bay Area. All rights reserved."
+  },
+  "seasonal": {
+    "spring_title": "Spring Fun!",
+    "spring_tip": "Cherry blossoms are blooming! Visit Japanese Tea Garden, explore botanical gardens, and enjoy family hikes. Don't miss Easter egg hunts and spring festivals.",
+    "spring": "Spring is here! Perfect time for outdoor playgrounds, botanical gardens, and picnics in the park.",
+    "summer_title": "Summer Adventures",
+    "summer_tip": "Water parks, beach trips, and outdoor camps are in full swing. Apply sunscreen, stay hydrated, and explore Bay Area's best summer activities!",
+    "summer": "Summer fun! Head to water parks, beaches, and outdoor festivals across the Bay Area.",
+    "fall_title": "Fall Activities",
+    "fall_tip": "Pumpkin patches, apple picking, and harvest festivals! Perfect weather for family hikes and outdoor fun. Check out Half Moon Bay pumpkins!",
+    "fall": "Fall adventures await! Enjoy pumpkin patches, harvest festivals, and cozy museum visits.",
+    "winter_title": "Winter Wonderland",
+    "winter_tip": "Indoor museums, ice skating, holiday light shows, and Tahoe snow play! Great time for indoor activities and cozy family outings.",
+    "winter": "Winter wonderland! Discover indoor play spaces, holiday events, and rainy-day museums.",
+    "explore": "Find Activities",
+    "cta": "Explore activities"
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Search places, activities...",
+    "hint": "Type at least 2 characters to search",
+    "noResults": "No results found.",
+    "escHint": "Press Esc to close",
+    "results": "{count} results found",
+    "close": "Close"
+  }
+}

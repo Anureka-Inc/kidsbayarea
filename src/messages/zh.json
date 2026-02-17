@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "title": "湾区遛娃指南 - Kids Bay Area",
+    "description": "发现湾区最棒的游乐场、亲子餐厅、兴趣班、购物和周末好去处，旧金山湾区家庭亲子活动全指南。"
+  },
+  "Common": {
+    "brandName": "湾区遛娃",
+    "home": "首页",
+    "play": "玩",
+    "eat": "吃",
+    "learn": "学",
+    "shop": "逛",
+    "explore": "行",
+    "darkMode": "深色模式",
+    "lightMode": "浅色模式",
+    "language": "语言",
+    "backToTop": "回到顶部",
+    "menu": "菜单",
+    "close": "关闭",
+    "viewAll": "查看全部",
+    "readMore": "了解更多",
+    "indoor": "室内",
+    "outdoor": "户外",
+    "both": "室内外均可",
+    "ages": "适合{range}岁",
+    "rating": "{score}星"
+  },
+  "nav": {
+    "home": "首页",
+    "play": "玩",
+    "eat": "吃",
+    "learn": "学",
+    "shop": "逛",
+    "explore": "行"
+  },
+  "hero": {
+    "title": "湾区亲子活动指南",
+    "subtitle": "发现湾区最棒的游乐场、亲子餐厅、兴趣班和周末好去处，一站式解决遛娃难题。",
+    "cta": "开始探索",
+    "search_placeholder": "搜索游乐场、餐厅、兴趣班...",
+    "searchPlaceholder": "搜索游乐场、餐厅、兴趣班...",
+    "searchButton": "搜索",
+    "quickSearch": "热门搜索："
+  },
+  "categories": {
+    "section_title": "按类别探索",
+    "play": {
+      "title": "玩乐天地",
+      "description": "游乐场、主题公园、动物园、博物馆，各年龄段孩子的欢乐活动。",
+      "cta": "发现好玩的"
+    },
+    "eat": {
+      "title": "亲子美食",
+      "description": "亲子友好餐厅，有儿童椅、儿童菜单、游玩区和家庭聚餐好去处。",
+      "cta": "找好吃的"
+    },
+    "learn": {
+      "title": "成长学堂",
+      "description": "STEM夏令营、艺术课、音乐课、中文学校和各类兴趣班。",
+      "cta": "找兴趣班"
+    },
+    "shop": {
+      "title": "亲子购物",
+      "description": "玩具店、书店、教育用品和儿童二手寄卖店。",
+      "cta": "去逛逛"
+    },
+    "explore": {
+      "title": "周末出行",
+      "description": "一日游、季节性活动、自然探险和湾区家庭短途旅行。",
+      "cta": "规划出行"
+    }
+  },
+  "todaysPick": {
+    "title": "今日推荐",
+    "random": "换一个",
+    "reroll": "换一个",
+    "viewDetails": "查看详情"
+  },
+  "map": {
+    "title": "探索湾区",
+    "loading": "加载地图中...",
+    "all": "全部",
+    "play": "玩",
+    "eat": "吃",
+    "learn": "学",
+    "shop": "逛",
+    "explore": "行",
+    "viewDetails": "查看详情"
+  },
+  "placeFilters": {
+    "all": "全部",
+    "allAreas": "所有区域",
+    "allAges": "所有年龄",
+    "indoor": "室内",
+    "outdoor": "户外",
+    "both": "室内外均可",
+    "free": "免费",
+    "showing": "显示 {count} / {total} 个地点",
+    "noResults": "没有符合筛选条件的地点",
+    "noResultsHint": "试试调整筛选条件看看更多结果。",
+    "sortRating": "评分最高",
+    "sortName": "按名称排序"
+  },
+  "placeDetail": {
+    "backToList": "返回",
+    "about": "关于这个地方",
+    "location": "位置",
+    "getDirections": "导航前往",
+    "info": "基本信息",
+    "parking": "停车",
+    "tips": "小贴士",
+    "bestTime": "最佳时间",
+    "website": "官方网站",
+    "ageRange": "适合年龄",
+    "strollerFriendly": "婴儿车友好",
+    "changingStation": "母婴室",
+    "diningOnSite": "现场餐饮",
+    "needsReservation": "需要预约",
+    "yes": "是",
+    "no": "否",
+    "home": "首页"
+  },
+  "mobileNav": {
+    "home": "首页",
+    "play": "玩",
+    "eat": "吃",
+    "learn": "学",
+    "more": "更多"
+  },
+  "play": {
+    "title": "游乐场和亲子活动",
+    "subtitle": "湾区最棒的游乐场、博物馆、公园、水上乐园和亲子活动。"
+  },
+  "eat": {
+    "title": "亲子友好餐厅",
+    "subtitle": "有儿童椅、儿童菜单、游玩区和健康选择的家庭友好餐厅。"
+  },
+  "learn": {
+    "title": "兴趣班和教育",
+    "subtitle": "STEM夏令营、艺术课、音乐课、中文学校、编程课和各类兴趣班。"
+  },
+  "shop": {
+    "title": "亲子购物",
+    "subtitle": "玩具店、书店、教育用品、童装和儿童寄卖店。"
+  },
+  "explore": {
+    "title": "周末出行和探险",
+    "subtitle": "周末出游、季节性活动、自然徒步和湾区家庭短途旅行。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "有好地方想推荐？有问题想咨询？欢迎联系我们！",
+    "description": "想推荐一个适合遛娃的好去处？想跟我们合作？给我们留言吧！",
+    "name": "您的姓名",
+    "namePlaceholder": "请输入您的姓名",
+    "email": "您的邮箱",
+    "emailPlaceholder": "you@example.com",
+    "message": "留言内容",
+    "messagePlaceholder": "告诉我们一个适合遛娃的好地方...",
+    "send": "发送消息",
+    "success": "消息发送成功！",
+    "error": "发送失败，请重试。",
+    "required": "此项为必填"
+  },
+  "NotFound": {
+    "title": "哎呀！这个页面走丢了！",
+    "description": "你要找的页面不存在。让我们回去继续探索吧！",
+    "goHome": "回到首页",
+    "explorePlay": "发现好玩的",
+    "backHome": "回到首页"
+  },
+  "notFound": {
+    "title": "哎呀！这个页面走丢了！",
+    "description": "你要找的页面不存在。让我们回去继续探索吧！",
+    "goHome": "回到首页",
+    "explorePlay": "发现好玩的"
+  },
+  "Footer": {
+    "tagline": "帮助湾区家庭一起发现快乐。",
+    "copyright": "湾区遛娃 Kids Bay Area 版权所有",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "description": "湾区家庭亲子活动终极指南。"
+  },
+  "footer": {
+    "tagline": "帮助湾区家庭一起发现快乐。",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "copyright": "湾区遛娃 Kids Bay Area 版权所有"
+  },
+  "seasonal": {
+    "spring_title": "春日好时光！",
+    "spring_tip": "樱花盛开啦！去日本茶园赏花、逛植物园、全家一起徒步。别错过复活节寻蛋和春季嘉年华。",
+    "spring": "春天来了！最适合去户外游乐场、植物园和公园野餐。",
+    "summer_title": "夏日大冒险",
+    "summer_tip": "水上乐园、海滩之旅和户外夏令营火热进行中。记得涂防晒、多喝水，探索湾区最棒的夏季活动！",
+    "summer": "夏日欢乐！去水上乐园、海滩和湾区各地的户外节日吧。",
+    "fall_title": "秋天的活动",
+    "fall_tip": "南瓜地、摘苹果和丰收节！秋高气爽，最适合全家徒步和户外活动。去半月湾看大南瓜！",
+    "fall": "秋日探险！去南瓜地、丰收节和温馨的博物馆。",
+    "winter_title": "冬日仙境",
+    "winter_tip": "室内博物馆、溜冰场、节日灯展和太浩湖玩雪！最适合室内活动和温馨的家庭出游。",
+    "winter": "冬日仙境！发现室内游乐场、节日活动和雨天好去处。",
+    "explore": "发现好玩的",
+    "cta": "探索活动"
+  },
+  "search": {
+    "title": "搜索",
+    "placeholder": "搜索地点、活动...",
+    "hint": "输入至少2个字符开始搜索",
+    "noResults": "未找到相关结果。",
+    "escHint": "按 Esc 键关闭",
+    "results": "找到 {count} 个结果",
+    "close": "关闭"
+  }
+}
