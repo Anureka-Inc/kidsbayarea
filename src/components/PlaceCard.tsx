@@ -2,6 +2,7 @@ import { Link } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import { Star, MapPin, Clock, DollarSign } from "lucide-react";
 import type { Place } from "@/data/places";
+import FavoriteButton from "./FavoriteButton";
 
 interface PlaceCardProps {
   place: Place;
@@ -26,13 +27,19 @@ export default function PlaceCard({ place }: PlaceCardProps) {
   const desc = locale === "zh" ? place.description.zh : place.description.en;
   const ageLabel = place.ageRange.includes("all") ? "All Ages" : place.ageRange.join(", ");
   return (
-    <Link
-      href={`/${place.category}`}
-      className="group block overflow-hidden rounded-xl border border-gray-100 bg-white transition-all duration-300 hover:border-teal-200 hover:shadow-md dark:border-gray-700 dark:bg-gray-800 dark:hover:border-teal-600"
-    >
+    <div className="group relative overflow-hidden rounded-xl border border-gray-100 bg-white transition-all duration-300 hover:border-teal-200 hover:shadow-md dark:border-gray-700 dark:bg-gray-800 dark:hover:border-teal-600">
+      {/* Favorite button - top right */}
+      <div className="absolute top-3 right-3 z-10">
+        <FavoriteButton slug={place.slug} />
+      </div>
+
+      <Link
+        href={`/${place.category}/${place.slug}`}
+        className="block"
+      >
       <div className="p-5">
         {/* Header: name + category badge */}
-        <div className="mb-3 flex items-start justify-between gap-2">
+        <div className="mb-3 flex items-start justify-between gap-2 pr-7">
           <h3 className="line-clamp-1 text-base font-semibold text-gray-900 transition-colors group-hover:text-teal-600 dark:text-white dark:group-hover:text-teal-400">
             {place.name}
           </h3>
@@ -89,6 +96,7 @@ export default function PlaceCard({ place }: PlaceCardProps) {
           </div>
         )}
       </div>
-    </Link>
+      </Link>
+    </div>
   );
 }

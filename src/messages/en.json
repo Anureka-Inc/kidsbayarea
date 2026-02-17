@@ -112,13 +112,22 @@
     "bestTime": "Best Time",
     "website": "Official Website",
     "ageRange": "Age Range",
+    "indoorOutdoor": "Venue Type",
+    "priceLevel": "Price Level",
     "strollerFriendly": "Stroller Friendly",
     "changingStation": "Changing Station",
     "diningOnSite": "Dining On Site",
     "needsReservation": "Reservation Needed",
     "yes": "Yes",
     "no": "No",
-    "home": "Home"
+    "home": "Home",
+    "similarPlaces": "Similar Places",
+    "share": "Share",
+    "copyLink": "Copy Link",
+    "linkCopied": "Link copied!",
+    "tags": "Tags",
+    "notFound": "Place not found",
+    "notFoundDesc": "The place you are looking for does not exist."
   },
   "mobileNav": {
     "home": "Home",
@@ -216,5 +225,23 @@
     "escHint": "Press Esc to close",
     "results": "{count} results found",
     "close": "Close"
+  },
+  "newsletter": {
+    "title": "Stay in the Loop",
+    "subtitle": "Get weekly picks of the best family activities, hidden gems, and seasonal events in the Bay Area.",
+    "placeholder": "Your email",
+    "subscribe": "Subscribe",
+    "success": "Thanks for subscribing!"
+  },
+  "share": {
+    "linkCopied": "Link copied!"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "play": "Play",
+    "eat": "Eat",
+    "learn": "Learn",
+    "shop": "Shop",
+    "explore": "Explore"
   }
 }

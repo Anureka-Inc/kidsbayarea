@@ -81,7 +81,7 @@ export default function TodaysPick() {
 
               {/* CTA */}
               <Link
-                href={`/${place.category}`}
+                href={`/${place.category}/${place.slug}`}
                 className="mt-4 inline-flex items-center gap-2 rounded-lg bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600"
               >
                 {t("viewDetails")}

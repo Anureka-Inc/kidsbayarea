@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "title": "Kids Bay Area - Guide familial",
+    "description": "Découvrez les meilleurs terrains de jeux, restaurants adaptés aux enfants, cours, boutiques et aventures de week-end pour les familles dans la région de la baie de San Francisco."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "Accueil",
+    "play": "Jouer",
+    "eat": "Manger",
+    "learn": "Apprendre",
+    "shop": "Boutiques",
+    "explore": "Explorer",
+    "darkMode": "Mode sombre",
+    "lightMode": "Mode clair",
+    "language": "Langue",
+    "backToTop": "Retour en haut",
+    "menu": "Menu",
+    "close": "Fermer",
+    "viewAll": "Tout voir",
+    "readMore": "En savoir plus",
+    "indoor": "Intérieur",
+    "outdoor": "Extérieur",
+    "both": "Intérieur et extérieur",
+    "ages": "Âges {range}",
+    "rating": "{score} étoiles"
+  },
+  "nav": {
+    "home": "Accueil",
+    "play": "Jouer",
+    "eat": "Manger",
+    "learn": "Apprendre",
+    "shop": "Boutiques",
+    "explore": "Explorer"
+  },
+  "hero": {
+    "title": "Le guide familial de la Bay Area",
+    "subtitle": "Découvrez les meilleurs terrains de jeux, restaurants adaptés aux enfants, cours, boutiques et aventures de week-end pour les familles dans la région de la baie de San Francisco.",
+    "cta": "Explorer maintenant",
+    "search_placeholder": "Rechercher terrains de jeux, restaurants, cours...",
+    "searchPlaceholder": "Rechercher terrains de jeux, restaurants, cours...",
+    "searchButton": "Rechercher",
+    "quickSearch": "Populaire :"
+  },
+  "categories": {
+    "section_title": "Explorer par catégorie",
+    "play": {
+      "title": "Jeux et divertissements",
+      "description": "Terrains de jeux, parcs d'attractions, zoos, musées et activités ludiques pour enfants de tous âges.",
+      "cta": "Trouver des activités"
+    },
+    "eat": {
+      "title": "Manger et boire",
+      "description": "Restaurants adaptés aux enfants avec chaises hautes, menus enfants, aires de jeux et repas en famille.",
+      "cta": "Trouver des restaurants"
+    },
+    "learn": {
+      "title": "Apprendre et grandir",
+      "description": "Camps STEM, cours d'art, leçons de musique, écoles chinoises et programmes d'enrichissement.",
+      "cta": "Trouver des cours"
+    },
+    "shop": {
+      "title": "Boutiques",
+      "description": "Magasins de jouets, librairies, fournitures éducatives et dépôts-ventes pour enfants.",
+      "cta": "Trouver des boutiques"
+    },
+    "explore": {
+      "title": "Explorer et voyager",
+      "description": "Excursions à la journée, événements saisonniers, aventures nature et road trips familiaux au départ de la Bay Area.",
+      "cta": "Planifier une sortie"
+    }
+  },
+  "todaysPick": {
+    "title": "La sélection du jour",
+    "random": "Surprenez-moi",
+    "reroll": "Voir un autre",
+    "viewDetails": "Voir les détails"
+  },
+  "map": {
+    "title": "Explorer la Bay Area",
+    "loading": "Chargement de la carte...",
+    "all": "Tout",
+    "play": "Jouer",
+    "eat": "Manger",
+    "learn": "Apprendre",
+    "shop": "Boutiques",
+    "explore": "Explorer",
+    "viewDetails": "Voir les détails"
+  },
+  "placeFilters": {
+    "all": "Tout",
+    "allAreas": "Toutes les zones",
+    "allAges": "Tous les âges",
+    "indoor": "Intérieur",
+    "outdoor": "Extérieur",
+    "both": "Intérieur/Extérieur",
+    "free": "Gratuit",
+    "showing": "Affichage de {count} sur {total} lieux",
+    "noResults": "Aucun lieu ne correspond à vos filtres",
+    "noResultsHint": "Essayez de modifier vos filtres pour voir plus de résultats.",
+    "sortRating": "Mieux notés",
+    "sortName": "Nom A-Z"
+  },
+  "placeDetail": {
+    "backToList": "Retour",
+    "about": "À propos de ce lieu",
+    "location": "Emplacement",
+    "getDirections": "Itinéraire",
+    "info": "Infos",
+    "parking": "Stationnement",
+    "tips": "Conseils",
+    "bestTime": "Meilleur moment",
+    "website": "Site officiel",
+    "ageRange": "Tranche d'âge",
+    "indoorOutdoor": "Type de lieu",
+    "priceLevel": "Niveau de prix",
+    "strollerFriendly": "Accessible en poussette",
+    "changingStation": "Table à langer",
+    "diningOnSite": "Restauration sur place",
+    "needsReservation": "Réservation nécessaire",
+    "yes": "Oui",
+    "no": "Non",
+    "home": "Accueil",
+    "similarPlaces": "Lieux similaires",
+    "share": "Partager",
+    "copyLink": "Copier le lien",
+    "linkCopied": "Lien copié !",
+    "tags": "Tags",
+    "notFound": "Lieu introuvable",
+    "notFoundDesc": "Le lieu que vous recherchez n'existe pas."
+  },
+  "mobileNav": {
+    "home": "Accueil",
+    "play": "Jouer",
+    "eat": "Manger",
+    "learn": "Apprendre",
+    "more": "Plus"
+  },
+  "play": {
+    "title": "Terrains de jeux et activités",
+    "subtitle": "Les meilleurs terrains de jeux, musées, parcs, parcs aquatiques et activités pour enfants dans la Bay Area."
+  },
+  "eat": {
+    "title": "Restaurants adaptés aux enfants",
+    "subtitle": "Restaurants familiaux avec chaises hautes, menus enfants, aires de jeux et options saines."
+  },
+  "learn": {
+    "title": "Cours et éducation",
+    "subtitle": "Camps STEM, cours d'art, leçons de musique, écoles chinoises, programmes de codage et activités d'enrichissement."
+  },
+  "shop": {
+    "title": "Shopping en famille",
+    "subtitle": "Magasins de jouets, librairies, fournitures éducatives, vêtements pour enfants et dépôts-ventes."
+  },
+  "explore": {
+    "title": "Excursions et aventures",
+    "subtitle": "Escapades de week-end, événements saisonniers, randonnées nature et road trips familiaux au départ de la Bay Area."
+  },
+  "contact": {
+    "title": "Nous contacter",
+    "subtitle": "Vous avez une suggestion ou une question ? Nous serions ravis de vous entendre !",
+    "description": "Vous connaissez un super endroit pour les enfants ? Vous souhaitez collaborer avec nous ? Envoyez-nous un message !",
+    "name": "Votre nom",
+    "namePlaceholder": "Entrez votre nom",
+    "email": "Votre e-mail",
+    "emailPlaceholder": "vous@exemple.com",
+    "message": "Message",
+    "messagePlaceholder": "Parlez-nous d'un super endroit pour les enfants...",
+    "send": "Envoyer le message",
+    "success": "Message envoyé avec succès !",
+    "error": "Échec de l'envoi du message. Veuillez réessayer.",
+    "required": "Ce champ est obligatoire"
+  },
+  "NotFound": {
+    "title": "Oups ! Cette page s'est égarée !",
+    "description": "La page que vous recherchez n'existe pas. Reprenons l'exploration !",
+    "goHome": "Retour à l'accueil",
+    "explorePlay": "Trouver des activités",
+    "backHome": "Retour à l'accueil"
+  },
+  "notFound": {
+    "title": "Oups ! Cette page s'est égarée !",
+    "description": "La page que vous recherchez n'existe pas. Reprenons l'exploration !",
+    "goHome": "Retour à l'accueil",
+    "explorePlay": "Trouver des activités"
+  },
+  "Footer": {
+    "tagline": "Aider les familles de la Bay Area à s'amuser ensemble.",
+    "copyright": "Kids Bay Area. Tous droits réservés.",
+    "about": "À propos",
+    "contact": "Contact",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "description": "Votre guide ultime pour les activités familiales dans la Bay Area."
+  },
+  "footer": {
+    "tagline": "Aider les familles de la Bay Area à s'amuser ensemble.",
+    "about": "À propos",
+    "contact": "Contact",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "copyright": "Kids Bay Area. Tous droits réservés."
+  },
+  "seasonal": {
+    "spring_title": "Vive le printemps !",
+    "spring_tip": "Les cerisiers sont en fleurs ! Visitez le Japanese Tea Garden, explorez les jardins botaniques et profitez de randonnées en famille. Ne manquez pas les chasses aux œufs de Pâques et les festivals de printemps.",
+    "spring": "Le printemps est là ! Parfait pour les terrains de jeux extérieurs, les jardins botaniques et les pique-niques au parc.",
+    "summer_title": "Aventures d'été",
+    "summer_tip": "Parcs aquatiques, sorties à la plage et camps de plein air battent leur plein. Mettez de la crème solaire, restez hydratés et découvrez les meilleures activités d'été de la Bay Area !",
+    "summer": "L'été est là ! Direction les parcs aquatiques, les plages et les festivals en plein air de la Bay Area.",
+    "fall_title": "Activités d'automne",
+    "fall_tip": "Champs de citrouilles, cueillette de pommes et fêtes des récoltes ! Un temps idéal pour les randonnées familiales et le plein air. Découvrez les citrouilles de Half Moon Bay !",
+    "fall": "L'automne vous attend ! Profitez des champs de citrouilles, des fêtes des récoltes et des visites de musées au chaud.",
+    "winter_title": "Féerie hivernale",
+    "winter_tip": "Musées en intérieur, patinage sur glace, spectacles de lumières des fêtes et jeux de neige à Tahoe ! Idéal pour les activités intérieures et les sorties familiales cosy.",
+    "winter": "Féerie hivernale ! Découvrez les espaces de jeux intérieurs, les événements des fêtes et les musées pour les jours de pluie.",
+    "explore": "Trouver des activités",
+    "cta": "Explorer les activités"
+  },
+  "search": {
+    "title": "Recherche",
+    "placeholder": "Rechercher des lieux, activités...",
+    "hint": "Tapez au moins 2 caractères pour rechercher",
+    "noResults": "Aucun résultat trouvé.",
+    "escHint": "Appuyez sur Échap pour fermer",
+    "results": "{count} résultats trouvés",
+    "close": "Fermer"
+  },
+  "newsletter": {
+    "title": "Restez informé",
+    "subtitle": "Recevez chaque semaine notre sélection des meilleures activités familiales, pépites cachées et événements saisonniers de la Bay Area.",
+    "placeholder": "Votre e-mail",
+    "subscribe": "S'abonner",
+    "success": "Merci de votre inscription !"
+  },
+  "share": {
+    "linkCopied": "Lien copié !"
+  },
+  "breadcrumbs": {
+    "home": "Accueil",
+    "play": "Jouer",
+    "eat": "Manger",
+    "learn": "Apprendre",
+    "shop": "Boutiques",
+    "explore": "Explorer"
+  }
+}

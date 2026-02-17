@@ -6,6 +6,7 @@ import CategoryCard from "@/components/CategoryCard";
 import BayAreaMap from "@/components/BayAreaMap";
 import TodaysPick from "@/components/TodaysPick";
 import SeasonalBanner from "@/components/SeasonalBanner";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import FadeIn from "@/components/FadeIn";
 
 const categories = [
@@ -48,6 +49,10 @@ function HomeContent() {
             ))}
           </div>
         </section>
+      </FadeIn>
+
+      <FadeIn>
+        <NewsletterSignup />
       </FadeIn>
 
       <FadeIn>

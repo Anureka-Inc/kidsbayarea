@@ -112,13 +112,22 @@
     "bestTime": "最佳时间",
     "website": "官方网站",
     "ageRange": "适合年龄",
+    "indoorOutdoor": "场地类型",
+    "priceLevel": "价格",
     "strollerFriendly": "婴儿车友好",
     "changingStation": "母婴室",
     "diningOnSite": "现场餐饮",
     "needsReservation": "需要预约",
     "yes": "是",
     "no": "否",
-    "home": "首页"
+    "home": "首页",
+    "similarPlaces": "类似推荐",
+    "share": "分享",
+    "copyLink": "复制链接",
+    "linkCopied": "链接已复制！",
+    "tags": "标签",
+    "notFound": "未找到该地点",
+    "notFoundDesc": "您要查看的地点不存在。"
   },
   "mobileNav": {
     "home": "首页",
@@ -216,5 +225,23 @@
     "escHint": "按 Esc 键关闭",
     "results": "找到 {count} 个结果",
     "close": "关闭"
+  },
+  "newsletter": {
+    "title": "订阅周刊",
+    "subtitle": "每周精选湾区亲子好去处、隐藏宝藏和季节性活动，直达你的邮箱。",
+    "placeholder": "输入邮箱",
+    "subscribe": "订阅",
+    "success": "感谢订阅！"
+  },
+  "share": {
+    "linkCopied": "链接已复制！"
+  },
+  "breadcrumbs": {
+    "home": "首页",
+    "play": "玩",
+    "eat": "吃",
+    "learn": "学",
+    "shop": "逛",
+    "explore": "行"
   }
 }

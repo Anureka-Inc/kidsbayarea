@@ -1782,6 +1782,17 @@ export function getPlacesByCategory(category: Category): Place[] {
   return places.filter((p) => p.category === category);
 }
 
+export function getPlaceBySlug(category: string, slug: string): Place | undefined {
+  return places.find((p) => p.category === category && p.slug === slug);
+}
+
+export function getSimilarPlaces(place: Place, limit = 4): Place[] {
+  return places
+    .filter((p) => p.category === place.category && p.slug !== place.slug)
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, limit);
+}
+
 export function searchPlaces(query: string): Place[] {
   const q = query.toLowerCase();
   return places.filter(

@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "title": "Kids Bay Area - ベイエリア家族アクティビティガイド",
+    "description": "サンフランシスコ・ベイエリアの最高の遊び場、子連れレストラン、教室、ショップ、週末の冒険を見つけよう。"
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "ホーム",
+    "play": "遊ぶ",
+    "eat": "食べる",
+    "learn": "学ぶ",
+    "shop": "買う",
+    "explore": "探検",
+    "darkMode": "ダークモード",
+    "lightMode": "ライトモード",
+    "language": "言語",
+    "backToTop": "トップに戻る",
+    "menu": "メニュー",
+    "close": "閉じる",
+    "viewAll": "すべて見る",
+    "readMore": "もっと読む",
+    "indoor": "屋内",
+    "outdoor": "屋外",
+    "both": "屋内・屋外",
+    "ages": "対象年齢 {range}",
+    "rating": "{score}つ星"
+  },
+  "nav": {
+    "home": "ホーム",
+    "play": "遊ぶ",
+    "eat": "食べる",
+    "learn": "学ぶ",
+    "shop": "買う",
+    "explore": "探検"
+  },
+  "hero": {
+    "title": "ベイエリアのファミリーガイド",
+    "subtitle": "サンフランシスコ・ベイエリアの最高の遊び場、子連れレストラン、教室、ショップ、週末の冒険を見つけよう。",
+    "cta": "今すぐ探す",
+    "search_placeholder": "遊び場、レストラン、教室を検索...",
+    "searchPlaceholder": "遊び場、レストラン、教室を検索...",
+    "searchButton": "検索",
+    "quickSearch": "人気："
+  },
+  "categories": {
+    "section_title": "カテゴリーで探す",
+    "play": {
+      "title": "遊び＆アクティビティ",
+      "description": "遊び場、テーマパーク、動物園、博物館、すべての年齢の子どもが楽しめるアクティビティ。",
+      "cta": "アクティビティを探す"
+    },
+    "eat": {
+      "title": "子連れグルメ",
+      "description": "ハイチェア、キッズメニュー、プレイエリア、家族のお食事に最適なレストラン。",
+      "cta": "レストランを探す"
+    },
+    "learn": {
+      "title": "学び＆成長",
+      "description": "STEMキャンプ、アート教室、音楽レッスン、中国語学校、各種教育プログラム。",
+      "cta": "教室を探す"
+    },
+    "shop": {
+      "title": "ショッピング",
+      "description": "おもちゃ屋、書店、教育用品、キッズ向けリサイクルショップ。",
+      "cta": "ショップを探す"
+    },
+    "explore": {
+      "title": "探検＆旅行",
+      "description": "日帰り旅行、季節のイベント、自然冒険、ベイエリアからの家族旅行。",
+      "cta": "旅を計画する"
+    }
+  },
+  "todaysPick": {
+    "title": "今日のおすすめ",
+    "random": "もう一つ",
+    "reroll": "次を見る",
+    "viewDetails": "詳細を見る"
+  },
+  "map": {
+    "title": "ベイエリアを探索",
+    "loading": "地図を読み込み中...",
+    "all": "すべて",
+    "play": "遊ぶ",
+    "eat": "食べる",
+    "learn": "学ぶ",
+    "shop": "買う",
+    "explore": "探検",
+    "viewDetails": "詳細を見る"
+  },
+  "placeFilters": {
+    "all": "すべて",
+    "allAreas": "全エリア",
+    "allAges": "全年齢",
+    "indoor": "屋内",
+    "outdoor": "屋外",
+    "both": "屋内/屋外",
+    "free": "無料",
+    "showing": "{total}件中 {count}件を表示",
+    "noResults": "フィルター条件に一致する場所がありません",
+    "noResultsHint": "フィルターを調整してみてください。",
+    "sortRating": "評価順",
+    "sortName": "名前順"
+  },
+  "placeDetail": {
+    "backToList": "戻る",
+    "about": "この場所について",
+    "location": "所在地",
+    "getDirections": "ナビを開始",
+    "info": "基本情報",
+    "parking": "駐車場",
+    "tips": "ヒント",
+    "bestTime": "おすすめの時間帯",
+    "website": "公式サイト",
+    "ageRange": "対象年齢",
+    "indoorOutdoor": "施設タイプ",
+    "priceLevel": "料金",
+    "strollerFriendly": "ベビーカーOK",
+    "changingStation": "おむつ交換台",
+    "diningOnSite": "飲食施設",
+    "needsReservation": "予約が必要",
+    "yes": "はい",
+    "no": "いいえ",
+    "home": "ホーム",
+    "similarPlaces": "似たスポット",
+    "share": "シェア",
+    "copyLink": "リンクをコピー",
+    "linkCopied": "リンクがコピーされました！",
+    "tags": "タグ",
+    "notFound": "スポットが見つかりません",
+    "notFoundDesc": "お探しのスポットは存在しません。"
+  },
+  "mobileNav": {
+    "home": "ホーム",
+    "play": "遊ぶ",
+    "eat": "食べる",
+    "learn": "学ぶ",
+    "more": "もっと"
+  },
+  "play": {
+    "title": "遊び場＆アクティビティ",
+    "subtitle": "ベイエリアの最高の遊び場、博物館、公園、ウォーターパーク、子どもアクティビティ。"
+  },
+  "eat": {
+    "title": "子連れレストラン",
+    "subtitle": "ハイチェア、キッズメニュー、プレイエリア、ヘルシーメニューのある家族向けレストラン。"
+  },
+  "learn": {
+    "title": "教室＆教育",
+    "subtitle": "STEMキャンプ、アート教室、音楽レッスン、中国語学校、プログラミング教室、各種教育プログラム。"
+  },
+  "shop": {
+    "title": "ファミリーショッピング",
+    "subtitle": "おもちゃ屋、書店、教育用品、子ども服、リサイクルショップ。"
+  },
+  "explore": {
+    "title": "日帰り旅行＆冒険",
+    "subtitle": "週末のお出かけ、季節のイベント、自然ハイキング、ベイエリアからのファミリー旅行。"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "おすすめの場所やご質問がありますか？お気軽にどうぞ！",
+    "description": "子連れにぴったりのスポットをご存知ですか？コラボレーションしませんか？メッセージをお送りください！",
+    "name": "お名前",
+    "namePlaceholder": "お名前を入力してください",
+    "email": "メールアドレス",
+    "emailPlaceholder": "you@example.com",
+    "message": "メッセージ",
+    "messagePlaceholder": "子どもに最適な場所を教えてください...",
+    "send": "メッセージを送信",
+    "success": "メッセージが送信されました！",
+    "error": "送信に失敗しました。もう一度お試しください。",
+    "required": "この項目は必須です"
+  },
+  "NotFound": {
+    "title": "おっと！ページが迷子です！",
+    "description": "お探しのページは存在しません。探検に戻りましょう！",
+    "goHome": "ホームに戻る",
+    "explorePlay": "アクティビティを探す",
+    "backHome": "ホームに戻る"
+  },
+  "notFound": {
+    "title": "おっと！ページが迷子です！",
+    "description": "お探しのページは存在しません。探検に戻りましょう！",
+    "goHome": "ホームに戻る",
+    "explorePlay": "アクティビティを探す"
+  },
+  "Footer": {
+    "tagline": "ベイエリアの家族が一緒に楽しみを見つけるお手伝い。",
+    "copyright": "Kids Bay Area. All rights reserved.",
+    "about": "概要",
+    "contact": "お問い合わせ",
+    "privacy": "プライバシー",
+    "terms": "利用規約",
+    "description": "ベイエリアの家族アクティビティ究極ガイド。"
+  },
+  "footer": {
+    "tagline": "ベイエリアの家族が一緒に楽しみを見つけるお手伝い。",
+    "about": "概要",
+    "contact": "お問い合わせ",
+    "privacy": "プライバシー",
+    "terms": "利用規約",
+    "copyright": "Kids Bay Area. All rights reserved."
+  },
+  "seasonal": {
+    "spring_title": "春のお楽しみ！",
+    "spring_tip": "桜が咲いています！日本庭園を訪れ、植物園を散策し、家族でハイキングを楽しみましょう。",
+    "spring": "春が来ました！屋外の遊び場、植物園、公園でのピクニックに最適です。",
+    "summer_title": "夏の冒険",
+    "summer_tip": "ウォーターパーク、ビーチ旅行、アウトドアキャンプが盛りだくさん！日焼け止めを忘れずに。",
+    "summer": "夏の楽しみ！ウォーターパーク、ビーチ、アウトドアフェスティバルへ。",
+    "fall_title": "秋のアクティビティ",
+    "fall_tip": "パンプキンパッチ、りんご狩り、収穫祭！家族ハイキングに最適な天気です。",
+    "fall": "秋の冒険！パンプキンパッチ、収穫祭、博物館巡りを楽しもう。",
+    "winter_title": "冬のワンダーランド",
+    "winter_tip": "室内博物館、アイススケート、ホリデーライトショー、タホでの雪遊び！",
+    "winter": "冬のワンダーランド！室内プレイスペース、ホリデーイベント、博物館を発見。",
+    "explore": "アクティビティを探す",
+    "cta": "アクティビティを探す"
+  },
+  "search": {
+    "title": "検索",
+    "placeholder": "場所、アクティビティを検索...",
+    "hint": "2文字以上入力して検索",
+    "noResults": "結果が見つかりませんでした。",
+    "escHint": "Escキーで閉じる",
+    "results": "{count}件の結果",
+    "close": "閉じる"
+  },
+  "newsletter": {
+    "title": "最新情報を受け取る",
+    "subtitle": "ベイエリアの家族向けアクティビティ、隠れた名所、季節のイベントを毎週お届けします。",
+    "placeholder": "メールアドレス",
+    "subscribe": "登録する",
+    "success": "ご登録ありがとうございます！"
+  },
+  "share": {
+    "linkCopied": "リンクがコピーされました！"
+  },
+  "breadcrumbs": {
+    "home": "ホーム",
+    "play": "遊ぶ",
+    "eat": "食べる",
+    "learn": "学ぶ",
+    "shop": "買う",
+    "explore": "探検"
+  }
+}

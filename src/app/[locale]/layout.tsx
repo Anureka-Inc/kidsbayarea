@@ -9,6 +9,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import MobileNav from "@/components/MobileNav";
+import FavoritesProvider from "@/components/FavoritesProvider";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -87,12 +89,15 @@ export default async function LocaleLayout({
         />
       </head>
       <body className="min-h-screen bg-white text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100">
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-XXXXXXXXXX" />
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
-          <BackToTop />
-          <MobileNav />
+          <FavoritesProvider>
+            <Header />
+            <main className="min-h-screen">{children}</main>
+            <Footer />
+            <BackToTop />
+            <MobileNav />
+          </FavoritesProvider>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "title": "Kids Bay Area - Guía de Actividades Familiares",
+    "description": "Descubre los mejores parques infantiles, restaurantes para familias, clases, tiendas y aventuras de fin de semana en el Área de la Bahía de San Francisco."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "Inicio",
+    "play": "Jugar",
+    "eat": "Comer",
+    "learn": "Aprender",
+    "shop": "Comprar",
+    "explore": "Explorar",
+    "darkMode": "Modo oscuro",
+    "lightMode": "Modo claro",
+    "language": "Idioma",
+    "backToTop": "Volver arriba",
+    "menu": "Menú",
+    "close": "Cerrar",
+    "viewAll": "Ver todo",
+    "readMore": "Leer más",
+    "indoor": "Interior",
+    "outdoor": "Exterior",
+    "both": "Interior y exterior",
+    "ages": "Edades {range}",
+    "rating": "{score} estrellas"
+  },
+  "nav": {
+    "home": "Inicio",
+    "play": "Jugar",
+    "eat": "Comer",
+    "learn": "Aprender",
+    "shop": "Comprar",
+    "explore": "Explorar"
+  },
+  "hero": {
+    "title": "Tu guía familiar del Área de la Bahía",
+    "subtitle": "Descubre los mejores parques infantiles, restaurantes para familias, clases, tiendas y aventuras de fin de semana en el Área de la Bahía de San Francisco.",
+    "cta": "Explorar ahora",
+    "search_placeholder": "Buscar parques, restaurantes, clases...",
+    "searchPlaceholder": "Buscar parques, restaurantes, clases...",
+    "searchButton": "Buscar",
+    "quickSearch": "Popular:"
+  },
+  "categories": {
+    "section_title": "Explorar por categoría",
+    "play": {
+      "title": "Jugar y divertirse",
+      "description": "Parques infantiles, parques temáticos, zoológicos, museos y actividades divertidas para niños de todas las edades.",
+      "cta": "Encontrar actividades"
+    },
+    "eat": {
+      "title": "Comer y beber",
+      "description": "Restaurantes para familias con tronas, menú infantil, áreas de juego y cenas familiares.",
+      "cta": "Encontrar restaurantes"
+    },
+    "learn": {
+      "title": "Aprender y crecer",
+      "description": "Campamentos STEM, clases de arte, lecciones de música, escuelas de chino y programas educativos.",
+      "cta": "Encontrar clases"
+    },
+    "shop": {
+      "title": "Comprar",
+      "description": "Tiendas de juguetes, librerías, material educativo y tiendas de segunda mano para niños.",
+      "cta": "Encontrar tiendas"
+    },
+    "explore": {
+      "title": "Explorar y viajar",
+      "description": "Excursiones de un día, eventos de temporada, aventuras en la naturaleza y viajes familiares desde el Área de la Bahía.",
+      "cta": "Planificar un viaje"
+    }
+  },
+  "todaysPick": {
+    "title": "Recomendación del día",
+    "random": "Sorpréndeme",
+    "reroll": "Mostrar otro",
+    "viewDetails": "Ver detalles"
+  },
+  "map": {
+    "title": "Explorar el Área de la Bahía",
+    "loading": "Cargando mapa...",
+    "all": "Todo",
+    "play": "Jugar",
+    "eat": "Comer",
+    "learn": "Aprender",
+    "shop": "Comprar",
+    "explore": "Explorar",
+    "viewDetails": "Ver detalles"
+  },
+  "placeFilters": {
+    "all": "Todo",
+    "allAreas": "Todas las áreas",
+    "allAges": "Todas las edades",
+    "indoor": "Interior",
+    "outdoor": "Exterior",
+    "both": "Interior/Exterior",
+    "free": "Gratis",
+    "showing": "Mostrando {count} de {total} lugares",
+    "noResults": "No hay lugares que coincidan con tus filtros",
+    "noResultsHint": "Intenta ajustar tus filtros para ver más resultados.",
+    "sortRating": "Mejor valorados",
+    "sortName": "Nombre A-Z"
+  },
+  "placeDetail": {
+    "backToList": "Volver",
+    "about": "Sobre este lugar",
+    "location": "Ubicación",
+    "getDirections": "Cómo llegar",
+    "info": "Información",
+    "parking": "Estacionamiento",
+    "tips": "Consejos",
+    "bestTime": "Mejor horario",
+    "website": "Sitio web oficial",
+    "ageRange": "Rango de edad",
+    "indoorOutdoor": "Tipo de lugar",
+    "priceLevel": "Nivel de precio",
+    "strollerFriendly": "Accesible con cochecito",
+    "changingStation": "Cambiador de pañales",
+    "diningOnSite": "Comida en el lugar",
+    "needsReservation": "Requiere reserva",
+    "yes": "Sí",
+    "no": "No",
+    "home": "Inicio",
+    "similarPlaces": "Lugares similares",
+    "share": "Compartir",
+    "copyLink": "Copiar enlace",
+    "linkCopied": "¡Enlace copiado!",
+    "tags": "Etiquetas",
+    "notFound": "Lugar no encontrado",
+    "notFoundDesc": "El lugar que buscas no existe."
+  },
+  "mobileNav": {
+    "home": "Inicio",
+    "play": "Jugar",
+    "eat": "Comer",
+    "learn": "Aprender",
+    "more": "Más"
+  },
+  "play": {
+    "title": "Parques infantiles y actividades",
+    "subtitle": "Los mejores parques infantiles, museos, parques, parques acuáticos y actividades para niños en el Área de la Bahía."
+  },
+  "eat": {
+    "title": "Restaurantes para familias",
+    "subtitle": "Restaurantes familiares con tronas, menú infantil, áreas de juego y opciones saludables."
+  },
+  "learn": {
+    "title": "Clases y educación",
+    "subtitle": "Campamentos STEM, clases de arte, lecciones de música, escuelas de chino, programas de programación y actividades educativas."
+  },
+  "shop": {
+    "title": "Compras familiares",
+    "subtitle": "Tiendas de juguetes, librerías, material educativo, ropa infantil y tiendas de segunda mano."
+  },
+  "explore": {
+    "title": "Excursiones y aventuras",
+    "subtitle": "Escapadas de fin de semana, eventos de temporada, caminatas por la naturaleza y viajes familiares desde el Área de la Bahía."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "¿Tienes una sugerencia o pregunta? ¡Nos encantaría saber de ti!",
+    "description": "¿Quieres sugerir un lugar genial para familias? ¿Quieres colaborar con nosotros? ¡Envíanos un mensaje!",
+    "name": "Tu nombre",
+    "namePlaceholder": "Ingresa tu nombre",
+    "email": "Tu correo",
+    "emailPlaceholder": "tu@ejemplo.com",
+    "message": "Mensaje",
+    "messagePlaceholder": "Cuéntanos sobre un gran lugar para niños...",
+    "send": "Enviar mensaje",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Error al enviar el mensaje. Intenta de nuevo.",
+    "required": "Este campo es obligatorio"
+  },
+  "NotFound": {
+    "title": "¡Ups! Esta página se perdió",
+    "description": "La página que buscas no existe. ¡Volvamos a explorar!",
+    "goHome": "Volver al inicio",
+    "explorePlay": "Encontrar actividades",
+    "backHome": "Volver al inicio"
+  },
+  "notFound": {
+    "title": "¡Ups! Esta página se perdió",
+    "description": "La página que buscas no existe. ¡Volvamos a explorar!",
+    "goHome": "Volver al inicio",
+    "explorePlay": "Encontrar actividades"
+  },
+  "Footer": {
+    "tagline": "Ayudando a las familias del Área de la Bahía a descubrir la diversión juntos.",
+    "copyright": "Kids Bay Area. Todos los derechos reservados.",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "description": "Tu guía definitiva de actividades familiares en el Área de la Bahía."
+  },
+  "footer": {
+    "tagline": "Ayudando a las familias del Área de la Bahía a descubrir la diversión juntos.",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "copyright": "Kids Bay Area. Todos los derechos reservados."
+  },
+  "seasonal": {
+    "spring_title": "¡Diversión de primavera!",
+    "spring_tip": "¡Los cerezos están floreciendo! Visita el Jardín de Té Japonés, explora jardines botánicos y disfruta de caminatas familiares.",
+    "spring": "¡La primavera está aquí! Perfecto para parques al aire libre, jardines botánicos y picnics.",
+    "summer_title": "Aventuras de verano",
+    "summer_tip": "¡Parques acuáticos, viajes a la playa y campamentos al aire libre! Aplica protector solar y explora las mejores actividades de verano.",
+    "summer": "¡Diversión de verano! Dirígete a parques acuáticos, playas y festivales al aire libre.",
+    "fall_title": "Actividades de otoño",
+    "fall_tip": "¡Campos de calabazas, recolección de manzanas y festivales de cosecha! Clima perfecto para caminatas familiares.",
+    "fall": "¡Aventuras de otoño! Disfruta de campos de calabazas, festivales de cosecha y visitas a museos.",
+    "winter_title": "País de las maravillas invernal",
+    "winter_tip": "¡Museos interiores, patinaje sobre hielo, espectáculos de luces navideñas y nieve en Tahoe!",
+    "winter": "¡País de las maravillas invernal! Descubre espacios de juego interiores, eventos navideños y museos.",
+    "explore": "Encontrar actividades",
+    "cta": "Explorar actividades"
+  },
+  "search": {
+    "title": "Buscar",
+    "placeholder": "Buscar lugares, actividades...",
+    "hint": "Escribe al menos 2 caracteres para buscar",
+    "noResults": "No se encontraron resultados.",
+    "escHint": "Presiona Esc para cerrar",
+    "results": "{count} resultados encontrados",
+    "close": "Cerrar"
+  },
+  "newsletter": {
+    "title": "Mantente informado",
+    "subtitle": "Recibe las mejores actividades familiares, joyas ocultas y eventos de temporada del Área de la Bahía cada semana.",
+    "placeholder": "Tu correo",
+    "subscribe": "Suscribirse",
+    "success": "¡Gracias por suscribirte!"
+  },
+  "share": {
+    "linkCopied": "¡Enlace copiado!"
+  },
+  "breadcrumbs": {
+    "home": "Inicio",
+    "play": "Jugar",
+    "eat": "Comer",
+    "learn": "Aprender",
+    "shop": "Comprar",
+    "explore": "Explorar"
+  }
+}

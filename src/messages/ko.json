@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "title": "Kids Bay Area - 베이에리어 가족 활동 가이드",
+    "description": "샌프란시스코 베이에리어 최고의 놀이터, 어린이 친화 레스토랑, 수업, 쇼핑, 주말 모험을 발견하세요."
+  },
+  "Common": {
+    "brandName": "Kids Bay Area",
+    "home": "홈",
+    "play": "놀기",
+    "eat": "먹기",
+    "learn": "배우기",
+    "shop": "쇼핑",
+    "explore": "탐험",
+    "darkMode": "다크 모드",
+    "lightMode": "라이트 모드",
+    "language": "언어",
+    "backToTop": "맨 위로",
+    "menu": "메뉴",
+    "close": "닫기",
+    "viewAll": "전체 보기",
+    "readMore": "더 보기",
+    "indoor": "실내",
+    "outdoor": "야외",
+    "both": "실내 & 야외",
+    "ages": "연령 {range}",
+    "rating": "별 {score}개"
+  },
+  "nav": {
+    "home": "홈",
+    "play": "놀기",
+    "eat": "먹기",
+    "learn": "배우기",
+    "shop": "쇼핑",
+    "explore": "탐험"
+  },
+  "hero": {
+    "title": "베이에리어 가족 가이드",
+    "subtitle": "샌프란시스코 베이에리어 최고의 놀이터, 어린이 친화 레스토랑, 수업, 쇼핑, 주말 모험을 발견하세요.",
+    "cta": "지금 탐험하기",
+    "search_placeholder": "놀이터, 레스토랑, 수업 검색...",
+    "searchPlaceholder": "놀이터, 레스토랑, 수업 검색...",
+    "searchButton": "검색",
+    "quickSearch": "인기:"
+  },
+  "categories": {
+    "section_title": "카테고리로 탐색",
+    "play": {
+      "title": "놀이 & 즐기기",
+      "description": "놀이터, 테마파크, 동물원, 박물관, 모든 연령대를 위한 재미있는 활동.",
+      "cta": "활동 찾기"
+    },
+    "eat": {
+      "title": "맛집 탐방",
+      "description": "유아 의자, 키즈 메뉴, 놀이 공간이 있는 가족 친화 레스토랑.",
+      "cta": "레스토랑 찾기"
+    },
+    "learn": {
+      "title": "배움 & 성장",
+      "description": "STEM 캠프, 미술 수업, 음악 레슨, 중국어 학교, 교육 프로그램.",
+      "cta": "수업 찾기"
+    },
+    "shop": {
+      "title": "쇼핑",
+      "description": "장난감 가게, 서점, 교육 용품, 아동 중고 매장.",
+      "cta": "매장 찾기"
+    },
+    "explore": {
+      "title": "탐험 & 여행",
+      "description": "당일치기 여행, 시즌 이벤트, 자연 모험, 베이에리어에서의 가족 여행.",
+      "cta": "여행 계획하기"
+    }
+  },
+  "todaysPick": {
+    "title": "오늘의 추천",
+    "random": "다른 곳 보기",
+    "reroll": "다른 곳 보기",
+    "viewDetails": "상세 보기"
+  },
+  "map": {
+    "title": "베이에리어 탐색",
+    "loading": "지도 로딩 중...",
+    "all": "전체",
+    "play": "놀기",
+    "eat": "먹기",
+    "learn": "배우기",
+    "shop": "쇼핑",
+    "explore": "탐험",
+    "viewDetails": "상세 보기"
+  },
+  "placeFilters": {
+    "all": "전체",
+    "allAreas": "모든 지역",
+    "allAges": "모든 연령",
+    "indoor": "실내",
+    "outdoor": "야외",
+    "both": "실내/야외",
+    "free": "무료",
+    "showing": "{total}개 중 {count}개 표시",
+    "noResults": "필터 조건에 맞는 장소가 없습니다",
+    "noResultsHint": "필터를 조정해 보세요.",
+    "sortRating": "평점순",
+    "sortName": "이름순"
+  },
+  "placeDetail": {
+    "backToList": "뒤로",
+    "about": "이 장소에 대해",
+    "location": "위치",
+    "getDirections": "길 찾기",
+    "info": "기본 정보",
+    "parking": "주차",
+    "tips": "팁",
+    "bestTime": "추천 시간대",
+    "website": "공식 웹사이트",
+    "ageRange": "연령대",
+    "indoorOutdoor": "시설 유형",
+    "priceLevel": "가격대",
+    "strollerFriendly": "유모차 이용 가능",
+    "changingStation": "기저귀 교환대",
+    "diningOnSite": "현장 식사",
+    "needsReservation": "예약 필요",
+    "yes": "예",
+    "no": "아니오",
+    "home": "홈",
+    "similarPlaces": "비슷한 장소",
+    "share": "공유",
+    "copyLink": "링크 복사",
+    "linkCopied": "링크가 복사되었습니다!",
+    "tags": "태그",
+    "notFound": "장소를 찾을 수 없습니다",
+    "notFoundDesc": "찾으시는 장소가 존재하지 않습니다."
+  },
+  "mobileNav": {
+    "home": "홈",
+    "play": "놀기",
+    "eat": "먹기",
+    "learn": "배우기",
+    "more": "더보기"
+  },
+  "play": {
+    "title": "놀이터 & 활동",
+    "subtitle": "베이에리어 최고의 놀이터, 박물관, 공원, 워터파크, 어린이 활동."
+  },
+  "eat": {
+    "title": "어린이 친화 레스토랑",
+    "subtitle": "유아 의자, 키즈 메뉴, 놀이 공간, 건강한 메뉴가 있는 가족 친화 레스토랑."
+  },
+  "learn": {
+    "title": "수업 & 교육",
+    "subtitle": "STEM 캠프, 미술 수업, 음악 레슨, 중국어 학교, 코딩 프로그램, 교육 활동."
+  },
+  "shop": {
+    "title": "가족 쇼핑",
+    "subtitle": "장난감 가게, 서점, 교육 용품, 아동복, 중고 매장."
+  },
+  "explore": {
+    "title": "당일치기 여행 & 모험",
+    "subtitle": "주말 여행, 시즌 이벤트, 자연 하이킹, 베이에리어에서의 가족 여행."
+  },
+  "contact": {
+    "title": "문의하기",
+    "subtitle": "추천이나 질문이 있으신가요? 연락해 주세요!",
+    "description": "어린이에게 좋은 장소를 추천하고 싶으신가요? 협업하고 싶으신가요? 메시지를 보내주세요!",
+    "name": "이름",
+    "namePlaceholder": "이름을 입력하세요",
+    "email": "이메일",
+    "emailPlaceholder": "you@example.com",
+    "message": "메시지",
+    "messagePlaceholder": "아이들에게 좋은 장소를 알려주세요...",
+    "send": "메시지 보내기",
+    "success": "메시지가 전송되었습니다!",
+    "error": "전송에 실패했습니다. 다시 시도해 주세요.",
+    "required": "필수 항목입니다"
+  },
+  "NotFound": {
+    "title": "이런! 페이지를 찾을 수 없어요!",
+    "description": "찾으시는 페이지가 존재하지 않습니다. 다시 탐험해 봐요!",
+    "goHome": "홈으로 돌아가기",
+    "explorePlay": "활동 찾기",
+    "backHome": "홈으로 돌아가기"
+  },
+  "notFound": {
+    "title": "이런! 페이지를 찾을 수 없어요!",
+    "description": "찾으시는 페이지가 존재하지 않습니다. 다시 탐험해 봐요!",
+    "goHome": "홈으로 돌아가기",
+    "explorePlay": "활동 찾기"
+  },
+  "Footer": {
+    "tagline": "베이에리어 가족들이 함께 즐거움을 찾도록 도와드립니다.",
+    "copyright": "Kids Bay Area. All rights reserved.",
+    "about": "소개",
+    "contact": "문의",
+    "privacy": "개인정보처리방침",
+    "terms": "이용약관",
+    "description": "베이에리어 가족 활동 궁극의 가이드."
+  },
+  "footer": {
+    "tagline": "베이에리어 가족들이 함께 즐거움을 찾도록 도와드립니다.",
+    "about": "소개",
+    "contact": "문의",
+    "privacy": "개인정보처리방침",
+    "terms": "이용약관",
+    "copyright": "Kids Bay Area. All rights reserved."
+  },
+  "seasonal": {
+    "spring_title": "봄 즐기기!",
+    "spring_tip": "벚꽃이 활짝 피었어요! 일본 정원을 방문하고, 식물원을 탐험하고, 가족 하이킹을 즐기세요.",
+    "spring": "봄이 왔어요! 야외 놀이터, 식물원, 공원 피크닉에 완벽한 시기입니다.",
+    "summer_title": "여름 모험",
+    "summer_tip": "워터파크, 해변 여행, 야외 캠프가 한창이에요! 자외선 차단제를 바르고 베이에리어 최고의 여름 활동을 탐험하세요.",
+    "summer": "여름 재미! 워터파크, 해변, 야외 축제로 향하세요.",
+    "fall_title": "가을 활동",
+    "fall_tip": "호박밭, 사과 따기, 수확 축제! 가족 하이킹에 완벽한 날씨입니다.",
+    "fall": "가을 모험! 호박밭, 수확 축제, 아늑한 박물관 방문을 즐기세요.",
+    "winter_title": "겨울 나라",
+    "winter_tip": "실내 박물관, 아이스 스케이팅, 홀리데이 라이트 쇼, 타호에서의 눈놀이!",
+    "winter": "겨울 나라! 실내 놀이 공간, 홀리데이 이벤트, 박물관을 발견하세요.",
+    "explore": "활동 찾기",
+    "cta": "활동 탐험하기"
+  },
+  "search": {
+    "title": "검색",
+    "placeholder": "장소, 활동 검색...",
+    "hint": "2글자 이상 입력하여 검색",
+    "noResults": "결과를 찾을 수 없습니다.",
+    "escHint": "Esc 키를 눌러 닫기",
+    "results": "{count}개 결과",
+    "close": "닫기"
+  },
+  "newsletter": {
+    "title": "소식 받기",
+    "subtitle": "베이에리어의 가족 활동, 숨은 명소, 시즌 이벤트를 매주 받아보세요.",
+    "placeholder": "이메일 주소",
+    "subscribe": "구독하기",
+    "success": "구독해 주셔서 감사합니다!"
+  },
+  "share": {
+    "linkCopied": "링크가 복사되었습니다!"
+  },
+  "breadcrumbs": {
+    "home": "홈",
+    "play": "놀기",
+    "eat": "먹기",
+    "learn": "배우기",
+    "shop": "쇼핑",
+    "explore": "탐험"
+  }
+}

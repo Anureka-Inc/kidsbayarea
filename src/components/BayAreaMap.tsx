@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import dynamic from "next/dynamic";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { places, type Category } from "@/data/places";
 
 const MapInner = dynamic(() => import("./MapInner"), { ssr: false });
@@ -20,6 +20,7 @@ const tabs: { key: FilterCategory; labelKey: string }[] = [
 
 export default function BayAreaMap() {
   const t = useTranslations("map");
+  const locale = useLocale();
   const [activeTab, setActiveTab] = useState<FilterCategory>("all");
 
   const filteredPlaces =
@@ -56,6 +57,7 @@ export default function BayAreaMap() {
           <MapInner
             places={filteredPlaces}
             filteredCategory={activeTab}
+            locale={locale}
           />
         </div>
       </div>
