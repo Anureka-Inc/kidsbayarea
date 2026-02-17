@@ -100,6 +100,7 @@ export default function Header() {
   };
 
   return (
+    <>
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur-md dark:border-gray-800 dark:bg-gray-950/80">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         {/* Logo */}
@@ -231,7 +232,9 @@ export default function Header() {
         </div>
       )}
 
-      <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
     </header>
+
+      <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
+    </>
   );
 }

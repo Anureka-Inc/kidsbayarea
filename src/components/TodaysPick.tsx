@@ -1,10 +1,21 @@
 "use client";
 
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Shuffle, ArrowRight, Star, MapPin, Baby, Sun, CloudRain } from "lucide-react";
 import { places } from "@/data/places";
+
+// Simple deterministic hash for consistent ordering between server and client
+function seededRandom(seed: number): number {
+  const x = Math.sin(seed) * 10000;
+  return x - Math.floor(x);
+}
+
+function getDaySeed(): number {
+  const now = new Date();
+  return now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
+}
 
 function getSeason(): "spring" | "summer" | "fall" | "winter" {
   const month = new Date().getMonth();
@@ -22,9 +33,10 @@ function isWeekend(): boolean {
 function getSmartPicks() {
   const season = getSeason();
   const weekend = isWeekend();
+  const daySeed = getDaySeed();
 
   // Score each place based on context
-  const scored = places.map((place) => {
+  const scored = places.map((place, index) => {
     let score = place.rating * 10; // Base score from rating
 
     // Weekend → prefer outdoor, day trips, explore
@@ -51,8 +63,8 @@ function getSmartPicks() {
       if (place.tags.includes("farm") || place.tags.includes("nature") || place.tags.includes("outdoor")) score += 10;
     }
 
-    // Add some randomness to prevent same result every time
-    score += Math.random() * 20;
+    // Deterministic variation based on day + place index (same on server and client)
+    score += seededRandom(daySeed + index) * 20;
 
     return { place, score };
   });
@@ -66,7 +78,7 @@ export default function TodaysPick() {
   const t = useTranslations("todaysPick");
   const locale = useLocale();
 
-  const smartPicks = useMemo(() => getSmartPicks(), []);
+  const [smartPicks] = useState(() => getSmartPicks());
   const [pickIndex, setPickIndex] = useState(0);
   const place = smartPicks[pickIndex] || smartPicks[0];
 
