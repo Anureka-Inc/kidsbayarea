@@ -12,8 +12,14 @@ import MobileNav from "@/components/MobileNav";
 import FavoritesProvider from "@/components/FavoritesProvider";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
+// Pre-render English only. Each locale layout pre-renders every static child
+// page (home, categories, etc.) and each child inlines all 533 places, so 30
+// locales × ~8 pages each balloons the SSR Lambda artifact past Amplify's
+// 220MB limit. Other locales render on first hit and are cached for 24h.
+export const revalidate = 86400;
+
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
+  return [{ locale: "en" }];
 }
 
 export const metadata: Metadata = {

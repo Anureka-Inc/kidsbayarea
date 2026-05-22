@@ -3,8 +3,10 @@ import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 import PlannerContent from "./PlannerContent";
 
+export const revalidate = 86400;
+
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
+  return [{ locale: "en" }];
 }
 
 export async function generateMetadata({

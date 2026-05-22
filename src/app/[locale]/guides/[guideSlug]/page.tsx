@@ -69,14 +69,13 @@ const guideMeta: Record<
   },
 };
 
+// ISR: guides pages inline filtered places, so 30 locales × 6 guides bloats
+// the artifact. Pre-render English only; other locales render on demand and
+// are cached for 24h via the export below.
+export const revalidate = 86400;
+
 export function generateStaticParams() {
-  const params: { locale: string; guideSlug: string }[] = [];
-  for (const locale of routing.locales) {
-    for (const slug of validGuides) {
-      params.push({ locale, guideSlug: slug });
-    }
-  }
-  return params;
+  return validGuides.map((slug) => ({ locale: "en", guideSlug: slug }));
 }
 
 export async function generateMetadata({

@@ -8,18 +8,14 @@ import PlaceDetail from "./PlaceDetail";
 
 const validCategories: Category[] = ["play", "eat", "learn", "shop", "explore"];
 
+// ISR: every (locale, place) renders on first hit and is cached for 24h.
+// Pre-rendering 533 places × 30 locales (~16k pages) at build time produced
+// a 3.7GB artifact, exceeding Amplify's 220MB deploy-size limit. Sitemap
+// still lists every URL so crawlers populate the cache.
+export const revalidate = 86400;
+
 export function generateStaticParams() {
-  const params: { locale: string; category: string; slug: string }[] = [];
-  for (const locale of routing.locales) {
-    for (const place of places) {
-      params.push({
-        locale,
-        category: place.category,
-        slug: place.slug,
-      });
-    }
-  }
-  return params;
+  return [];
 }
 
 export async function generateMetadata({
