@@ -1,7 +1,8 @@
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
-import { routing } from "@/i18n/routing";
+import { routing, isFullyTranslated } from "@/i18n/routing";
+import { buildCategoryFaqJsonLd } from "@/lib/categoryFaq";
 import ExploreContent from "./ExploreContent";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -13,18 +14,32 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     alternates[altLocale] = `https://www.kidsbayarea.com/${altLocale}/explore`;
   }
 
+  const translated = isFullyTranslated(locale);
+  const canonicalUrl = translated
+    ? `https://www.kidsbayarea.com/${locale}/explore`
+    : `https://www.kidsbayarea.com/en/explore`;
+
   return {
     title: t("title"),
     description: t("subtitle"),
-    alternates: {
-      canonical: `https://www.kidsbayarea.com/${locale}/explore`,
-      languages: alternates,
-    },
+    alternates: { canonical: canonicalUrl, languages: alternates },
+    ...(translated ? {} : { robots: { index: false, follow: true } }),
   };
 }
 
 export default async function ExplorePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <ExploreContent />;
+
+  const faqJsonLd = buildCategoryFaqJsonLd("explore", locale);
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <ExploreContent />
+    </>
+  );
 }

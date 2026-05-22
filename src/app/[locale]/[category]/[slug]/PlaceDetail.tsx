@@ -98,36 +98,12 @@ export default function PlaceDetail({ place }: PlaceDetailProps) {
     }
   };
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: place.name,
-    description: desc,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: place.city,
-      addressRegion: "CA",
-      addressCountry: "US",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: place.lat,
-      longitude: place.lng,
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: place.rating,
-      bestRating: 5,
-    },
-    ...(place.website ? { url: place.website } : {}),
-  };
+  // Note: place JSON-LD (Store/Restaurant/TouristAttraction + BreadcrumbList +
+  // FAQPage) is emitted from the parent server component in page.tsx so AI
+  // crawlers see it without JS, and we avoid duplicate / conflicting schema.
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
         {/* Breadcrumbs */}
         <nav className="mb-6 flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400">
@@ -296,6 +272,46 @@ export default function PlaceDetail({ place }: PlaceDetailProps) {
                 </p>
               </div>
             </div>
+
+            {/* Hours — rendered only when verified hours data exists. The
+                whole tile is omitted otherwise so we never display fabricated
+                or guessed hours to users searching "X hours saturday". */}
+            {place.hours && place.hours.length > 0 && (
+              <div className="flex items-start gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 dark:border-gray-700 dark:bg-gray-800/50 sm:col-span-2">
+                <Clock className="mt-0.5 h-5 w-5 shrink-0 text-teal-500" />
+                <div className="w-full">
+                  <p className="text-sm font-medium text-gray-900 dark:text-white">
+                    {locale === "zh" ? "营业时间" : "Hours"}
+                  </p>
+                  <ul className="mt-1 grid grid-cols-1 gap-y-0.5 text-sm text-gray-600 dark:text-gray-400">
+                    {place.hours.map((block, idx) => {
+                      const dayList = block.days.length === 7
+                        ? (locale === "zh" ? "每天" : "Daily")
+                        : block.days.join(", ");
+                      const time = block.closed
+                        ? (locale === "zh" ? "休息" : "Closed")
+                        : `${block.opens}–${block.closes}`;
+                      return (
+                        <li key={idx} className="flex flex-wrap gap-x-2">
+                          <span className="font-medium">{dayList}:</span>
+                          <span>{time}</span>
+                          {block.note && (
+                            <span className="text-xs italic text-gray-500 dark:text-gray-500">
+                              ({block.note})
+                            </span>
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                  <p className="mt-1.5 text-xs text-gray-500 dark:text-gray-500">
+                    {locale === "zh"
+                      ? "出发前请到官网核对最新营业时间。"
+                      : "Verify on the official website before visiting."}
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
         </section>
 

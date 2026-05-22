@@ -4,6 +4,32 @@ export type Region = "sf" | "east-bay" | "south-bay" | "north-bay" | "peninsula"
 export type IndoorOutdoor = "indoor" | "outdoor" | "both";
 export type PriceLevel = "free" | "$" | "$$" | "$$$";
 
+// Hours grammar
+// - One entry per contiguous block sharing the same hours.
+// - `days`: array of weekdays the block covers. Use the schema.org names so we
+//   can map 1:1 to OpeningHoursSpecification.dayOfWeek.
+// - `opens` / `closes`: 24h "HH:MM" (e.g. "09:00", "21:30"). For 24/7 venues
+//   use `opens: "00:00", closes: "23:59"`.
+// - `closed: true` shortcut for explicit closed days (skips opens/closes).
+// - `note`: optional human-readable caveat ("seasonal", "Memorial Day–Labor Day").
+//   Surfaces in the UI but is NOT emitted in JSON-LD (Google can mis-parse it).
+export type Weekday =
+  | "Monday"
+  | "Tuesday"
+  | "Wednesday"
+  | "Thursday"
+  | "Friday"
+  | "Saturday"
+  | "Sunday";
+
+export interface HoursBlock {
+  days: Weekday[];
+  opens?: string;
+  closes?: string;
+  closed?: boolean;
+  note?: string;
+}
+
 export interface Place {
   slug: string;
   name: string;
@@ -26,6 +52,18 @@ export interface Place {
   bestTime: string;
   tags: string[];
   website?: string;
+  // Optional structured hours. When present they drive:
+  //   1. schema.org OpeningHoursSpecification → eligible for SERP "Hours" panel
+  //   2. UI hours table on the place detail page
+  //   3. AI Overview / ChatGPT / Perplexity answers to "X hours saturday" queries
+  // Leave undefined if hours are unknown — we never fabricate. The schema block
+  // only emits when hours is a non-empty array.
+  hours?: HoursBlock[];
+  // Optional phone in E.164 (+1...) for LocalBusiness telephone property.
+  phone?: string;
+  // Set when a venue is permanently closed; we still keep the page (history) but
+  // skip OpeningHoursSpecification and add a warning banner.
+  permanentlyClosed?: boolean;
 }
 
 export const regionNames: Record<Region, { en: string; zh: string }> = {
@@ -2590,6 +2628,9 @@ export const places: Place[] = [
     bestTime: "Weekday mornings for a peaceful visit",
     tags: ["petting-zoo","free","farm-animals","outdoor","toddler-friendly"],
     website: "https://www.ebparks.org/parks/venues/little-farm",
+    hours: [
+      { days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "08:30", closes: "16:00" },
+    ],
   },
   {
     slug: "tilden-park-little-farm",

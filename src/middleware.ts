@@ -19,8 +19,10 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: [
-    "/",
-    "/(en|zh|es|ja|ko|fr|de|pt|it|ru|ar|hi|th|vi|id|tr|nl|pl|sv|da|nb|fi|cs|he|ms|tl|uk|ro|hu|el)/:path*",
-  ],
+  // Catch all paths except API routes, Next internals, and static files (any
+  // segment with a dot). The previous matcher only listed locale-prefixed paths,
+  // so pre-i18n URLs like `/learn/foo` or `/guides/rainy-day` bypassed next-intl
+  // entirely and 404'd. With this broader matcher, next-intl 308-redirects
+  // unprefixed paths to the default locale (`/en/...`).
+  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 };

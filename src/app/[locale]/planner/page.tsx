@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
-import { routing } from "@/i18n/routing";
+import { routing, isFullyTranslated } from "@/i18n/routing";
 import PlannerContent from "./PlannerContent";
 
 export const revalidate = 86400;
@@ -29,13 +29,19 @@ export async function generateMetadata({
     alternates[altLocale] = `https://www.kidsbayarea.com/${altLocale}/planner`;
   }
 
+  const translated = isFullyTranslated(locale);
+  const canonicalUrl = translated
+    ? `https://www.kidsbayarea.com/${locale}/planner`
+    : `https://www.kidsbayarea.com/en/planner`;
+
   return {
     title,
     description,
     alternates: {
-      canonical: `https://www.kidsbayarea.com/${locale}/planner`,
+      canonical: canonicalUrl,
       languages: alternates,
     },
+    ...(translated ? {} : { robots: { index: false, follow: true } }),
   };
 }
 

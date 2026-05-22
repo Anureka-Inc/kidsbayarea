@@ -2,7 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { routing } from "@/i18n/routing";
+import { routing, isFullyTranslated } from "@/i18n/routing";
 import GuideContent from "./GuideContent";
 
 const validGuides = [
@@ -96,13 +96,24 @@ export async function generateMetadata({
     alternates[altLocale] = `https://www.kidsbayarea.com/${altLocale}/guides/${guideSlug}`;
   }
 
+  // Untranslated locales serve EN body content, so we point canonical at the
+  // EN version and ask Google not to index the duplicate. hreflang still maps
+  // the language variants for users who switch via the language picker.
+  const translated = isFullyTranslated(locale);
+  const canonicalUrl = translated
+    ? `https://www.kidsbayarea.com/${locale}/guides/${guideSlug}`
+    : `https://www.kidsbayarea.com/en/guides/${guideSlug}`;
+
   return {
     title,
     description,
     alternates: {
-      canonical: `https://www.kidsbayarea.com/${locale}/guides/${guideSlug}`,
+      canonical: canonicalUrl,
       languages: alternates,
     },
+    ...(translated
+      ? {}
+      : { robots: { index: false, follow: true } }),
   };
 }
 
