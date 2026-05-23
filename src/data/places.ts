@@ -602,6 +602,10 @@ export const places: Place[] = [
     bestTime: "Weekday mornings for a peaceful farm experience",
     tags: ["farm","free","farm-animals","hiking","nature"],
     website: "https://www.deerhollowfarm.org/",
+    hours: [
+      { days: ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "08:00", closes: "16:00" },
+      { days: ["Monday"], closed: true },
+    ],
   },
   {
     slug: "dennis-the-menace-playground",
@@ -705,6 +709,9 @@ export const places: Place[] = [
     bestTime: "Summer weekday mornings to avoid crowds",
     tags: ["splash-pad","free","water-play","playground","outdoor"],
     website: "https://dublin.ca.gov/facilities/facility/details/Emerald-Glen-Park-13",
+    hours: [
+      { days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "11:00", closes: "19:30", note: "Memorial Day – Labor Day only" },
+    ],
   },
   {
     slug: "golden-gate-park-playground",
@@ -1069,6 +1076,9 @@ export const places: Place[] = [
     bestTime: "Weekday mornings for smallest crowds",
     tags: ["indoor","playground","toddler-friendly","imaginative-play","new"],
     website: "https://www.kidplex.com/",
+    hours: [
+      { days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "10:00", closes: "17:00" },
+    ],
   },
   {
     slug: "kidtopia-fremont",
@@ -1147,6 +1157,10 @@ export const places: Place[] = [
     bestTime: "Morning sessions for younger kids",
     tags: ["outdoor","splash-pad","seasonal","toddler-friendly","water-play","budget"],
     website: "https://www.walnut-creek.org/",
+    hours: [
+      { days: ["Monday","Tuesday","Wednesday","Thursday"], opens: "10:30", closes: "12:30", note: "Mid-June through summer (morning session)" },
+      { days: ["Monday","Tuesday","Wednesday","Thursday"], opens: "16:30", closes: "18:30", note: "Mid-June through summer (afternoon session)" },
+    ],
   },
   {
     slug: "laser-tagging-newark",
@@ -1199,6 +1213,10 @@ export const places: Place[] = [
     bestTime: "Late morning on weekdays",
     tags: ["play-cafe","toddler-friendly","baby-friendly","pretend-play","cafe"],
     website: "https://www.lemontreeevent.com/",
+    hours: [
+      { days: ["Tuesday","Wednesday","Thursday","Friday"], opens: "10:00", closes: "15:00" },
+      { days: ["Monday","Saturday","Sunday"], closed: true },
+    ],
   },
   {
     slug: "lemos-farm",
@@ -1225,6 +1243,9 @@ export const places: Place[] = [
     bestTime: "Weekday mornings for shorter lines; fall for pumpkin patch",
     tags: ["farm","petting-zoo","pony-rides","pumpkin-patch","train-ride"],
     website: "https://www.lemosfarm.com/",
+    hours: [
+      { days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "09:30", closes: "17:00" },
+    ],
   },
   {
     slug: "little-oceanauts",
@@ -1485,6 +1506,9 @@ export const places: Place[] = [
     bestTime: "Hot summer afternoons",
     tags: ["outdoor","splash-pad","free","pirate-theme","seasonal","water-play"],
     website: "https://www.cityofconcord.org/930/Spray-Park",
+    hours: [
+      { days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "12:00", closes: "18:00", note: "Summer only" },
+    ],
   },
   {
     slug: "mias-dream-playground-hayward",
@@ -1511,6 +1535,9 @@ export const places: Place[] = [
     bestTime: "Weekday mornings for quiet play",
     tags: ["outdoor","playground","free","inclusive","accessible","all-abilities"],
     website: "https://www.haywardrec.org/",
+    hours: [
+      { days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "08:30", closes: "20:00" },
+    ],
   },
   {
     slug: "mission-bowling-club",
@@ -1771,6 +1798,10 @@ export const places: Place[] = [
     bestTime: "Weekday mornings for fewer crowds",
     tags: ["indoor","playground","toddler-friendly","zip-line","obstacle-course"],
     website: "https://www.peekaboofactory.com/daly-city/",
+    hours: [
+      { days: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "10:00", closes: "17:00" },
+      { days: ["Saturday","Sunday"], opens: "09:30", closes: "12:30" },
+    ],
   },
   {
     slug: "peek-a-boo-factory-livermore",
@@ -2446,6 +2477,9 @@ export const places: Place[] = [
     bestTime: "Weekday mornings during Rockin' Tots sessions",
     tags: ["trampoline","basketball","foam-pit","dodgeball","birthday-party"],
     website: "https://www.skyzone.com/dublin/",
+    hours: [
+      { days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "09:00", closes: "21:00", note: "Weekends often later — check website" },
+    ],
   },
   {
     slug: "sky-zone-fremont",
@@ -2524,6 +2558,9 @@ export const places: Place[] = [
     bestTime: "Weekend afternoons when the weather is nice",
     tags: ["mini-golf","outdoor","mission-bay","food-trucks","family-fun"],
     website: "https://www.stagecoachgreens.com/cms/",
+    hours: [
+      { days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "11:00", closes: "20:15" },
+    ],
   },
   {
     slug: "subpar-miniature-golf-alameda",
@@ -2550,6 +2587,11 @@ export const places: Place[] = [
     bestTime: "Weekday afternoons for shorter waits",
     tags: ["mini-golf","indoor","arcade","east-bay-landmarks","family-fun"],
     website: "https://www.subparminigolf.com/alameda",
+    hours: [
+      { days: ["Monday","Tuesday","Wednesday","Thursday"], opens: "11:00", closes: "21:00" },
+      { days: ["Friday","Saturday"], opens: "10:00", closes: "23:00" },
+      { days: ["Sunday"], opens: "10:00", closes: "21:00" },
+    ],
   },
   {
     slug: "subpar-miniature-golf-sf",
@@ -2576,6 +2618,11 @@ export const places: Place[] = [
     bestTime: "Weekday afternoons",
     tags: ["mini-golf","indoor","arcade","san-francisco-landmarks","family-fun"],
     website: "https://www.subparminigolf.com/san-francisco",
+    hours: [
+      { days: ["Monday","Tuesday","Wednesday","Thursday"], opens: "11:00", closes: "21:00" },
+      { days: ["Friday","Saturday"], opens: "10:00", closes: "23:00" },
+      { days: ["Sunday"], opens: "10:00", closes: "21:00" },
+    ],
   },
   {
     slug: "the-plex-san-jose",
@@ -8714,6 +8761,10 @@ export const places: Place[] = [
     bestTime: "Saturday 10am-12pm",
     tags: ["farmers-market","storytime","library","live-music","saturday"],
     website: "https://ecologycenter.org/fm/",
+    hours: [
+      { days: ["Saturday"], opens: "10:00", closes: "15:00" },
+      { days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Sunday"], closed: true },
+    ],
   },
   {
     slug: "black-bird-bookstore",
@@ -9156,6 +9207,9 @@ export const places: Place[] = [
     bestTime: "Saturday 8am-10am before the crowds",
     tags: ["farmers-market","artisan-food","waterfront","cooking-demos","saturday"],
     website: "https://foodwise.org/markets/ferry-plaza-farmers-market/",
+    hours: [
+      { days: ["Saturday"], opens: "08:00", closes: "14:00", note: "Main market — Tue/Thu also operate but smaller" },
+    ],
   },
   {
     slug: "five-little-monkeys-burlingame",
@@ -9364,6 +9418,10 @@ export const places: Place[] = [
     bestTime: "Saturday 9am-11am before it gets crowded",
     tags: ["farmers-market","bouncy-house","live-music","splash-pad","saturday"],
     website: "https://www.agriculturalinstitute.org/grand-lake",
+    hours: [
+      { days: ["Saturday"], opens: "09:00", closes: "14:00" },
+      { days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Sunday"], closed: true },
+    ],
   },
   {
     slug: "great-mall-milpitas",
@@ -9832,6 +9890,10 @@ export const places: Place[] = [
     bestTime: "Sunday 9am-11am",
     tags: ["farmers-market","kids-activities","live-music","caltrain","sunday"],
     website: "http://www.cafarmersmkts.com/mountain-view-farmers-market",
+    hours: [
+      { days: ["Sunday"], opens: "09:00", closes: "13:00" },
+      { days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], closed: true },
+    ],
   },
   {
     slug: "mr-mopps-toy-shop",
@@ -10300,6 +10362,10 @@ export const places: Place[] = [
     bestTime: "Sunday 9am-11am before it gets crowded",
     tags: ["farmers-market","kids-activities","crafts","fresh-produce","sunday"],
     website: "https://www.agriculturalinstitute.org/stonestown",
+    hours: [
+      { days: ["Sunday"], opens: "09:00", closes: "13:00" },
+      { days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], closed: true },
+    ],
   },
   {
     slug: "tantrum-mill-valley",
