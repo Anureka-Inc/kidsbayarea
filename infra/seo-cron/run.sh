@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# SEO cron orchestrator — runs weekly (Wed) via kidsbayarea-seo-cron.timer on
+# SEO cron orchestrator — runs weekly (Thu) via kidsbayarea-seo-cron.timer on
 # the shared visacub-seo-cron EC2. Pipeline:
 #   self-update repo → fetch GSC+Bing+DataForSEO data → Claude Code (Bedrock)
 #   optimizes pages → tsc gate → branch+PR → safe actions (sitemap/IndexNow)

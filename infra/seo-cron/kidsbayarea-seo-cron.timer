@@ -1,12 +1,14 @@
 [Unit]
-# Weekly (Wed). 1x/week because GSC needs ~10-14 days to reflect a snippet
+# Weekly (Thu). 1x/week because GSC needs ~10-14 days to reflect a snippet
 # change — running faster than the measurement window confounds attribution
-# (see playbook.md §"single-page cooldown"). Wed keeps it off the same box's
-# other pipelines: visacub (Mon+Thu) and citationmap seo-cron (Tue).
-Description=Run kidsbayarea-seo-cron.service weekly (Wed; off visacub Mon+Thu and citationmap Tue on the same box)
+# (see playbook.md §"single-page cooldown"). Thu is the free day on this shared
+# box: Mon=visacub(seo-weekly), Tue=citationmap(seo-cron), Wed=pickfromvideo
+# (seo-cron-pfv), Sat=eurkart(seo-cron-eurkart). 14:13 clears their 13:13-13:22
+# cluster too.
+Description=Run kidsbayarea-seo-cron.service weekly (Thu 14:13 UTC; the free day/slot on the shared box)
 
 [Timer]
-OnCalendar=Wed *-*-* 13:13:00 UTC
+OnCalendar=Thu *-*-* 14:13:00 UTC
 RandomizedDelaySec=10min
 Persistent=true
 

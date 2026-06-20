@@ -42,7 +42,7 @@ def main():
 {report}
 
 --
-Shared visacub-seo-cron EC2 (i-0fee473f9b347c706), runs weekly (Wed).
+Shared visacub-seo-cron EC2 (i-0fee473f9b347c706), runs weekly (Thu 14:13 UTC).
 Code: infra/seo-cron/ in Anureka-Inc/kidsbayarea. PR-only — nothing auto-merges.
 """
     ses = boto3.client("ses", region_name="us-east-1")

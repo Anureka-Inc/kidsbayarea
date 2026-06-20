@@ -2,7 +2,8 @@
 
 Modeled on citationmap's seo-cron. Runs on the **shared** EC2
 `visacub-seo-cron` (`i-0fee473f9b347c706`, t4g.small, us-east-1, SSM-managed),
-alongside visacub (Mon+Thu) and citationmap seo-cron (Tue). **Wed 13:13 UTC**,
+alongside other weekly pipelines on the box (Mon=visacub, Tue=citationmap,
+Wed=pickfromvideo, Sat=eurkart). **Thu 14:13 UTC** (the free day/slot),
 **PR-only** (a human reviews & merges — nothing auto-merges):
 
 ```
@@ -35,7 +36,7 @@ On any service failure, `kidsbayarea-seo-cron-failure-notify.service`
 | `safe_actions.py` | GSC sitemap resubmit (chunked) + IndexNow ping |
 | `send_report.py` | SES email (to `SEO_REPORT_TO`, default tom@anureka.com) |
 | `verify_domain.py` | GSC service-account self-ownership (token/verify/register/check) |
-| `kidsbayarea-seo-cron.service` / `.timer` | systemd units (Wed 13:13 UTC, Persistent) |
+| `kidsbayarea-seo-cron.service` / `.timer` | systemd units (Thu 14:13 UTC, Persistent) |
 | `kidsbayarea-seo-cron-failure-notify.service` | OnFailure SES alert |
 | `bootstrap.sh` | One-time box setup (deps, clone, units) |
 
@@ -98,7 +99,7 @@ aws ssm put-parameter --profile $P --type SecureString \
 #    (or just add the SA email as a Restricted user in GSC settings).
 
 # 3. Bootstrap the box (self-clones the repo first, then runs bootstrap.sh
-#    which installs deps, units, and enables the Wed timer). Idempotent.
+#    which installs deps, units, and enables the Thu timer). Idempotent.
 aws ssm send-command --profile $P --instance-ids $INST \
   --document-name AWS-RunShellScript \
   --parameters 'commands=["set -e","D=/opt/kidsbayarea-seo-cron/kidsbayarea","mkdir -p /opt/kidsbayarea-seo-cron","chown ec2-user:ec2-user /opt/kidsbayarea-seo-cron","if [ ! -d $D/.git ]; then T=$(aws ssm get-parameter --name /seo-cron/kidsbayarea/github-token --with-decryption --query Parameter.Value --output text --region us-east-1); sudo -u ec2-user git clone https://oauth2:$T@github.com/Anureka-Inc/kidsbayarea.git $D; else sudo -u ec2-user git -C $D pull; fi","bash $D/infra/seo-cron/bootstrap.sh"]'
