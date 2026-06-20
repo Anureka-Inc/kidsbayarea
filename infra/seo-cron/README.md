@@ -20,7 +20,7 @@ Wed=pickfromvideo, Sat=eurkart). **Thu 14:13 UTC** (the free day/slot),
 ⑨ SES report email → tom@anureka.com (from seo-cron@anureka.com)
 ```
 
-On any service failure, `kidsbayarea-seo-cron-failure-notify.service`
+On any service failure, `seo-cron-kidsbayarea-failure-notify.service`
 (`OnFailure=`) emails an alert with the last journal lines.
 
 ## Files (this directory)
@@ -36,8 +36,8 @@ On any service failure, `kidsbayarea-seo-cron-failure-notify.service`
 | `safe_actions.py` | GSC sitemap resubmit (chunked) + IndexNow ping |
 | `send_report.py` | SES email (to `SEO_REPORT_TO`, default tom@anureka.com) |
 | `verify_domain.py` | GSC service-account self-ownership (token/verify/register/check) |
-| `kidsbayarea-seo-cron.service` / `.timer` | systemd units (Thu 14:13 UTC, Persistent) |
-| `kidsbayarea-seo-cron-failure-notify.service` | OnFailure SES alert |
+| `seo-cron-kidsbayarea.service` / `.timer` | systemd units (Thu 14:13 UTC, Persistent) |
+| `seo-cron-kidsbayarea-failure-notify.service` | OnFailure SES alert |
 | `bootstrap.sh` | One-time box setup (deps, clone, units) |
 
 Related, outside this dir: `.github/workflows/pr-build-check.yml` (advisory
@@ -102,7 +102,7 @@ aws ssm put-parameter --profile $P --type SecureString \
 #    which installs deps, units, and enables the Thu timer). Idempotent.
 aws ssm send-command --profile $P --instance-ids $INST \
   --document-name AWS-RunShellScript \
-  --parameters 'commands=["set -e","D=/opt/kidsbayarea-seo-cron/kidsbayarea","mkdir -p /opt/kidsbayarea-seo-cron","chown ec2-user:ec2-user /opt/kidsbayarea-seo-cron","if [ ! -d $D/.git ]; then T=$(aws ssm get-parameter --name /seo-cron/kidsbayarea/github-token --with-decryption --query Parameter.Value --output text --region us-east-1); sudo -u ec2-user git clone https://oauth2:$T@github.com/Anureka-Inc/kidsbayarea.git $D; else sudo -u ec2-user git -C $D pull; fi","bash $D/infra/seo-cron/bootstrap.sh"]'
+  --parameters 'commands=["set -e","D=/opt/seo-cron-kidsbayarea/kidsbayarea","mkdir -p /opt/seo-cron-kidsbayarea","chown ec2-user:ec2-user /opt/seo-cron-kidsbayarea","if [ ! -d $D/.git ]; then T=$(aws ssm get-parameter --name /seo-cron/kidsbayarea/github-token --with-decryption --query Parameter.Value --output text --region us-east-1); sudo -u ec2-user git clone https://oauth2:$T@github.com/Anureka-Inc/kidsbayarea.git $D; else sudo -u ec2-user git -C $D pull; fi","bash $D/infra/seo-cron/bootstrap.sh"]'
 ```
 
 ## Operate
@@ -111,16 +111,16 @@ aws ssm send-command --profile $P --instance-ids $INST \
 # Trigger a run now
 aws ssm send-command --profile anureka --instance-ids i-0fee473f9b347c706 \
   --document-name AWS-RunShellScript \
-  --parameters 'commands=["systemctl start kidsbayarea-seo-cron.service --no-block"]'
+  --parameters 'commands=["systemctl start seo-cron-kidsbayarea.service --no-block"]'
 
 # Tail logs
 aws ssm send-command --profile anureka --instance-ids i-0fee473f9b347c706 \
   --document-name AWS-RunShellScript \
-  --parameters 'commands=["journalctl -u kidsbayarea-seo-cron.service -n 100 --no-pager"]'
+  --parameters 'commands=["journalctl -u seo-cron-kidsbayarea.service -n 100 --no-pager"]'
 
 # Change cadence/playbook/keywords: edit here + push to main — the box pulls
 # main at the start of every run. Unit-file changes also need:
-#   cp infra/seo-cron/kidsbayarea-seo-cron.timer /etc/systemd/system/ && systemctl daemon-reload
+#   cp infra/seo-cron/seo-cron-kidsbayarea.timer /etc/systemd/system/ && systemctl daemon-reload
 ```
 
 ## Cost

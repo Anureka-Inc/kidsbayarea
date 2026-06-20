@@ -5,7 +5,7 @@
 # box: Mon=visacub(seo-weekly), Tue=citationmap(seo-cron), Wed=pickfromvideo
 # (seo-cron-pfv), Sat=eurkart(seo-cron-eurkart). 14:13 clears their 13:13-13:22
 # cluster too.
-Description=Run kidsbayarea-seo-cron.service weekly (Thu 14:13 UTC; the free day/slot on the shared box)
+Description=Run seo-cron-kidsbayarea.service weekly (Thu 14:13 UTC; the free day/slot on the shared box)
 
 [Timer]
 OnCalendar=Thu *-*-* 14:13:00 UTC

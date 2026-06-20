@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# SEO cron orchestrator — runs weekly (Thu) via kidsbayarea-seo-cron.timer on
+# SEO cron orchestrator — runs weekly (Thu) via seo-cron-kidsbayarea.timer on
 # the shared visacub-seo-cron EC2. Pipeline:
 #   self-update repo → fetch GSC+Bing+DataForSEO data → Claude Code (Bedrock)
 #   optimizes pages → tsc gate → branch+PR → safe actions (sitemap/IndexNow)
@@ -7,10 +7,10 @@
 #   data-fetch fails soft so the report email always goes out.
 set -uo pipefail
 
-BASE=/opt/kidsbayarea-seo-cron
+BASE=/opt/seo-cron-kidsbayarea
 REPO_DIR=$BASE/kidsbayarea
 export SEO_OUT_DIR=$BASE/out
-LOG_PREFIX="[kba-seo-cron]"
+LOG_PREFIX="[seo-cron-kidsbayarea]"
 
 export AWS_REGION=us-east-1
 export CLAUDE_CODE_USE_BEDROCK=1
@@ -100,7 +100,7 @@ if ! git diff --quiet -- "${ALLOW[@]}"; then
     # can evaluate whether these edits worked (past_changes_effect).
     python3 "$REPO_DIR/infra/seo-cron/record_history.py" || true
     git add "${ALLOW[@]}" infra/seo-cron/history
-    git -c user.name="kba-seo-cron" -c user.email="seo-cron@anureka.com" \
+    git -c user.name="seo-cron-kidsbayarea" -c user.email="seo-cron@anureka.com" \
       commit -m "seo-cron: data-driven page optimizations $(date +%F)
 
 Automated weekly SEO pass driven by GSC + Bing Webmaster + DataForSEO data.
