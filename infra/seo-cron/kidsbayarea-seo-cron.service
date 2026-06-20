@@ -1,0 +1,13 @@
+[Unit]
+Description=Weekly SEO optimization run for kidsbayarea.com (GSC+Bing+DataForSEO -> Claude Code on Bedrock -> PR + report)
+Wants=network-online.target
+After=network-online.target
+OnFailure=kidsbayarea-seo-cron-failure-notify.service
+
+[Service]
+Type=oneshot
+User=ec2-user
+WorkingDirectory=/opt/kidsbayarea-seo-cron
+ExecStart=/opt/kidsbayarea-seo-cron/kidsbayarea/infra/seo-cron/run.sh
+TimeoutStartSec=2h
+Environment=HOME=/home/ec2-user

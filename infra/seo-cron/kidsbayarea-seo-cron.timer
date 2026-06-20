@@ -1,0 +1,14 @@
+[Unit]
+# Weekly (Wed). 1x/week because GSC needs ~10-14 days to reflect a snippet
+# change — running faster than the measurement window confounds attribution
+# (see playbook.md §"single-page cooldown"). Wed keeps it off the same box's
+# other pipelines: visacub (Mon+Thu) and citationmap seo-cron (Tue).
+Description=Run kidsbayarea-seo-cron.service weekly (Wed; off visacub Mon+Thu and citationmap Tue on the same box)
+
+[Timer]
+OnCalendar=Wed *-*-* 13:13:00 UTC
+RandomizedDelaySec=10min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
