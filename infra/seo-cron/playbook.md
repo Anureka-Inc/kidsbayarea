@@ -110,6 +110,20 @@ competitors). A data source may carry an `error` key — work with what's presen
   while never re-touching a page inside its measurement window.
 - Keep place facts accurate. Never invent venue details (hours, prices,
   amenities) that aren't already in `src/data/places.ts`.
+- **No fabricated specifics in FAQ / JSON-LD.** When you write FAQ answers,
+  FAQPage JSON-LD, or any structured data, you may name venues and their
+  general category, but you MUST NOT state a specific **price, operating hours,
+  street address, age cutoff, or free-admission time window** unless that exact
+  fact exists verbatim in `src/data/places.ts`. You have no live knowledge of
+  current prices/hours or whether a venue is still open — guessing produces
+  wrong facts that Google AI Overviews / Perplexity quote verbatim, which
+  harms the site. When a specific is needed, write "check the venue's website
+  for current hours and pricing" instead. Do not name a venue as currently
+  open unless it's in `places.ts`.
+- **Locale-gate any English-only block you inject.** New FAQ HTML or JSON-LD
+  written in English must be gated on `locale === "en"` (not on the slug alone,
+  and not `locale !== "zh"`) so English content/structured-data never renders
+  on the other 29 locales.
 - After editing, run `npx tsc --noEmit` and fix any errors you introduced.
 - If the snapshot has no actionable signal (sources errored, or nothing
   meets the thresholds), make NO code changes, still write `out/report.md`
