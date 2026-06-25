@@ -136,6 +136,49 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
         </section>
       ))}
 
+      {/* Rainy-day FAQ — renders as readable HTML for GEO citability */}
+      {guideSlug === "rainy-day" && locale !== "zh" && (
+        <section className="mt-12 rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
+          <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
+            Rainy Day Activities FAQ
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What are the best rainy day activities for kids in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Top picks include the <strong>Exploratorium</strong> at Pier 15 in San Francisco (hands-on science for ages 5+), the <strong>Children&apos;s Discovery Museum of San Jose</strong> (255 Almaden Blvd), the <strong>Bay Area Discovery Museum</strong> in Sausalito (best for ages 1–8), <strong>Children&apos;s Creativity Museum</strong> in SF, <strong>The Tech Interactive</strong> in San Jose, and <strong>Chabot Space and Science Center</strong> in Oakland. <strong>Sky Zone</strong> trampoline parks in Fremont and Dublin are also open year-round indoors.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Are there free indoor activities for kids on rainy days?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Yes. Free options include public library story times (SFPL, Santa Clara County Library, Oakland Public Library), <strong>Lakeshore Learning</strong> free Saturday crafts (11am–3pm at San Jose, San Leandro, and Walnut Creek), <strong>East Bay Depot for Creative Reuse</strong> (donation-based art supplies), the <strong>Randall Museum</strong> in SF (free admission), and <strong>The Tech Interactive</strong> in San Jose (free 3–5pm Sundays).
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Where can toddlers go on rainy days in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Best rainy day spots for toddlers (ages 1–4): <strong>Bay Area Discovery Museum</strong> in Sausalito (dedicated Tot Spot), <strong>Habitot Children&apos;s Museum</strong> in Berkeley (designed for ages 0–6), <strong>Children&apos;s Discovery Museum of San Jose</strong> (Under-5 water play zone), <strong>La Petite Playhouse</strong> in San Francisco, and <strong>Little Gym</strong> locations in Palo Alto, San Jose, and Danville.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What indoor play spaces near San Francisco are open on rainy days?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Near SF: <strong>Exploratorium</strong> at Pier 15, <strong>Children&apos;s Creativity Museum</strong> in SOMA, and <strong>House of Air</strong> trampoline park at the Presidio (ages 3+, sessions from $15). Within a 20–25 minute drive: <strong>Bay Area Discovery Museum</strong> in Sausalito and <strong>Chabot Space and Science Center</strong> in Oakland.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Cross-link to other guides */}
       <section className="mt-12 rounded-2xl border border-gray-100 bg-gray-50 p-6 dark:border-gray-700 dark:bg-gray-800/50">
         <h2 className="mb-4 text-lg font-bold text-gray-900 dark:text-white">
