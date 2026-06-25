@@ -52,10 +52,10 @@ const guideMeta: Record<
       "挑战性活动、科技营、户外探险，适合大孩子的湾区好去处。",
   },
   "rainy-day": {
-    titleEn: "Rainy Day Activities for Kids in the Bay Area",
+    titleEn: "Rainy Day Activities for Kids in the Bay Area — Indoor Fun",
     titleZh: "湾区雨天亲子活动指南",
     descEn:
-      "Indoor play spaces, museums, and activities for when the weather keeps you inside. Never be bored on a rainy day!",
+      "Best rainy day activities for Bay Area kids: children's museums, trampoline parks, indoor play spaces, and science centers. Never be stuck at home on a rainy day.",
     descZh:
       "室内游乐场、博物馆和室内活动，雨天也不无聊！",
   },
@@ -117,6 +117,51 @@ export async function generateMetadata({
   };
 }
 
+// FAQPage JSON-LD for rainy-day guide. Targets "rainy day activities kids bay
+// area" — competitors rank #1-2 on DataForSEO while we don't appear. Answers
+// name venues + city + general category ONLY: no specific prices, hours,
+// addresses, or free-admission windows (those weren't sourced from places.ts
+// and age badly — an earlier draft cited a trampoline park that has since
+// closed). Defer specifics to "check the venue's website."
+const rainyDayFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are the best rainy day activities for kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Top Bay Area rainy-day activities for kids include the Exploratorium in San Francisco (hands-on science), the Children's Discovery Museum of San Jose, the Bay Area Discovery Museum in Sausalito (great for younger children), the Children's Creativity Museum in San Francisco, The Tech Interactive in San Jose, and Chabot Space and Science Center in Oakland. For active kids, Sky Zone trampoline parks in Fremont and Dublin are indoors year-round. Check each venue's website for current hours and admission.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are there free indoor activities for kids on rainy days in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Free or low-cost rainy-day options include public library story times and kids' programs (such as the San Francisco, Santa Clara County, and Oakland public library systems), the East Bay Depot for Creative Reuse in Oakland, and the Randall Museum in San Francisco. Hours and admission vary by location and season — check each venue's website for current details.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where can toddlers go on rainy days in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The best rainy-day spots for Bay Area toddlers are the Bay Area Discovery Museum in Sausalito, Habitot Children's Museum in Berkeley (designed for younger children), the Children's Discovery Museum of San Jose, La Petite Playhouse in San Francisco, and Little Gym locations in Palo Alto, San Jose, and Danville. Many community recreation centers also offer indoor family swim times — check local schedules.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What indoor play spaces near San Francisco are good on rainy days?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Indoor play spaces near San Francisco include the Exploratorium and the Children's Creativity Museum, both in San Francisco. A short drive away, the Bay Area Discovery Museum in Sausalito and Chabot Space and Science Center in Oakland offer indoor exhibits. Check each venue's website for current hours and tickets.",
+      },
+    },
+  ],
+};
+
 export default async function GuidePage({
   params,
 }: {
@@ -132,5 +177,15 @@ export default async function GuidePage({
 
   const meta = guideMeta[guideSlug as GuideSlug];
 
-  return <GuideContent guideSlug={guideSlug as GuideSlug} meta={meta} />;
+  return (
+    <>
+      {guideSlug === "rainy-day" && locale === "en" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(rainyDayFaqJsonLd) }}
+        />
+      )}
+      <GuideContent guideSlug={guideSlug as GuideSlug} meta={meta} />
+    </>
+  );
 }

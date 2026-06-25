@@ -19,9 +19,20 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     ? `https://www.kidsbayarea.com/${locale}/eat`
     : `https://www.kidsbayarea.com/en/eat`;
 
+  // EN-specific overrides: page has 925 impressions at pos 10.8 but only 0.86%
+  // CTR. Leading with "kid-friendly restaurants" + city callouts + specific
+  // amenity signals (high chairs, kids menus) anchors intent for searchers
+  // deciding whether to click a generic-looking result.
+  const title = locale === "en"
+    ? "Kid-Friendly Restaurants in the Bay Area — SF, East Bay & South Bay"
+    : t("title");
+  const description = locale === "en"
+    ? "Find the best kid-friendly restaurants in San Francisco, Oakland, San Jose, and across the Bay Area. Curated picks with kids' menus, high chairs, play areas, and family dining options."
+    : t("subtitle");
+
   return {
-    title: t("title"),
-    description: t("subtitle"),
+    title,
+    description,
     alternates: { canonical: canonicalUrl, languages: alternates },
     ...(translated ? {} : { robots: { index: false, follow: true } }),
   };
