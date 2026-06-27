@@ -99,24 +99,47 @@ if ! git diff --quiet -- "${ALLOW[@]}"; then
     # Closed loop: record what changed + its GSC baseline so the NEXT run
     # can evaluate whether these edits worked (past_changes_effect).
     python3 "$REPO_DIR/infra/seo-cron/record_history.py" || true
+    # Commit-landed gate. If git commit silently fails — classically because
+    # root-owned objects in .git/objects make ec2-user commits fail with
+    # "insufficient permission" — the working-tree edits never become a commit,
+    # HEAD stays at main, `push -f` pushes an empty (== main) branch, `gh pr
+    # create` finds no diff and the `gh pr list` fallback hands back a STALE
+    # already-merged PR. The orchestrator would then email "PR opened" having
+    # changed nothing. Guard by requiring HEAD to actually advance before we
+    # push or touch a PR. (PR-only here, so no merge-ancestor gate needed.)
+    PRE_SHA=$(git rev-parse HEAD)
     git add "${ALLOW[@]}" infra/seo-cron/history
+    COMMIT_OK=1
     git -c user.name="seo-cron-kidsbayarea" -c user.email="seo-cron@anureka.com" \
       commit -m "seo-cron: data-driven page optimizations $(date +%F)
 
 Automated weekly SEO pass driven by GSC + Bing Webmaster + DataForSEO data.
 See PR body for the optimizer report.
 
-Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>"
-    git push -f origin "$BRANCH"
-    PR_URL=$(gh pr create \
-      --title "seo-cron: page optimizations (auto-updating, needs review)" \
-      --body-file "$SEO_OUT_DIR/report.md" \
-      --base main --head "$BRANCH" 2>/dev/null \
-      || gh pr list --head "$BRANCH" --json url -q '.[0].url')
-    echo "$PR_URL" > "$SEO_OUT_DIR/pr_url.txt"
-    echo "$LOG_PREFIX PR: $PR_URL"
-    echo "" >> "$SEO_OUT_DIR/report.md"
-    echo "_PR opened/updated — review and merge manually to deploy via Amplify._" >> "$SEO_OUT_DIR/report.md"
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" || COMMIT_OK=0
+    RUN_SHA=$(git rev-parse HEAD)
+    if [ "$COMMIT_OK" = "0" ] || [ "$RUN_SHA" = "$PRE_SHA" ]; then
+      echo "$LOG_PREFIX FATAL: commit did not land (HEAD unchanged at $PRE_SHA) — NOT pushing/opening a PR"
+      sudo find "$REPO_DIR/.git/objects" -not -user "$(id -un)" -print -quit >/dev/null 2>&1 \
+        && OWN_HINT=" (found non-self-owned objects in .git/objects — run: sudo chown -R \$(id -un): $REPO_DIR)" || OWN_HINT=""
+      {
+        echo ""
+        echo "## ⚠️ commit did not land — NO PR opened, nothing changed this run"
+        echo "git commit produced no new HEAD${OWN_HINT}. This run did NOT modify the site;"
+        echo "do not trust any PR link above — there is none for this run."
+      } >> "$SEO_OUT_DIR/report.md"
+    else
+      git push -f origin "$BRANCH"
+      PR_URL=$(gh pr create \
+        --title "seo-cron: page optimizations (auto-updating, needs review)" \
+        --body-file "$SEO_OUT_DIR/report.md" \
+        --base main --head "$BRANCH" 2>/dev/null \
+        || gh pr list --head "$BRANCH" --state open --json url -q '.[0].url')
+      echo "$PR_URL" > "$SEO_OUT_DIR/pr_url.txt"
+      echo "$LOG_PREFIX PR: $PR_URL (commit $RUN_SHA)"
+      echo "" >> "$SEO_OUT_DIR/report.md"
+      echo "_PR opened/updated ($RUN_SHA) — review and merge manually to deploy via Amplify._" >> "$SEO_OUT_DIR/report.md"
+    fi
   else
     echo "$LOG_PREFIX tsc FAILED — discarding changes, reporting only"
     {
