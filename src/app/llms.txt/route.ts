@@ -25,9 +25,9 @@ The site publishes in 30 languages (with English and 简体中文 as primary), s
 ## Age-based guides
 
 - [Babies 0-2](https://www.kidsbayarea.com/en/guides/babies-0-2): Stroller-friendly venues with changing stations and quiet play areas.
-- [Toddlers 2-5](https://www.kidsbayarea.com/en/guides/toddlers-2-5): Splash pads, playgrounds, petting farms, and indoor play spaces.
+- [Toddlers 2-5](https://www.kidsbayarea.com/en/guides/toddlers-2-5): Splash pads, free petting farms, indoor play cafes, discovery museums, and stroller-friendly playgrounds for ages 2–5. Includes a Q&A on the best indoor and free toddler activities by Bay Area region.
 - [Kids 5-8](https://www.kidsbayarea.com/en/guides/kids-5-8): Museums, hiking, science centers, and beginner classes.
-- [Tweens 8-12](https://www.kidsbayarea.com/en/guides/tweens-8-12): Amusement parks, trampoline parks, escape rooms, coding camps, and adventure activities.
+- [Tweens 8-12](https://www.kidsbayarea.com/en/guides/tweens-8-12): Climbing gyms, trampoline parks, amusement parks, laser tag, escape rooms, coding camps, and after-school programs for ages 8–12 across SF, East Bay, and South Bay. Includes a Q&A on activities, group outings, and after-school options.
 
 ## Themed guides
 

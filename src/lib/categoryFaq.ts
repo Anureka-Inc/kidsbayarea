@@ -39,6 +39,10 @@ const FAQ: Record<Category, CategoryFaqContent> = {
         q: "Where are the best Bay Area zoos and animal experiences for kids?",
         a: "Major Bay Area zoos and animal venues include the San Francisco Zoo, Oakland Zoo, Happy Hollow Park & Zoo (San Jose), Tilden Little Farm petting zoo (Berkeley, free), Ardenwood Historic Farm (Fremont), Slide Ranch (Muir Beach), and the Aquarium of the Bay at Pier 39. For wild marine life try Monterey Bay Aquarium (1.5 hours south).",
       },
+      {
+        q: "Where are the best splash pads and water parks in the Bay Area?",
+        a: "Top Bay Area splash pads (free or low-cost): 24th & York Mini Park Splash Pad in San Francisco's Mission District (free), Castro Valley Splash Park (seasonal), Larkey Sprayground in Walnut Creek, Emerald Glen Park Splash Pad in Dublin, Ortega Park Splash Pad in Sunnyvale, and Meadow Homes Spray Park in Concord. For full water parks, Raging Waters San Jose is the largest in Northern California, Aqua Adventure Waterpark is in Fremont, and The Wave Waterpark is in Dublin. Check each venue's website for seasonal hours and admission.",
+      },
     ],
     zh: [
       {
@@ -60,6 +64,10 @@ const FAQ: Record<Category, CategoryFaqContent> = {
       {
         q: "湾区适合带孩子的动物园有哪些？",
         a: "湾区主要动物园和动物体验场所：旧金山 SF Zoo、Oakland Zoo、San Jose 的 Happy Hollow Park & Zoo、Berkeley 免费的 Tilden Little Farm 触摸动物园、Fremont 的 Ardenwood Historic Farm、Muir Beach 的 Slide Ranch、Pier 39 的 Aquarium of the Bay。再远一些有 1.5 小时车程的 Monterey Bay Aquarium。",
+      },
+      {
+        q: "湾区有哪些戏水区和水上乐园？",
+        a: "湾区免费或低价戏水区：旧金山 Mission 区的 24th & York Mini Park Splash Pad（免费）、Castro Valley Splash Park（季节性）、Walnut Creek 的 Larkey Sprayground、Dublin 的 Emerald Glen Park Splash Pad、Sunnyvale 的 Ortega Park Splash Pad、Concord 的 Meadow Homes Spray Park。收费水上乐园：北加州最大的 Raging Waters San Jose、Fremont 的 Aqua Adventure Waterpark、Dublin 的 The Wave Waterpark。请查看各场馆官网获取最新的开放时间和票价。",
       },
     ],
   },
