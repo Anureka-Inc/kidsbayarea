@@ -3,6 +3,7 @@ import { useLocale } from "next-intl";
 import { Star, MapPin, Clock, DollarSign } from "lucide-react";
 import type { Place } from "@/data/places";
 import FavoriteButton from "./FavoriteButton";
+import PlaceImage from "./PlaceImage";
 
 interface PlaceCardProps {
   place: Place;
@@ -37,6 +38,7 @@ export default function PlaceCard({ place }: PlaceCardProps) {
         href={`/${place.category}/${place.slug}`}
         className="block"
       >
+      <PlaceImage slug={place.slug} name={place.name} className="h-40 w-full" />
       <div className="p-5">
         {/* Header: name + category badge */}
         <div className="mb-3 flex items-start justify-between gap-2 pr-7">

@@ -27,6 +27,7 @@ import {
 import type { Place, Category } from "@/data/places";
 import { getSimilarPlaces, categoryNames, regionNames } from "@/data/places";
 import PlaceCard from "@/components/PlaceCard";
+import PlaceImage from "@/components/PlaceImage";
 
 const MapInner = dynamic(() => import("@/components/MapInner"), { ssr: false });
 
@@ -125,6 +126,14 @@ export default function PlaceDetail({ place }: PlaceDetailProps) {
             {place.name}
           </span>
         </nav>
+
+        {/* Hero image (scraped from venue site; gradient fallback when absent) */}
+        <PlaceImage
+          slug={place.slug}
+          name={place.name}
+          priority
+          className="mb-8 h-56 w-full rounded-2xl sm:h-72"
+        />
 
         {/* Header */}
         <div className="mb-8">
