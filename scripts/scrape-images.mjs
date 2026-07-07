@@ -69,6 +69,9 @@ function extractImage(html, baseUrl) {
   } catch {
     return null;
   }
+  // Upgrade http→https: the site is served over HTTPS, so http images would be
+  // blocked as mixed content. onError fallback covers hosts without https.
+  url = url.replace(/^http:\/\//, "https://");
   if (BAD.test(url)) return null;
   return url;
 }
