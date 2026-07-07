@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Baby, MapPin, Calendar, Compass, Cake, Tag, Blocks } from "lucide-react";
+import { Baby, MapPin, Calendar, CalendarDays, Compass, Cake, Tag, Blocks } from "lucide-react";
 
 export default function Footer() {
   const t = useTranslations("Footer");
@@ -70,6 +70,15 @@ export default function Footer() {
                 >
                   <Calendar className="h-3.5 w-3.5" />
                   Weekend Planner
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/events"
+                  className="flex items-center gap-1.5 text-gray-400 transition-colors hover:text-cyan-400"
+                >
+                  <CalendarDays className="h-3.5 w-3.5" />
+                  Events Calendar
                 </Link>
               </li>
               <li>

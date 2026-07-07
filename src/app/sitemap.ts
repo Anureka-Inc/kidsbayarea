@@ -11,7 +11,7 @@ const baseUrl = "https://www.kidsbayarea.com";
 // alternates on the EN pages, but they no longer compete with EN for indexing.
 const indexableLocales = fullyTranslatedLocales;
 
-const staticPages = ["/", "/play", "/eat", "/learn", "/shop", "/explore", "/contact", "/planner"];
+const staticPages = ["/", "/play", "/eat", "/learn", "/shop", "/explore", "/contact", "/planner", "/events"];
 const guideSlugs = ["babies-0-2", "toddlers-2-5", "kids-5-8", "tweens-8-12", "rainy-day", "family-favorites", "birthday-party", "free", "indoor-playgrounds"];
 
 // Build `alternates.languages` for a path. Next.js MetadataRoute.Sitemap maps
