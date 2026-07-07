@@ -136,6 +136,84 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
         </section>
       ))}
 
+      {/* Toddlers FAQ — targets "things to do with toddlers bay area" / "toddler activities san francisco" */}
+      {guideSlug === "toddlers-2-5" && locale === "en" && (
+        <section className="mt-12 rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
+          <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
+            Toddler Activities FAQ
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What are the best toddler activities in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Top picks include the <strong>Bay Area Discovery Museum</strong> in Sausalito (outdoor tide pools and hands-on exhibits), <strong>Habitot Children&apos;s Museum</strong> in Berkeley (designed for under-5s), <strong>Children&apos;s Fairyland</strong> in Oakland (pint-sized amusement park), <strong>Tilden Little Farm</strong> in Berkeley (free petting farm, open daily), <strong>La Petite Playhouse</strong> in Redwood City (large indoor play structure), and splash pads at <strong>Castro Valley Splash Park</strong> and <strong>Larkey Sprayground</strong> in Walnut Creek. Check each venue&apos;s website for current hours and admission.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Where can toddlers play indoors in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Indoor toddler play spaces include <strong>Habitot Children&apos;s Museum</strong> (Berkeley), <strong>Bay Area Discovery Museum</strong> (Sausalito — indoor and outdoor areas), <strong>La Petite Playhouse</strong> (Redwood City), <strong>WOW Kids Playground</strong> (San Jose), <strong>Lemon Tree Play Cafe</strong> (San Jose), <strong>Imagination City</strong> (San Jose), and <strong>KidTopia</strong> (San Jose). Many community recreation centers also offer toddler open-play and drop-in gym sessions — check local schedules.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Are there free activities for toddlers in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Yes. Free toddler-friendly activities include <strong>Tilden Little Farm</strong> in Berkeley (free, open 365 days a year — bring celery and lettuce for the goats), all municipal playgrounds and inclusive <strong>Magical Bridge Playgrounds</strong> (Palo Alto, Sunnyvale, Mountain View), seasonal splash pads at <strong>24th &amp; York Mini Park</strong> in San Francisco and <strong>Castro Valley Splash Park</strong>, and free public library story-times throughout Santa Clara County, San Francisco, and the East Bay.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What stroller-friendly activities are available for toddlers in San Francisco?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Stroller-friendly San Francisco toddler activities include the <strong>Koret Children&apos;s Quarter</strong> playground in Golden Gate Park (flat paved paths), <strong>Yerba Buena Gardens Playground</strong>, <strong>Crissy Field</strong> lawn areas, <strong>24th &amp; York Mini Park</strong> splash pad in the Mission, <strong>Children&apos;s Creativity Museum</strong> near Union Square, and the <strong>Exploratorium</strong> at Pier 15. Most Bay Area Discovery Museum trails in Sausalito are also stroller-accessible.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Tweens FAQ — targets "things to do with tweens" / "activities for 12 year olds" */}
+      {guideSlug === "tweens-8-12" && locale === "en" && (
+        <section className="mt-12 rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
+          <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
+            Tweens Activities FAQ
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What are the best activities for tweens (ages 8–12) in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Top picks for tweens include rock climbing at <strong>Berkeley Ironworks</strong>, <strong>Planet Granite</strong> (Belmont, San Francisco, Sunnyvale), or <strong>Diablo Rock Gym</strong>; trampoline parks at <strong>Sky Zone Fremont</strong> and Dublin and <strong>House of Air</strong> at the Presidio; amusement parks at <strong>California&apos;s Great America</strong> (Santa Clara); laser tag at <strong>Laser Tagging Inc.</strong>; and arcade experiences at <strong>Round1</strong> in San Jose, Concord, and Hayward. For outdoor adventures, hiking Mount Diablo State Park or exploring Redwood Regional Park (Oakland) is ideal for tweens.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What after-school programs are available for 8–12 year olds in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Bay Area after-school programs for tweens include coding and STEM at iD Tech (Stanford campus), Code Ninjas (Cupertino, North San Jose, Fremont), and Galileo camps. Fencing at <strong>Halberstadt Fencers Club</strong> (San Francisco) and climbing at <strong>Berkeley Ironworks</strong> both have structured youth tracks. <strong>The Tech Interactive</strong> (San Jose) runs ongoing design challenges and weekend workshops for ages 8–12.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Where can tweens go with friends in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Tween group outings: bowling at <strong>Lucky Strike Alameda</strong> or <strong>Lucky Strike San Francisco</strong>; mini-golf at <strong>Stagecoach Greens</strong> (San Francisco) or <strong>Urban Putt</strong> San Jose; arcade experiences at <strong>Round1</strong> (San Jose, Concord, Hayward); and ice skating at <strong>Nazareth Ice Oasis</strong> (Fremont), <strong>Snoopy&apos;s Home Ice</strong> (Santa Rosa), or <strong>Oakland Ice Center</strong>. The <strong>Santa Cruz Beach Boardwalk</strong> (free admission, pay-per-ride) and <strong>Roaring Camp Railroads</strong> in Felton are popular tween destinations.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Rainy-day FAQ — renders as readable HTML for GEO citability */}
       {guideSlug === "rainy-day" && locale === "en" && (
         <section className="mt-12 rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
