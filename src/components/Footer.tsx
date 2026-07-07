@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Baby, MapPin, Calendar, Compass } from "lucide-react";
+import { Baby, MapPin, Calendar, CalendarDays, Compass, Cake, Tag, Blocks } from "lucide-react";
 
 export default function Footer() {
   const t = useTranslations("Footer");
@@ -74,6 +74,15 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/events"
+                  className="flex items-center gap-1.5 text-gray-400 transition-colors hover:text-cyan-400"
+                >
+                  <CalendarDays className="h-3.5 w-3.5" />
+                  Events Calendar
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/guides/rainy-day"
                   className="flex items-center gap-1.5 text-gray-400 transition-colors hover:text-cyan-400"
                 >
@@ -88,6 +97,33 @@ export default function Footer() {
                 >
                   <MapPin className="h-3.5 w-3.5" />
                   Top Rated
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/guides/birthday-party"
+                  className="flex items-center gap-1.5 text-gray-400 transition-colors hover:text-cyan-400"
+                >
+                  <Cake className="h-3.5 w-3.5" />
+                  Birthday Party Places
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/guides/free"
+                  className="flex items-center gap-1.5 text-gray-400 transition-colors hover:text-cyan-400"
+                >
+                  <Tag className="h-3.5 w-3.5" />
+                  Free Things to Do
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/guides/indoor-playgrounds"
+                  className="flex items-center gap-1.5 text-gray-400 transition-colors hover:text-cyan-400"
+                >
+                  <Blocks className="h-3.5 w-3.5" />
+                  Indoor Playgrounds
                 </Link>
               </li>
               <li>

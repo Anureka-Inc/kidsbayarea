@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { routing, isFullyTranslated } from "@/i18n/routing";
 import { getPlaceBySlug, categoryNames, regionNames, type Category } from "@/data/places";
+import { placeImages } from "@/data/placeImages";
 import PlaceDetail from "./PlaceDetail";
 
 const validCategories: Category[] = ["play", "eat", "learn", "shop", "explore"];
@@ -291,6 +292,7 @@ export default async function PlaceDetailPage({
       longitude: place.lng,
     },
     review,
+    ...(placeImages[place.slug] ? { image: placeImages[place.slug] } : {}),
     isAccessibleForFree: place.priceLevel === "free",
     priceRange: place.priceLevel === "free" ? "Free" : place.priceLevel,
     audience,

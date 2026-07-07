@@ -13,7 +13,10 @@ type GuideSlug =
   | "kids-5-8"
   | "tweens-8-12"
   | "rainy-day"
-  | "family-favorites";
+  | "family-favorites"
+  | "birthday-party"
+  | "free"
+  | "indoor-playgrounds";
 
 interface GuideMeta {
   titleEn: string;
@@ -48,6 +51,18 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
       );
     } else if (guideSlug === "family-favorites") {
       result = result.filter((p) => p.rating >= 4.5);
+    } else if (guideSlug === "birthday-party") {
+      result = result.filter((p) => p.tags.includes("birthday-party"));
+    } else if (guideSlug === "free") {
+      result = result.filter(
+        (p) => p.priceLevel === "free" || p.tags.includes("free")
+      );
+    } else if (guideSlug === "indoor-playgrounds") {
+      result = result.filter(
+        (p) =>
+          p.tags.includes("indoor-playground") ||
+          (p.tags.includes("playground") && p.indoorOutdoor === "indoor")
+      );
     } else {
       const age = guideAgeMap[guideSlug];
       if (age) {
