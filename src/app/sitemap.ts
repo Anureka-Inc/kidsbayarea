@@ -12,7 +12,7 @@ const baseUrl = "https://www.kidsbayarea.com";
 const indexableLocales = fullyTranslatedLocales;
 
 const staticPages = ["/", "/play", "/eat", "/learn", "/shop", "/explore", "/contact", "/planner"];
-const guideSlugs = ["babies-0-2", "toddlers-2-5", "kids-5-8", "tweens-8-12", "rainy-day", "family-favorites"];
+const guideSlugs = ["babies-0-2", "toddlers-2-5", "kids-5-8", "tweens-8-12", "rainy-day", "family-favorites", "birthday-party", "free", "indoor-playgrounds"];
 
 // Build `alternates.languages` for a path. Next.js MetadataRoute.Sitemap maps
 // this to xhtml:link rel="alternate" hreflang tags inside each <url> entry,

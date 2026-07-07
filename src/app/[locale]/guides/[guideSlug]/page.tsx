@@ -12,6 +12,9 @@ const validGuides = [
   "tweens-8-12",
   "rainy-day",
   "family-favorites",
+  "birthday-party",
+  "free",
+  "indoor-playgrounds",
 ] as const;
 
 type GuideSlug = (typeof validGuides)[number];
@@ -66,6 +69,30 @@ const guideMeta: Record<
       "The highest-rated, most-loved family activities in the Bay Area. Places the whole family will enjoy together.",
     descZh:
       "湾区评分最高、最受家庭喜爱的亲子活动。全家老少都开心的好去处。",
+  },
+  "birthday-party": {
+    titleEn: "Best Kids Birthday Party Places in the Bay Area",
+    titleZh: "湾区儿童生日派对场地推荐",
+    descEn:
+      "The best venues for kids birthday parties in the Bay Area: indoor playgrounds, trampoline parks, museums, and party-ready spots that handle the setup so you don't have to.",
+    descZh:
+      "湾区最适合举办儿童生日派对的场地：室内游乐场、蹦床公园、博物馆和省心的派对好去处。",
+  },
+  free: {
+    titleEn: "Free Things to Do with Kids in the Bay Area",
+    titleZh: "湾区免费亲子活动大全",
+    descEn:
+      "Free family activities in the Bay Area that won't cost a thing: parks, beaches, free-admission museums, nature trails, and budget-friendly fun for kids of all ages.",
+    descZh:
+      "湾区不花钱的亲子好去处：公园、海滩、免费博物馆、自然步道，适合各年龄段孩子的省钱活动。",
+  },
+  "indoor-playgrounds": {
+    titleEn: "Best Indoor Playgrounds for Kids in the Bay Area",
+    titleZh: "湾区室内游乐场推荐",
+    descEn:
+      "The best indoor playgrounds and play spaces in the Bay Area: soft-play areas, climbing structures, trampoline parks, and indoor fun perfect for any weather.",
+    descZh:
+      "湾区最棒的室内游乐场和游玩空间：软体游乐区、攀爬设施、蹦床公园，任何天气都能玩。",
   },
 };
 
