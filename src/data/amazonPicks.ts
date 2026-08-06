@@ -162,6 +162,16 @@ export const amazonPickContexts: AmazonPickContext[] = [
     ],
   },
   {
+    key: "family-favorites",
+    headingEn: "Day-Out Essentials for Any Adventure",
+    queries: [
+      "family day trip bag essentials",
+      "kids travel water bottle",
+      "portable snack containers kids",
+      "car games for kids travel",
+    ],
+  },
+  {
     key: "free",
     headingEn: "Free Fun Still Needs a Few Things",
     queries: [

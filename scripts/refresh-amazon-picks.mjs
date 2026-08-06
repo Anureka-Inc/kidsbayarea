@@ -69,6 +69,15 @@ const SCOPE = IS_LWA ? "creatorsapi::default" : "creatorsapi/default";
 const API_BASE = process.env.AMZ_API_BASE ?? "https://creatorsapi.amazon/catalog/v1";
 const MARKETPLACE = env("AMZ_MARKETPLACE", "AMAZON_CREATORS_MARKETPLACE") ?? "www.amazon.com";
 
+// Optional LLM query generation via LiteLLM (OpenAI-compatible proxy).
+// When LITELLM_BASE_URL is set, each context's search queries are generated
+// fresh by the model (seeded with the hand-written queries as style
+// examples); any failure falls back to the static queries, so the LLM stage
+// can never break a refresh.
+const LITELLM_BASE_URL = env("LITELLM_BASE_URL");
+const LITELLM_API_KEY = env("LITELLM_API_KEY");
+const LITELLM_MODEL = env("LITELLM_MODEL") ?? "qwen-pool";
+
 if (!TOKEN_ENDPOINT) {
   console.error(`Unsupported AMZ_CREDENTIAL_VERSION "${CREDENTIAL_VERSION}" and no AMZ_TOKEN_ENDPOINT override.`);
   process.exit(1);
@@ -109,6 +118,54 @@ async function getToken() {
   const data = await res.json();
   if (!data.access_token) throw new Error(`token response missing access_token: ${JSON.stringify(data)}`);
   return data.access_token;
+}
+
+async function generateQueries(ctx) {
+  if (!LITELLM_BASE_URL || !LITELLM_API_KEY) return null;
+  try {
+    const res = await fetch(`${LITELLM_BASE_URL}/v1/chat/completions`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${LITELLM_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: LITELLM_MODEL,
+        temperature: 0.7,
+        max_tokens: 250,
+        messages: [
+          {
+            role: "user",
+            content:
+              `You pick Amazon US search queries for kidsbayarea.com, a guide to Bay Area family activities. ` +
+              `Page: "${ctx.headingEn}" (scenario: ${ctx.key}). ` +
+              `Style examples of good queries for this page: ${ctx.queries.join("; ")}. ` +
+              `Return ONLY a JSON array of exactly 4 short Amazon search queries (plain strings, 2-6 words each): ` +
+              `the first 2 are essential gear for this scenario, the last 2 are clever non-obvious items parents ` +
+              `usually forget or never think of. Family/kid-appropriate products only. No brand names.`,
+          },
+        ],
+      }),
+      signal: AbortSignal.timeout(90_000),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    let text = data.choices?.[0]?.message?.content ?? "";
+    text = text.replace(/```(?:json)?/g, "").trim();
+    const arr = JSON.parse(text.slice(text.indexOf("["), text.lastIndexOf("]") + 1));
+    if (
+      Array.isArray(arr) &&
+      arr.length >= 3 &&
+      arr.length <= 6 &&
+      arr.every((q) => typeof q === "string" && q.length >= 5 && q.length <= 70)
+    ) {
+      return arr.slice(0, 4);
+    }
+    throw new Error(`invalid query list: ${JSON.stringify(arr).slice(0, 120)}`);
+  } catch (err) {
+    console.warn(`  [${ctx.key}] LLM query generation failed (${err.message}) — using static queries`);
+    return null;
+  }
 }
 
 async function searchItems(token, keywords, retried = false) {
@@ -182,7 +239,10 @@ for (const ctx of contexts) {
   const seen = new Set();
   const items = [];
   const cap = ctx.maxItems ?? 4;
-  for (const q of ctx.queries) {
+  const llmQueries = await generateQueries(ctx);
+  const queries = llmQueries ?? ctx.queries;
+  if (llmQueries) console.log(`  [${ctx.key}] LLM queries: ${llmQueries.join(" | ")}`);
+  for (const q of queries) {
     if (items.length >= cap) break;
     try {
       const results = await searchItems(token, q);

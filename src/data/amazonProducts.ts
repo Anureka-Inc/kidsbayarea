@@ -1,6 +1,6 @@
 // GENERATED FILE — do not edit by hand.
 // Refreshed by scripts/refresh-amazon-picks.mjs via the Amazon Creators API.
-// Last refresh: 2026-08-06T17:53:50.164Z
+// Last refresh: 2026-08-06T18:18:48.485Z
 import type { AmazonPicksData } from "./amazonPicks";
 
 export const amazonProducts: Record<string, AmazonPicksData> = {
@@ -228,6 +228,39 @@ export const amazonProducts: Record<string, AmazonPicksData> = {
       }
     ]
   },
+  "family-favorites": {
+    "updatedAt": "2026-08-06",
+    "items": [
+      {
+        "asin": "B0CPYFXYLF",
+        "title": "Fammart Extra Large Mesh Beach Bag for Women, Top Zipper Closure Pool Tote, SandProof Cruise Essentials 2026 Family Travel",
+        "image": "https://m.media-amazon.com/images/I/51+jMNLKkiL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0CPYFXYLF?tag=kidsbayarea0d-20",
+        "price": "$9.99"
+      },
+      {
+        "asin": "B0CCVG1GPF",
+        "title": "Kerilyn 12oz Kids Water Bottle, Stainless Steel Insulated Water Bottle, Toddler Cup with Straws Leak-Proof, Kids Water Bottles for School Boys Girls, BPA Free, Blue",
+        "image": "https://m.media-amazon.com/images/I/41RrTIy8G-L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0CCVG1GPF?tag=kidsbayarea0d-20",
+        "price": "$9.99"
+      },
+      {
+        "asin": "B0G2C149CP",
+        "title": "6 Oz Snack Containers with Lids for Kids - 6 Pack Lunch Box Accessories",
+        "image": "https://m.media-amazon.com/images/I/41OZ7TNT-hL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0G2C149CP?tag=kidsbayarea0d-20",
+        "price": "$14.99"
+      },
+      {
+        "asin": "B0CF6DJJSP",
+        "title": "Memory Matching Game for Kids, Travel Toys for Toddlers Boys Girls Ages 3-5",
+        "image": "https://m.media-amazon.com/images/I/519Y5MXJ-lL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0CF6DJJSP?tag=kidsbayarea0d-20",
+        "price": "$14.99"
+      }
+    ]
+  },
   "free": {
     "updatedAt": "2026-08-06",
     "items": [
@@ -239,11 +272,11 @@ export const amazonProducts: Record<string, AmazonPicksData> = {
         "price": "$26.99"
       },
       {
-        "asin": "B0CSK3LHCF",
-        "title": "HENGDA KITE 2 Pack Butterfly Kite,for Kids and Adults,Easy to Fly,Excellent Fabric and Structure Design,The Pictures are Beautiful in high Definition,Suitable for Beginners(31x22)",
-        "image": "https://m.media-amazon.com/images/I/51+TvTapbTL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CSK3LHCF?tag=kidsbayarea0d-20",
-        "price": "$13.99"
+        "asin": "B0DCJZLC22",
+        "title": "SGftre Delta Kite Three Set for Kids and Adults,Easy to Fly Adult Kites,Perfect Family Kite for Parks and Beach, Delta Kites for Fun Outdoor Activities",
+        "image": "https://m.media-amazon.com/images/I/41a-V1btKKL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0DCJZLC22?tag=kidsbayarea0d-20",
+        "price": "$21.24"
       },
       {
         "asin": "B0DPQBS27W",
@@ -345,11 +378,11 @@ export const amazonProducts: Record<string, AmazonPicksData> = {
         "price": "$25.99"
       },
       {
-        "asin": "1426330731",
-        "title": "National Geographic Kids Bird Guide of North America, Second Edition",
-        "image": "https://m.media-amazon.com/images/I/41JwtF7-a+L._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/1426330731?tag=kidsbayarea0d-20",
-        "price": "$9.55"
+        "asin": "1591935741",
+        "title": "Animal Tracks of the Midwest Field Guide: Easy-to-Use Guide with 55 Track Illustrations",
+        "image": "https://m.media-amazon.com/images/I/51AJfgYJC0L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/1591935741?tag=kidsbayarea0d-20",
+        "price": "$11.99"
       }
     ]
   },
@@ -437,11 +470,11 @@ export const amazonProducts: Record<string, AmazonPicksData> = {
         "price": "$14.99"
       },
       {
-        "asin": "B077MRB9Z9",
-        "title": "Learning Resources Botley the Coding Robot - Code Games for Boys and Girls, Robotics for Kids, STEM Programming, Scientific Building Toys, Engineering Gift Set",
-        "image": "https://m.media-amazon.com/images/I/51be8-ByY4L._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B077MRB9Z9?tag=kidsbayarea0d-20",
-        "price": "$65.45"
+        "asin": "B09SVRLNMY",
+        "title": "Learning Resources Switcheroo Coding Crew",
+        "image": "https://m.media-amazon.com/images/I/51bzfryRZAL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B09SVRLNMY?tag=kidsbayarea0d-20",
+        "price": "$55.20"
       },
       {
         "asin": "1432130781",
@@ -503,11 +536,11 @@ export const amazonProducts: Record<string, AmazonPicksData> = {
         "price": "$6.06"
       },
       {
-        "asin": "B0F9F61YLM",
-        "title": "Microscope for Kids, Ahalfcit 1000X Handheld Digital Microscope with 2” HD IPS Screen, Portable Mini Camera for Exploring Nature, Science Educational Toy, Birthday Gift for 3-12 Years Old Boys Girls",
-        "image": "https://m.media-amazon.com/images/I/41AW52xy4GL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0F9F61YLM?tag=kidsbayarea0d-20",
-        "price": "$29.99"
+        "asin": "B0GL89R5H4",
+        "title": "OAEBLLE Kids Binoculars with Night Vision Camera, 10X Zoom Digital Adventures Telescope with 2.4\" IPS Screen, Nature Explorer STEM Toys for Bird Watching Camping, Gifts for Boys Girls Age 4-12 - Blue",
+        "image": "https://m.media-amazon.com/images/I/518gOkKshIL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0GL89R5H4?tag=kidsbayarea0d-20",
+        "price": "$51.27"
       }
     ]
   },
