@@ -1,6 +1,6 @@
 // GENERATED FILE — do not edit by hand.
 // Refreshed by scripts/refresh-amazon-picks.mjs via the Amazon Creators API.
-// Last refresh: 2026-08-06T17:46:01.912Z
+// Last refresh: 2026-08-06T17:53:50.164Z
 import type { AmazonPicksData } from "./amazonPicks";
 
 export const amazonProducts: Record<string, AmazonPicksData> = {
@@ -251,6 +251,204 @@ export const amazonProducts: Record<string, AmazonPicksData> = {
         "image": "https://m.media-amazon.com/images/I/51auWKOPBgL._SL160_.jpg",
         "url": "https://www.amazon.com/dp/B0DPQBS27W?tag=kidsbayarea0d-20",
         "price": "$27.99"
+      }
+    ]
+  },
+  "water-outing": {
+    "updatedAt": "2026-08-06",
+    "items": [
+      {
+        "asin": "B0D6GP6RYM",
+        "title": "SEEKWAY Barefoot Water Shoes for Kids - Wide Toe Box and Quick-Dry Sand Shoes Toddler for Hiking Swim Beach Pool Kayak Sport Accessories, Camping Essentials Non-Slip for Boys Girls Sizes",
+        "image": "https://m.media-amazon.com/images/I/517UD1r6AlL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0D6GP6RYM?tag=kidsbayarea0d-20",
+        "price": "$15.26"
+      },
+      {
+        "asin": "B0GHR8K57F",
+        "title": "Stylish Hooded Beach Towel for Kids - Soft Cotton Poncho for Toddlers 3-6",
+        "image": "https://m.media-amazon.com/images/I/41iwrcPefsL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0GHR8K57F?tag=kidsbayarea0d-20",
+        "price": "$19.99"
+      },
+      {
+        "asin": "B079HV3TC9",
+        "title": "Hiearcool Waterproof Phone Pouch, IPX8 Waterproof Phone Case for iPhone 17/16/15/14 Pro Max, Cell Phone Dry Bag for Beach & Cruise Essentials, Touch Screen, Lanyard Included, 2 Pack (Fits Up to 8.9”)",
+        "image": "https://m.media-amazon.com/images/I/51+k2TQ28hL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B079HV3TC9?tag=kidsbayarea0d-20",
+        "price": "$9.99"
+      },
+      {
+        "asin": "B0GMS6LJ93",
+        "title": "Pampers Splashers Swim Diapers, Size 6+, 15 Count, Disposable Swim Diapers, Contains Mess, No Swell",
+        "image": "https://m.media-amazon.com/images/I/51Ce66UkBNL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0GMS6LJ93?tag=kidsbayarea0d-20",
+        "price": "$9.97"
+      }
+    ]
+  },
+  "trail-day": {
+    "updatedAt": "2026-08-06",
+    "items": [
+      {
+        "asin": "B09TZZLPW4",
+        "title": "Ivygreen Kids Hydration Backpack for Hiking, 1.5L Water Bladder, Purple S",
+        "image": "https://m.media-amazon.com/images/I/41ABb8Lz+lL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B09TZZLPW4?tag=kidsbayarea0d-20",
+        "price": "$30.99"
+      },
+      {
+        "asin": "B071WP41M2",
+        "title": "Scotamalone Kids Binoculars Shock Proof Toy Binoculars Set for Age 3-12 Years Old Boys Girls Bird Watching Educational Learning Hunting Hiking Birthday Presents",
+        "image": "https://m.media-amazon.com/images/I/41-iD6Ygh4L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B071WP41M2?tag=kidsbayarea0d-20",
+        "price": "$7.99"
+      },
+      {
+        "asin": "B09GDB6K8Q",
+        "title": "OFF! Kids Mosquito & Tick Repellent Spray, Botanically Inspired, Safe for Use On Kids, 4 oz",
+        "image": "https://m.media-amazon.com/images/I/41iMnfYNzhL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B09GDB6K8Q?tag=kidsbayarea0d-20",
+        "price": "$7.99"
+      },
+      {
+        "asin": "B0DMWW6B75",
+        "title": "Crayola First Aid Kit, Everyday Essentials, 30 Pieces",
+        "image": "https://m.media-amazon.com/images/I/51QZFCFpA1L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0DMWW6B75?tag=kidsbayarea0d-20",
+        "price": "$7.99"
+      }
+    ]
+  },
+  "animal-encounter": {
+    "updatedAt": "2026-08-06",
+    "items": [
+      {
+        "asin": "B0BS8WT7HL",
+        "title": "Toddler Baby Sun Hat Kids Summer Beach Essentials Adjustable Beach Hats with Bucket Wide Brim for Boys Girls Age 0-14 Years",
+        "image": "https://m.media-amazon.com/images/I/312yT4ngkBL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0BS8WT7HL?tag=kidsbayarea0d-20",
+        "price": "$11.99"
+      },
+      {
+        "asin": "B0B4BM18DW",
+        "title": "Germ-X Original Hand Sanitizer, 2 Fl Oz (Pack of 6), Less Drying Moisturizing Gel with Vitamin E, No Rinse Formula, Display Pack, Mini Travel Size for On-The-Go",
+        "image": "https://m.media-amazon.com/images/I/419ZQ6VNWsL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0B4BM18DW?tag=kidsbayarea0d-20",
+        "price": "$12.94"
+      },
+      {
+        "asin": "B0B68W6ZMT",
+        "title": "Goopow Kids Camera Toys for 3-8 Year Old Girls Boys,Children Digital Video Camcorder Camera with Cartoon Soft Cover, Best Chritmas Birthday Festival Gift for Kids",
+        "image": "https://m.media-amazon.com/images/I/41hlA3pf5cL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0B68W6ZMT?tag=kidsbayarea0d-20",
+        "price": "$25.99"
+      },
+      {
+        "asin": "1426330731",
+        "title": "National Geographic Kids Bird Guide of North America, Second Edition",
+        "image": "https://m.media-amazon.com/images/I/41JwtF7-a+L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/1426330731?tag=kidsbayarea0d-20",
+        "price": "$9.55"
+      }
+    ]
+  },
+  "museum-day": {
+    "updatedAt": "2026-08-06",
+    "items": [
+      {
+        "asin": "1837581053",
+        "title": "Lonely Planet Kids Create Your Own Travel Journal: Fun Activities, Games & Challenges Inside | Diary & Keepsake | Write & Draw Precious Trip Moments | Story Prompts",
+        "image": "https://m.media-amazon.com/images/I/51vxSIcjWFL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/1837581053?tag=kidsbayarea0d-20",
+        "price": "$8.49"
+      },
+      {
+        "asin": "B0CRC7XLCR",
+        "title": "Owala FreeSip Kids Stainless Steel Water Bottle 16 oz Mint Chocolate",
+        "image": "https://m.media-amazon.com/images/I/216EBYJ2iKL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0CRC7XLCR?tag=kidsbayarea0d-20",
+        "price": "$19.99"
+      },
+      {
+        "asin": "B0C5R5T273",
+        "title": "Accmor Toddler Harness Backpack Leash, Cute Dinosaur Backpacks with Anti Lost Wrist Link, Cute Mini Child Backpack Wristband Tether Strap and Protection Leashes for Boys Girls Aged 1-3 Years",
+        "image": "https://m.media-amazon.com/images/I/51cNxlH5hXL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0C5R5T273?tag=kidsbayarea0d-20",
+        "price": "$16.99"
+      },
+      {
+        "asin": "B0746RBK2M",
+        "title": "noot products K11 Kids Headphones with Wired Cord 3.5mm Jack Navy/Teal",
+        "image": "https://m.media-amazon.com/images/I/414CwjkEV6L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0746RBK2M?tag=kidsbayarea0d-20",
+        "price": "$9.99"
+      }
+    ]
+  },
+  "eat-out": {
+    "updatedAt": "2026-08-06",
+    "items": [
+      {
+        "asin": "B0D543R48M",
+        "title": "Babebay Disposable Stick-On Placemats for Baby, 60 Pack, 3 Animal Designs",
+        "image": "https://m.media-amazon.com/images/I/51yT3sD+lqL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0D543R48M?tag=kidsbayarea0d-20",
+        "price": "$11.99"
+      },
+      {
+        "asin": "B07R2MJ136",
+        "title": "Kirecoo 2 Set Stainless Steel Toddler Utensils with Travel Case",
+        "image": "https://m.media-amazon.com/images/I/411xGGCfz2L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B07R2MJ136?tag=kidsbayarea0d-20",
+        "price": "$7.99"
+      },
+      {
+        "asin": "B0CZCX792S",
+        "title": "Bright Starts Pop ‘N Sit Portable Booster Seat, 3-in-1 Floor Seat, Travel High Chair & Toddler Booster with Feeding Tray, Indoor/Outdoor, Grey, 6 Months–3 Years",
+        "image": "https://m.media-amazon.com/images/I/41xr2w96ERL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0CZCX792S?tag=kidsbayarea0d-20",
+        "price": "$21.99"
+      },
+      {
+        "asin": "B0FPCKDTCJ",
+        "title": "haakaa Lightweight Silicone Pocket Bib – Ultra-Light & Foldable Travel Silicone Baby Bibs with Deep Food Catcher Pocket, Adjustable Waterproof Design, Baby Feeding Essentials",
+        "image": "https://m.media-amazon.com/images/I/31woBFRxXPL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0FPCKDTCJ?tag=kidsbayarea0d-20",
+        "price": "$9.99"
+      }
+    ]
+  },
+  "learn-enrich": {
+    "updatedAt": "2026-08-06",
+    "items": [
+      {
+        "asin": "B0C3GWRMZY",
+        "title": "STEM Kits for Kids Craft 8-12, STEM Toy 6 7 8 9 Year Old Boy Birthday Gift",
+        "image": "https://m.media-amazon.com/images/I/51z482+wJHL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0C3GWRMZY?tag=kidsbayarea0d-20",
+        "price": "$19.99"
+      },
+      {
+        "asin": "B0C1N6W1BH",
+        "title": "iBayam Art Supplies, 149-Pack Drawing Kit Painting Art Set Art Kits Gifts",
+        "image": "https://m.media-amazon.com/images/I/610fDGeYrhL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0C1N6W1BH?tag=kidsbayarea0d-20",
+        "price": "$14.99"
+      },
+      {
+        "asin": "B077MRB9Z9",
+        "title": "Learning Resources Botley the Coding Robot - Code Games for Boys and Girls, Robotics for Kids, STEM Programming, Scientific Building Toys, Engineering Gift Set",
+        "image": "https://m.media-amazon.com/images/I/51be8-ByY4L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B077MRB9Z9?tag=kidsbayarea0d-20",
+        "price": "$65.45"
+      },
+      {
+        "asin": "1432130781",
+        "title": "77 Bible Activities for Kids, Ages 5-8 (77 for Kids Editions)",
+        "image": "https://m.media-amazon.com/images/I/51HlFiz4PqL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/1432130781?tag=kidsbayarea0d-20",
+        "price": "$4.19"
       }
     ]
   },

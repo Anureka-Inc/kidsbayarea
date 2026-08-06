@@ -26,6 +26,8 @@ import {
 } from "lucide-react";
 import type { Place, Category } from "@/data/places";
 import { getSimilarPlaces, categoryNames, regionNames } from "@/data/places";
+import { resolvePlaceContextKey } from "@/data/amazonPicks";
+import AmazonPicks from "@/components/AmazonPicks";
 import PlaceCard from "@/components/PlaceCard";
 import PlaceImage from "@/components/PlaceImage";
 
@@ -414,6 +416,8 @@ export default function PlaceDetail({ place }: PlaceDetailProps) {
             </a>
           </div>
         </section>
+
+        <AmazonPicks contextKey={resolvePlaceContextKey(place.tags, place.category)} />
 
         {/* Similar Places */}
         {similarPlaces.length > 0 && (
