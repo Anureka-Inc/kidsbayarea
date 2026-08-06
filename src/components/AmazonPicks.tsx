@@ -59,9 +59,14 @@ export default function AmazonPicks({ contextKey }: AmazonPicksProps) {
             <p className="mb-2 line-clamp-2 flex-1 text-sm font-medium text-gray-800 group-hover:text-amber-700 dark:text-gray-200 dark:group-hover:text-amber-400">
               {item.title}
             </p>
-            <p className="flex items-center gap-1 text-sm font-semibold text-gray-900 dark:text-white">
-              {item.price ?? "See price"}
-              <ExternalLink className="h-3.5 w-3.5 text-gray-400" />
+            {/* Prices are intentionally NOT rendered: product data refreshes
+                weekly (seo-cron step 3.5), and Amazon's Associates terms
+                require displayed prices to be no more than 24h stale. The
+                price stays in the data file — restore rendering only if the
+                refresh ever becomes daily. */}
+            <p className="flex items-center gap-1 text-sm font-semibold text-teal-700 dark:text-teal-400">
+              View on Amazon
+              <ExternalLink className="h-3.5 w-3.5" />
             </p>
           </a>
         ))}

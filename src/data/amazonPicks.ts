@@ -22,6 +22,10 @@ export interface AmazonProduct {
 
 export interface AmazonPicksData {
   updatedAt: string;
+  /** How this context's queries were produced — "qwen" or "static" fallback. */
+  source?: string;
+  /** The actual search queries used, persisted so every pick is auditable. */
+  queries?: string[];
   items: AmazonProduct[];
 }
 
