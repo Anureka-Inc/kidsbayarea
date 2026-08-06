@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { places, regionNames, type Region, type AgeRange, type PriceLevel, type Category } from "@/data/places";
 import PlaceCard from "@/components/PlaceCard";
+import AmazonPicks from "@/components/AmazonPicks";
 
 const ageOptions: AgeRange[] = ["0-2", "2-5", "5-8", "8-12", "all"];
 const priceOptions: PriceLevel[] = ["free", "$", "$$", "$$$"];
@@ -97,6 +98,8 @@ export default function CategoryContent({ category }: CategoryContentProps) {
           {filtered.map((p) => <PlaceCard key={p.slug} place={p} />)}
         </div>
       )}
+
+      <AmazonPicks contextKey={category} />
     </div>
   );
 }
