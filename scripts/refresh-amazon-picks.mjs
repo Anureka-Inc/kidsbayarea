@@ -142,7 +142,10 @@ async function generateQueries(ctx) {
               `Style examples of good queries for this page: ${ctx.queries.join("; ")}. ` +
               `Return ONLY a JSON array of exactly 4 short Amazon search queries (plain strings, 2-6 words each): ` +
               `the first 2 are essential gear for this scenario, the last 2 are clever non-obvious items parents ` +
-              `usually forget or never think of. Family/kid-appropriate products only. No brand names.`,
+              `usually forget or never think of. Stay strictly within the product domain of the style examples — ` +
+              `refine or replace them with better ideas for the SAME kind of outing, never drift to a different ` +
+              `topic (e.g. no car accessories unless the examples are about car trips). ` +
+              `Family/kid-appropriate products only. No brand names.`,
           },
         ],
       }),
