@@ -151,6 +151,92 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
         </section>
       ))}
 
+      {/* Indoor playgrounds FAQ — targets "best indoor playgrounds bay area" / "indoor play spaces for kids" */}
+      {guideSlug === "indoor-playgrounds" && locale === "en" && (
+        <section className="mt-12 rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
+          <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
+            Indoor Playgrounds FAQ
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What are the best indoor playgrounds in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Top picks include <strong>WOW Kids Playground</strong> in San Jose (large multi-level soft-play structure), <strong>Lemon Tree Play Cafe</strong> in San Jose (indoor play with a cafe for parents), <strong>KidTopia</strong> in Fremont, <strong>La Petite Playhouse</strong> in Redwood City, and the <strong>Exploratorium</strong> at Pier 15 in San Francisco (250+ hands-on science play exhibits). For trampoline-style play, <strong>Sky Zone</strong> in Fremont and Dublin and <strong>House of Air</strong> at the Presidio in San Francisco are popular choices. Check each venue&apos;s website for current hours and admission.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Which indoor play spaces are best for toddlers in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Best for toddlers: <strong>Habitot Children&apos;s Museum</strong> in Berkeley (designed for children under 5), <strong>Bay Area Discovery Museum</strong> in Sausalito, <strong>La Petite Playhouse</strong> in Redwood City, <strong>WOW Kids Playground</strong> in San Jose (dedicated toddler zone), <strong>Lemon Tree Play Cafe</strong> in San Jose, and <strong>KidTopia</strong> in Fremont. The <strong>Children&apos;s Discovery Museum of San Jose</strong> also has a toddler-friendly section. Check each venue&apos;s website for age guidelines.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Are there free or low-cost indoor play options for kids in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Free and low-cost options include public library story times and drop-in play mornings (San Francisco, Oakland, Santa Clara County), the <strong>Randall Museum</strong> in San Francisco (free general admission), <strong>East Bay Depot for Creative Reuse</strong> in Oakland, and free family art Saturdays at the <strong>de Young Museum</strong> in Golden Gate Park. Many city recreation centers also run subsidized drop-in gym sessions for families — check local parks and recreation departments for schedules.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What indoor play and trampoline parks are near San Jose?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                South Bay indoor play venues near San Jose include <strong>WOW Kids Playground</strong>, <strong>Lemon Tree Play Cafe</strong>, <strong>KidTopia</strong> (Fremont), <strong>Altitude Trampoline Park</strong> San Jose, and the <strong>Children&apos;s Discovery Museum of San Jose</strong>. For STEM-based indoor play, <strong>The Tech Interactive</strong> in downtown San Jose offers hands-on robotics, AI, and design exhibits for kids of all ages.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Kids 5-8 FAQ — targets "indoor activities for kids bay area" / "things to do with kids bay area" */}
+      {guideSlug === "kids-5-8" && locale === "en" && (
+        <section className="mt-12 rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
+          <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
+            Kids 5–8 Activities FAQ
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What are the best indoor activities for kids ages 5–8 in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Top indoor picks include the <strong>Exploratorium</strong> at Pier 15 in San Francisco (250+ hands-on science exhibits), <strong>Children&apos;s Discovery Museum of San Jose</strong> (three floors of interactive exhibits), <strong>The Tech Interactive</strong> in San Jose (robotics, AI, and design labs), <strong>Lawrence Hall of Science</strong> in Berkeley (hilltop science center with hands-on exhibits), <strong>Bay Area Discovery Museum</strong> in Sausalito, and <strong>Children&apos;s Creativity Museum</strong> in San Francisco. Check each venue&apos;s website for current hours and admission.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What outdoor adventures are good for kids ages 5–8 in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Great outdoor options include <strong>Tilden Park Steam Trains</strong> in Berkeley, <strong>Tilden Little Farm</strong> (free petting farm, open daily), <strong>Adventure Playground</strong> at the Berkeley Marina (build-your-own structures from scrap lumber — unique to the region), the 1-mile Main Trail loop at <strong>Muir Woods National Monument</strong>, <strong>Shoreline Park</strong> trails in Mountain View, and the <strong>Oakland Zoo</strong>. <strong>Magical Bridge Playgrounds</strong> in Palo Alto, Sunnyvale, and Mountain View are designed for all abilities.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What STEM classes are available for 5–8 year olds in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Bay Area STEM programs for this age group include <strong>Code Ninjas</strong> (Cupertino, North San Jose, Fremont), <strong>Galileo Innovation Camps</strong> (multiple Bay Area locations), <strong>iD Tech</strong> beginner coding courses (Stanford campus), <strong>Lawrence Hall of Science</strong> after-school clubs (Berkeley), and workshops at <strong>The Tech Interactive</strong> (San Jose). Many public library systems — including San Francisco, Santa Clara County, and Oakland — run free STEM Saturdays for this age group.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Where can kids ages 5–8 take art and music classes in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Art and music programs include <strong>Music Together</strong> studios (Palo Alto, Menlo Park, Sunnyvale, and East Bay), <strong>Studio4Art</strong> in San Jose, <strong>Color Me Mine</strong> ceramic painting (multiple Bay Area locations), the <strong>de Young Museum</strong>&apos;s family art Saturdays in Golden Gate Park (free), <strong>SFMOMA</strong> family workshops, the <strong>Asian Art Museum</strong>&apos;s kids&apos; programs, and the <strong>Randall Museum</strong> in San Francisco (hands-on nature, arts, and science classes).
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Toddlers FAQ — targets "things to do with toddlers bay area" / "toddler activities san francisco" */}
       {guideSlug === "toddlers-2-5" && locale === "en" && (
         <section className="mt-12 rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
