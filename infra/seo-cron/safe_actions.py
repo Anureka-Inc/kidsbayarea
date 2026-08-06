@@ -85,13 +85,60 @@ def resubmit_gsc_sitemap():
 
 
 def ping_indexnow():
-    changed_path = os.path.join(OUT_DIR, "changed_urls.txt")
-    urls = []
-    if os.path.exists(changed_path):
-        with open(changed_path) as f:
-            urls = [u.strip() for u in f if u.strip().startswith("http")]
+    # Deploy-visibility gate (ported from bayareadog): this run's edits sit in
+    # an UNMERGED PR, so pinging them would tell Bing to re-crawl content that
+    # hasn't changed yet. Instead ping URLs from history/changes.jsonl — that
+    # file only reaches origin/main when a PR merges, so every entry there IS
+    # deployed. A local ledger keeps each entry from being pinged twice, and a
+    # liveness probe (HTTP 200) guards against pinging a URL that 404s.
+    import datetime as dt
+
+    history_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), "history", "changes.jsonl"
+    )
+    ledger_path = os.path.join(os.path.dirname(OUT_DIR) or ".", ".indexnow-pinged")
+    try:
+        pinged = set(open(ledger_path).read().split())
+    except FileNotFoundError:
+        pinged = None  # first run: don't replay all history
+
+    urls, dates = [], []
+    cutoff = (dt.date.today() - dt.timedelta(days=21)).isoformat()
+    if os.path.exists(history_path):
+        for line in open(history_path):
+            try:
+                entry = json.loads(line)
+            except ValueError:
+                continue
+            date = entry.get("date", "")
+            if pinged is None:
+                dates.append(date)  # seed ledger without pinging
+                continue
+            if date in pinged or date < cutoff:
+                continue
+            dates.append(date)
+            for u in entry.get("urls", {}):
+                try:
+                    if requests.get(u, timeout=15).status_code == 200:
+                        urls.append(u)
+                    else:
+                        log(f"IndexNow: skipped {u} (not serving 200)")
+                except Exception:  # noqa: BLE001
+                    log(f"IndexNow: skipped {u} (liveness probe failed)")
+
+    def _write_ledger():
+        if dates:
+            existing = set() if pinged is None else pinged
+            with open(ledger_path, "w") as f:
+                f.write("\n".join(sorted(existing | set(dates))))
+
+    if pinged is None:
+        _write_ledger()
+        log("IndexNow: ledger initialized, nothing pinged (first gated run)")
+        return
     if not urls:
-        log("IndexNow: no changed URLs this run, skipping ping")
+        _write_ledger()
+        log("IndexNow: no newly-merged deployed URLs to ping")
         return
     body = {
         "host": HOST,
@@ -106,7 +153,8 @@ def ping_indexnow():
         timeout=30,
     )
     if r.status_code in (200, 202):
-        log(f"IndexNow accepted {len(urls)} URL(s) (HTTP {r.status_code})")
+        log(f"IndexNow accepted {len(urls)} deployed URL(s) from merged runs {sorted(set(dates))} (HTTP {r.status_code})")
+        _write_ledger()
     else:
         log(f"IndexNow FAILED: HTTP {r.status_code} {r.text[:200]}")
 
