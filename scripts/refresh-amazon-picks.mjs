@@ -25,6 +25,7 @@
 //   export AMZ_CREATORS_CLIENT_ID=$(aws ssm get-parameter --name /seo-cron/kidsbayarea/amz-creators-client-id --with-decryption --query Parameter.Value --output text)
 
 import { readFile, writeFile } from "node:fs/promises";
+import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
@@ -32,10 +33,28 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT_FILE = path.join(ROOT, "src", "data", "amazonProducts.ts");
 const PICKS_FILE = path.join(ROOT, "src", "data", "amazonPicks.ts");
 
-const CLIENT_ID = process.env.AMZ_CREATORS_CLIENT_ID;
-const CLIENT_SECRET = process.env.AMZ_CREATORS_CLIENT_SECRET;
-const PARTNER_TAG = process.env.AMZ_PARTNER_TAG;
-const CREDENTIAL_VERSION = process.env.AMZ_CREDENTIAL_VERSION ?? "2.1";
+// AMZ_ENV_FILE: optional path to a dotenv-style file to load credentials from,
+// so secrets never appear on the command line. Understands both this script's
+// AMZ_* names and the AMAZON_CREATORS_* names used by pickfromvideo-web.
+const fileEnv = {};
+if (process.env.AMZ_ENV_FILE) {
+  for (const line of readFileSync(process.env.AMZ_ENV_FILE, "utf8").split("\n")) {
+    const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*"?([^"\n]*)"?\s*$/);
+    if (m) fileEnv[m[1]] = m[2];
+  }
+}
+const env = (...names) => {
+  for (const n of names) {
+    const v = process.env[n] ?? fileEnv[n];
+    if (v) return v;
+  }
+  return undefined;
+};
+
+const CLIENT_ID = env("AMZ_CREATORS_CLIENT_ID", "AMAZON_CREATORS_CREDENTIAL_ID");
+const CLIENT_SECRET = env("AMZ_CREATORS_CLIENT_SECRET", "AMAZON_CREATORS_CREDENTIAL_SECRET");
+const PARTNER_TAG = env("AMZ_PARTNER_TAG", "AMAZON_CREATORS_PARTNER_TAG");
+const CREDENTIAL_VERSION = env("AMZ_CREDENTIAL_VERSION", "AMAZON_CREATORS_VERSION") ?? "2.1";
 const IS_LWA = CREDENTIAL_VERSION.startsWith("3.");
 const TOKEN_ENDPOINTS = {
   "2.1": "https://creatorsapi.auth.us-east-1.amazoncognito.com/oauth2/token",
@@ -48,14 +67,15 @@ const TOKEN_ENDPOINTS = {
 const TOKEN_ENDPOINT = process.env.AMZ_TOKEN_ENDPOINT ?? TOKEN_ENDPOINTS[CREDENTIAL_VERSION];
 const SCOPE = IS_LWA ? "creatorsapi::default" : "creatorsapi/default";
 const API_BASE = process.env.AMZ_API_BASE ?? "https://creatorsapi.amazon/catalog/v1";
-const MARKETPLACE = process.env.AMZ_MARKETPLACE ?? "www.amazon.com";
+const MARKETPLACE = env("AMZ_MARKETPLACE", "AMAZON_CREATORS_MARKETPLACE") ?? "www.amazon.com";
 
 if (!TOKEN_ENDPOINT) {
   console.error(`Unsupported AMZ_CREDENTIAL_VERSION "${CREDENTIAL_VERSION}" and no AMZ_TOKEN_ENDPOINT override.`);
   process.exit(1);
 }
 
-const PER_QUERY = 2; // products kept per query
+const PER_QUERY = 1; // products kept per query — one per query keeps the set
+// diverse and guarantees the later "didn't-think-of-it" queries make the cut
 const SEARCH_COUNT = 5; // products requested per query (headroom for filtering)
 const THROTTLE_MS = 1200; // stay well under API rate limits
 
