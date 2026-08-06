@@ -39,12 +39,28 @@ export interface AmazonPickContext {
 // would actually pack for that visit. First match wins — ordered from most
 // activity-specific to most generic. Falls back to the place's category
 // context, or null (no section) when nothing fits.
+// Exact tag matches only — the tag vocabulary contains traps like
+// "farm-to-table" (a restaurant), "stuffed-animals" (a toy store), and
+// "computer-science" (a coding class), so no substring/word matching.
+// Lists are curated from the actual places.ts vocabulary.
 const TAG_CONTEXT_RULES: Array<[tags: string[], contextKey: string]> = [
-  [["splash-pad", "water-play", "swimming", "beach", "tide-pools", "lake", "waterfront"], "water-outing"],
-  [["hiking", "state-park", "redwoods", "waterfall", "nature-preserve", "flat-trail", "camping", "nature"], "trail-day"],
-  [["farm", "animals", "wildlife", "zoo"], "animal-encounter"],
-  [["museum", "science", "STEM", "interactive"], "museum-day"],
-  [["indoor-playground", "trampoline", "play-area", "climbing", "rock-climbing"], "indoor-playgrounds"],
+  [
+    ["farm", "farm-animals", "petting-zoo", "zoo", "children-zoo", "baby-animals", "animals", "wildlife", "aquarium"],
+    "animal-encounter",
+  ],
+  [
+    ["splash-pad", "water-play", "water-park", "waterpark", "water-slides", "water-rides", "swimming", "pool", "indoor-pool", "beach", "family-beach", "ocean-beach", "pebble-beach", "tide-pools", "lake", "waterfront"],
+    "water-outing",
+  ],
+  [
+    ["hiking", "easy-hike", "short-hike", "guided-hikes", "trail", "easy-trail", "easy-trails", "flat-trail", "creek-trail", "coastal-trail", "bay-trail", "state-park", "national-park", "regional-park", "county-park", "nature", "nature-preserve", "nature-center", "urban-nature", "redwoods", "waterfall", "waterfalls", "camping"],
+    "trail-day",
+  ],
+  [["museum", "science", "interactive"], "museum-day"],
+  [
+    ["indoor-playground", "trampoline", "play-area", "climbing", "rock-climbing", "inflatables"],
+    "indoor-playgrounds",
+  ],
   [["playground", "slides"], "play"],
   [["day-trip", "scenic"], "explore"],
 ];
@@ -61,6 +77,12 @@ export function resolvePlaceContextKey(
   tags: readonly string[],
   category: string
 ): string | null {
+  // Venue-type categories map straight to their scenario — a waterfront
+  // restaurant is still a restaurant, a science class is still a class.
+  // Tag rules only differentiate activity venues (play/explore).
+  if (category === "eat" || category === "learn" || category === "shop") {
+    return CATEGORY_CONTEXT_FALLBACK[category];
+  }
   for (const [ruleTags, contextKey] of TAG_CONTEXT_RULES) {
     if (ruleTags.some((t) => tags.includes(t))) return contextKey;
   }
