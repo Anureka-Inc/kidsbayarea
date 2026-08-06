@@ -130,11 +130,17 @@ Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" || COMMIT_OK=0
       } >> "$SEO_OUT_DIR/report.md"
     else
       git push -f origin "$BRANCH"
-      PR_URL=$(gh pr create \
+      # gh pr create fails when an open PR already exists on the branch; in
+      # that case the force-push updated the diff but NOT the PR body, so the
+      # body must be refreshed explicitly or it forever shows the first run's
+      # report (this is exactly what happened between 2026-07-09 and 2026-08-06).
+      if ! PR_URL=$(gh pr create \
         --title "seo-cron: page optimizations (auto-updating, needs review)" \
         --body-file "$SEO_OUT_DIR/report.md" \
-        --base main --head "$BRANCH" 2>/dev/null \
-        || gh pr list --head "$BRANCH" --state open --json url -q '.[0].url')
+        --base main --head "$BRANCH" 2>/dev/null); then
+        PR_URL=$(gh pr list --head "$BRANCH" --state open --json url -q '.[0].url')
+        [ -n "$PR_URL" ] && gh pr edit "$PR_URL" --body-file "$SEO_OUT_DIR/report.md" || true
+      fi
       echo "$PR_URL" > "$SEO_OUT_DIR/pr_url.txt"
       echo "$LOG_PREFIX PR: $PR_URL (commit $RUN_SHA)"
       echo "" >> "$SEO_OUT_DIR/report.md"

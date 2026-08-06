@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     ? "Bay Area Toy Stores & Kids' Shopping — Toy Safari, Indie Shops & More"
     : t("title");
   const description = locale === "en"
-    ? "Discover the best kids' toy stores, bookstores, and family shopping destinations in the Bay Area: independent toy shops like Toy Safari (Alameda), Mr. Mopps' (Berkeley), ambassador Toys (SF), plus malls with children's play areas."
+    ? "Discover the best kids' toy stores, bookstores, and family shopping destinations in the Bay Area: independent toy shops like Toy Safari (Alameda), Mr. Mopps' (Berkeley), Ambassador Toys (SF), plus malls with children's play areas."
     : t("subtitle");
 
   return {

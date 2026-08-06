@@ -230,7 +230,7 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
                 Where can kids ages 5–8 take art and music classes in the Bay Area?
               </h3>
               <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
-                Art and music programs include <strong>Music Together</strong> studios (Palo Alto, Menlo Park, Sunnyvale, and East Bay), <strong>Color Me Mine</strong> ceramic painting (multiple Bay Area locations), the <strong>de Young Museum</strong>&apos;s family art Saturdays in Golden Gate Park (free), <strong>SFMOMA</strong> family workshops, the <strong>Asian Art Museum</strong>&apos;s kids&apos; programs, and the <strong>Randall Museum</strong> in San Francisco (hands-on nature, arts, and science classes).
+                Art and music programs include <strong>Music Together</strong> studios (Palo Alto, Menlo Park, Sunnyvale, and East Bay), <strong>Studio4Art</strong> in San Jose, <strong>Color Me Mine</strong> ceramic painting (multiple Bay Area locations), the <strong>de Young Museum</strong>&apos;s family art Saturdays in Golden Gate Park (free), <strong>SFMOMA</strong> family workshops, the <strong>Asian Art Museum</strong>&apos;s kids&apos; programs, and the <strong>Randall Museum</strong> in San Francisco (hands-on nature, arts, and science classes).
               </p>
             </div>
           </div>
