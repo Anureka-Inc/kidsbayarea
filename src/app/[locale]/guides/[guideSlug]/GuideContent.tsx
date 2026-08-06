@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { Home, ChevronRight } from "lucide-react";
 import { places, type AgeRange } from "@/data/places";
 import PlaceCard from "@/components/PlaceCard";
+import AmazonPicks from "@/components/AmazonPicks";
 
 type GuideSlug =
   | "babies-0-2"
@@ -359,6 +360,8 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
       )}
 
       {/* Cross-link to other guides */}
+      <AmazonPicks contextKey={guideSlug} />
+
       <section className="mt-12 rounded-2xl border border-gray-100 bg-gray-50 p-6 dark:border-gray-700 dark:bg-gray-800/50">
         <h2 className="mb-4 text-lg font-bold text-gray-900 dark:text-white">
           {locale === "zh" ? "更多指南" : "More Guides"}
