@@ -11,7 +11,12 @@
 //   AMZ_CREATORS_CLIENT_SECRET  Creators API Credential Secret
 //   AMZ_PARTNER_TAG             Associates tracking tag (e.g. kidsbayarea-20)
 // Optional env:
-//   AMZ_TOKEN_ENDPOINT          default https://api.amazon.com/auth/o2/token (NA)
+//   AMZ_CREDENTIAL_VERSION      2.1 (default) | 2.2 | 2.3 | 3.1 | 3.2 | 3.3
+//                               v2.x = Cognito token endpoint, form-encoded,
+//                               scope "creatorsapi/default"; v3.x = LWA (Login
+//                               with Amazon), JSON body, scope
+//                               "creatorsapi::default".
+//   AMZ_TOKEN_ENDPOINT          override the version-derived token endpoint
 //   AMZ_API_BASE                default https://creatorsapi.amazon/catalog/v1
 //   AMZ_MARKETPLACE             default www.amazon.com
 //
@@ -30,9 +35,25 @@ const PICKS_FILE = path.join(ROOT, "src", "data", "amazonPicks.ts");
 const CLIENT_ID = process.env.AMZ_CREATORS_CLIENT_ID;
 const CLIENT_SECRET = process.env.AMZ_CREATORS_CLIENT_SECRET;
 const PARTNER_TAG = process.env.AMZ_PARTNER_TAG;
-const TOKEN_ENDPOINT = process.env.AMZ_TOKEN_ENDPOINT ?? "https://api.amazon.com/auth/o2/token";
+const CREDENTIAL_VERSION = process.env.AMZ_CREDENTIAL_VERSION ?? "2.1";
+const IS_LWA = CREDENTIAL_VERSION.startsWith("3.");
+const TOKEN_ENDPOINTS = {
+  "2.1": "https://creatorsapi.auth.us-east-1.amazoncognito.com/oauth2/token",
+  "2.2": "https://creatorsapi.auth.eu-south-2.amazoncognito.com/oauth2/token",
+  "2.3": "https://creatorsapi.auth.us-west-2.amazoncognito.com/oauth2/token",
+  "3.1": "https://api.amazon.com/auth/o2/token",
+  "3.2": "https://api.amazon.co.uk/auth/o2/token",
+  "3.3": "https://api.amazon.co.jp/auth/o2/token",
+};
+const TOKEN_ENDPOINT = process.env.AMZ_TOKEN_ENDPOINT ?? TOKEN_ENDPOINTS[CREDENTIAL_VERSION];
+const SCOPE = IS_LWA ? "creatorsapi::default" : "creatorsapi/default";
 const API_BASE = process.env.AMZ_API_BASE ?? "https://creatorsapi.amazon/catalog/v1";
 const MARKETPLACE = process.env.AMZ_MARKETPLACE ?? "www.amazon.com";
+
+if (!TOKEN_ENDPOINT) {
+  console.error(`Unsupported AMZ_CREDENTIAL_VERSION "${CREDENTIAL_VERSION}" and no AMZ_TOKEN_ENDPOINT override.`);
+  process.exit(1);
+}
 
 const PER_QUERY = 2; // products kept per query
 const SEARCH_COUNT = 5; // products requested per query (headroom for filtering)
@@ -48,15 +69,19 @@ if (!CLIENT_ID || !CLIENT_SECRET || !PARTNER_TAG) {
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function getToken() {
+  const params = {
+    grant_type: "client_credentials",
+    client_id: CLIENT_ID,
+    client_secret: CLIENT_SECRET,
+    scope: SCOPE,
+  };
+  // v3.x (LWA) takes a JSON body; v2.x (Cognito) requires form-encoding.
   const res = await fetch(TOKEN_ENDPOINT, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      grant_type: "client_credentials",
-      client_id: CLIENT_ID,
-      client_secret: CLIENT_SECRET,
-      scope: "creatorsapi::default",
-    }),
+    headers: {
+      "Content-Type": IS_LWA ? "application/json" : "application/x-www-form-urlencoded",
+    },
+    body: IS_LWA ? JSON.stringify(params) : new URLSearchParams(params).toString(),
   });
   if (!res.ok) {
     throw new Error(`token request failed: HTTP ${res.status} ${await res.text()}`);
