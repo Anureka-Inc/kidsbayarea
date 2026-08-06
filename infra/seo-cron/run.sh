@@ -101,7 +101,14 @@ if aws secretsmanager get-secret-value --secret-id pickfromvideo/integrations \
    | python3 -c 'import json,sys
 for k, v in json.loads(sys.stdin.read()).items():
     print(f"{k}={v}")' > "$AMZ_ENV_TMP" && [ -s "$AMZ_ENV_TMP" ]; then
+  # LiteLLM key (visacub/litellm/api-key, JSON {"VALUE": "sk-..."}) enables
+  # qwen-pool query generation; refresh falls back to static queries without it.
+  LITELLM_KEY=$(aws secretsmanager get-secret-value --secret-id visacub/litellm/api-key \
+      --region us-east-1 --query SecretString --output text 2>/dev/null \
+    | python3 -c 'import json,sys;print(json.loads(sys.stdin.read())["VALUE"])' 2>/dev/null) || LITELLM_KEY=""
   AMZ_ENV_FILE="$AMZ_ENV_TMP" AMZ_PARTNER_TAG=kidsbayarea0d-20 \
+    LITELLM_BASE_URL=${LITELLM_KEY:+http://litellm.citationmap.local:4000} \
+    LITELLM_API_KEY="$LITELLM_KEY" \
     node "$REPO_DIR/scripts/refresh-amazon-picks.mjs" \
     || echo "$LOG_PREFIX Amazon picks refresh failed (non-fatal, keeping previous data)"
 else

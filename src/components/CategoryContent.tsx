@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { places, regionNames, type Region, type AgeRange, type PriceLevel, type Category } from "@/data/places";
 import PlaceCard from "@/components/PlaceCard";
 import AmazonPicks from "@/components/AmazonPicks";
+import { resolvePlaceContextKey } from "@/data/amazonPicks";
 
 const ageOptions: AgeRange[] = ["0-2", "2-5", "5-8", "8-12", "all"];
 const priceOptions: PriceLevel[] = ["free", "$", "$$", "$$$"];
@@ -99,7 +100,7 @@ export default function CategoryContent({ category }: CategoryContentProps) {
         </div>
       )}
 
-      <AmazonPicks contextKey={category} />
+      <AmazonPicks contextKey={resolvePlaceContextKey([], category)} />
     </div>
   );
 }
