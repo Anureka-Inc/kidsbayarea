@@ -106,11 +106,24 @@ for k, v in json.loads(sys.stdin.read()).items():
   LITELLM_KEY=$(aws secretsmanager get-secret-value --secret-id visacub/litellm/api-key \
       --region us-east-1 --query SecretString --output text 2>/dev/null \
     | python3 -c 'import json,sys;print(json.loads(sys.stdin.read())["VALUE"])' 2>/dev/null) || LITELLM_KEY=""
+  AMZ_REFRESH_LOG=$(mktemp)
   AMZ_ENV_FILE="$AMZ_ENV_TMP" AMZ_PARTNER_TAG=kidsbayarea0d-20 \
     LITELLM_BASE_URL=${LITELLM_KEY:+http://litellm.citationmap.local:4000} \
     LITELLM_API_KEY="$LITELLM_KEY" \
-    node "$REPO_DIR/scripts/refresh-amazon-picks.mjs" \
+    node "$REPO_DIR/scripts/refresh-amazon-picks.mjs" > "$AMZ_REFRESH_LOG" 2>&1 \
     || echo "$LOG_PREFIX Amazon picks refresh failed (non-fatal, keeping previous data)"
+  cat "$AMZ_REFRESH_LOG"
+  # Surface what the refresh did in the report email (recipients otherwise
+  # only see it in the journal).
+  {
+    echo ""
+    echo "## Amazon picks refresh"
+    echo "- Result: $(tail -1 "$AMZ_REFRESH_LOG")"
+    echo "- Qwen-generated query sets: $(grep -c 'LLM queries:' "$AMZ_REFRESH_LOG") (0 = static fallback)"
+    echo "- Query errors: $(grep -c 'ERROR' "$AMZ_REFRESH_LOG")"
+    echo "- Earnings attribution: tracking ID \`kidsbayarea0d-20\` — revenue is NOT in this email; check Associates Central → Reports, filtered by that tracking ID."
+  } >> "$SEO_OUT_DIR/report.md"
+  rm -f "$AMZ_REFRESH_LOG"
 else
   echo "$LOG_PREFIX could not read pickfromvideo/integrations secret (non-fatal)"
 fi
