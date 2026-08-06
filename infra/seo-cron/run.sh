@@ -87,6 +87,28 @@ for f in report.md changed_urls.txt; do
 done
 rm -rf "$REPO_DIR/out"
 
+# --- 3.5 Amazon picks refresh (Creators API, fail-soft) --------------------
+# Refreshes src/data/amazonProducts.ts so product prices/availability on the
+# AmazonPicks sections stay current. src/data is an allowed path, so the
+# regenerated file rides the same weekly PR as the optimizer edits. The
+# instance role already has GetSecretValue on pickfromvideo/integrations
+# (bayareadog-product-pipeline-secrets policy). AMZ_PARTNER_TAG overrides the
+# secret's pickfromvideo tag with kidsbayarea's own tracking ID.
+echo "$LOG_PREFIX refreshing Amazon picks"
+AMZ_ENV_TMP=$(mktemp)
+if aws secretsmanager get-secret-value --secret-id pickfromvideo/integrations \
+     --region us-east-1 --query SecretString --output text 2>/dev/null \
+   | python3 -c 'import json,sys
+for k, v in json.loads(sys.stdin.read()).items():
+    print(f"{k}={v}")' > "$AMZ_ENV_TMP" && [ -s "$AMZ_ENV_TMP" ]; then
+  AMZ_ENV_FILE="$AMZ_ENV_TMP" AMZ_PARTNER_TAG=kidsbayarea0d-20 \
+    node "$REPO_DIR/scripts/refresh-amazon-picks.mjs" \
+    || echo "$LOG_PREFIX Amazon picks refresh failed (non-fatal, keeping previous data)"
+else
+  echo "$LOG_PREFIX could not read pickfromvideo/integrations secret (non-fatal)"
+fi
+rm -f "$AMZ_ENV_TMP"
+
 # --- 4. gate + PR (PR-only: a human reviews and merges) -------------------
 # Commit ONLY the playbook-permitted paths, explicitly excluding the contact
 # API even though it lives under src/app. src/messages, src/i18n, and

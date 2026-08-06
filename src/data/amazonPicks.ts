@@ -35,6 +35,38 @@ export interface AmazonPickContext {
   maxItems?: number;
 }
 
+// Maps a place's tags to the outing-scenario context whose products a family
+// would actually pack for that visit. First match wins — ordered from most
+// activity-specific to most generic. Falls back to the place's category
+// context, or null (no section) when nothing fits.
+const TAG_CONTEXT_RULES: Array<[tags: string[], contextKey: string]> = [
+  [["splash-pad", "water-play", "swimming", "beach", "tide-pools", "lake", "waterfront"], "water-outing"],
+  [["hiking", "state-park", "redwoods", "waterfall", "nature-preserve", "flat-trail", "camping", "nature"], "trail-day"],
+  [["farm", "animals", "wildlife", "zoo"], "animal-encounter"],
+  [["museum", "science", "STEM", "interactive"], "museum-day"],
+  [["indoor-playground", "trampoline", "play-area", "climbing", "rock-climbing"], "indoor-playgrounds"],
+  [["playground", "slides"], "play"],
+  [["day-trip", "scenic"], "explore"],
+];
+
+const CATEGORY_CONTEXT_FALLBACK: Record<string, string> = {
+  play: "play",
+  explore: "explore",
+  shop: "shop",
+  eat: "eat-out",
+  learn: "learn-enrich",
+};
+
+export function resolvePlaceContextKey(
+  tags: readonly string[],
+  category: string
+): string | null {
+  for (const [ruleTags, contextKey] of TAG_CONTEXT_RULES) {
+    if (ruleTags.some((t) => tags.includes(t))) return contextKey;
+  }
+  return CATEGORY_CONTEXT_FALLBACK[category] ?? null;
+}
+
 export const amazonPickContexts: AmazonPickContext[] = [
   // --- Age guides -------------------------------------------------------
   {
@@ -114,6 +146,67 @@ export const amazonPickContexts: AmazonPickContext[] = [
       "waterproof picnic blanket family",
       "kite for kids easy fly",
       "bubble machine kids outdoor",
+    ],
+  },
+  // --- Place-detail scenarios (resolved from place tags/category) ----------
+  {
+    key: "water-outing",
+    headingEn: "Pack for a Water Day",
+    queries: [
+      "kids water shoes",
+      "kids hooded beach towel poncho",
+      "waterproof phone pouch",
+      "swim diapers toddler",
+    ],
+  },
+  {
+    key: "trail-day",
+    headingEn: "Trail Day Checklist",
+    queries: [
+      "kids hiking backpack with water bladder",
+      "kids binoculars",
+      "kids bug spray deet free",
+      "kids mini first aid kit",
+    ],
+  },
+  {
+    key: "animal-encounter",
+    headingEn: "For Farm & Wildlife Visits",
+    queries: [
+      "kids sun hat",
+      "travel hand sanitizer",
+      "kids digital camera",
+      "kids animal field guide",
+    ],
+  },
+  {
+    key: "museum-day",
+    headingEn: "Museum Day Helpers",
+    queries: [
+      "kids travel activity journal",
+      "kids water bottle leakproof",
+      "toddler backpack harness",
+      "kids headphones wired",
+    ],
+  },
+  {
+    key: "eat-out",
+    headingEn: "Eating Out with Kids, Solved",
+    queries: [
+      "disposable placemats toddler",
+      "toddler travel utensils case",
+      "portable high chair travel",
+      "silicone bib toddler travel",
+    ],
+  },
+  {
+    key: "learn-enrich",
+    headingEn: "Keep the Learning Going at Home",
+    queries: [
+      "STEM kits kids",
+      "kids art supplies set",
+      "beginner coding toys kids",
+      "kids workbooks ages 5-8",
     ],
   },
   // --- Category pages -----------------------------------------------------

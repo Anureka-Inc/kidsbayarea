@@ -111,7 +111,7 @@ async function getToken() {
   return data.access_token;
 }
 
-async function searchItems(token, keywords) {
+async function searchItems(token, keywords, retried = false) {
   const res = await fetch(`${API_BASE}/searchItems`, {
     method: "POST",
     headers: {
@@ -131,6 +131,10 @@ async function searchItems(token, keywords) {
       ],
     }),
   });
+  if (res.status === 429 && !retried) {
+    await sleep(6000);
+    return searchItems(token, keywords, true);
+  }
   if (!res.ok) {
     throw new Error(`searchItems("${keywords}") failed: HTTP ${res.status} ${await res.text()}`);
   }

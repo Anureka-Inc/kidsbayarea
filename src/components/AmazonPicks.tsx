@@ -9,7 +9,7 @@ import {
 import { amazonProducts } from "@/data/amazonProducts";
 
 interface AmazonPicksProps {
-  contextKey: string;
+  contextKey: string | null;
 }
 
 // Contextual Amazon product picks: gear a family would actually use for the
@@ -18,8 +18,10 @@ interface AmazonPicksProps {
 // has populated product data for this context.
 export default function AmazonPicks({ contextKey }: AmazonPicksProps) {
   const locale = useLocale();
-  const ctx = amazonPickContexts.find((c) => c.key === contextKey);
-  const data = amazonProducts[contextKey];
+  const ctx = contextKey
+    ? amazonPickContexts.find((c) => c.key === contextKey)
+    : undefined;
+  const data = contextKey ? amazonProducts[contextKey] : undefined;
 
   if (locale !== "en" || !ctx || !AMAZON_PARTNER_TAG || !data?.items?.length) {
     return null;
@@ -33,8 +35,8 @@ export default function AmazonPicks({ contextKey }: AmazonPicksProps) {
         {ctx.headingEn}
       </h2>
       <p className="mb-6 text-sm text-gray-500 dark:text-gray-400">
-        Handpicked for the activities in this guide — including a few things
-        families usually wish they&apos;d packed.
+        Handpicked for this kind of outing — including a few things families
+        usually wish they&apos;d packed.
       </p>
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
         {items.map((item) => (
