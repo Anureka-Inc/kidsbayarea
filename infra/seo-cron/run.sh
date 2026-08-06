@@ -49,6 +49,14 @@ if [ -z "${SEO_CRON_REEXEC:-}" ]; then
   exec "$REPO_DIR/infra/seo-cron/run.sh" "$@"
 fi
 
+# No overlapping runs (manual trigger vs timer, or a hung previous run) —
+# they'd interleave on the same checkout and out/ directory.
+exec 9>"$BASE/.seo-cron.lock"
+if ! flock -n 9; then
+  echo "$LOG_PREFIX another run holds the lock — exiting"
+  exit 0
+fi
+
 # --- 2. data fetch -------------------------------------------------------
 echo "$LOG_PREFIX fetching GSC + Bing + DataForSEO data"
 python3 "$REPO_DIR/infra/seo-cron/fetch_data.py" || {
@@ -190,6 +198,27 @@ Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" || COMMIT_OK=0
       echo "$LOG_PREFIX PR: $PR_URL (commit $RUN_SHA)"
       echo "" >> "$SEO_OUT_DIR/report.md"
       echo "_PR opened/updated ($RUN_SHA) — review and merge manually to deploy via Amplify._" >> "$SEO_OUT_DIR/report.md"
+      # Fact gate (ported from bayareadog): flag policy-like claims the
+      # optimizer may have invented — hours, prices, fees, closures, age
+      # limits. Intentionally over-triggers: a false positive costs one
+      # glance, a false negative ships an invented fact that AI answer
+      # engines quote verbatim. amazonProducts.ts is excluded (its prices
+      # come from the Amazon API, not the LLM).
+      FACT_RX='hours|price|admission|fee|\$[0-9]|closed|closure|reservation|ages? [0-9]|free (entry|admission)|open (daily|now)'
+      if git diff "$PRE_SHA..$RUN_SHA" -- src/ public/llms.txt ':!src/data/amazonProducts.ts' \
+           | grep -E '^\+[^+]' | grep -Ei "$FACT_RX" | head -15 > "$SEO_OUT_DIR/fact_hits.txt" \
+         && [ -s "$SEO_OUT_DIR/fact_hits.txt" ]; then
+        gh pr edit "$PR_URL" --title "seo-cron: page optimizations [needs fact review]" 2>/dev/null || true
+        {
+          echo ""
+          echo "## ⚠️ Fact gate triggered — review these added lines before merging"
+          echo '```'
+          cat "$SEO_OUT_DIR/fact_hits.txt"
+          echo '```'
+          echo "The optimizer added policy-like language (hours/prices/fees/closures/ages). Verify each claim against places.ts or the venue's website."
+        } >> "$SEO_OUT_DIR/report.md"
+        echo "$LOG_PREFIX fact gate triggered ($(wc -l < "$SEO_OUT_DIR/fact_hits.txt") hit(s)) — PR retitled"
+      fi
     fi
   else
     echo "$LOG_PREFIX tsc FAILED — discarding changes, reporting only"
