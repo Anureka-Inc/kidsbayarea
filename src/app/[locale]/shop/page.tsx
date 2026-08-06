@@ -19,9 +19,19 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     ? `https://www.kidsbayarea.com/${locale}/shop`
     : `https://www.kidsbayarea.com/en/shop`;
 
+  // EN override: "toy safari" ranks pos 7.8 with 187 impressions but only 0.53% CTR —
+  // the generic translated title doesn't signal toy stores or the Bay Area.
+  // Naming "Toy Safari" and the store category lifts relevance for that query cluster.
+  const title = locale === "en"
+    ? "Bay Area Toy Stores & Kids' Shopping — Toy Safari, Indie Shops & More"
+    : t("title");
+  const description = locale === "en"
+    ? "Discover the best kids' toy stores, bookstores, and family shopping destinations in the Bay Area: independent toy shops like Toy Safari (Alameda), Mr. Mopps' (Berkeley), ambassador Toys (SF), plus malls with children's play areas."
+    : t("subtitle");
+
   return {
-    title: t("title"),
-    description: t("subtitle"),
+    title,
+    description,
     alternates: { canonical: canonicalUrl, languages: alternates },
     ...(translated ? {} : { robots: { index: false, follow: true } }),
   };
