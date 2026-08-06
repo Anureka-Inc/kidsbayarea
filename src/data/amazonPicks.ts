@@ -10,7 +10,7 @@
 
 // Your Amazon Associates tracking tag (e.g. "kidsbayarea-20"). Empty string
 // keeps every AmazonPicks section hidden site-wide.
-export const AMAZON_PARTNER_TAG = "pickfromvid00-20";
+export const AMAZON_PARTNER_TAG = "kidsbayarea0d-20";
 
 export interface AmazonProduct {
   asin: string;
