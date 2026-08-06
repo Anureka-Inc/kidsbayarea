@@ -88,8 +88,11 @@ done
 rm -rf "$REPO_DIR/out"
 
 # --- 3.5 Amazon picks refresh (Creators API, fail-soft) --------------------
-# Refreshes src/data/amazonProducts.ts so product prices/availability on the
-# AmazonPicks sections stay current. src/data is an allowed path, so the
+# Refreshes src/data/amazonProducts.ts weekly. NOTE: at weekly cadence the
+# site must NOT display product prices (Amazon Associates terms require
+# displayed prices to be <24h stale) — AmazonPicks.tsx deliberately renders
+# "View on Amazon" instead; restore price display only if this ever becomes
+# a daily refresh. src/data is an allowed path, so the
 # regenerated file rides the same weekly PR as the optimizer edits. The
 # instance role already has GetSecretValue on pickfromvideo/integrations
 # (bayareadog-product-pipeline-secrets policy). AMZ_PARTNER_TAG overrides the

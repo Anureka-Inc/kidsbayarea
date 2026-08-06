@@ -83,8 +83,8 @@ if (!TOKEN_ENDPOINT) {
   process.exit(1);
 }
 
-const PER_QUERY = 1; // products kept per query — one per query keeps the set
-// diverse and guarantees the later "didn't-think-of-it" queries make the cut
+// Selection is a round-robin merge across query result lists (see below),
+// which keeps the set diverse and backfills slots when a query comes up dry.
 const SEARCH_COUNT = 5; // products requested per query (headroom for filtering)
 const THROTTLE_MS = 1200; // stay well under API rate limits
 
@@ -233,42 +233,87 @@ async function loadContexts() {
   return new Function(`return ${match[1]}`)();
 }
 
+// Revenue attribution: ascsubtag flows through to the Associates report, so
+// earnings are attributable per page scenario, not just per site.
+function withSubtag(url, contextKey) {
+  const subtag = `kba-${contextKey}`.replace(/[^A-Za-z0-9-]/g, "").slice(0, 100);
+  return `${url}${url.includes("?") ? "&" : "?"}ascsubtag=${subtag}`;
+}
+
+// Previous data, so a context whose queries all fail this week keeps last
+// week's picks instead of dropping its section (stale beats empty).
+async function loadPrevious() {
+  try {
+    const src = await readFile(OUT_FILE, "utf8");
+    const m = src.match(/= (\{[\s\S]*\});/);
+    return m ? JSON.parse(m[1]) : {};
+  } catch {
+    return {};
+  }
+}
+
 const contexts = await loadContexts();
+const previous = await loadPrevious();
 console.log(`refreshing ${contexts.length} contexts…`);
 const token = await getToken();
 
 const out = {};
+const globalSeen = new Set(); // cross-context dedup: no ASIN on two pages
+let freshContexts = 0;
 for (const ctx of contexts) {
-  const seen = new Set();
-  const items = [];
   const cap = ctx.maxItems ?? 4;
   const llmQueries = await generateQueries(ctx);
   const queries = llmQueries ?? ctx.queries;
+  const source = llmQueries ? "qwen" : "static";
   if (llmQueries) console.log(`  [${ctx.key}] LLM queries: ${llmQueries.join(" | ")}`);
+
+  // Collect full result lists per query, then round-robin merge (each
+  // query's #1, then each query's #2, …) so one strong query can't fill the
+  // whole set with near-duplicates and a dead query's slots are backfilled.
+  const perQuery = [];
   for (const q of queries) {
-    if (items.length >= cap) break;
     try {
       const results = await searchItems(token, q);
-      let kept = 0;
-      for (const raw of results) {
-        if (items.length >= cap || kept >= PER_QUERY) break;
-        const item = normalizeItem(raw);
-        if (!item || seen.has(item.asin)) continue;
-        seen.add(item.asin);
-        items.push(item);
-        kept++;
-      }
-      console.log(`  [${ctx.key}] "${q}" → kept ${kept}`);
+      perQuery.push(results.map(normalizeItem).filter(Boolean));
+      console.log(`  [${ctx.key}] "${q}" → ${results.length} results`);
     } catch (err) {
+      perQuery.push([]);
       console.error(`  [${ctx.key}] "${q}" ERROR: ${err.message}`);
     }
     await sleep(THROTTLE_MS);
   }
+  const items = [];
+  for (let rank = 0; rank < SEARCH_COUNT && items.length < cap; rank++) {
+    for (const list of perQuery) {
+      if (items.length >= cap) break;
+      const item = list[rank];
+      if (!item || globalSeen.has(item.asin)) continue;
+      globalSeen.add(item.asin);
+      items.push({ ...item, url: withSubtag(item.url, ctx.key) });
+    }
+  }
+
   if (items.length) {
-    out[ctx.key] = { updatedAt: new Date().toISOString().slice(0, 10), items };
+    out[ctx.key] = {
+      updatedAt: new Date().toISOString().slice(0, 10),
+      source,
+      queries,
+      items,
+    };
+    freshContexts++;
+  } else if (previous[ctx.key]?.items?.length) {
+    out[ctx.key] = previous[ctx.key];
+    console.warn(`  [${ctx.key}] no fresh items — keeping previous data (${previous[ctx.key].updatedAt})`);
   } else {
     console.warn(`  [${ctx.key}] no items — section will stay hidden`);
   }
+}
+
+// Never-worse guard: if every context came up empty the API is down or the
+// account is ineligible — refuse to overwrite good data with nothing.
+if (freshContexts === 0) {
+  console.error("no fresh products for ANY context — refusing to overwrite; previous data stays live");
+  process.exit(1);
 }
 
 const body = `// GENERATED FILE — do not edit by hand.
