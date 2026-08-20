@@ -144,6 +144,48 @@ export async function generateMetadata({
   };
 }
 
+// FAQPage JSON-LD for babies-0-2 guide. Targets "things to do with babies bay area" —
+// DataForSEO 0 rank while reddit, 510families, and mommypoppins rank #1-3.
+// Venues and details sourced from places.ts; no prices, hours, or ages fabricated.
+const babies02FaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are the best activities for babies (0–2) in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Top Bay Area activities for babies and young toddlers (ages 0–2) include the Bay Area Discovery Museum in Sausalito (indoor and outdoor sensory exhibits designed for the youngest visitors), Habitot Children's Museum in Berkeley (specifically designed for children under 5, with a dedicated infant crawl area), Tilden Little Farm in Berkeley (free, open 365 days a year — great for babies who love animals), the Koret Children's Quarter playground in Golden Gate Park, Yerba Buena Gardens Children's Garden in San Francisco, and public library baby story-time programs throughout the Bay Area. Check each venue's website for current hours and scheduling.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Which Bay Area venues are stroller-friendly for families with babies?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Stroller-friendly Bay Area venues for babies include Crissy Field in San Francisco (flat paved path along the waterfront), the Main Trail loop at Muir Woods National Monument (1-mile flat paved path through redwoods), Shoreline Park in Mountain View (wide paved trails around the lake), Yerba Buena Gardens in San Francisco, and most indoor venues including the Bay Area Discovery Museum in Sausalito, Habitot Children's Museum in Berkeley, and the Exploratorium at Pier 15 in San Francisco. Venues with stroller parking at the entrance include the Exploratorium and the Children's Creativity Museum in San Francisco.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are there free activities for babies and infants in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Free activities for Bay Area babies include Tilden Little Farm petting farm in Berkeley (open 365 days a year, free admission), public library baby rhyme times and infant story-times (available at San Francisco Public Library's Fisher Children's Center, Santa Clara County Library, and Oakland Public Library), all municipal playgrounds including Magical Bridge Playgrounds in Palo Alto and Mountain View, Crissy Field and Baker Beach in San Francisco, and free outdoor spaces like Shoreline Park in Mountain View and Oyster Point Marina Park in South San Francisco.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What indoor play spaces in the Bay Area are good for babies under 2?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The best Bay Area indoor play spaces for babies under 2 include Habitot Children's Museum in Berkeley (dedicated infant crawl room), Bay Area Discovery Museum in Sausalito (indoor exhibits for very young children), La Petite Playhouse in Redwood City (soft-play area for infants and toddlers), and the Children's Discovery Museum of San Jose (infant and toddler-friendly exhibits). Many YMCA branches across the Bay Area also offer infant and parent-and-me swim classes. Check each venue's website for current hours and age guidelines.",
+      },
+    },
+  ],
+};
+
 // FAQPage JSON-LD for indoor-playgrounds guide. Targets "best indoor playgrounds bay area"
 // and "indoor play spaces for kids". GSC shows the locale-stripped path at pos 13.4
 // with 214 impressions and no FAQ structured data. Venues sourced from places.ts.
@@ -366,6 +408,12 @@ export default async function GuidePage({
 
   return (
     <>
+      {guideSlug === "babies-0-2" && locale === "en" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(babies02FaqJsonLd) }}
+        />
+      )}
       {guideSlug === "indoor-playgrounds" && locale === "en" && (
         <script
           type="application/ld+json"

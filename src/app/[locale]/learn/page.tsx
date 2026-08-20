@@ -19,9 +19,19 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     ? `https://www.kidsbayarea.com/${locale}/learn`
     : `https://www.kidsbayarea.com/en/learn`;
 
+  // EN override: DataForSEO shows 0 rank for all tracked keyword clusters;
+  // generic translated title "Classes & Education" signals no activity type or
+  // geography. Naming specific program types and the Bay Area converts searchers.
+  const title = locale === "en"
+    ? "Bay Area Kids Classes & Programs — Music, Coding, Art & After-School"
+    : t("title");
+  const description = locale === "en"
+    ? "Find the best kids classes and programs in the Bay Area: music lessons, STEM and coding camps, art studios, martial arts, after-school programs, and language classes across SF, East Bay, South Bay, and Peninsula."
+    : t("subtitle");
+
   return {
-    title: t("title"),
-    description: t("subtitle"),
+    title,
+    description,
     alternates: { canonical: canonicalUrl, languages: alternates },
     ...(translated ? {} : { robots: { index: false, follow: true } }),
   };

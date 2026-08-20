@@ -2258,7 +2258,7 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.3,
     description: {
-      en: "A 100-acre zoo near Ocean Beach with over 2,000 animals including gorillas, penguins, and grizzly bears. The Fisher Family Children's Zoo has a nature trail, insect zoo, barn, and playground. Great carousel too!",
+      en: "The Fisher Family Children's Zoo at San Francisco Zoo & Gardens features a nature trail, insect zoo, barn, and playground inside a 100-acre zoo near Ocean Beach. Home to gorillas, penguins, grizzly bears, a classic carousel, and over 2,000 animals.",
       zh: "靠近海洋海滩的100英亩动物园，有2000多只动物，包括大猩猩、企鹅和灰熊。儿童动物园有自然步道、昆虫馆、谷仓和游乐场。还有漂亮的旋转木马！",
     },
     tips: "Dress in layers - the coast is always cooler. First Wednesday of month is free for SF residents.",
