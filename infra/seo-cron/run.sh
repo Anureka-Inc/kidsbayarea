@@ -113,13 +113,38 @@ if aws secretsmanager get-secret-value --secret-id pickfromvideo/integrations \
 for k, v in json.loads(sys.stdin.read()).items():
     print(f"{k}={v}")' > "$AMZ_ENV_TMP" && [ -s "$AMZ_ENV_TMP" ]; then
   # LiteLLM key (visacub/litellm/api-key, JSON {"VALUE": "sk-..."}) enables
-  # qwen-pool query generation; refresh falls back to static queries without it.
+  # LLM query generation; refresh falls back to static queries without it.
   LITELLM_KEY=$(aws secretsmanager get-secret-value --secret-id visacub/litellm/api-key \
       --region us-east-1 --query SecretString --output text 2>/dev/null \
     | python3 -c 'import json,sys;print(json.loads(sys.stdin.read())["VALUE"])' 2>/dev/null) || LITELLM_KEY=""
+  # The LLM endpoint has moved before: the 2026-08-13 and 08-20 runs silently
+  # fell back to static queries because the LiteLLM proxy hosts behind
+  # litellm.citationmap.local:4000 had been decommissioned (the Route53 A
+  # records still point at terminated instances). Qwen now serves straight
+  # from vLLM on l40s-vllm-test-1. Probe candidates in order, take the first
+  # whose /v1/models answers, and read the served model id from the response
+  # (prefer the "qwen-pool" alias, else any qwen model) — so the run works
+  # whichever backend is alive. If the model moves again, add its host here.
+  LLM_BASE="" LLM_MODEL=""
+  if [ -n "$LITELLM_KEY" ]; then
+    for LLM_CAND in http://litellm.citationmap.local:4000 http://172.31.28.104:8000; do
+      LLM_MODEL=$(curl -sf -m 8 -H "Authorization: Bearer $LITELLM_KEY" "$LLM_CAND/v1/models" 2>/dev/null \
+        | python3 -c 'import json, sys
+ids = [m.get("id", "") for m in json.load(sys.stdin).get("data", [])]
+qwen = [i for i in ids if "qwen" in i.lower()]
+print("qwen-pool" if "qwen-pool" in ids else (qwen or ids or [""])[0])' 2>/dev/null) || LLM_MODEL=""
+      if [ -n "$LLM_MODEL" ]; then LLM_BASE="$LLM_CAND"; break; fi
+    done
+    if [ -n "$LLM_BASE" ]; then
+      echo "$LOG_PREFIX LLM endpoint: $LLM_BASE (model $LLM_MODEL)"
+    else
+      echo "$LOG_PREFIX no LLM endpoint reachable — static queries this run"
+    fi
+  fi
   AMZ_REFRESH_LOG=$(mktemp)
   AMZ_ENV_FILE="$AMZ_ENV_TMP" AMZ_PARTNER_TAG=kidsbayarea0d-20 \
-    LITELLM_BASE_URL=${LITELLM_KEY:+http://litellm.citationmap.local:4000} \
+    LITELLM_BASE_URL="$LLM_BASE" \
+    LITELLM_MODEL="$LLM_MODEL" \
     LITELLM_API_KEY="$LITELLM_KEY" \
     node "$REPO_DIR/scripts/refresh-amazon-picks.mjs" > "$AMZ_REFRESH_LOG" 2>&1 \
     || echo "$LOG_PREFIX Amazon picks refresh failed (non-fatal, keeping previous data)"
@@ -130,6 +155,7 @@ for k, v in json.loads(sys.stdin.read()).items():
     echo ""
     echo "## Amazon picks refresh"
     echo "- Result: $(tail -1 "$AMZ_REFRESH_LOG")"
+    echo "- LLM endpoint: ${LLM_BASE:-none reachable}${LLM_MODEL:+ (model $LLM_MODEL)}"
     echo "- Qwen-generated query sets: $(grep -c 'LLM queries:' "$AMZ_REFRESH_LOG") (0 = static fallback)"
     echo "- Query errors: $(grep -c 'ERROR' "$AMZ_REFRESH_LOG")"
     echo "- Earnings attribution: tracking ID \`kidsbayarea0d-20\` — revenue is NOT in this email; check Associates Central → Reports, filtered by that tracking ID."
