@@ -133,6 +133,12 @@ async function generateQueries(ctx) {
         model: LITELLM_MODEL,
         temperature: 0.7,
         max_tokens: 250,
+        // Qwen3.6 is a reasoning model: served via vLLM, its default thinking
+        // mode spends the whole token budget on <think> and returns content:
+        // null (verified 2026-08-24 — every context silently fell back to
+        // static). This template kwarg disables thinking; OpenAI-compatible
+        // proxies pass it through or ignore it.
+        chat_template_kwargs: { enable_thinking: false },
         messages: [
           {
             role: "user",
