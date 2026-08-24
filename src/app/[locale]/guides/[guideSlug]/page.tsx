@@ -156,7 +156,7 @@ const babies02FaqJsonLd = {
       name: "What are the best activities for babies (0–2) in the Bay Area?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Top Bay Area activities for babies and young toddlers (ages 0–2) include the Bay Area Discovery Museum in Sausalito (indoor and outdoor sensory exhibits designed for the youngest visitors), Habitot Children's Museum in Berkeley (specifically designed for children under 5, with a dedicated infant crawl area), Tilden Little Farm in Berkeley (free, open 365 days a year — great for babies who love animals), the Koret Children's Quarter playground in Golden Gate Park, Yerba Buena Gardens Children's Garden in San Francisco, and public library baby story-time programs throughout the Bay Area. Check each venue's website for current hours and scheduling.",
+        text: "Top Bay Area activities for babies and young toddlers (ages 0–2) include the Bay Area Discovery Museum in Sausalito (indoor and outdoor sensory exhibits designed for the youngest visitors), Tilden Little Farm in Berkeley (free, open 365 days a year — great for babies who love animals), the Koret Children's Quarter playground in Golden Gate Park, Yerba Buena Gardens Children's Garden in San Francisco, and public library baby story-time programs throughout the Bay Area. Check each venue's website for current hours and scheduling.",
       },
     },
     {
@@ -164,7 +164,7 @@ const babies02FaqJsonLd = {
       name: "Which Bay Area venues are stroller-friendly for families with babies?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Stroller-friendly Bay Area venues for babies include Crissy Field in San Francisco (flat paved path along the waterfront), the Main Trail loop at Muir Woods National Monument (1-mile flat paved path through redwoods), Shoreline Park in Mountain View (wide paved trails around the lake), Yerba Buena Gardens in San Francisco, and most indoor venues including the Bay Area Discovery Museum in Sausalito, Habitot Children's Museum in Berkeley, and the Exploratorium at Pier 15 in San Francisco. Venues with stroller parking at the entrance include the Exploratorium and the Children's Creativity Museum in San Francisco.",
+        text: "Stroller-friendly Bay Area venues for babies include Crissy Field in San Francisco (flat paved path along the waterfront), the Main Trail loop at Muir Woods National Monument (1-mile flat paved path through redwoods), Shoreline Park in Mountain View (wide paved trails around the lake), Yerba Buena Gardens in San Francisco, and most indoor venues including the Bay Area Discovery Museum in Sausalito and the Exploratorium at Pier 15 in San Francisco. Venues with stroller parking at the entrance include the Exploratorium and the Children's Creativity Museum in San Francisco.",
       },
     },
     {
@@ -180,7 +180,7 @@ const babies02FaqJsonLd = {
       name: "What indoor play spaces in the Bay Area are good for babies under 2?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The best Bay Area indoor play spaces for babies under 2 include Habitot Children's Museum in Berkeley (dedicated infant crawl room), Bay Area Discovery Museum in Sausalito (indoor exhibits for very young children), La Petite Playhouse in Redwood City (soft-play area for infants and toddlers), and the Children's Discovery Museum of San Jose (infant and toddler-friendly exhibits). Many YMCA branches across the Bay Area also offer infant and parent-and-me swim classes. Check each venue's website for current hours and age guidelines.",
+        text: "The best Bay Area indoor play spaces for babies under 2 include the Bay Area Discovery Museum in Sausalito (indoor exhibits for very young children), La Petite Playhouse in Redwood City (soft-play area for infants and toddlers), and the Children's Discovery Museum of San Jose (infant and toddler-friendly exhibits). Many YMCA branches across the Bay Area also offer infant and parent-and-me swim classes. Check each venue's website for current hours and age guidelines.",
       },
     },
   ],
