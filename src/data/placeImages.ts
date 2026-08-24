@@ -91,7 +91,6 @@ export const placeImages: Record<string, string> = {
   "golfland-sunnyvale": "https://www.golfland.com/sunnyvale/wp-content/uploads/sites/18/elementor/thumbs/DSF0029-scaled-r5wr6i4fq3f55h2ou5izyrqy8vp4944fh9wcigd0sk.webp",
   "gotts-roadside-walnut-creek": "https://images.getbento.com/accounts/1ec702daf8b9f16b96899c1e4c57a7b5/media/images/27042GRSLogo_BlkFlat_Gott-s_Only.png?w=1200&fit=fill&auto=compress,format&cs=origin&h=600&bg=fff&pad=100",
   "great-america": "https://cdn.sanity.io/images/bsnrdz4t/production/9729d7609b03173780788657eee72be648e3fd15-458x600.jpg?rect=0,181,458,239&amp;w=1200&amp;h=627&amp;fit=crop&amp;auto=format",
-  "habitot-childrens-museum": "https://www.habitot.org/wp-content/uploads/2020/08/avatar.png",
   "hakone-gardens": "https://static.wixstatic.com/media/831588_793b304c45c94bb5a576a2690f99d575~mv2.jpg/v1/fill/w_917,h_467,al_c/831588_793b304c45c94bb5a576a2690f99d575~mv2.jpg",
   "half-moon-bay-brewing": "https://static1.squarespace.com/static/68e7357467131920cb42bce6/t/68e735b067131920cb42c4a5/1775242351970/HMBBC+Main+Logo.png?format=1500w",
   "half-moon-bay-camping": "https://www.parks.ca.gov/img/content/ParksLogo.png",

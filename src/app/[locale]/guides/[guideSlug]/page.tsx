@@ -206,7 +206,7 @@ const indoorPlaygroundsFaqJsonLd = {
       name: "Which indoor play spaces in the Bay Area are best for toddlers and younger children?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The best Bay Area indoor play spaces for toddlers include Habitot Children's Museum in Berkeley (designed specifically for children under 5), Bay Area Discovery Museum in Sausalito (bilingual indoor exhibits and outdoor tide pools), La Petite Playhouse in Redwood City (soft play, age 0–8), WOW Kids Playground in San Jose (dedicated toddler zone), Lemon Tree Play Cafe in San Jose (cafe for parents, safe soft-play for young children), and KidTopia in Fremont. Children's Discovery Museum of San Jose also has a toddler-friendly section. Check each venue's website for current hours and age guidelines.",
+        text: "The best Bay Area indoor play spaces for toddlers include the Bay Area Discovery Museum in Sausalito (bilingual indoor exhibits and outdoor tide pools), La Petite Playhouse in Redwood City (soft play, age 0–8), WOW Kids Playground in San Jose (dedicated toddler zone), Lemon Tree Play Cafe in San Jose (cafe for parents, safe soft-play for young children), and KidTopia in Fremont. Children's Discovery Museum of San Jose also has a toddler-friendly section. Check each venue's website for current hours and age guidelines.",
       },
     },
     {
@@ -282,7 +282,7 @@ const toddlersFaqJsonLd = {
       name: "What are the best toddler activities in the Bay Area?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Top Bay Area activities for toddlers (ages 2–5) include Bay Area Discovery Museum in Sausalito (outdoor tide pools and hands-on exhibits), Habitot Children's Museum in Berkeley (designed for under-5s), Children's Fairyland in Oakland (pint-sized amusement park), Tilden Little Farm in Berkeley (free petting farm, open daily), La Petite Playhouse in Redwood City (large indoor play structure), and splash pads at Castro Valley Splash Park and Larkey Sprayground in Walnut Creek. Check each venue's website for current hours and admission.",
+        text: "Top Bay Area activities for toddlers (ages 2–5) include Bay Area Discovery Museum in Sausalito (outdoor tide pools and hands-on exhibits), Children's Fairyland in Oakland (pint-sized amusement park), Tilden Little Farm in Berkeley (free petting farm, open daily), La Petite Playhouse in Redwood City (large indoor play structure), and splash pads at Castro Valley Splash Park and Larkey Sprayground in Walnut Creek. Check each venue's website for current hours and admission.",
       },
     },
     {
@@ -290,7 +290,7 @@ const toddlersFaqJsonLd = {
       name: "Where can toddlers play indoors in the Bay Area?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Indoor toddler play spaces in the Bay Area include Habitot Children's Museum (Berkeley), Bay Area Discovery Museum (Sausalito — indoor and outdoor areas), La Petite Playhouse (Redwood City), WOW Kids Playground (San Jose), Lemon Tree Play Cafe (San Jose), Imagination City (San Jose), and KidTopia (San Jose). Many community recreation centers also offer toddler open-play and drop-in gym sessions — check local schedules.",
+        text: "Indoor toddler play spaces in the Bay Area include Bay Area Discovery Museum (Sausalito — indoor and outdoor areas), La Petite Playhouse (Redwood City), WOW Kids Playground (San Jose), Lemon Tree Play Cafe (San Jose), Imagination City (San Jose), and KidTopia (San Jose). Many community recreation centers also offer toddler open-play and drop-in gym sessions — check local schedules.",
       },
     },
     {
@@ -377,7 +377,7 @@ const rainyDayFaqJsonLd = {
       name: "Where can toddlers go on rainy days in the Bay Area?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The best rainy-day spots for Bay Area toddlers are the Bay Area Discovery Museum in Sausalito, Habitot Children's Museum in Berkeley (designed for younger children), the Children's Discovery Museum of San Jose, La Petite Playhouse in San Francisco, and Little Gym locations in Palo Alto, San Jose, and Danville. Many community recreation centers also offer indoor family swim times — check local schedules.",
+        text: "The best rainy-day spots for Bay Area toddlers are the Bay Area Discovery Museum in Sausalito, the Children's Discovery Museum of San Jose, La Petite Playhouse in Redwood City, and Little Gym locations in Palo Alto, San Jose, and Danville. Many community recreation centers also offer indoor family swim times — check local schedules.",
       },
     },
     {
