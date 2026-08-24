@@ -25,7 +25,7 @@ const FAQ: Record<Category, CategoryFaqContent> = {
       },
       {
         q: "Where can I find indoor play spaces for kids on rainy days?",
-        a: "Bay Area indoor play options include the Exploratorium and Children's Creativity Museum (San Francisco), Bay Area Discovery Museum (Sausalito), Children's Discovery Museum of San Jose, Habitot Children's Museum (Berkeley), the Tech Interactive (San Jose), Chabot Space and Science Center (Oakland), Sky Zone Trampoline Park (Fremont, Dublin), Pump It Up indoor inflatable parks, and Kid-Plex (San Ramon).",
+        a: "Bay Area indoor play options include the Exploratorium and Children's Creativity Museum (San Francisco), Bay Area Discovery Museum (Sausalito), Children's Discovery Museum of San Jose, the Tech Interactive (San Jose), Chabot Space and Science Center (Oakland), Sky Zone Trampoline Park (Fremont, Dublin), Pump It Up indoor inflatable parks, and Kid-Plex (San Ramon).",
       },
       {
         q: "What trampoline parks and water parks are in the Bay Area?",
@@ -51,7 +51,7 @@ const FAQ: Record<Category, CategoryFaqContent> = {
       },
       {
         q: "湾区雨天可以带孩子去哪些室内游乐场？",
-        a: "湾区雨天室内活动选择包括：旧金山 Exploratorium 和 Children's Creativity Museum、Sausalito 的 Bay Area Discovery Museum、San Jose Children's Discovery Museum、Berkeley Habitot Children's Museum、San Jose 的 The Tech Interactive、Oakland 的 Chabot Space and Science Center、Sky Zone 跳床乐园（Fremont/Dublin）、Pump It Up 充气乐园、San Ramon 的 Kid-Plex。",
+        a: "湾区雨天室内活动选择包括：旧金山 Exploratorium 和 Children's Creativity Museum、Sausalito 的 Bay Area Discovery Museum、San Jose Children's Discovery Museum、San Jose 的 The Tech Interactive、Oakland 的 Chabot Space and Science Center、Sky Zone 跳床乐园（Fremont/Dublin）、Pump It Up 充气乐园、San Ramon 的 Kid-Plex。",
       },
       {
         q: "湾区有哪些跳床乐园和水上乐园？",

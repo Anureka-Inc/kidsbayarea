@@ -38,7 +38,7 @@ The site publishes in 30 languages (with English and 简体中文 as primary), s
 ## Popular Bay Area destinations covered
 
 - **San Francisco**: Exploratorium, California Academy of Sciences, Children's Creativity Museum, Golden Gate Park Koret Children's Quarter, Crissy Field, Yerba Buena Gardens playground, Kinokuniya Bookstore (Japantown), Ghirardelli Square, Mel's Drive-In.
-- **East Bay**: Tilden Regional Park (Steam Trains, Little Farm), Lawrence Hall of Science (Berkeley), Adventure Playground (Berkeley Marina), Chabot Space and Science Center (Oakland), Oakland Zoo, East Bay Depot for Creative Reuse, Habitot Children's Museum.
+- **East Bay**: Tilden Regional Park (Steam Trains, Little Farm), Lawrence Hall of Science (Berkeley), Adventure Playground (Berkeley Marina), Chabot Space and Science Center (Oakland), Oakland Zoo, East Bay Depot for Creative Reuse.
 - **South Bay**: Children's Discovery Museum of San Jose, Happy Hollow Park & Zoo, Raging Waters San Jose, The Tech Interactive, Magical Bridge Playgrounds (Palo Alto, Sunnyvale, Mountain View), Sky Zone Fremont, Aqua Adventure Waterpark Fremont, Ardenwood Historic Farm.
 - **Peninsula**: IKEA East Palo Alto (Smaland kids' play area), Magical Bridge Playground, Shoreline Park, Stanford-area parks.
 - **North Bay**: Bay Area Discovery Museum (Sausalito), Muir Woods National Monument, Angel Island State Park, Point Reyes National Seashore.
