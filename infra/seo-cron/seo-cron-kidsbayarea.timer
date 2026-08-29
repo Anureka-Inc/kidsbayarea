@@ -1,14 +1,21 @@
 [Unit]
-# Weekly (Thu). 1x/week because GSC needs ~10-14 days to reflect a snippet
-# change — running faster than the measurement window confounds attribution
-# (see playbook.md §"single-page cooldown"). Thu is the free day on this shared
-# box: Mon=visacub(seo-weekly), Tue=citationmap(seo-cron), Wed=pickfromvideo
-# (seo-cron-pfv), Sat=eurkart(seo-cron-eurkart). 14:13 clears their 13:13-13:22
-# cluster too.
-Description=Run seo-cron-kidsbayarea.service weekly (Thu 14:13 UTC; the free day/slot on the shared box)
+# 共用 EC2 visacub-seo-cron（t4g.small，1.8G 内存）上的重活排班。一天一条，互不重叠：
+#   一 03:13 visacub(seo-weekly)      二 03:13 citationmap(seo-cron)
+#   三 03:13 familyboard              四 03:13 kidsbayarea
+#   五 03:13 pickfromvideo(pfv)       六 03:13 eurkart · 六 15:07 bayareadog(product)
+#   日 03:13 bayareadog(content)
+# 为什么是 03:13：这一档整点只有 sysstat 在跑。以前所有周任务都排在 13:13，而
+# visa-bulletin-watch 每天 13:00 跑、the-citation 每天 11:30/23:30 跑 —— 只差 13 分钟，
+# 加上 RandomizedDelaySec=10min 一抖动就叠在一起，两条 Claude Code + Next 构建
+# 同时挤在 1.8G 内存里，谁先 OOM 全看运气。
+# 一周一次而不是更快：GSC 要 10–14 天才反映一次改动，跑得比测量窗口快，归因就没了
+# （见 playbook.md 的「同一页 14 天冷却」）。
+# ⚠️ 改完这里必须同步到 /etc/systemd/system/：run.sh 的 unit drift 检查会比对两份，
+#    不同步的话每周报告邮件里都会报一次漂移。
+Description=Run seo-cron-kidsbayarea.service weekly (Thu 03:13 UTC)
 
 [Timer]
-OnCalendar=Thu *-*-* 14:13:00 UTC
+OnCalendar=Thu *-*-* 03:13:00 UTC
 RandomizedDelaySec=10min
 Persistent=true
 
