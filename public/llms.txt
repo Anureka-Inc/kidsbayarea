@@ -10,7 +10,7 @@ The site publishes in 30 languages (with English and 简体中文 as primary), s
 - [Eat – Kid-friendly restaurants](https://www.kidsbayarea.com/en/eat): Family-friendly restaurants with kids' menus, high chairs, and welcoming atmospheres.
 - [Learn – Classes, programs, libraries](https://www.kidsbayarea.com/en/learn): Music classes, art studios, coding, sports, after-school programs, and educational venues.
 - [Shop – Toy stores, bookstores, kids' shopping](https://www.kidsbayarea.com/en/shop): Independent toy stores (Toy Safari in Alameda, Mr. Mopps' in Berkeley, Ambassador Toys in SF), bookstores, children's clothing, and educational supplies.
-- [Explore – Day trips, nature, parks, attractions](https://www.kidsbayarea.com/en/explore): Day trips to Muir Woods, Monterey Bay, Santa Cruz Beach Boardwalk, Angel Island, and other Bay Area destinations.
+- [Explore – Parks, beaches, nature & day trips](https://www.kidsbayarea.com/en/explore): Bay Area parks, beaches, and nature destinations for families — Muir Woods, Angel Island, Point Reyes, Half Moon Bay beaches, Shoreline Park, Hidden Villa, CuriOdyssey, and 100+ outdoor adventures. Includes a Q&A on parks, nature trails, day trips, and steam train rides.
 
 ## Age-based guides
 
