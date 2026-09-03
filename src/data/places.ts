@@ -1067,7 +1067,7 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.2,
     description: {
-      en: "The East Bay's largest soft play indoor playground designed for children up to age 10. Features vibrant play structures, slides, ball pits, and a dedicated baby and toddler playground. All-day play on weekdays makes it great value for families.",
+      en: "KidTopia in Fremont is the East Bay's largest soft-play indoor playground, with multi-level structures, slides, and ball pits for children up to age 10. A dedicated baby and toddler area lets youngest visitors play safely. Weekday all-day passes offer great value.",
       zh: "东湾最大的软体室内游乐场，专为10岁以下儿童设计。设有色彩鲜艳的游乐设施、滑梯、球池，以及专门的婴幼儿游乐区。工作日可全天游玩，性价比很高。",
     },
     tips: "Shoes are not allowed inside — bring socks or buy them there. Weekday all-day passes are cheaper than weekend 2-hour sessions.",
@@ -2232,7 +2232,7 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.3,
     description: {
-      en: "The Fisher Family Children's Zoo at San Francisco Zoo & Gardens features a nature trail, insect zoo, barn, and playground inside a 100-acre zoo near Ocean Beach. Home to gorillas, penguins, grizzly bears, a classic carousel, and over 2,000 animals.",
+      en: "San Francisco Zoo & Gardens is home to the Fisher Family Children's Zoo, featuring a nature trail, insect zoo, barn, and playground. The 100-acre zoo near Ocean Beach houses gorillas, grizzly bears, penguins, a classic carousel, and over 2,000 animals.",
       zh: "靠近海洋海滩的100英亩动物园，有2000多只动物，包括大猩猩、企鹅和灰熊。儿童动物园有自然步道、昆虫馆、谷仓和游乐场。还有漂亮的旋转木马！",
     },
     tips: "Dress in layers - the coast is always cooler. First Wednesday of month is free for SF residents.",

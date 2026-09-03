@@ -207,6 +207,10 @@ const FAQ: Record<Category, CategoryFaqContent> = {
         q: "Where can I ride a steam train with kids in the Bay Area?",
         a: "Bay Area steam train rides: Tilden Park Steam Trains (Berkeley — Redwood Valley Railway, weekends year-round, $3 per ride), Roaring Camp Railroads in Felton (Santa Cruz Mountains — narrow-gauge steam through redwoods), and the Napa Valley Wine Train (less kid-focused but family-friendly weekend brunches). Ardenwood Historic Farm also has weekend train rides during Railroad Days.",
       },
+      {
+        q: "What are the best parks and nature spots for kids in the Bay Area?",
+        a: "Top Bay Area parks and nature destinations for families include Muir Woods National Monument in Mill Valley (old-growth redwoods, stroller-accessible Main Trail), Angel Island State Park in San Francisco Bay (ferry access, bike rentals, picnic areas), Point Reyes National Seashore in Marin County (beaches, elk meadows, lighthouse), Shoreline Park in Mountain View (flat paved lakeside trails), Hidden Villa in Los Altos Hills (working organic farm and wilderness preserve), and CuriOdyssey at Coyote Point in San Mateo (science museum plus nature trails and wildlife habitats). Most regional park trails are free; check each park's website for parking fees and seasonal closures.",
+      },
     ],
     zh: [
       {
@@ -228,6 +232,10 @@ const FAQ: Record<Category, CategoryFaqContent> = {
       {
         q: "湾区哪里能带孩子坐蒸汽小火车？",
         a: "湾区蒸汽火车体验：Berkeley 的 Tilden Park Steam Trains（Redwood Valley Railway，全年周末运行，$3 一次）、Felton 的 Roaring Camp 窄轨蒸汽火车（穿越红杉林）、Napa Valley Wine Train（家庭友好的周末早午餐线，但不太面向小朋友）。Fremont 的 Ardenwood Historic Farm 在 Railroad Days 周末也有火车。",
+      },
+      {
+        q: "湾区适合带孩子的公园和自然景点有哪些？",
+        a: "湾区顶级亲子公园和自然目的地：Mill Valley 的 Muir Woods 国家纪念地（红杉古木，推车友好的主步道）、旧金山湾的 Angel Island 州立公园（渡轮通达，可租自行车、野餐）、Marin County 的 Point Reyes 国家海岸（海滩、麋鹿草原、灯塔）、Mountain View 的 Shoreline Park（平坦的湖边铺装步道）、Los Altos Hills 的 Hidden Villa（有机农场兼荒野保护区）、San Mateo 的 Coyote Point CuriOdyssey（科学博物馆加自然步道）。大多数地区公园步道免费，停车费和季节性关闭情况请查看各公园官网。",
       },
     ],
   },
