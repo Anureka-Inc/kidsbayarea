@@ -77,6 +77,20 @@ competitors). A data source may carry an `error` key — work with what's presen
    ALSO update its entry in `src/app/llms.txt/route.ts` (the `BODY` string) and
    mirror it into `public/llms.txt` so the AI-engine site map stays in sync.
 
+   Note: FAQPage JSON-LD does not produce a rich result at all any more.
+   Google restricted FAQ rich results to government/health sources in 2023 and
+   then removed them from Search entirely on 2026-05-07, dropping the Search
+   Console FAQ report and the Rich Results Test support that June and August.
+   Keep the markup — unused structured data is harmless, FAQPage is still
+   valid schema.org, and answer engines do read it — but never justify an edit
+   by a rich snippet, by "FAQ rich result eligibility", or by a CTR gain
+   unlocked from aligning schema with visible headings. That mechanism has not
+   existed since May 2026. Justify FAQ work by what a reader or an answer
+   engine gets from the visible text — and the answers have to BE visible:
+   FAQPage whose answers appear nowhere on the page does nothing for anyone,
+   and an answer duplicated into both an sr-only block and a visible section
+   is a duplicate-content problem, not twice the signal.
+
 3. Write `out/report.md` (markdown, in English) with sections:
    - `## Data digest` — 5–10 bullet summary of GSC+Bing+DataForSEO state and notable WoW moves
    - `## Changes made` — per change: file, what, why (cite the query data)
