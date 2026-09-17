@@ -359,6 +359,92 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
         </section>
       )}
 
+      {/* Birthday party FAQ — targets "birthday party places for kids bay area" */}
+      {guideSlug === "birthday-party" && locale === "en" && (
+        <section className="mt-12 rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
+          <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
+            Kids Birthday Party FAQ
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What are the best birthday party places for kids in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Top Bay Area kids&apos; birthday party venues include <strong>Sky Zone</strong> trampoline parks in Fremont and Dublin (private party rooms, jump packages), <strong>Urban Putt</strong> in San Jose (indoor mini-golf with party dining), <strong>La Petite Playhouse</strong> in Redwood City (indoor playground private party packages for ages 0–10), <strong>Round1</strong> entertainment centers in San Jose, Concord, and Hayward (bowling, arcade, karaoke), and <strong>Children&apos;s Fairyland</strong> in Oakland (classic storybook amusement park for toddlers and young kids). Check each venue&apos;s website for current party packages and availability.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Where can toddlers have birthday parties in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Birthday party venues best suited for toddlers (ages 1–4) in the Bay Area include <strong>La Petite Playhouse</strong> in Redwood City (soft-play indoor playground with a toddler section), <strong>WOW Kids Playground</strong> in San Jose (dedicated toddler zone), <strong>Children&apos;s Fairyland</strong> in Oakland (storybook park for young children), and <strong>Bay Area Discovery Museum</strong> in Sausalito (indoor and outdoor play areas). Check each venue&apos;s website for party booking details.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Are there outdoor birthday party venues for kids in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Bay Area outdoor kids&apos; party options include municipal park picnic areas (reservable through city parks departments in San Francisco, Oakland, San Jose, and most Bay Area cities), <strong>Oakland Zoo</strong> (birthday party packages available), and <strong>Roaring Camp Railroads</strong> in Felton (private event rail excursions). Many Bay Area parks have free-use picnic areas — check local city parks and recreation websites for reservation details and fees.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What are unique birthday party ideas for kids in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                For a one-of-a-kind Bay Area birthday, consider <strong>Berkeley Ironworks</strong> or <strong>Planet Granite</strong> (climbing gym birthday parties for active older kids), <strong>Chabot Space and Science Center</strong> in Oakland (sleepover and party packages with planetarium access), or a picnic-with-animals event at <strong>Tilden Little Farm</strong> in Berkeley (free admission, reservable group area nearby). For creative parties, <strong>Color Me Mine</strong> ceramic painting studios offer group party sessions at multiple Bay Area locations. Check each venue&apos;s website for current party package pricing and availability.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Free activities FAQ — targets "free things to do with kids bay area" */}
+      {guideSlug === "free" && locale === "en" && (
+        <section className="mt-12 rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
+          <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
+            Free Activities for Kids FAQ
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What are the best free things to do with kids in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Top free Bay Area activities for kids include <strong>Tilden Little Farm</strong> in Berkeley (free petting farm, open 365 days a year), <strong>Crissy Field</strong> in San Francisco (flat waterfront lawn, kite flying, Golden Gate views), <strong>Baker Beach</strong> in San Francisco (free admission, sheltered cove with beach access), the <strong>Koret Children&apos;s Quarter</strong> in Golden Gate Park, and the <strong>Randall Museum</strong> in San Francisco (free general admission, live animal exhibits, and hands-on exhibits). All municipal playgrounds across the Bay Area are free — the <strong>Magical Bridge Playgrounds</strong> in Palo Alto, Sunnyvale, and Mountain View are standouts designed for all abilities.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Are there free splash pads for kids in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Yes. Free Bay Area splash pads include the <strong>24th &amp; York Mini Park</strong> spray area in San Francisco&apos;s Mission District, the <strong>Ortega Park Splash Pad</strong> in Sunnyvale, and water play areas at several East Bay parks. Splash pads typically operate during summer months — check local parks and recreation websites for current seasonal schedules.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What are the best free outdoor activities for kids in the San Francisco Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Free outdoor Bay Area highlights for families include the 1-mile Main Trail at <strong>Muir Woods National Monument</strong> (free for children 15 and under), hiking the easy trails at <strong>Mount Diablo State Park</strong> (day-use fee for cars, no per-person admission), tidepooling at <strong>Point Reyes National Seashore</strong> (free admission), and the <strong>Marin Headlands</strong> trails (free) with views of the Golden Gate Bridge. Beaches along the coast — including <strong>Baker Beach</strong> and <strong>Crissy Field</strong> in San Francisco — are free year-round.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What are free activities for kids in the East Bay?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Free East Bay activities for kids include <strong>Tilden Little Farm</strong> in Berkeley (free petting farm with goats, pigs, and chickens — open 365 days a year), the <strong>Adventure Playground</strong> at the Berkeley Marina (free, kids build structures from scrap lumber and rafts), the free trails in <strong>Redwood Regional Park</strong> in Oakland, and <strong>Don Castro Regional Recreation Area</strong> in Hayward (free trails and a seasonal swim lagoon — check for current swim fees and hours). The <strong>Randall Museum</strong> in San Francisco and <strong>East Bay Depot for Creative Reuse</strong> in Oakland are also free admission.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Cross-link to other guides */}
       <AmazonPicks contextKey={guideSlug} />
 
