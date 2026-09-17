@@ -1093,7 +1093,7 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.5,
     description: {
-      en: "A 10,000 sq ft indoor playground featuring giant multi-level play structures, separate baby and toddler areas, and activities suitable for children of all abilities up to age 10. Great for birthday parties and open play sessions in Redwood City.",
+      en: "La Petite Playhouse in Redwood City is a 10,000 sq ft indoor playground on the Peninsula, with giant multi-level play structures, a dedicated baby-and-toddler soft-play area, and activities suitable for all abilities up to age 10. Popular for open-play sessions and birthday parties.",
       zh: "10,000平方英尺的室内游乐场，拥有大型多层游乐设施、独立的婴幼儿区域，适合10岁以下各种能力水平的儿童。位于红木城，非常适合举办生日派对和开放游玩。",
     },
     tips: "Admission is $18 per child. Up to 2 free adults per paid child. Non-walkers are $8 or free with a paid sibling.",

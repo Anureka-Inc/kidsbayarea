@@ -144,6 +144,88 @@ export async function generateMetadata({
   };
 }
 
+// FAQPage JSON-LD for birthday-party guide. Targets "birthday party places for kids bay area"
+// DataForSEO 0 rank; rebounderz #5, 510families #6. Venues from places.ts; no prices fabricated.
+const birthdayPartyFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are the best birthday party places for kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Top Bay Area kids' birthday party venues include Sky Zone trampoline parks in Fremont and Dublin (private party rooms), Urban Putt in San Jose (indoor mini-golf with party dining), La Petite Playhouse in Redwood City (indoor playground party packages for ages 0–10), Round1 entertainment centers in San Jose, Concord, and Hayward (bowling, arcade, karaoke), and Children's Fairyland in Oakland (storybook amusement park for toddlers and young kids). Check each venue's website for current party packages and availability.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where can toddlers have birthday parties in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Birthday party venues best for toddlers (ages 1–4) in the Bay Area include La Petite Playhouse in Redwood City (soft-play indoor playground with a dedicated toddler section), WOW Kids Playground in San Jose (dedicated toddler zone), Children's Fairyland in Oakland (storybook park for young children), and Bay Area Discovery Museum in Sausalito. Check each venue's website for current party booking details.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are there outdoor birthday party venues for kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Bay Area outdoor kids' party options include municipal park picnic areas (reservable through city parks departments in San Francisco, Oakland, San Jose, and most Bay Area cities), Oakland Zoo (birthday party packages available), and Roaring Camp Railroads in Felton (private event rail excursions). Check local city parks and recreation websites for reservation details and fees.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are unique birthday party ideas for kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "For a one-of-a-kind Bay Area birthday, consider Berkeley Ironworks or Planet Granite (climbing gym birthday parties for older kids), Chabot Space and Science Center in Oakland (sleepover and party packages with planetarium access), or Tilden Little Farm in Berkeley (free admission petting farm with nearby group picnic areas). For creative parties, Color Me Mine ceramic painting studios offer group party sessions at multiple Bay Area locations. Check each venue's website for current pricing and availability.",
+      },
+    },
+  ],
+};
+
+// FAQPage JSON-LD for free guide. Targets "free things to do with kids bay area"
+// DataForSEO 0 rank; bayareakidfun #1, 510families #3. Venues from places.ts.
+const freeFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are the best free things to do with kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Top free Bay Area activities for kids include Tilden Little Farm in Berkeley (free petting farm, open 365 days a year), Crissy Field in San Francisco (flat waterfront lawn, kite flying, Golden Gate views), Baker Beach in San Francisco (free admission), the Koret Children's Quarter playground in Golden Gate Park, and the Randall Museum in San Francisco (free general admission with live animal exhibits). All municipal playgrounds across the Bay Area are free — the Magical Bridge Playgrounds in Palo Alto, Sunnyvale, and Mountain View are standouts designed for all abilities.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are there free splash pads for kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Free Bay Area splash pads include the 24th & York Mini Park spray area in San Francisco's Mission District and the Ortega Park Splash Pad in Sunnyvale. Splash pads typically operate during summer months — check local parks and recreation websites for current seasonal schedules.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are free outdoor activities for kids in San Francisco and the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Free outdoor Bay Area highlights for families include the 1-mile Main Trail at Muir Woods National Monument (free for children 15 and under), tidepooling at Point Reyes National Seashore (free admission), the Marin Headlands trails with Golden Gate Bridge views, and beaches along the coast including Baker Beach and Crissy Field in San Francisco. Hiking trails at Mount Diablo State Park and Redwood Regional Park in Oakland are free to enter on foot.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are free activities for kids in the East Bay?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Free East Bay activities include Tilden Little Farm in Berkeley (free, open 365 days a year — bring celery and lettuce for the goats), the Adventure Playground at the Berkeley Marina (free, kids build structures from scrap lumber), free trails in Redwood Regional Park in Oakland, and Don Castro Regional Recreation Area in Hayward (free trails; check for current swim fees and hours). The Randall Museum in San Francisco and East Bay Depot for Creative Reuse in Oakland are also free admission.",
+      },
+    },
+  ],
+};
+
 // FAQPage JSON-LD for babies-0-2 guide. Targets "things to do with babies bay area" —
 // DataForSEO 0 rank while reddit, 510families, and mommypoppins rank #1-3.
 // Venues and details sourced from places.ts; no prices, hours, or ages fabricated.
@@ -408,6 +490,18 @@ export default async function GuidePage({
 
   return (
     <>
+      {guideSlug === "birthday-party" && locale === "en" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(birthdayPartyFaqJsonLd) }}
+        />
+      )}
+      {guideSlug === "free" && locale === "en" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(freeFaqJsonLd) }}
+        />
+      )}
       {guideSlug === "babies-0-2" && locale === "en" && (
         <script
           type="application/ld+json"
