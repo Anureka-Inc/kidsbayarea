@@ -144,6 +144,50 @@ export async function generateMetadata({
   };
 }
 
+// FAQPage JSON-LD for family-favorites guide. Targets "bay area family attractions"
+// and "bay area family activities" — DataForSEO 0 rank while bayareakidfun (#3),
+// livefreecreative (#5), and 510families (#6) rank top-6. zh variant already gets
+// 5 clicks at pos 4.8, showing the page has strong relevance; EN needs structured Q&A
+// to match what competitors offer. Venues sourced from places.ts only.
+const familyFavoritesFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are the top-rated family attractions in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The Bay Area's most-loved family attractions include the Exploratorium at Pier 15 in San Francisco (250+ hands-on science exhibits), the California Academy of Sciences in Golden Gate Park (planetarium, rainforest, and aquarium under one roof), the Oakland Zoo in Knowland Park, the Bay Area Discovery Museum in Sausalito (indoor and outdoor exhibits designed for younger children), Tilden Regional Park in Berkeley (steam trains, a free petting farm, and nature trails), and Magical Bridge Playground in Palo Alto (all-inclusive play space designed for children of all abilities). Check each venue's website for current hours and admission.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Which Bay Area family activities are good for all ages?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Bay Area family activities that work for a wide age range include the Exploratorium in San Francisco (ages 3 through adult), the California Academy of Sciences (planetarium is particularly popular with tweens), Tilden Regional Park's steam trains and Little Farm in Berkeley (free petting farm, open 365 days a year), the Santa Cruz Beach Boardwalk (free park admission, pay-per-ride), Angel Island State Park (ferry, hiking, and bay views), and Roaring Camp Railroads in Felton (narrow-gauge steam train through redwoods). Check each venue's website for current hours and admission.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are the best free or low-cost family activities in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Free and low-cost Bay Area family favorites include Tilden Little Farm in Berkeley (free, open every day of the year), Magical Bridge Playgrounds in Palo Alto, Sunnyvale, and Mountain View (free entry), Crissy Field and Baker Beach in San Francisco (free National Park Service beaches), the de Young Museum in Golden Gate Park (free for children 17 and under), and outdoor hiking at Muir Woods National Monument's 1-mile Main Trail loop. Public library systems throughout San Francisco, the East Bay, and Santa Clara County also offer free family story times and maker programs.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What Bay Area family attractions are best for a weekend day trip?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Top Bay Area weekend day trips for families include the Monterey Bay Aquarium (about 1.5 hours south of San Francisco — world-class marine life exhibits), the Santa Cruz Beach Boardwalk (free admission, ocean-side amusement park rides), Roaring Camp Railroads in Felton (steam train through old-growth redwoods), Muir Woods National Monument in Mill Valley (iconic old-growth redwood forest, 30 minutes north of SF), and Gilroy Gardens Family Theme Park (rides and landscaped gardens). Check each venue's website for current hours, tickets, and parking reservation requirements.",
+      },
+    },
+  ],
+};
+
 // FAQPage JSON-LD for babies-0-2 guide. Targets "things to do with babies bay area" —
 // DataForSEO 0 rank while reddit, 510families, and mommypoppins rank #1-3.
 // Venues and details sourced from places.ts; no prices, hours, or ages fabricated.
@@ -408,6 +452,12 @@ export default async function GuidePage({
 
   return (
     <>
+      {guideSlug === "family-favorites" && locale === "en" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(familyFavoritesFaqJsonLd) }}
+        />
+      )}
       {guideSlug === "babies-0-2" && locale === "en" && (
         <script
           type="application/ld+json"
