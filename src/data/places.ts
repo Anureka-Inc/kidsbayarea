@@ -1067,7 +1067,7 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.2,
     description: {
-      en: "The East Bay's largest soft play indoor playground designed for children up to age 10. Features vibrant play structures, slides, ball pits, and a dedicated baby and toddler playground. All-day play on weekdays makes it great value for families.",
+      en: "KidTopia in Fremont is the East Bay's largest soft-play indoor playground, designed for children up to age 10. KidTopia features vibrant play structures, slides, ball pits, and a dedicated baby and toddler playground. Weekday all-day passes make it one of the best-value family play destinations in the East Bay.",
       zh: "东湾最大的软体室内游乐场，专为10岁以下儿童设计。设有色彩鲜艳的游乐设施、滑梯、球池，以及专门的婴幼儿游乐区。工作日可全天游玩，性价比很高。",
     },
     tips: "Shoes are not allowed inside — bring socks or buy them there. Weekday all-day passes are cheaper than weekend 2-hour sessions.",
@@ -1175,7 +1175,7 @@ export const places: Place[] = [
     priceLevel: "$",
     rating: 4.4,
     description: {
-      en: "A charming play cafe on El Camino Real designed for crawlers and toddlers ages 6 months to 3.5 years. Parents can relax in the cafe while children enjoy slides, a train table, pretend play stations including a doll house, market, and kitchen.",
+      en: "Lemon Tree Play Cafe in Santa Clara is a South Bay play cafe on El Camino Real designed for crawlers and toddlers ages 6 months to 3.5 years. Lemon Tree's indoor play area features slides, a train table, and pretend-play stations including a doll house, market, and kitchen, while parents relax in the cafe.",
       zh: "位于El Camino Real的温馨亲子咖啡馆，专为6个月到3.5岁的爬行婴儿和幼儿设计。家长可以在咖啡区放松，孩子们享受滑梯、火车桌、角色扮演区，包括娃娃屋、市场和厨房。",
     },
     tips: "Open Tuesday-Friday 10am-3pm for indoor play. Also offers customized birthday parties and baby showers.",
