@@ -2,7 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { routing, isFullyTranslated } from "@/i18n/routing";
-import { buildCategoryFaqJsonLd } from "@/lib/categoryFaq";
+import { buildCategoryFaqJsonLd, getCategoryFaqEntries } from "@/lib/categoryFaq";
 import EatContent from "./EatContent";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -51,6 +51,23 @@ export default async function EatPage({ params }: { params: Promise<{ locale: st
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <EatContent />
+      {(locale === "en" || locale === "zh") && (
+        <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
+          <div className="rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
+            <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
+              {locale === "zh" ? "亲子餐厅常见问题" : "Kid-Friendly Restaurants FAQ"}
+            </h2>
+            <div className="space-y-6">
+              {getCategoryFaqEntries("eat", locale).map((entry) => (
+                <div key={entry.q}>
+                  <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">{entry.q}</h3>
+                  <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">{entry.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }

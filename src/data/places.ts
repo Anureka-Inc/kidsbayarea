@@ -1093,7 +1093,7 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.5,
     description: {
-      en: "A 10,000 sq ft indoor playground featuring giant multi-level play structures, separate baby and toddler areas, and activities suitable for children of all abilities up to age 10. Great for birthday parties and open play sessions in Redwood City.",
+      en: "La Petite Playhouse in Redwood City is a 10,000 sq ft indoor playground on the Peninsula, with giant multi-level play structures, a dedicated baby-and-toddler soft-play area, and activities suitable for all abilities up to age 10. Popular for open-play sessions and birthday parties.",
       zh: "10,000平方英尺的室内游乐场，拥有大型多层游乐设施、独立的婴幼儿区域，适合10岁以下各种能力水平的儿童。位于红木城，非常适合举办生日派对和开放游玩。",
     },
     tips: "Admission is $18 per child. Up to 2 free adults per paid child. Non-walkers are $8 or free with a paid sibling.",
@@ -2232,7 +2232,7 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.3,
     description: {
-      en: "The Fisher Family Children's Zoo at San Francisco Zoo & Gardens features a nature trail, insect zoo, barn, and playground inside a 100-acre zoo near Ocean Beach. Home to gorillas, penguins, grizzly bears, a classic carousel, and over 2,000 animals.",
+      en: "San Francisco Zoo & Gardens is home to the Fisher Family Children's Zoo, featuring a nature trail, insect zoo, barn, and playground. The 100-acre zoo near Ocean Beach houses gorillas, grizzly bears, penguins, a classic carousel, and over 2,000 animals.",
       zh: "靠近海洋海滩的100英亩动物园，有2000多只动物，包括大猩猩、企鹅和灰熊。儿童动物园有自然步道、昆虫馆、谷仓和游乐场。还有漂亮的旋转木马！",
     },
     tips: "Dress in layers - the coast is always cooler. First Wednesday of month is free for SF residents.",
@@ -6383,7 +6383,7 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.5,
     description: {
-      en: "A nonprofit center for gymnastics, circus arts, aerial arts, breakdancing, and parkour. Age-appropriate classes from 18 months through adult, fostering physical confidence and creativity in San Francisco's Inner Sunset.",
+      en: "AcroSports is a nonprofit gymnastics and circus-arts center in San Francisco's Inner Sunset neighborhood, offering classes in aerial arts, breakdancing, and parkour for children from 18 months through adult. Structured programs build physical confidence and creativity at every age.",
       zh: "非营利体操、马戏艺术、空中艺术、霹雳舞和跑酷中心。从18个月到成人的各年龄段课程，在旧金山内日落区培养孩子的身体自信和创造力。",
     },
     tips: "Try the parent-tot class for ages 18 months to 3 years. Summer camps are very popular.",
@@ -13371,7 +13371,7 @@ export const places: Place[] = [
     priceLevel: "$",
     rating: 4.6,
     description: {
-      en: "A 55-acre garden in Golden Gate Park with over 8,000 plants from around the world. The Children's Garden is a 'yes space' where kids can dig, water, pick, and build. Free admission before 9am daily and for SF residents with ID.",
+      en: "San Francisco Botanical Garden's Children's Garden is a hands-on outdoor 'yes space' inside Golden Gate Park where kids can dig, water plants, pick, and build. The 55-acre garden holds over 8,000 plants from around the world. SF residents with ID visit free; general daily free admission before 9am.",
       zh: "位于金门公园内的55英亩花园，拥有来自世界各地的8000多种植物。儿童花园是孩子们可以挖掘、浇水、采摘和搭建的'自由空间'。每天9点前和旧金山居民凭证件免费入场。",
     },
     tips: "Free admission daily 7:30-9am and all day on 2nd Tuesday of each month. SF residents free with ID. Children's Garden tools available at welcome station.",

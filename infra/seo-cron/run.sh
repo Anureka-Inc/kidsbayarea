@@ -76,11 +76,30 @@ if [ "$CUR_SHA" != "$(cat "$LOCK_STAMP" 2>/dev/null)" ]; then
 fi
 
 # --- 3. Claude Code optimizer -------------------------------------------
-# Fixed branch: at most ONE open seo-cron PR. An unmerged previous PR gets
-# force-updated with the latest data-driven edits instead of piling up
-# parallel PRs that all touch the same metadata files.
+# Fixed branch: at most ONE open seo-cron PR. If the previous PR is still
+# unmerged, build ON TOP of it (carry-forward) instead of re-branching from
+# main — re-branching + `push -f` silently discarded every unmerged week
+# (8/27–9/17 were lost that way and had to be recovered from PR force-push
+# history). Only if main no longer merges cleanly into the old branch do we
+# fall back to a fresh branch, and the report says so loudly.
 BRANCH="seo-cron/auto"
-git checkout -B "$BRANCH"
+CARRY_NOTE=""
+OPEN_PR_CREATED=$(gh pr list --head "$BRANCH" --state open --json createdAt -q '.[0].createdAt' 2>/dev/null || true)
+if [ -n "$OPEN_PR_CREATED" ] && git fetch origin "$BRANCH" 2>/dev/null; then
+  git checkout -B "$BRANCH" "origin/$BRANCH"
+  if git merge --no-edit origin/main >/dev/null 2>&1; then
+    echo "$LOG_PREFIX carrying forward unmerged PR (open since $OPEN_PR_CREATED)"
+    CARRY_NOTE="> ⚠️ **This PR has been open since ${OPEN_PR_CREATED%%T*} and now stacks multiple weekly runs.** Changes are not live and the past-changes scoreboard can't measure them until this is merged."
+  else
+    git merge --abort 2>/dev/null || true
+    git checkout -f main >/dev/null 2>&1
+    git checkout -B "$BRANCH"
+    echo "$LOG_PREFIX WARNING: unmerged PR conflicts with main — starting fresh; previous unmerged edits will be DROPPED from the PR"
+    CARRY_NOTE="> 🚨 **The previous unmerged run(s) conflicted with main and were dropped from this PR.** Recover them from the PR's force-push history (\`gh api repos/Anureka-Inc/kidsbayarea/issues/<PR>/timeline\`) if still wanted."
+  fi
+else
+  git checkout -B "$BRANCH"
+fi
 
 echo "$LOG_PREFIX running Claude Code optimizer on Bedrock ($ANTHROPIC_MODEL)"
 timeout 3600 claude -p "$(cat "$REPO_DIR/infra/seo-cron/playbook.md")" \
@@ -94,6 +113,11 @@ for f in report.md changed_urls.txt; do
   [ -f "$REPO_DIR/out/$f" ] && cp "$REPO_DIR/out/$f" "$SEO_OUT_DIR/$f"
 done
 rm -rf "$REPO_DIR/out"
+
+if [ -n "$CARRY_NOTE" ]; then
+  { echo "$CARRY_NOTE"; echo ""; cat "$SEO_OUT_DIR/report.md" 2>/dev/null; } > "$SEO_OUT_DIR/report.md.tmp" \
+    && mv "$SEO_OUT_DIR/report.md.tmp" "$SEO_OUT_DIR/report.md"
+fi
 
 # --- 3.5 Amazon picks refresh (Creators API, fail-soft) --------------------
 # Refreshes src/data/amazonProducts.ts weekly. NOTE: at weekly cadence the
