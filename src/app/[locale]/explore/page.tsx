@@ -19,14 +19,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     ? `https://www.kidsbayarea.com/${locale}/explore`
     : `https://www.kidsbayarea.com/en/explore`;
 
-  // EN-specific overrides: target "family day trips bay area" intent directly —
-  // page has 1,240 impressions at pos 14.4 but only 0.40% CTR; naming specific
-  // destinations in the snippet converts searchers who want concrete picks.
+  // EN override: page regressed to pos 46 with 1,980 impressions and 0 clicks.
+  // DataForSEO shows "family day trips bay area" at pos 19 on the homepage, not
+  // explore. Refocus on the page's actual corpus: parks, beaches, nature trails,
+  // and state parks — queries that aren't served by /play. Naming CuriOdyssey,
+  // Hidden Villa, and Muir Woods targets "kids parks bay area"-type intent.
   const title = locale === "en"
-    ? "Bay Area Family Day Trips & Outdoor Adventures for Kids"
+    ? "Bay Area Parks, Beaches & Nature for Kids — Day Trips & Outdoor Adventures"
     : t("title");
   const description = locale === "en"
-    ? "Bay Area family day trips for kids — Muir Woods, Monterey Bay Aquarium, Santa Cruz Boardwalk, Angel Island, Roaring Camp Railroads, and more outdoor adventures. Filter by age and season."
+    ? "Discover Bay Area parks, beaches, and nature destinations for families — Muir Woods, Angel Island, Point Reyes, Half Moon Bay beaches, Shoreline Park, and 100+ outdoor adventures. Filter by age and region."
     : t("subtitle");
 
   return {

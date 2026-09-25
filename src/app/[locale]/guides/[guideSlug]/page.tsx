@@ -144,6 +144,88 @@ export async function generateMetadata({
   };
 }
 
+// FAQPage JSON-LD for birthday-party guide. Targets "birthday party places for kids bay area".
+// Venues and facts sourced from places.ts only; mirrors the visible FAQ in GuideContent.
+const birthdayPartyFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are the best birthday party places for kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Popular Bay Area kids' birthday party venues include Sky Zone trampoline parks in Fremont and Dublin (Sky Zone Dublin has private party rooms), Altitude Trampoline Park in South San Jose, Ninja Republic in San Mateo (American Ninja Warrior-style obstacles), Round1 entertainment centers in Concord, Hayward, and San Jose (bowling, arcade games, karaoke, and party rooms), Bowlero San Jose (59 lanes with bumper bowling), and Laser Tagging Inc. in Newark (a two-story laser tag arena). Check each venue's website for current party packages and availability.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where can toddlers have birthday parties in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Toddler-friendly Bay Area birthday party venues include La Petite Playhouse in Redwood City (10,000 sq ft indoor playground with separate baby and toddler areas), Little Oceanauts in San Francisco (ocean-themed playground and party venue with a separate area for tots under 2), Whirlygig in San Jose (play space for ages 8 weeks to 8 years that hosts 2-hour private parties), and WOW Kids Playground in San Francisco (indoor playground designed for younger children). Party rooms at popular toddler venues fill up quickly, so book ahead.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are there outdoor birthday party options for kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "For an outdoor celebration, consider Pixieland Amusement Park in Concord (free admission with pay-per-ride tickets, rides sized for ages 1 to 10), Children's Fairyland in Oakland (storybook theme park on Lake Merritt with puppet shows and gentle rides), the Oakland Zoo, or a picnic at Coyote Hills Regional Park in Fremont (flat trails and a marsh boardwalk). Many city and regional parks take picnic-area reservations; check the local parks department for availability and fees.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are unique birthday party ideas for kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "For something different, try a climbing party at Bridges Rock Gym in El Cerrito (weekend birthday parties, kids programs from age 5), indoor mini golf at Urban Putt in downtown San Jose (families welcome before 8pm) or Holey Moley in San Francisco (kids birthday packages; under-13s welcome with an adult before 8pm), teppanyaki theater at Benihana in Cupertino (mention the birthday for a special treat), or bumper bowling at Lucky Strike Alameda. Check each venue's website for current packages.",
+      },
+    },
+  ],
+};
+
+// FAQPage JSON-LD for free guide. Targets "free things to do with kids bay area".
+// Venues and facts sourced from places.ts only; mirrors the visible FAQ in GuideContent.
+const freeFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are the best free things to do with kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Top free Bay Area activities for kids include Tilden Little Farm in Berkeley (free petting farm; bring celery and lettuce for the animals), Adventure Playground at the Berkeley Marina (kids build forts with real hammers and saws under supervision), the Randall Museum in San Francisco (free family museum with live animals and a woodworking shop), Magical Bridge Playground in Palo Alto (inclusive playground designed for children of all abilities), Mia's Dream Come True Playground in Hayward (1-acre all-abilities playground), and Koret Children's Quarter in Golden Gate Park (the oldest public children's playground in the US, with concrete slides built into the hill).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are there free splash pads for kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Free Bay Area splash pads include Emerald Glen Park Splash Pad in Dublin (open Memorial Day through Labor Day), Meadow Homes Spray Park in Concord (pirate-themed, open Memorial Day through September), Ortega Park Splash Pad in Sunnyvale (pirate-themed and great for toddlers), and the 24th & York Mini Park splash pad in San Francisco's Mission District. Splash pads run seasonally, so check city parks websites for current hours.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What free outdoor activities are there for kids in San Francisco?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Free San Francisco outdoor picks include Crissy Field (waterfront promenade with a sandy beach, kite flying, and Golden Gate Bridge views), Baker Beach (stick to the family-friendly south end with picnic tables and restrooms; strong riptides make swimming dangerous), Koret Children's Quarter in Golden Gate Park, and Yerba Buena Gardens Playground atop the Moscone Center. Across the bridge, Battery Spencer in the Marin Headlands is a free quarter-mile walk to classic Golden Gate views.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are free activities for kids in the East Bay?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Free East Bay picks include Tilden Little Farm in Berkeley (free admission, open daily 8:30am to 4pm), Adventure Playground at the Berkeley Marina (open weekends during the school year and daily in summer; closed-toe shoes required), Redwood Regional Park in Oakland (the first mile of the Stream Trail is paved and stroller-friendly, with a playground at Canyon Meadow), Mia's Dream Come True Playground in Hayward, and Pixieland Amusement Park in Concord (free admission; rides are pay-per-ticket).",
+      },
+    },
+  ],
+};
+
 // FAQPage JSON-LD for family-favorites guide. Targets "bay area family attractions"
 // and "bay area family activities" — DataForSEO 0 rank while bayareakidfun (#3),
 // livefreecreative (#5), and 510families (#6) rank top-6. zh variant already gets
@@ -452,6 +534,18 @@ export default async function GuidePage({
 
   return (
     <>
+      {guideSlug === "birthday-party" && locale === "en" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(birthdayPartyFaqJsonLd) }}
+        />
+      )}
+      {guideSlug === "free" && locale === "en" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(freeFaqJsonLd) }}
+        />
+      )}
       {guideSlug === "family-favorites" && locale === "en" && (
         <script
           type="application/ld+json"

@@ -75,37 +75,37 @@ const FAQ: Record<Category, CategoryFaqContent> = {
     en: [
       {
         q: "What are the best kid-friendly restaurants in San Francisco?",
-        a: "Top kid-friendly San Francisco restaurants include Mel's Drive-In (classic 1950s diner with all-day breakfast), Super Duper Burgers (organic burgers, free pickles), Park Tavern, San Tung (family-style Chinese), Tony's Pizza Napoletana, Lou's Cafe, Tartine Manufactory (bakery + lunch), and pretty much anywhere in Japantown — try Mifune for udon or Benihana for teppanyaki theater.",
+        a: "Kid-friendly San Francisco restaurants include Mel's Drive-In (1950s-style diner with jukeboxes, high chairs, and breakfast all day), Super Duper Burgers (organic burgers, a kid-size mini burger, and high chairs), Giorgio's Pizzeria in the Inner Richmond (kids get pizza dough to play with while they wait), Yank Sing (dim sum from pushcarts), Kura Revolving Sushi Bar (conveyor-belt sushi with capsule-toy prizes), and Zazie in Cole Valley (Wednesday Kid's Night with free mac & cheese or ice cream for kids).",
       },
       {
         q: "What family-friendly restaurants in the Bay Area have kids' menus and play areas?",
-        a: "Bay Area family restaurants with kids' menus include Benihana (Cupertino, Santa Clara, Millbrae, San Jose — teppanyaki entertainment), Spaghetti Factory (downtown San Jose), Homeroom (Oakland — mac & cheese specialist), Lazy Dog Restaurant & Bar (San Jose), In-N-Out Burger, Sizzler (Milpitas), Hobee's (multiple locations, kids eat free Wed 8am-2pm), and Pizza My Heart.",
+        a: "Bay Area restaurants that go beyond a kids' menu include Arthur Mac's Tap & Snack in Oakland (outdoor play area with toy cars), Headlands Brewing's Westbrae Biergarten in Berkeley (a big sandbox), Benihana in Cupertino (teppanyaki chefs cooking at the table), The Old Spaghetti Factory in downtown San Jose (eat inside a real trolley car), Lazy Dog Restaurant & Bar in San Jose (kids' menu with real dishes and coloring activities), and Hobee's (kids eat free on Wednesdays 8am to 2pm).",
       },
       {
         q: "Where can I take toddlers and babies to eat in the Bay Area?",
-        a: "Toddler-friendly Bay Area restaurants typically have high chairs, changing stations, and shorter wait times for early diners. Try Homeroom (Oakland), Hobee's (kids menu + crayons), Park Chow (SF — outdoor patio), Cafe Reverie (kid-friendly cafe in Cole Valley), Crepevine, and most cafes near playgrounds. Many sushi conveyor-belt restaurants like Sushiritto Sankai entertain little ones.",
+        a: "Toddler-friendly Bay Area spots include Rigolo Cafe in San Francisco's Laurel Heights (play area with a play kitchen, chalkboard, and books), Shalala Ramen in Japantown (room for strollers, high chairs, and kid-size bowls), Denica's Real Food Kitchen in Castro Valley, Walnut Creek, and Dublin (a train table for kids), and Taqueria Talavera in Berkeley (right next to a tot lot). An early dinner seating usually means shorter waits.",
       },
       {
         q: "Are there family-friendly restaurants in Oakland and the East Bay?",
-        a: "Top kid-friendly Oakland/East Bay restaurants: Homeroom (mac & cheese), Lake Chalet (Lake Merritt views), Jack London Square diners, Hopscotch, Cactus Taqueria, Bakesale Betty, Souley Vegan, Boot & Shoe Service, and Berkeley's Cheese Board Pizza. Many Mexican and Vietnamese spots in Fruitvale and on International Boulevard welcome families.",
+        a: "Family favorites in Oakland and the East Bay include Homeroom in Oakland (a restaurant devoted to mac and cheese), Fentons Creamery in Oakland (ice cream parlor since 1894, featured in Pixar's Up), Cactus Taqueria on Solano Ave and in Rockridge (tiny bean-and-cheese burritos on the kids' menu), Ramen Shop in Rockridge (a dedicated kid's ramen), Legendary Palace in Oakland Chinatown (dim sum from pushcarts), and Arthur Mac's Tap & Snack near MacArthur BART (outdoor play area).",
       },
     ],
     zh: [
       {
         q: "旧金山有哪些亲子餐厅推荐？",
-        a: "旧金山亲子餐厅推荐：Mel's Drive-In 经典 50 年代风格餐车餐厅（全天早餐）、Super Duper Burgers 有机汉堡（免费 pickle）、Park Tavern、San Tung 中式家庭餐厅、Tony's Pizza Napoletana、Lou's Cafe、Tartine Manufactory（面包+午餐）。日本城几乎都欢迎家庭，比如 Mifune 乌冬面或 Benihana 铁板烧表演。",
+        a: "旧金山亲子餐厅推荐：Mel's Drive-In（50 年代风格餐车餐厅，有点唱机和儿童椅，全天供应早餐）、Super Duper Burgers（有机汉堡，有儿童迷你汉堡和儿童椅）、Inner Richmond 的 Giorgio's Pizzeria（等餐时给孩子一团面团玩）、Yank Sing（推车点心）、Kura Revolving Sushi Bar（回转寿司，集盘子换扭蛋玩具）、Cole Valley 的 Zazie（周三儿童之夜，孩子免费吃芝士通心粉或冰淇淋）。",
       },
       {
         q: "湾区有儿童菜单和游乐区的家庭餐厅有哪些？",
-        a: "湾区亲子餐厅带儿童菜单：Benihana 铁板烧（Cupertino、Santa Clara、Millbrae、San Jose）、Spaghetti Factory（San Jose 市中心）、Oakland 的 Homeroom（芝士通心粉专门店）、Lazy Dog Restaurant & Bar（San Jose）、In-N-Out Burger、Sizzler（Milpitas）、Hobee's（多家分店，周三 8am-2pm 儿童免费）、Pizza My Heart。",
+        a: "湾区不只有儿童菜单的亲子餐厅：Oakland 的 Arthur Mac's Tap & Snack（户外游乐区，有玩具车）、Berkeley 的 Headlands Brewing Westbrae Biergarten（大沙坑）、Cupertino 的 Benihana（厨师在桌边表演铁板烧）、San Jose 市中心的 The Old Spaghetti Factory（可以坐在真的老电车里吃饭）、San Jose 的 Lazy Dog Restaurant & Bar（儿童菜单是正经菜，还有涂色活动）、Hobee's（周三 8am-2pm 儿童免费）。",
       },
       {
         q: "湾区带宝宝和幼儿可以去哪些餐厅吃饭？",
-        a: "湾区适合带宝宝/幼儿的餐厅通常配备儿童椅、母婴室、且早开餐时间人少：Oakland 的 Homeroom、Hobee's（儿童菜单+蜡笔）、SF 的 Park Chow（户外露台）、Cole Valley 的 Cafe Reverie、Crepevine、以及游乐场附近的咖啡馆。回转寿司店如 Sushiritto Sankai 对小朋友特别有吸引力。",
+        a: "湾区适合带宝宝和幼儿的餐厅：旧金山 Laurel Heights 的 Rigolo Cafe（有玩具厨房、黑板和绘本的游戏区）、日本城的 Shalala Ramen（空间宽敞能放推车，有儿童椅和儿童碗）、Castro Valley / Walnut Creek / Dublin 的 Denica's Real Food Kitchen（有儿童火车桌）、Berkeley 的 Taqueria Talavera（紧挨幼儿游乐场）。早点去吃晚饭通常不用排队。",
       },
       {
-        q: "Oakland 和东湾有哪些亲子餐厅？",
-        a: "Oakland 和东湾亲子餐厅：Homeroom 芝士通心粉、Lake Chalet（Lake Merritt 湖景）、Jack London Square 多家餐厅、Hopscotch、Cactus Taqueria、Bakesale Betty、Souley Vegan、Boot & Shoe Service、Berkeley 的 Cheese Board Pizza。Fruitvale 区和 International Boulevard 上的墨西哥、越南餐厅多数都欢迎家庭。",
+        q: "奥克兰和东湾有哪些亲子餐厅？",
+        a: "奥克兰和东湾亲子餐厅推荐：Oakland 的 Homeroom（芝士通心粉专门店）、Oakland 的 Fentons Creamery（1894 年开业的冰淇淋店，出现在皮克斯电影《飞屋环游记》里）、Solano Ave 和 Rockridge 的 Cactus Taqueria（儿童菜单有迷你豆子芝士卷饼）、Rockridge 的 Ramen Shop（有专门的儿童拉面）、Oakland 唐人街的 Legendary Palace（推车点心）、MacArthur BART 附近的 Arthur Mac's Tap & Snack（户外游乐区）。",
       },
     ],
   },
@@ -207,6 +207,10 @@ const FAQ: Record<Category, CategoryFaqContent> = {
         q: "Where can I ride a steam train with kids in the Bay Area?",
         a: "Bay Area steam train rides: Tilden Park Steam Trains (Berkeley — Redwood Valley Railway, weekends year-round, $3 per ride), Roaring Camp Railroads in Felton (Santa Cruz Mountains — narrow-gauge steam through redwoods), and the Napa Valley Wine Train (less kid-focused but family-friendly weekend brunches). Ardenwood Historic Farm also has weekend train rides during Railroad Days.",
       },
+      {
+        q: "What are the best parks and nature spots for kids in the Bay Area?",
+        a: "Top Bay Area parks and nature destinations for families include Muir Woods National Monument in Mill Valley (old-growth redwoods, stroller-accessible Main Trail), Angel Island State Park in San Francisco Bay (ferry access, bike rentals, picnic areas), Point Reyes National Seashore in Marin County (tide pools, elephant seals, lighthouse), Shoreline Park in Mountain View (flat paved lakeside trails), Hidden Villa in Los Altos Hills (working organic farm and wilderness preserve), and CuriOdyssey at Coyote Point in San Mateo (science zoo with native wildlife, hands-on science, and nature trails). Most regional park trails are free; check each park's website for parking fees and seasonal closures.",
+      },
     ],
     zh: [
       {
@@ -228,6 +232,10 @@ const FAQ: Record<Category, CategoryFaqContent> = {
       {
         q: "湾区哪里能带孩子坐蒸汽小火车？",
         a: "湾区蒸汽火车体验：Berkeley 的 Tilden Park Steam Trains（Redwood Valley Railway，全年周末运行，$3 一次）、Felton 的 Roaring Camp 窄轨蒸汽火车（穿越红杉林）、Napa Valley Wine Train（家庭友好的周末早午餐线，但不太面向小朋友）。Fremont 的 Ardenwood Historic Farm 在 Railroad Days 周末也有火车。",
+      },
+      {
+        q: "湾区适合带孩子的公园和自然景点有哪些？",
+        a: "湾区顶级亲子公园和自然目的地：Mill Valley 的 Muir Woods 国家纪念地（红杉古木，推车友好的主步道）、旧金山湾的 Angel Island 州立公园（渡轮通达，可租自行车、野餐）、Marin County 的 Point Reyes 国家海岸（潮池、象海豹、灯塔）、Mountain View 的 Shoreline Park（平坦的湖边铺装步道）、Los Altos Hills 的 Hidden Villa（有机农场兼荒野保护区）、San Mateo 的 Coyote Point CuriOdyssey（有本地野生动物和动手科学站的科学动物园，外加自然步道）。大多数地区公园步道免费，停车费和季节性关闭情况请查看各公园官网。",
       },
     ],
   },
