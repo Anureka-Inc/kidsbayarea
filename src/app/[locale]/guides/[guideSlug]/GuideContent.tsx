@@ -164,7 +164,7 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
                 What are the top-rated family attractions in the Bay Area?
               </h3>
               <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
-                The Bay Area&apos;s most-loved family attractions include the <strong>Exploratorium</strong> at Pier 15 in San Francisco (250+ hands-on science exhibits), the <strong>California Academy of Sciences</strong> in Golden Gate Park (planetarium, rainforest, and aquarium under one roof), the <strong>Oakland Zoo</strong> in Knowland Park, the <strong>Bay Area Discovery Museum</strong> in Sausalito (indoor and outdoor exhibits for younger children), and <strong>Magical Bridge Playground</strong> in Palo Alto (inclusive play space designed for children of all abilities). Check each venue&apos;s website for current hours and admission.
+                The Bay Area&apos;s most-loved family attractions include the <strong>Exploratorium</strong> at Pier 15 in San Francisco (hands-on science exhibits), the <strong>California Academy of Sciences</strong> in Golden Gate Park (planetarium, rainforest, and aquarium under one roof), the <strong>Oakland Zoo</strong> in Knowland Park, the <strong>Bay Area Discovery Museum</strong> in Sausalito (indoor and outdoor exhibits for younger children), and <strong>Magical Bridge Playground</strong> in Palo Alto (inclusive play space designed for children of all abilities). Check each venue&apos;s website for current hours and admission.
               </p>
             </div>
             <div>
@@ -172,7 +172,7 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
                 Which Bay Area family activities are good for all ages?
               </h3>
               <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
-                All-ages Bay Area favorites include the <strong>Exploratorium</strong> in San Francisco, <strong>Tilden Regional Park</strong> in Berkeley (steam trains, free petting farm, and nature trails), the <strong>Santa Cruz Beach Boardwalk</strong> (free park entry, pay-per-ride), <strong>Angel Island State Park</strong> (ferry, hiking, and bay views), and <strong>Roaring Camp Railroads</strong> in Felton (steam train through old-growth redwoods). Check each venue&apos;s website for current hours and admission.
+                All-ages Bay Area favorites include the <strong>Exploratorium</strong> in San Francisco, <strong>Tilden Regional Park</strong> in Berkeley (steam trains, a free petting farm, and nature trails), the <strong>Santa Cruz Beach Boardwalk</strong> (free park entry, pay-per-ride), <strong>Angel Island State Park</strong> (ferry, hiking, and bay views), and <strong>Roaring Camp Railroads</strong> in Felton (steam train through old-growth redwoods). Check each venue&apos;s website for current hours and admission.
               </p>
             </div>
             <div>
@@ -180,7 +180,7 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
                 What are the best free Bay Area family activities?
               </h3>
               <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
-                Free Bay Area family highlights include <strong>Tilden Little Farm</strong> in Berkeley (free, open every day of the year), <strong>Magical Bridge Playgrounds</strong> in Palo Alto, Sunnyvale, and Mountain View (free entry), <strong>Crissy Field</strong> and <strong>Baker Beach</strong> in San Francisco (National Park Service beaches), and the <strong>de Young Museum</strong> in Golden Gate Park (free for children 17 and under). Public library systems throughout San Francisco, the East Bay, and Santa Clara County offer free family story times and maker programs as well.
+                Free Bay Area family highlights include <strong>Tilden Little Farm</strong> in Berkeley (free admission), <strong>Magical Bridge Playground</strong> in Palo Alto (free entry), <strong>Crissy Field</strong> and <strong>Baker Beach</strong> in San Francisco (National Park Service beaches), and the <strong>de Young Museum</strong> in Golden Gate Park (free for children 17 and under). Public library systems throughout San Francisco, the East Bay, and Santa Clara County offer free family story times and maker programs as well.
               </p>
             </div>
             <div>
@@ -188,7 +188,7 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
                 What Bay Area family attractions make great weekend day trips?
               </h3>
               <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
-                Top Bay Area family day trips include the <strong>Monterey Bay Aquarium</strong> (about 1.5 hours south of San Francisco), the <strong>Santa Cruz Beach Boardwalk</strong> (ocean-side rides and free beach), <strong>Roaring Camp Railroads</strong> in Felton (steam train through redwoods), <strong>Muir Woods National Monument</strong> in Mill Valley (old-growth redwoods, 30 minutes north of SF), and <strong>Gilroy Gardens Family Theme Park</strong>. Check each venue&apos;s website for current hours, tickets, and parking reservation requirements.
+                Top Bay Area family day trips include the <strong>Monterey Bay Aquarium</strong> (about two hours south of San Francisco), the <strong>Santa Cruz Beach Boardwalk</strong> (ocean-side rides and free beach), <strong>Roaring Camp Railroads</strong> in Felton (steam train through redwoods), <strong>Muir Woods National Monument</strong> in Mill Valley (old-growth redwoods just north of San Francisco), and <strong>Gilroy Gardens Family Theme Park</strong>. Check each venue&apos;s website for current hours, tickets, and parking reservation requirements.
               </p>
             </div>
           </div>
