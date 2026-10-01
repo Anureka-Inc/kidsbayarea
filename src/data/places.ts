@@ -726,7 +726,7 @@ export const places: Place[] = [
     priceLevel: "free",
     rating: 4.6,
     description: {
-      en: "The oldest public children's playground in the US, recently renovated with modern play structures, a concrete slide built into the hill, climbing walls, and a beautiful carousel. Surrounded by Golden Gate Park's gorgeous scenery.",
+      en: "Koret Children's Quarter in Golden Gate Park is the oldest public children's playground in the US, recently renovated with modern play structures, a concrete slide built into the hill, climbing walls, and a beautiful carousel. Located in the heart of Golden Gate Park near the California Academy of Sciences.",
       zh: "美国最古老的公共儿童游乐场，最近翻新了现代游乐设施、建在山坡上的水泥滑梯、攀岩墙和美丽的旋转木马。被金门公园的美景环绕。",
     },
     tips: "The concrete slides are a must — bring cardboard to slide faster! Visit the nearby Botanical Garden or California Academy of Sciences for a full day.",
