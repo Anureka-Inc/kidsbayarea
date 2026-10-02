@@ -12,6 +12,17 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
+  async redirects() {
+    return [
+      // Duplicate entry removed: Planet Granite SF rebranded to Movement in
+      // 2022 and was listed twice. Keep old links/rankings pointing somewhere.
+      {
+        source: "/:locale/play/planet-granite-sf",
+        destination: "/:locale/play/movement-sf",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);
