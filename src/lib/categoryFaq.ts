@@ -21,53 +21,53 @@ const FAQ: Record<Category, CategoryFaqContent> = {
     en: [
       {
         q: "What are the best playgrounds in the Bay Area?",
-        a: "Top Bay Area playgrounds include Magical Bridge Playgrounds (Palo Alto, Sunnyvale, Mountain View), Yerba Buena Gardens playground and Children's Garden (San Francisco), Koret Children's Quarter in Golden Gate Park, Adventure Playground at the Berkeley Marina, Mission Playground splash pad, Shoreline Park playground (Mountain View), Mia's Dream Come True Playground (Hayward), Dennis the Menace Park (Monterey), and the inclusive playgrounds at Burton Park (San Carlos).",
+        a: "Standout Bay Area playgrounds include Magical Bridge Playground in Palo Alto (inclusive design for kids of all abilities), Outpost Playground at the Presidio in San Francisco (two acres at Presidio Tunnel Tops, with a giant fallen tree), Koret Children's Quarter in Golden Gate Park (the oldest public children's playground in the US, with concrete slides and a carousel), Adventure Playground in Berkeley (kids build forts with real hammers and saws), Mia's Dream Come True Playground in Hayward, and Magic Mountain Playground at Coyote Point in San Mateo (a 42-foot castle and dragons).",
       },
       {
         q: "Where can I find indoor play spaces for kids on rainy days?",
-        a: "Bay Area indoor play options include the Exploratorium and Children's Creativity Museum (San Francisco), Bay Area Discovery Museum (Sausalito), Children's Discovery Museum of San Jose, the Tech Interactive (San Jose), Chabot Space and Science Center (Oakland), Sky Zone Trampoline Park (Fremont, Dublin), Pump It Up indoor inflatable parks, and Kid-Plex (San Ramon).",
+        a: "Rainy-day options include the Exploratorium on Pier 15 in San Francisco (over 650 hands-on exhibits), Children's Creativity Museum in Yerba Buena Gardens (animation and art projects), Children's Discovery Museum of San Jose (water play, a fire truck to climb, and a bubbles room), Chabot Space & Science Center in Oakland (planetarium shows), Imagination City at Hillsdale Shopping Center in San Mateo (a weekday role-play city), KidPlex in San Ramon (toddler room and pretend play for ages 0 to 8), and WOW Kids Playground on Polk Street in San Francisco.",
       },
       {
         q: "What trampoline parks and water parks are in the Bay Area?",
-        a: "Trampoline parks include Sky Zone Fremont and Dublin, House of Air at the Presidio (SF), and Rockin' Jump in multiple cities. Water parks include Raging Waters San Jose (NorCal's largest), Aqua Adventure Waterpark in Fremont, The Wave Waterpark in Dublin, and seasonal splash pads at Emerald Glen Park, 24th & York Mini Park, and Larkey Sprayground.",
+        a: "Trampoline parks include House of Air at Crissy Field in the Presidio (42 conjoined trampolines, plus The Fort for ages 3 to 6), Sky Zone Dublin (foam pit and dodgeball), Sky Zone Trampoline Park in Fremont (toddler zone), Altitude Trampoline Park in South San Jose (ninja course and kids zone), and Urban Air Adventure Park in Concord. Water parks include Raging Waters San Jose (Northern California's largest), Aqua Adventure Waterpark in Fremont (lazy river and toddler splash pad), and The Wave Waterpark in Dublin (open Memorial Day through Labor Day).",
       },
       {
         q: "What are free playgrounds and play activities for Bay Area kids?",
-        a: "Free Bay Area play activities include Tilden Little Farm petting zoo (Berkeley), Adventure Playground (Berkeley Marina, just gear is paid), all municipal playgrounds including Magical Bridge sites, Golden Gate Park's Koret Children's Quarter, Yerba Buena Gardens, splash pads at 24th & York and Emerald Glen, the East Bay Depot for Creative Reuse, and Crissy Field beaches.",
+        a: "Free Bay Area play spots include Tilden Little Farm in Berkeley (bring celery and lettuce for the animals), Deer Hollow Farm in Rancho San Antonio Open Space Preserve (goats, sheep, and pigs; closed Mondays), Adventure Playground in Berkeley (weekends during the school year, daily in summer), Helen Diller Playground in Dolores Park, Yerba Buena Gardens Playground atop the Moscone Center, Outpost Playground at the Presidio, and Mia's Dream Come True Playground in Hayward. Slide Ranch at Muir Beach also offers free self-guided visits.",
       },
       {
         q: "Where are the best Bay Area zoos and animal experiences for kids?",
-        a: "Major Bay Area zoos and animal venues include the San Francisco Zoo, Oakland Zoo, Happy Hollow Park & Zoo (San Jose), Tilden Little Farm petting zoo (Berkeley, free), Ardenwood Historic Farm (Fremont), Slide Ranch (Muir Beach), and the Aquarium of the Bay at Pier 39. For wild marine life try Monterey Bay Aquarium (1.5 hours south).",
+        a: "Bay Area animal outings include San Francisco Zoo & Gardens near Ocean Beach (gorillas, penguins, and the Fisher Family Children's Zoo), Oakland Zoo (a gondola up to the California Trail with grizzly bears and wolves), Happy Hollow Park & Zoo in San Jose (small zoo plus gentle rides), CuriOdyssey at Coyote Point in San Mateo (bobcat and river otter exhibits), Lindsay Wildlife Experience in Walnut Creek (rescued hawks, owls, and snakes), the free Tilden Little Farm in Berkeley, and Ardenwood Historic Farm in Fremont (a Victorian-era working farm).",
       },
       {
         q: "Where are the best splash pads and water parks in the Bay Area?",
-        a: "Top Bay Area splash pads (free or low-cost): 24th & York Mini Park Splash Pad in San Francisco's Mission District (free), Castro Valley Splash Park (seasonal), Larkey Sprayground in Walnut Creek, Emerald Glen Park Splash Pad in Dublin, Ortega Park Splash Pad in Sunnyvale, and Meadow Homes Spray Park in Concord. For full water parks, Raging Waters San Jose is the largest in Northern California, Aqua Adventure Waterpark is in Fremont, and The Wave Waterpark is in Dublin. Check each venue's website for seasonal hours and admission.",
+        a: "Free Bay Area splash pads include 24th & York Mini Park Splash Pad in San Francisco's Mission District, Emerald Glen Park Splash Pad in Dublin (open Memorial Day through Labor Day), Ortega Park Splash Pad in Sunnyvale (pirate-themed), and Meadow Homes Spray Park in Concord (pirate-themed, open Memorial Day through September). Castro Valley Splash Park and Larkey Sprayground in Walnut Creek charge admission and open seasonally. For full water parks, try Raging Waters San Jose, Aqua Adventure Waterpark in Fremont, or The Wave Waterpark in Dublin. Check each venue's website for hours.",
       },
     ],
     zh: [
       {
         q: "湾区最棒的游乐场有哪些？",
-        a: "湾区顶级游乐场包括 Magical Bridge 全龄段无障碍游乐场（Palo Alto、Sunnyvale、Mountain View 三处）、Yerba Buena Gardens 儿童花园和游乐场（旧金山）、金门公园 Koret Children's Quarter、伯克利码头 Adventure Playground、Mission Playground 戏水区、Mountain View 的 Shoreline Park、Hayward 的 Mia's Dream Come True 游乐场。",
+        a: "湾区值得一去的游乐场：Palo Alto 的 Magical Bridge Playground（为各种能力的孩子设计的无障碍游乐场）、旧金山的 Outpost Playground at the Presidio（位于 Presidio Tunnel Tops，占地两英亩，有一棵巨大的倒木）、金门公园的 Koret Children's Quarter（全美最古老的公共儿童游乐场，有水泥滑梯和旋转木马）、Berkeley 的 Adventure Playground（孩子用真的锤子和锯子搭堡垒）、Hayward 的 Mia's Dream Come True Playground、San Mateo Coyote Point 的 Magic Mountain Playground（42 英尺高的城堡和巨龙）。",
       },
       {
         q: "湾区雨天可以带孩子去哪些室内游乐场？",
-        a: "湾区雨天室内活动选择包括：旧金山 Exploratorium 和 Children's Creativity Museum、Sausalito 的 Bay Area Discovery Museum、San Jose Children's Discovery Museum、San Jose 的 The Tech Interactive、Oakland 的 Chabot Space and Science Center、Sky Zone 跳床乐园（Fremont/Dublin）、Pump It Up 充气乐园、San Ramon 的 Kid-Plex。",
+        a: "雨天室内去处：旧金山 Pier 15 的 Exploratorium（650 多件动手展品）、Yerba Buena Gardens 的 Children's Creativity Museum（动画和艺术创作）、Children's Discovery Museum of San Jose（玩水区、可以爬的消防车、泡泡屋）、Oakland 的 Chabot Space & Science Center（天文馆节目）、San Mateo Hillsdale Shopping Center 里的 Imagination City（工作日开放的职业角色扮演小城）、San Ramon 的 KidPlex（0 到 8 岁，有幼儿房和过家家区）、旧金山 Polk Street 的 WOW Kids Playground。",
       },
       {
         q: "湾区有哪些跳床乐园和水上乐园？",
-        a: "湾区跳床乐园：Sky Zone Fremont、Sky Zone Dublin、Presidio 的 House of Air、Rockin' Jump（多家分店）。水上乐园：北加州最大的 Raging Waters San Jose、Fremont 的 Aqua Adventure Waterpark、Dublin 的 The Wave Waterpark；季节性戏水池：Emerald Glen、24th & York Mini Park、Larkey Sprayground。",
+        a: "跳床乐园：Presidio Crissy Field 的 House of Air（42 张连体蹦床，还有专给 3 到 6 岁孩子的 The Fort）、Sky Zone Dublin（海绵池和躲避球）、Fremont 的 Sky Zone Trampoline Park（幼儿区）、南 San Jose 的 Altitude Trampoline Park（忍者障碍赛道和儿童区）、Concord 的 Urban Air Adventure Park。水上乐园：北加州最大的 Raging Waters San Jose、Fremont 的 Aqua Adventure Waterpark（漂流河和幼儿戏水区）、Dublin 的 The Wave Waterpark（阵亡将士纪念日到劳动节开放）。",
       },
       {
         q: "湾区有哪些免费的游乐场和亲子活动？",
-        a: "湾区免费遛娃去处：Berkeley 的 Tilden Little Farm 免费动物农场、伯克利码头 Adventure Playground（材料费除外）、所有市政游乐场（含 Magical Bridge 系列）、金门公园 Koret Children's Quarter、Yerba Buena Gardens、24th & York 和 Emerald Glen 戏水区、East Bay Depot for Creative Reuse、Crissy Field 海滩。",
+        a: "湾区免费遛娃去处：Berkeley 的 Tilden Little Farm（带芹菜和生菜喂动物）、Rancho San Antonio Open Space Preserve 里的 Deer Hollow Farm（山羊、绵羊、猪；周一闭园）、Berkeley 的 Adventure Playground（上学期间周末开放，夏天每天开放）、Dolores Park 的 Helen Diller Playground、Moscone Center 楼顶的 Yerba Buena Gardens Playground、Outpost Playground at the Presidio、Hayward 的 Mia's Dream Come True Playground。Muir Beach 的 Slide Ranch 也可以免费自助参观。",
       },
       {
         q: "湾区适合带孩子的动物园有哪些？",
-        a: "湾区主要动物园和动物体验场所：旧金山 SF Zoo、Oakland Zoo、San Jose 的 Happy Hollow Park & Zoo、Berkeley 免费的 Tilden Little Farm 触摸动物园、Fremont 的 Ardenwood Historic Farm、Muir Beach 的 Slide Ranch、Pier 39 的 Aquarium of the Bay。再远一些有 1.5 小时车程的 Monterey Bay Aquarium。",
+        a: "湾区看动物的好去处：Ocean Beach 附近的 San Francisco Zoo & Gardens（大猩猩、企鹅，还有 Fisher Family Children's Zoo）、Oakland Zoo（坐缆车上 California Trail 看灰熊和狼）、San Jose 的 Happy Hollow Park & Zoo（小型动物园加温和的游乐设施）、San Mateo Coyote Point 的 CuriOdyssey（山猫和河獭展区）、Walnut Creek 的 Lindsay Wildlife Experience（获救的鹰、猫头鹰和蛇）、Berkeley 免费的 Tilden Little Farm、Fremont 的 Ardenwood Historic Farm（维多利亚时代风格的农场，至今仍在运营）。",
       },
       {
         q: "湾区有哪些戏水区和水上乐园？",
-        a: "湾区免费或低价戏水区：旧金山 Mission 区的 24th & York Mini Park Splash Pad（免费）、Castro Valley Splash Park（季节性）、Walnut Creek 的 Larkey Sprayground、Dublin 的 Emerald Glen Park Splash Pad、Sunnyvale 的 Ortega Park Splash Pad、Concord 的 Meadow Homes Spray Park。收费水上乐园：北加州最大的 Raging Waters San Jose、Fremont 的 Aqua Adventure Waterpark、Dublin 的 The Wave Waterpark。请查看各场馆官网获取最新的开放时间和票价。",
+        a: "湾区免费戏水区：旧金山 Mission 区的 24th & York Mini Park Splash Pad、Dublin 的 Emerald Glen Park Splash Pad（阵亡将士纪念日到劳动节开放）、Sunnyvale 的 Ortega Park Splash Pad（海盗主题）、Concord 的 Meadow Homes Spray Park（海盗主题，阵亡将士纪念日到 9 月开放）。Castro Valley Splash Park 和 Walnut Creek 的 Larkey Sprayground 需要买票，只在季节内开放。想去正规水上乐园，可以选 Raging Waters San Jose、Fremont 的 Aqua Adventure Waterpark 或 Dublin 的 The Wave Waterpark。开放时间请查看各场馆官网。",
       },
     ],
   },
