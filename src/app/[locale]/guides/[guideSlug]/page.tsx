@@ -450,7 +450,7 @@ const tweensFaqJsonLd = {
       name: "What are the best activities for tweens (ages 8–12) in the Bay Area?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Top Bay Area activities for tweens include rock climbing at Berkeley Ironworks, Planet Granite (Belmont, San Francisco, Sunnyvale), or Diablo Rock Gym; trampoline parks at Sky Zone Fremont and Dublin and House of Air at the Presidio; amusement parks at California's Great America (Santa Clara); laser tag at Laser Tagging Inc.; and adventure-park arcade experiences at Round1 in San Jose, Concord, and Hayward. For outdoor adventures, hiking Mount Diablo State Park or exploring Redwood Regional Park (Oakland) fits tweens well.",
+        text: "Top Bay Area activities for tweens include rock climbing at Berkeley Ironworks, Movement (Belmont, San Francisco, Sunnyvale), or Diablo Rock Gym; trampoline parks at Sky Zone Fremont and Dublin and House of Air at the Presidio; amusement parks at California's Great America (Santa Clara); laser tag at Laser Tagging Inc.; and adventure-park arcade experiences at Round1 in San Jose, Concord, and Hayward. For outdoor adventures, hiking Mount Diablo State Park or exploring Redwood Regional Park (Oakland) fits tweens well.",
       },
     },
     {
