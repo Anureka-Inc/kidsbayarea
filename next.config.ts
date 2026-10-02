@@ -21,6 +21,17 @@ const nextConfig: NextConfig = {
         destination: "/:locale/play/movement-sf",
         permanent: true,
       },
+      // Duplicate entries merged into their twins.
+      {
+        source: "/:locale/play/tilden-park-little-farm",
+        destination: "/:locale/play/tilden-little-farm",
+        permanent: true,
+      },
+      {
+        source: "/:locale/play/shoreline-park",
+        destination: "/:locale/explore/shoreline-park-mountain-view",
+        permanent: true,
+      },
     ];
   },
 };

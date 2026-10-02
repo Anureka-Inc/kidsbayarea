@@ -251,7 +251,6 @@ export const placeImages: Record<string, string> = {
   "tiffanys-dance-academy": "https://static1.squarespace.com/static/6075f8418631ad2120f39365/t/6075f92605ef932d22095bf8/1629144913611/TDA+New+Logo+Stacked+Color.png?format=1500w",
   "tilden-little-farm": "https://www.ebparks.org/sites/default/files/Tilden_Nature_Area.jpg",
   "tilden-nature-area-eec": "https://www.ebparks.org/sites/default/files/Tilden_Nature_Area.jpg",
-  "tilden-park-little-farm": "https://www.ebparks.org/sites/default/files/16x9_Tilden%20Inspiration%20Point_Yvonne%20Rathbone.jpg",
   "tipsy-putt-emeryville": "https://tipsyputt.com/wp-content/uploads/home-page.webp",
   "tomales-bay-kayaking": "https://bluewaterskayaking.com/wp-content/uploads/2025/04/DSCF2245-scaled.jpg",
   "toy-go-round-albany": "https://lh3.googleusercontent.com/sitesv/AA5AbUDImrlnhfK_85vAejE2eeRCCtZOgzet6GgOXSbS_9fWOPxVA0Rym6231_DqovZFYgmxJVC36Uz2XD3-acdSVkgzkAViHJlR8-g-YWR0gjw0B1BN8pdjdVhxl6hqS8ZROVJW4STqBNl-VRWHS5PDBM3TdPvXi3tgQyv2JXiWJBftGfEXpSR1gqxZzEe9xUU=w16383",
