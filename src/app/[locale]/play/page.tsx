@@ -53,11 +53,11 @@ export default async function PlayPage({ params }: { params: Promise<{ locale: s
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <PlayContent />
-      {locale === "en" && (
+      {(locale === "en" || locale === "zh") && (
         <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
           <div className="rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
             <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
-              Bay Area Play &amp; Activities FAQ
+              {locale === "zh" ? "湾区亲子游玩常见问题" : "Bay Area Play & Activities FAQ"}
             </h2>
             <div className="space-y-6">
               {getCategoryFaqEntries("play", locale).map((entry) => (
