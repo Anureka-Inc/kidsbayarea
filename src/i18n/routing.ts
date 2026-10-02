@@ -34,6 +34,12 @@ export const routing = defineRouting({
     "el",
   ],
   defaultLocale: "en",
+  // next-intl's default HTTP `Link` header advertised the UNPREFIXED path
+  // (e.g. /guides/foo) as hreflang x-default, but that path only 307s to
+  // /en/... — Google then kept the redirecting URL as the indexed one and the
+  // real /en pages showed no GSC data. Page metadata + sitemap.ts already
+  // declare hreflang (x-default → /en), so the header is redundant.
+  alternateLinks: false,
 });
 
 // Locales where place/guide/planner content (titles, descriptions, body text)
