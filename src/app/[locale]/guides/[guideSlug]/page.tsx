@@ -58,7 +58,7 @@ const guideMeta: Record<
     titleEn: "Rainy Day Activities for Kids in the Bay Area — Indoor Fun",
     titleZh: "湾区雨天亲子活动指南",
     descEn:
-      "Best rainy day activities for Bay Area kids: children's museums, trampoline parks, indoor play spaces, and science centers. Never be stuck at home on a rainy day.",
+      "Best rainy day activities for Bay Area kids: the Exploratorium (SF), Children's Discovery Museum of San Jose, Bay Area Discovery Museum (Sausalito), Sky Zone trampoline parks, and The Tech Interactive.",
     descZh:
       "室内游乐场、博物馆和室内活动，雨天也不无聊！",
   },
