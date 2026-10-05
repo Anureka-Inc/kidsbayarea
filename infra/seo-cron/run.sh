@@ -20,7 +20,8 @@ export PATH="$HOME/.local/bin:$PATH"
 
 mkdir -p "$SEO_OUT_DIR"
 rm -f "$SEO_OUT_DIR"/report.md "$SEO_OUT_DIR"/changed_urls.txt \
-      "$SEO_OUT_DIR"/pr_url.txt "$SEO_OUT_DIR"/actions.json
+      "$SEO_OUT_DIR"/pr_url.txt "$SEO_OUT_DIR"/actions.json \
+      "$SEO_OUT_DIR"/fact_hits.txt "$SEO_OUT_DIR"/venue_hits.txt
 
 echo "$LOG_PREFIX fetching GitHub token from SSM"
 GH_TOKEN=$(aws ssm get-parameter --name /seo-cron/kidsbayarea/github-token \
@@ -268,6 +269,30 @@ Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" || COMMIT_OK=0
           echo "The optimizer added policy-like language (hours/prices/fees/closures/ages). Verify each claim against places.ts or the venue's website."
         } >> "$SEO_OUT_DIR/report.md"
         echo "$LOG_PREFIX fact gate triggered ($(wc -l < "$SEO_OUT_DIR/fact_hits.txt") hit(s)) — PR retitled"
+      fi
+      # Venue gate: proper nouns the optimizer added that appear nowhere in
+      # places.ts. Every bad FAQ in the 8/27–9/17 runs (closed restaurants,
+      # an out-of-state school, venues placed in the wrong city) would have
+      # been listed here.
+      if git diff "$PRE_SHA..$RUN_SHA" -- src/ public/llms.txt ':!src/data/amazonProducts.ts' \
+           | python3 "$REPO_DIR/infra/seo-cron/venue_check.py" "$REPO_DIR/src/data/places.ts" \
+             > "$SEO_OUT_DIR/venue_hits.txt" \
+         && [ -s "$SEO_OUT_DIR/venue_hits.txt" ]; then
+        gh pr edit "$PR_URL" --title "seo-cron: page optimizations [needs fact review]" 2>/dev/null || true
+        {
+          echo ""
+          echo "## ⚠️ Venue gate — names not found anywhere in places.ts"
+          echo '```'
+          cat "$SEO_OUT_DIR/venue_hits.txt"
+          echo '```'
+          echo "Each name above is either a venue we don't list (likely invented, closed, or out of area — remove it) or a street/landmark (fine). Check before merging."
+        } >> "$SEO_OUT_DIR/report.md"
+        echo "$LOG_PREFIX venue gate triggered ($(wc -l < "$SEO_OUT_DIR/venue_hits.txt") name(s)) — PR retitled"
+      fi
+      # The PR body was set before the gates ran; re-sync so the warnings
+      # show on the PR itself, not only in the email.
+      if [ -s "$SEO_OUT_DIR/fact_hits.txt" ] || [ -s "$SEO_OUT_DIR/venue_hits.txt" ]; then
+        gh pr edit "$PR_URL" --body-file "$SEO_OUT_DIR/report.md" 2>/dev/null || true
       fi
     fi
   else
