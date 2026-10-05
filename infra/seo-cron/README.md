@@ -36,6 +36,7 @@ On any service failure, `seo-cron-kidsbayarea-failure-notify.service`
 | `safe_actions.py` | GSC sitemap resubmit (chunked) + IndexNow ping |
 | `venue_check.py` | Venue gate: flags added proper nouns not found anywhere in places.ts (PR retitled for review) |
 | `ga_amazon.py` | GA4 Amazon-picks views / clicks / CTR by context + placement (7d) for the report |
+| `place_status.py` | Monthly (1st Thu): Google Places businessStatus + name check for every venue → report (closed / renamed). Key: SSM `/seo-cron/kidsbayarea/google-places-api-key` |
 | `send_report.py` | SES email (to `SEO_REPORT_TO`, default tom@anureka.com) |
 | `verify_domain.py` | GSC service-account self-ownership (token/verify/register/check) |
 | `seo-cron-kidsbayarea.service` / `.timer` | systemd units (Thu 14:13 UTC, Persistent) |

@@ -193,6 +193,19 @@ else
 fi
 rm -f "$AMZ_ENV_TMP"
 
+# --- 3.6 Venue status (Google Places, first Thursday of the month) --------
+# Flags venues Google marks permanently/temporarily closed or under a
+# different name (Habitot, Planet Granite, Rockin' Jump San Carlos were all
+# found by accident). Report-only — never edits places.ts. Place ids are
+# cached in history/place_ids.json (rides the history commit) so later runs
+# use the cheaper Details call. PLACE_STATUS=1 forces a run.
+if [ "$(date -u +%d)" -le 07 ] || [ "${PLACE_STATUS:-}" = "1" ]; then
+  echo "$LOG_PREFIX checking venue status (Google Places)"
+  timeout 1800 python3 "$REPO_DIR/infra/seo-cron/place_status.py" \
+    "$REPO_DIR/src/data/places.ts" "$REPO_DIR/infra/seo-cron/history/place_ids.json" \
+    >> "$SEO_OUT_DIR/report.md" || echo "$LOG_PREFIX venue status check failed (non-fatal)"
+fi
+
 # --- 4. gate + PR (PR-only: a human reviews and merges) -------------------
 # Commit ONLY the playbook-permitted paths, explicitly excluding the contact
 # API even though it lives under src/app. src/messages, src/i18n, and
