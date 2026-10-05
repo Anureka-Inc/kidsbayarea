@@ -35,6 +35,7 @@ On any service failure, `seo-cron-kidsbayarea-failure-notify.service`
 | `history/changes.jsonl` | The change ledger (orchestrator-written; agent never touches) |
 | `safe_actions.py` | GSC sitemap resubmit (chunked) + IndexNow ping |
 | `venue_check.py` | Venue gate: flags added proper nouns not found anywhere in places.ts (PR retitled for review) |
+| `ga_amazon.py` | GA4 Amazon-picks views / clicks / CTR by context + placement (7d) for the report |
 | `send_report.py` | SES email (to `SEO_REPORT_TO`, default tom@anureka.com) |
 | `verify_domain.py` | GSC service-account self-ownership (token/verify/register/check) |
 | `seo-cron-kidsbayarea.service` / `.timer` | systemd units (Thu 14:13 UTC, Persistent) |

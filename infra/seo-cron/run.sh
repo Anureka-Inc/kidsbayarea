@@ -185,6 +185,8 @@ print("qwen-pool" if "qwen-pool" in ids else (qwen or ids or [""])[0])' 2>/dev/n
     echo "- Query errors: $(grep -c 'ERROR' "$AMZ_REFRESH_LOG")"
     echo "- Earnings attribution: tracking ID \`kidsbayarea0d-20\` — revenue is NOT in this email; check Associates Central → Reports, filtered by that tracking ID."
   } >> "$SEO_OUT_DIR/report.md"
+  # Views / clicks / CTR per context + placement (GA4 amazon_* events).
+  python3 "$REPO_DIR/infra/seo-cron/ga_amazon.py" >> "$SEO_OUT_DIR/report.md" || true
   rm -f "$AMZ_REFRESH_LOG"
 else
   echo "$LOG_PREFIX could not read pickfromvideo/integrations secret (non-fatal)"
