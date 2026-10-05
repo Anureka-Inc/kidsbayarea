@@ -15,6 +15,7 @@ const validGuides = [
   "birthday-party",
   "free",
   "indoor-playgrounds",
+  "museums",
 ] as const;
 
 type GuideSlug = (typeof validGuides)[number];
@@ -85,6 +86,14 @@ const guideMeta: Record<
       "Free family activities in the Bay Area that won't cost a thing: parks, beaches, free-admission museums, nature trails, and budget-friendly fun for kids of all ages.",
     descZh:
       "湾区不花钱的亲子好去处：公园、海滩、免费博物馆、自然步道，适合各年龄段孩子的省钱活动。",
+  },
+  museums: {
+    titleEn: "Best Children's Museums & Science Centers in the Bay Area",
+    titleZh: "湾区儿童博物馆与科学馆推荐",
+    descEn:
+      "Bay Area children's and science museums for kids: the Exploratorium, California Academy of Sciences, Children's Discovery Museum of San Jose, Bay Area Discovery Museum, The Tech Interactive, plus free museums and resident free days.",
+    descZh:
+      "湾区适合孩子的儿童博物馆和科学馆：Exploratorium、California Academy of Sciences、圣何塞儿童探索博物馆、Bay Area Discovery Museum、The Tech Interactive，以及免费博物馆和居民免费日。",
   },
   "indoor-playgrounds": {
     titleEn: "Best Indoor Playgrounds for Kids in the Bay Area",
@@ -307,6 +316,48 @@ const babies02FaqJsonLd = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "The best Bay Area indoor play spaces for babies under 2 include the Bay Area Discovery Museum in Sausalito (indoor exhibits for very young children), La Petite Playhouse in Redwood City (soft-play area for infants and toddlers), and the Children's Discovery Museum of San Jose (infant and toddler-friendly exhibits). Many YMCA branches across the Bay Area also offer infant and parent-and-me swim classes. Check each venue's website for current hours and age guidelines.",
+      },
+    },
+  ],
+};
+
+// FAQPage JSON-LD for museums guide. Targets "children's museums bay area" /
+// "science museums for kids bay area" (DataForSEO gap: bayareakidfun #4).
+// Venues and facts sourced from places.ts only; mirrors the visible FAQ.
+const museumsFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are the best children's museums in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Top Bay Area children's museums include the Children's Discovery Museum of San Jose (the largest children's museum west of the Mississippi, with water play, a real fire truck to climb, and a bubbles exhibit), the Bay Area Discovery Museum in Sausalito (hands-on exhibits at the foot of the Golden Gate Bridge, daily Maker Labs, and the outdoor Lookout Cove with tide pools and caves), the Children's Creativity Museum in San Francisco's Yerba Buena Gardens (kids make animations and music videos, plus a historic carousel), and MOCHA - Museum of Children's Art in Old Oakland (open studios and Saturday drop-in sessions). Check each museum's website for current hours and admission.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are the best science museums for kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The Bay Area's best science museums for kids are the Exploratorium on San Francisco's Pier 15 (over 650 interactive exhibits, plus the Tactile Dome for older kids), the California Academy of Sciences in Golden Gate Park (an aquarium, planetarium, rainforest dome, and natural history museum under one living roof), The Tech Interactive in San Jose (kids design roller coasters, code robots, and explore biotech), Chabot Space & Science Center in the Oakland Hills (planetarium shows and real telescopes, with Friday and Saturday night viewings), and the Lawrence Hall of Science in Berkeley (hands-on exhibits, a planetarium, and an outdoor science park with Bay views).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Which Bay Area museums are best for toddlers and preschoolers?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "For toddlers and preschoolers, try the Children's Discovery Museum of San Jose (bring extra clothes for the water play area), the Bay Area Discovery Museum in Sausalito (indoor and outdoor exhibits designed for young children; weekday mornings are less crowded), the Randall Museum in San Francisco (a live animal room with snakes, owls, and rodents), and the Lawrence Hall of Science in Berkeley. The Children's Creativity Museum in Yerba Buena Gardens also welcomes kids from age 2.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are there free museums or free days for kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. The Randall Museum in San Francisco is free, with live animals, art studios, and a woodworking shop. The Maritime Museum and Visitor Center at San Francisco Maritime National Historical Park are free, and Fort Point National Historic Site under the Golden Gate Bridge has free admission with ranger-led tours on weekends. Several museums also offer resident free days: the Exploratorium on the first Wednesday for SF residents, the Children's Discovery Museum of San Jose on the first Wednesday for San Jose residents, and the California Academy of Sciences quarterly for SF residents. Confirm free-day dates on each museum's website.",
       },
     },
   ],
@@ -556,6 +607,12 @@ export default async function GuidePage({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(babies02FaqJsonLd) }}
+        />
+      )}
+      {guideSlug === "museums" && locale === "en" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(museumsFaqJsonLd) }}
         />
       )}
       {guideSlug === "indoor-playgrounds" && locale === "en" && (
