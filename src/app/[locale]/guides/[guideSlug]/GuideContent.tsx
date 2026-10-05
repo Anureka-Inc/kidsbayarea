@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { Fragment, useMemo } from "react";
 import { useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Home, ChevronRight } from "lucide-react";
@@ -133,8 +133,9 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
       </div>
 
       {/* Grouped results */}
-      {Array.from(grouped.entries()).map(([category, categoryPlaces]) => (
-        <section key={category} className="mb-10">
+      {Array.from(grouped.entries()).map(([category, categoryPlaces], groupIndex) => (
+        <Fragment key={category}>
+        <section className="mb-10">
           <h2 className="mb-4 flex items-center gap-2 text-xl font-bold text-gray-900 dark:text-white">
             <span>{categoryEmojis[category]}</span>
             {locale === "zh"
@@ -150,6 +151,13 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
             ))}
           </div>
         </section>
+        {/* Picks sit after the first group of places, where readers are still
+            planning — at the page bottom almost nobody saw them (GA4: ~19% of
+            views scroll to 90%, 0 Amazon clicks in 90 days). */}
+        {groupIndex === 0 && (
+          <AmazonPicks contextKey={guideSlug} placement="guide-after-first-group" className="mb-10" />
+        )}
+        </Fragment>
       ))}
 
       {/* Birthday party FAQ — targets "birthday party places for kids bay area" */}
@@ -489,7 +497,6 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
       )}
 
       {/* Cross-link to other guides */}
-      <AmazonPicks contextKey={guideSlug} />
 
       <section className="mt-12 rounded-2xl border border-gray-100 bg-gray-50 p-6 dark:border-gray-700 dark:bg-gray-800/50">
         <h2 className="mb-4 text-lg font-bold text-gray-900 dark:text-white">
