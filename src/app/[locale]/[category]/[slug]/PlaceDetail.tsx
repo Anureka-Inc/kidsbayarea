@@ -388,6 +388,14 @@ export default function PlaceDetail({ place }: PlaceDetailProps) {
           </section>
         )}
 
+        {/* Picks right after the website button (the most-clicked element on
+            place pages) instead of below the map, where few readers reach. */}
+        <AmazonPicks
+          contextKey={resolvePlaceContextKey(place.tags, place.category)}
+          placement="place-after-website"
+          className="mb-8"
+        />
+
         {/* Map */}
         <section className="mb-8">
           <h2 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
@@ -416,8 +424,6 @@ export default function PlaceDetail({ place }: PlaceDetailProps) {
             </a>
           </div>
         </section>
-
-        <AmazonPicks contextKey={resolvePlaceContextKey(place.tags, place.category)} />
 
         {/* Similar Places */}
         {similarPlaces.length > 0 && (
