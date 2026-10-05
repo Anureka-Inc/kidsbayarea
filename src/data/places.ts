@@ -2669,7 +2669,7 @@ export const places: Place[] = [
       en: "The largest American Ninja Warrior gym in California, welcoming kids ages 6 and up for classes, open gym, birthday parties, and camps. Features a wide variety of ninja warrior obstacles in a massive indoor space. Their Pro Team competes worldwide.",
       zh: "加州最大的美国忍者战士训练馆，欢迎6岁以上的孩子参加课程、开放训练、生日派对和营地。在巨大的室内空间中设有各种忍者战士障碍设施。其专业队伍在世界各地参赛。",
     },
-    tips: "Open gym requires a drop-in fee. Richmond residents and military get 20% off. Birthday party packages cover the first 5 kids.",
+    tips: "Open gym requires a drop-in fee. Richmond residents and military get 20% off. Birthday party packages available — see the website for current pricing.",
     parking: "Free parking at 1 W Barrett Ave, Richmond.",
     strollerFriendly: false,
     changingStation: false,
