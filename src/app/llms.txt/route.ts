@@ -36,6 +36,7 @@ The site publishes in 30 languages (with English and 简体中文 as primary), s
 - [Birthday party places](https://www.kidsbayarea.com/en/guides/birthday-party): Bay Area kids' birthday party venues — trampoline parks (Sky Zone, Altitude), indoor playgrounds (La Petite Playhouse, Little Oceanauts, Whirlygig), Round1, bowling, climbing, and outdoor options like Pixieland and Children's Fairyland. Includes a Q&A by age group and party style.
 - [Free activities for kids](https://www.kidsbayarea.com/en/guides/free): Free family activities across the Bay Area — Tilden Little Farm, Adventure Playground, Randall Museum, all-abilities playgrounds, free splash pads, and San Francisco and East Bay outdoor picks. Includes a Q&A by region.
 - [Indoor playgrounds](https://www.kidsbayarea.com/en/guides/indoor-playgrounds): Best Bay Area indoor playgrounds and play spaces — soft-play areas (WOW Kids, Lemon Tree, La Petite Playhouse), trampoline parks (Sky Zone, House of Air, Altitude), and science play venues. Includes a Q&A on the best picks by age group and region.
+- [Children's museums & science centers](https://www.kidsbayarea.com/en/guides/museums): Bay Area children's and science museums — Exploratorium, California Academy of Sciences, Children's Discovery Museum of San Jose, Bay Area Discovery Museum, The Tech Interactive, Chabot, Lawrence Hall of Science, MOCHA — plus free museums (Randall Museum, SF Maritime) and resident free days. Includes a Q&A by age and budget.
 
 ## Popular Bay Area destinations covered
 

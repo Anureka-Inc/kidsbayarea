@@ -2452,7 +2452,7 @@ export const places: Place[] = [
     diningOnSite: true,
     needsReservation: false,
     bestTime: "Public skating sessions; check website for schedule",
-    tags: ["indoor","ice-skating","snoopy","peanuts","museum","historic"],
+    tags: ["indoor","ice-skating","snoopy","peanuts","historic"],
     website: "https://www.snoopyshomeice.com/",
   },
   {
@@ -6730,7 +6730,7 @@ export const places: Place[] = [
     diningOnSite: true,
     needsReservation: false,
     bestTime: "Weekend afternoons, or Friday/Saturday evenings for stargazing",
-    tags: ["space","science","telescopes","planetarium","stem"],
+    tags: ["museum","space","science","telescopes","planetarium","stem"],
     website: "https://chabotspace.org",
   },
   {
@@ -6938,7 +6938,7 @@ export const places: Place[] = [
     diningOnSite: true,
     needsReservation: true,
     bestTime: "Weekday mornings, free Wednesdays go fast",
-    tags: ["science","interactive","hands-on","waterfront","educational"],
+    tags: ["museum","science","interactive","hands-on","waterfront","educational"],
     website: "https://exploratorium.edu",
   },
   {
@@ -7276,7 +7276,7 @@ export const places: Place[] = [
     diningOnSite: true,
     needsReservation: false,
     bestTime: "Weekday mornings, clear days for views",
-    tags: ["science","planetarium","views","hands-on","university"],
+    tags: ["museum","science","planetarium","views","hands-on","university"],
     website: "https://lawrencehallofscience.org",
   },
   {
@@ -8290,7 +8290,7 @@ export const places: Place[] = [
     diningOnSite: true,
     needsReservation: false,
     bestTime: "Weekday mornings during school year",
-    tags: ["stem","technology","robots","engineering","imax"],
+    tags: ["museum","stem","technology","robots","engineering","imax"],
     website: "https://thetech.org",
   },
   {

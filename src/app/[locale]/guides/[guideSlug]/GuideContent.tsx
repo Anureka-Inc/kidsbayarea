@@ -17,7 +17,8 @@ type GuideSlug =
   | "family-favorites"
   | "birthday-party"
   | "free"
-  | "indoor-playgrounds";
+  | "indoor-playgrounds"
+  | "museums";
 
 interface GuideMeta {
   titleEn: string;
@@ -58,6 +59,8 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
       result = result.filter(
         (p) => p.priceLevel === "free" || p.tags.includes("free")
       );
+    } else if (guideSlug === "museums") {
+      result = result.filter((p) => p.tags.includes("museum"));
     } else if (guideSlug === "indoor-playgrounds") {
       result = result.filter(
         (p) =>
@@ -289,6 +292,49 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
         </section>
       )}
 
+      {/* Museums FAQ — targets "children's museums bay area" / "science museums for kids" */}
+      {guideSlug === "museums" && locale === "en" && (
+        <section className="mt-12 rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
+          <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
+            Bay Area Children&apos;s Museums FAQ
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What are the best children&apos;s museums in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Top Bay Area children&apos;s museums include the Children&apos;s Discovery Museum of San Jose (the largest children&apos;s museum west of the Mississippi, with water play, a real fire truck to climb, and a bubbles exhibit), the Bay Area Discovery Museum in Sausalito (hands-on exhibits at the foot of the Golden Gate Bridge, daily Maker Labs, and the outdoor Lookout Cove with tide pools and caves), the Children&apos;s Creativity Museum in San Francisco&apos;s Yerba Buena Gardens (kids make animations and music videos, plus a historic carousel), and MOCHA - Museum of Children&apos;s Art in Old Oakland (open studios and Saturday drop-in sessions). Check each museum&apos;s website for current hours and admission.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What are the best science museums for kids in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                The Bay Area&apos;s best science museums for kids are the Exploratorium on San Francisco&apos;s Pier 15 (over 650 interactive exhibits, plus the Tactile Dome for older kids), the California Academy of Sciences in Golden Gate Park (an aquarium, planetarium, rainforest dome, and natural history museum under one living roof), The Tech Interactive in San Jose (kids design roller coasters, code robots, and explore biotech), Chabot Space &amp; Science Center in the Oakland Hills (planetarium shows and real telescopes, with Friday and Saturday night viewings), and the Lawrence Hall of Science in Berkeley (hands-on exhibits, a planetarium, and an outdoor science park with Bay views).
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Which Bay Area museums are best for toddlers and preschoolers?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                For toddlers and preschoolers, try the Children&apos;s Discovery Museum of San Jose (bring extra clothes for the water play area), the Bay Area Discovery Museum in Sausalito (indoor and outdoor exhibits designed for young children; weekday mornings are less crowded), the Randall Museum in San Francisco (a live animal room with snakes, owls, and rodents), and the Lawrence Hall of Science in Berkeley. The Children&apos;s Creativity Museum in Yerba Buena Gardens also welcomes kids from age 2.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Are there free museums or free days for kids in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Yes. The Randall Museum in San Francisco is free, with live animals, art studios, and a woodworking shop. The Maritime Museum and Visitor Center at San Francisco Maritime National Historical Park are free, and Fort Point National Historic Site under the Golden Gate Bridge has free admission with ranger-led tours on weekends. Several museums also offer resident free days: the Exploratorium on the first Wednesday for SF residents, the Children&apos;s Discovery Museum of San Jose on the first Wednesday for San Jose residents, and the California Academy of Sciences quarterly for SF residents. Confirm free-day dates on each museum&apos;s website.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Indoor playgrounds FAQ — targets "best indoor playgrounds bay area" / "indoor play spaces for kids" */}
       {guideSlug === "indoor-playgrounds" && locale === "en" && (
         <section className="mt-12 rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
@@ -511,6 +557,10 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
               { slug: "tweens-8-12", label: "🧑 8-12", zhLabel: "🧑 8-12岁" },
               { slug: "rainy-day", label: "🌧️ Rainy Day", zhLabel: "🌧️ 雨天" },
               { slug: "family-favorites", label: "⭐ Top Rated", zhLabel: "⭐ 最佳" },
+              { slug: "museums", label: "🏛️ Museums", zhLabel: "🏛️ 博物馆" },
+              { slug: "indoor-playgrounds", label: "🧸 Indoor Play", zhLabel: "🧸 室内游乐" },
+              { slug: "free", label: "🆓 Free", zhLabel: "🆓 免费" },
+              { slug: "birthday-party", label: "🎂 Birthdays", zhLabel: "🎂 生日派对" },
             ] as const
           )
             .filter((g) => g.slug !== guideSlug)
