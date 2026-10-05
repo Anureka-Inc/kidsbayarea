@@ -29,6 +29,22 @@ function truncateAtSentence(text: string, maxLen: number): string {
   return ending.replace(/[\s,.;:!?，。；：]+$/, "") + "…";
 }
 
+// For first sentences longer than the whole budget: end at the first clause
+// break past ~45% of the budget and close it with a period ("…indoor
+// playground on the Peninsula.") — reads as a sentence, unlike a "…" cut.
+function truncateAtClause(text: string, maxLen: number): string | null {
+  if (text.length <= maxLen) return text;
+  const cut = text.slice(0, maxLen);
+  const re = /, |，|; /g;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(cut))) {
+    if (m.index >= Math.floor(maxLen * 0.45)) {
+      return text.slice(0, m.index).trimEnd() + (m[0] === "，" ? "。" : ".");
+    }
+  }
+  return null;
+}
+
 function kidFriendlySignals(
   place: ReturnType<typeof getPlaceBySlug>,
   locale: string,
@@ -95,15 +111,37 @@ export async function generateMetadata({
       ? ` 适合${place.city}家庭｜${signals}。`
       : ` Kid-friendly visit guide for ${place.city} · ${signals}.`
     : baseSuffix;
-  const leadLen = BUDGET - richSuffix.length;
-  const leadShortLen = BUDGET - baseSuffix.length;
-  let metaDescription: string;
-  if (leadLen >= 60) {
-    metaDescription = truncateAtSentence(description, leadLen) + richSuffix;
-  } else if (leadShortLen >= 60) {
-    metaDescription = truncateAtSentence(description, leadShortLen) + baseSuffix;
-  } else {
-    metaDescription = truncateAtSentence(description, BUDGET);
+  // A complete first sentence beats keeping the suffix: snippets cut
+  // mid-sentence ("…indoor playground on…") read broken in the SERP, and the
+  // entity-first descriptions are long — with the rich suffix reserved, 364 of
+  // 529 place pages were being cut mid-sentence. So try rich suffix → base
+  // suffix → no suffix, taking the first that fits a whole sentence; then a
+  // clause-level cut; only then the word-boundary "…" cut.
+  const options: Array<[number, string]> = [
+    [BUDGET - richSuffix.length, richSuffix],
+    [BUDGET - baseSuffix.length, baseSuffix],
+    [BUDGET, ""],
+  ];
+  let metaDescription = "";
+  for (const [leadLen, suffix] of options) {
+    if (leadLen < 60) continue;
+    const lead = truncateAtSentence(description, leadLen);
+    if (!lead.endsWith("…")) {
+      metaDescription = lead + suffix;
+      break;
+    }
+  }
+  for (const [leadLen, suffix] of options.slice(1)) {
+    if (metaDescription || leadLen < 60) continue;
+    const lead = truncateAtClause(description, leadLen);
+    if (lead) metaDescription = lead + suffix;
+  }
+  if (!metaDescription) {
+    const leadLen = BUDGET - richSuffix.length;
+    metaDescription =
+      leadLen >= 60
+        ? truncateAtSentence(description, leadLen) + richSuffix
+        : truncateAtSentence(description, BUDGET);
   }
 
   // Build hreflang alternates
