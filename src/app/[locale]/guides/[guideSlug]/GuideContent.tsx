@@ -175,7 +175,7 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
                 What are the best birthday party places for kids in the Bay Area?
               </h3>
               <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
-                Popular Bay Area kids&apos; birthday party venues include Sky Zone trampoline parks in Fremont and Dublin (Sky Zone Dublin has private party rooms), Altitude Trampoline Park in South San Jose, Ninja Republic in San Mateo (American Ninja Warrior-style obstacles), Round1 entertainment centers in Concord, Hayward, and San Jose (bowling, arcade games, karaoke, and party rooms), Bowlero San Jose (59 lanes with bumper bowling), and Laser Tagging Inc. in Newark (a two-story laser tag arena). Check each venue&apos;s website for current party packages and availability.
+                Popular Bay Area kids&apos; birthday party venues include Sky Zone trampoline parks in Fremont and Dublin (Sky Zone Dublin has private party rooms), Altitude Trampoline Park in South San Jose, Ninja Republic in San Mateo (American Ninja Warrior-style obstacles), Round1 entertainment centers in Concord, Hayward, and San Jose (bowling, arcade games, karaoke, and party rooms), Lucky Strike San Jose (formerly Bowlero; 59 lanes with bumper bowling), and Laser Tagging Inc. in Newark (a two-story laser tag arena). Check each venue&apos;s website for current party packages and availability.
               </p>
             </div>
             <div>

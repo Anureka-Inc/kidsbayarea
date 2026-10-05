@@ -27,6 +27,8 @@ from difflib import SequenceMatcher
 import requests
 
 MAX_KM = 1.5
+FAR_KM = 25
+SAME_SPOT_KM = 0.3
 API = "https://places.googleapis.com/v1"
 FIELDS = "id,displayName,businessStatus,formattedAddress,location"
 
@@ -90,7 +92,7 @@ def main() -> int:
     s = requests.Session()
     s.headers.update({"X-Goog-Api-Key": key, "Content-Type": "application/json"})
     places = parse_places(places_path)[:limit]
-    closed, temp, renamed, unmatched, errors = [], [], [], [], 0
+    closed, temp, renamed, unmatched, moved, errors = [], [], [], [], [], 0
 
     for p in places:
         try:
@@ -103,11 +105,30 @@ def main() -> int:
                            json={"textQuery": f"{p['name']} {p['city']} California",
                                  "locationBias": {"circle": {"center": {"latitude": p["lat"], "longitude": p["lng"]},
                                                              "radius": 5000.0}},
-                                 "maxResultCount": 3}, timeout=30)
+                                 "maxResultCount": 5}, timeout=30)
                 cands = r.json().get("places", []) if r.ok else []
-                cands = [c for c in cands if "location" in c and
-                         km(p["lat"], p["lng"], c["location"]["latitude"], c["location"]["longitude"]) <= MAX_KM]
-                g = max(cands, key=lambda c: similar(p["name"], c.get("displayName", {}).get("text", ""), p["city"]), default=None)
+                g, best = None, 0.0
+                for c in cands:
+                    if "location" not in c:
+                        continue
+                    d = km(p["lat"], p["lng"], c["location"]["latitude"], c["location"]["longitude"])
+                    sim = similar(p["name"], c.get("displayName", {}).get("text", ""), p["city"])
+                    # Near our pin with a plausible name, or a strong name match
+                    # a bit further away (our coordinates are often approximate).
+                    if (d <= MAX_KM and sim >= 0.5) or (sim >= 0.8 and d <= FAR_KM):
+                        if sim > best:
+                            g, best = c, sim
+                if not g:
+                    # Same spot, different name → likely rebranded or replaced
+                    # (e.g. Bowlero → Lucky Strike); surfaces as a name mismatch.
+                    same_spot = [c for c in cands if "location" in c and km(
+                        p["lat"], p["lng"], c["location"]["latitude"], c["location"]["longitude"]) <= SAME_SPOT_KM]
+                    g = same_spot[0] if same_spot else None
+                if g:
+                    d = km(p["lat"], p["lng"], g["location"]["latitude"], g["location"]["longitude"])
+                    if d > MAX_KM:
+                        moved.append(f"`{p['slug']}` {p['name']}: our pin is {d:.1f} km from Google's "
+                                     f"({g['location']['latitude']:.5f}, {g['location']['longitude']:.5f})")
                 if g:
                     ids[p["slug"]] = g["id"]
             if not r.ok:
@@ -135,7 +156,7 @@ def main() -> int:
         json.dump(ids, f, indent=1, sort_keys=True)
 
     print(f"- Checked {len(places)} venues · {len(closed)} permanently closed · {len(temp)} temporarily closed · "
-          f"{len(renamed)} name mismatch · {len(unmatched)} no confident match · {errors} API errors")
+          f"{len(renamed)} name mismatch · {len(moved)} pin off · {len(unmatched)} no confident match · {errors} API errors")
     for title, rows, note in [
         ("🚨 Permanently closed — remove from places.ts", closed, ""),
         ("⏸ Temporarily closed — consider a note on the page", temp, ""),
@@ -148,6 +169,11 @@ def main() -> int:
                 print(note)
             for row in rows[:40]:
                 print(f"- {row}")
+    if moved:
+        print(f"\n<details><summary>📍 Name matches but our map pin is off by more than {MAX_KM} km ({len(moved)})</summary>\n")
+        for row in moved[:80]:
+            print(f"- {row}")
+        print("\n</details>")
     if unmatched:
         print(f"\n<details><summary>No confident Google match within {MAX_KM} km ({len(unmatched)})</summary>\n")
         for p in unmatched[:60]:
