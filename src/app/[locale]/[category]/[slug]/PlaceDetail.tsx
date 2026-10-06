@@ -29,6 +29,7 @@ import type { Place, Category } from "@/data/places";
 import { getSimilarPlaces, categoryNames, regionNames } from "@/data/places";
 import { resolvePlaceContextKey } from "@/data/amazonPicks";
 import AmazonPicks from "@/components/AmazonPicks";
+import { hubSlugForCity } from "@/lib/cities";
 import PlaceCard from "@/components/PlaceCard";
 import PlaceImage from "@/components/PlaceImage";
 
@@ -175,7 +176,17 @@ export default function PlaceDetail({ place }: PlaceDetailProps) {
             </span>
             <span className="flex items-center gap-1 text-gray-600 dark:text-gray-400">
               <MapPin className="h-4 w-4" />
-              {place.city}, {regionLabel}
+              {hubSlugForCity(place.city) ? (
+                <Link
+                  href={`/cities/${hubSlugForCity(place.city)}`}
+                  className="underline decoration-dotted underline-offset-2 hover:text-teal-700 dark:hover:text-teal-300"
+                >
+                  {place.city}
+                </Link>
+              ) : (
+                place.city
+              )}
+              , {regionLabel}
             </span>
             <span className="flex items-center gap-1 text-gray-600 dark:text-gray-400">
               <Star className="h-4 w-4 fill-amber-400 text-amber-400" />

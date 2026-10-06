@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { cityHubs } from "@/lib/cities";
 import { Baby, MapPin, Calendar, CalendarDays, Compass, Cake, Tag, Blocks, Landmark, Leaf, Bus, Snowflake } from "lucide-react";
 
 export default function Footer() {
@@ -193,6 +194,25 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+        </div>
+
+        {/* City hubs */}
+        <div className="mt-10">
+          <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-300">
+            Cities
+          </h3>
+          <ul className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+            {cityHubs.map((c) => (
+              <li key={c.slug}>
+                <Link
+                  href={`/cities/${c.slug}`}
+                  className="text-gray-400 transition-colors hover:text-cyan-400"
+                >
+                  {c.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* Bottom bar */}

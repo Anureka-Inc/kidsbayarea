@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { fullyTranslatedLocales } from "@/i18n/routing";
 import { places } from "@/data/places";
+import { cityHubs } from "@/lib/cities";
 
 const baseUrl = "https://www.kidsbayarea.com";
 
@@ -85,6 +86,20 @@ export default async function sitemap({
           priority: 0.7,
           alternates: {
             languages: buildAlternates((loc) => `/${loc}/guides/${slug}`),
+          },
+        });
+      }
+    }
+
+    for (const hub of cityHubs) {
+      for (const locale of indexableLocales) {
+        entries.push({
+          url: `${baseUrl}/${locale}/cities/${hub.slug}`,
+          lastModified: new Date(),
+          changeFrequency: "weekly",
+          priority: 0.7,
+          alternates: {
+            languages: buildAlternates((loc) => `/${loc}/cities/${hub.slug}`),
           },
         });
       }

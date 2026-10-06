@@ -41,6 +41,27 @@ The site publishes in 30 languages (with English and 简体中文 as primary), s
 - [Field trip ideas](https://www.kidsbayarea.com/en/guides/field-trips): Bay Area field trip ideas for kids and groups — science museums (Exploratorium, Cal Academy, Tech Interactive, Chabot, Lawrence Hall), working farms (Ardenwood, Hidden Villa, Slide Ranch, Loma Vista), history sites (John Muir NHS, Sanchez Adobe, Fort Point, Black Diamond Mines), tide pools, and free options. Includes a Q&A.
 - [Winter activities](https://www.kidsbayarea.com/en/guides/winter): Bay Area winter fun for families — ice skating (Winter Lodge outdoor rink, Oakland Ice Center, Sharks Ice San Jose and Fremont, Nazareth Ice Oasis, Snoopy's Home Ice), elephant seals at Año Nuevo and Point Reyes, whale watching from Point Reyes Lighthouse, Pigeon Point and Muir Beach Overlook, monarch butterflies, spawning salmon, rainy-season waterfalls, and Roaring Camp holiday trains. Includes a Q&A.
 
+## Cities
+
+- [San Francisco](https://www.kidsbayarea.com/en/cities/san-francisco): Things to do with kids in San Francisco — 100 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [San Jose](https://www.kidsbayarea.com/en/cities/san-jose): Things to do with kids in San Jose — 48 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [Berkeley](https://www.kidsbayarea.com/en/cities/berkeley): Things to do with kids in Berkeley — 28 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [Oakland](https://www.kidsbayarea.com/en/cities/oakland): Things to do with kids in Oakland — 28 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [Cupertino](https://www.kidsbayarea.com/en/cities/cupertino): Things to do with kids in Cupertino — 19 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [Palo Alto](https://www.kidsbayarea.com/en/cities/palo-alto): Things to do with kids in Palo Alto — 18 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [Fremont](https://www.kidsbayarea.com/en/cities/fremont): Things to do with kids in Fremont — 17 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [San Mateo](https://www.kidsbayarea.com/en/cities/san-mateo): Things to do with kids in San Mateo — 15 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [Sausalito](https://www.kidsbayarea.com/en/cities/sausalito): Things to do with kids in Sausalito — 10 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [Sunnyvale](https://www.kidsbayarea.com/en/cities/sunnyvale): Things to do with kids in Sunnyvale — 10 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [Santa Clara](https://www.kidsbayarea.com/en/cities/santa-clara): Things to do with kids in Santa Clara — 9 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [Livermore](https://www.kidsbayarea.com/en/cities/livermore): Things to do with kids in Livermore — 8 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [Concord](https://www.kidsbayarea.com/en/cities/concord): Things to do with kids in Concord — 8 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [San Rafael](https://www.kidsbayarea.com/en/cities/san-rafael): Things to do with kids in San Rafael — 8 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [Half Moon Bay](https://www.kidsbayarea.com/en/cities/half-moon-bay): Things to do with kids in Half Moon Bay — 8 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [Alameda](https://www.kidsbayarea.com/en/cities/alameda): Things to do with kids in Alameda — 8 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+- [Los Gatos](https://www.kidsbayarea.com/en/cities/los-gatos): Things to do with kids in Los Gatos — 8 family-friendly places (play, parks, classes, restaurants, shops) with an FAQ.
+
+
 ## Popular Bay Area destinations covered
 
 - **San Francisco**: Exploratorium, California Academy of Sciences, Children's Creativity Museum, Golden Gate Park Koret Children's Quarter, Crissy Field, Yerba Buena Gardens playground, Kinokuniya Bookstore (Japantown), Ghirardelli Square, Mel's Drive-In.
