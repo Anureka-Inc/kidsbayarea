@@ -313,6 +313,10 @@ export default async function PlaceDetailPage({
     datePublished: "2026-01-01",
   };
 
+  // place.address is "street, City, CA 94000" (Google Places formatted).
+  const streetAddress = place.address?.split(`, ${place.city},`)[0];
+  const postalCode = place.address?.match(/\bCA (\d{5})\b/)?.[1];
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": placeType,
@@ -320,6 +324,8 @@ export default async function PlaceDetailPage({
     description,
     address: {
       "@type": "PostalAddress",
+      ...(streetAddress ? { streetAddress } : {}),
+      ...(postalCode ? { postalCode } : {}),
       addressLocality: place.city,
       addressRegion: "CA",
       addressCountry: "US",
