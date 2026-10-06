@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Baby, MapPin, Calendar, CalendarDays, Compass, Cake, Tag, Blocks, Landmark, Leaf, Bus } from "lucide-react";
+import { Baby, MapPin, Calendar, CalendarDays, Compass, Cake, Tag, Blocks, Landmark, Leaf, Bus, Snowflake } from "lucide-react";
 
 export default function Footer() {
   const t = useTranslations("Footer");
@@ -151,6 +151,15 @@ export default function Footer() {
                 >
                   <Bus className="h-3.5 w-3.5" />
                   Field Trip Ideas
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/guides/winter"
+                  className="flex items-center gap-1.5 text-gray-400 transition-colors hover:text-cyan-400"
+                >
+                  <Snowflake className="h-3.5 w-3.5" />
+                  Winter Activities
                 </Link>
               </li>
               <li>

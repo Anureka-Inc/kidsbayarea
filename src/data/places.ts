@@ -1683,7 +1683,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Weekend public skating sessions",
-    tags: ["ice-skating","indoor","year-round","skating-school","hockey"],
+    tags: ["winter","ice-skating","indoor","year-round","skating-school","hockey"],
     website: "https://nazarethice.com/",
   },
   {
@@ -1739,7 +1739,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Weekday morning or afternoon public sessions",
-    tags: ["ice-skating","indoor","year-round","skating-lessons","downtown"],
+    tags: ["winter","ice-skating","indoor","year-round","skating-lessons","downtown"],
     website: "https://www.oaklandice.com/",
   },
   {
@@ -2455,7 +2455,7 @@ export const places: Place[] = [
     diningOnSite: true,
     needsReservation: false,
     bestTime: "Weekend afternoon public skating sessions",
-    tags: ["ice-skating","indoor","year-round","hockey","figure-skating"],
+    tags: ["winter","ice-skating","indoor","year-round","hockey","figure-skating"],
     website: "https://www.sharksiceatfremont.com/",
   },
   {
@@ -2483,7 +2483,7 @@ export const places: Place[] = [
     diningOnSite: true,
     needsReservation: false,
     bestTime: "Weekend afternoon public sessions",
-    tags: ["ice-skating","indoor","hockey","figure-skating","year-round"],
+    tags: ["winter","ice-skating","indoor","hockey","figure-skating","year-round"],
     website: "https://www.sharksiceatsanjose.com/",
   },
   {
@@ -2598,7 +2598,7 @@ export const places: Place[] = [
     diningOnSite: true,
     needsReservation: false,
     bestTime: "Public skating sessions; check website for schedule",
-    tags: ["indoor","ice-skating","snoopy","peanuts","historic"],
+    tags: ["winter","indoor","ice-skating","snoopy","peanuts","historic"],
     website: "https://www.snoopyshomeice.com/",
   },
   {
@@ -2946,7 +2946,7 @@ export const places: Place[] = [
     diningOnSite: true,
     needsReservation: true,
     bestTime: "Weekday afternoons or evening sessions for magical atmosphere",
-    tags: ["fall","outdoor","ice-skating","seasonal","romantic","classes"],
+    tags: ["winter","fall","outdoor","ice-skating","seasonal","romantic","classes"],
     website: "https://winterlodge.com/",
   },
   {
@@ -10810,7 +10810,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: true,
     bestTime: "Dec-Mar for elephant seal breeding season; Jan for peak activity",
-    tags: ["wildlife","elephant-seals","nature","guided-tours","coastal"],
+    tags: ["winter","wildlife","elephant-seals","nature","guided-tours","coastal"],
     website: "https://www.parks.ca.gov/AnoNuevo/",
   },
   {
@@ -11188,7 +11188,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Winter and early spring after rainfall for best waterfall flow",
-    tags: ["waterfall","hiking","redwoods","nature","easy-hike"],
+    tags: ["winter","waterfall","hiking","redwoods","nature","easy-hike"],
     website: "https://www.marinwater.org/cascade-falls",
   },
   {
@@ -12574,7 +12574,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Clear days for views; Dec-May for whale watching; sunset for photos",
-    tags: ["viewpoint","scenic","wwii-history","whale-watching","free"],
+    tags: ["winter","viewpoint","scenic","wwii-history","whale-watching","free"],
     website: "https://www.nps.gov/goga/planyourvisit/muir-beach-overlook.htm",
   },
   {
@@ -12683,7 +12683,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Oct-Jan for monarchs; spring-summer for tide pools",
-    tags: ["fall","tide-pools","butterflies","beach","state-park","nature"],
+    tags: ["winter","fall","tide-pools","butterflies","beach","state-park","nature"],
     website: "https://www.parks.ca.gov/?page_id=541",
   },
   {
@@ -12845,7 +12845,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Winter for migratory birds; spring/fall for migrations",
-    tags: ["wetlands","bird-watching","nature-center","free","marshland"],
+    tags: ["winter","wetlands","bird-watching","nature-center","free","marshland"],
     website: "https://www.paloalto.gov/Departments/Community-Services/Parks-Open-Space-Golf-Division/Neighborhood-Parks/Baylands-Nature-Preserve",
   },
   {
@@ -12926,7 +12926,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Dec-May for whale watching; low tide for tide pools; clear days for views",
-    tags: ["lighthouse","scenic","tide-pools","wildlife","free"],
+    tags: ["winter","lighthouse","scenic","tide-pools","wildlife","free"],
     website: "https://www.parks.ca.gov/?page_id=533",
   },
   {
@@ -13006,7 +13006,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Dec-May for gray whale migration; clear days for best views",
-    tags: ["lighthouse","whale-watching","scenic","hiking","wildlife"],
+    tags: ["winter","lighthouse","whale-watching","scenic","hiking","wildlife"],
     website: "https://www.nps.gov/pore/planyourvisit/lighthouse.htm",
   },
   {
@@ -13032,7 +13032,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Clear days, Dec-March for elephant seals, Jan-April for whale watching",
-    tags: ["nature","beach","wildlife","lighthouse","hiking"],
+    tags: ["winter","nature","beach","wildlife","lighthouse","hiking"],
     website: "https://nps.gov/pore",
   },
   {
@@ -13060,7 +13060,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Winter-spring for waterfall; year-round for redwoods",
-    tags: ["redwoods","waterfall","state-park","quiet","camping"],
+    tags: ["winter","redwoods","waterfall","state-park","quiet","camping"],
     website: "https://www.parks.ca.gov/?page_id=539",
   },
   {
@@ -13248,7 +13248,7 @@ export const places: Place[] = [
     diningOnSite: true,
     needsReservation: true,
     bestTime: "Summer for Beach Train, holidays for special events",
-    tags: ["train","steam","redwoods","beach","historic"],
+    tags: ["winter","train","steam","redwoods","beach","historic"],
     website: "https://roaringcamp.com",
   },
   {
@@ -13380,7 +13380,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Spring-fall for biking; Nov-Jan for salmon spawning; summer for camping",
-    tags: ["state-park","biking","camping","redwoods","salmon"],
+    tags: ["winter","state-park","biking","camping","redwoods","salmon"],
     website: "https://www.parks.ca.gov/?page_id=469",
   },
   {
@@ -14135,7 +14135,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: true,
     bestTime: "Winter and early spring after rainfall for best waterfalls",
-    tags: ["waterfall","hiking","camping","redwoods","nature"],
+    tags: ["winter","waterfall","hiking","camping","redwoods","nature"],
     website: "https://parks.santaclaracounty.gov/locations/uvas-canyon-county-park",
   },
   {
