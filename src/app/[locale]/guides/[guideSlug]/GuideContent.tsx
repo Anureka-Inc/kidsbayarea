@@ -20,7 +20,8 @@ type GuideSlug =
   | "indoor-playgrounds"
   | "museums"
   | "fall"
-  | "field-trips";
+  | "field-trips"
+  | "winter";
 
 interface GuideMeta {
   titleEn: string;
@@ -49,7 +50,9 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
   const filteredPlaces = useMemo(() => {
     let result = [...places];
 
-    if (guideSlug === "rainy-day") {
+    if (guideSlug === "winter") {
+      result = result.filter((p) => p.tags.includes("winter"));
+    } else if (guideSlug === "rainy-day") {
       result = result.filter(
         (p) => p.indoorOutdoor === "indoor" || p.indoorOutdoor === "both"
       );
@@ -634,6 +637,49 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
         </section>
       )}
 
+      {/* Bay Area Winter Activities FAQ — Targets "winter activities for kids bay area" / "ice skating bay area" — seasonal peak Nov–Jan. */}
+      {guideSlug === "winter" && locale === "en" && (
+        <section className="mt-12 rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
+          <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
+            Bay Area Winter Activities FAQ
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Where can kids go ice skating in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Winter Lodge in Palo Alto is the only permanent outdoor ice skating rink west of the Sierras, open mid-October through mid-April with twinkling lights. Year-round indoor rinks include Oakland Ice Center in downtown Oakland (two rinks, classes for kids 3 and up, and skating aids for beginners), Sharks Ice at San Jose (six NHL-sized rinks, the largest ice rink facility west of the Mississippi), Sharks Ice at Fremont, and Nazareth Ice Oasis in San Mateo&apos;s Bridgepointe Shopping Center. In Santa Rosa, Snoopy&apos;s Home Ice was built by Peanuts creator Charles Schulz in 1969 and has the Warm Puppy Cafe rink-side. Check each rink&apos;s website for public session times.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Where can families see elephant seals and whales in winter?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Elephant seals breed at Año Nuevo State Park in Pescadero from December to March, and Point Reyes National Seashore has elephant seal viewing from December through March. Whale watching season runs December through May: Point Reyes Lighthouse is one of the best whale watching spots on the California coast (its 308 steps are not suitable for strollers), and you can also look for passing whales from Pigeon Point Lighthouse and Muir Beach Overlook. Dress warmly, because the coast is windy and cold.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What nature activities are best in the Bay Area in winter?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Monarch butterflies stay at Natural Bridges State Beach in Santa Cruz through January, with the peak in November and December. At Samuel P. Taylor State Park, kids can spot spawning salmon in Lagunitas Creek during winter. Palo Alto Baylands is best at high tide in winter for migratory birds. Winter rains also bring the waterfalls to life: the Waterfall Loop at Uvas Canyon County Park passes five waterfalls (reservation required), Cascade Falls in Fairfax is best in winter and early spring, and Tiptoe Falls at Portola Redwoods State Park is best in winter and spring.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Are there holiday train rides for kids in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Roaring Camp Railroads in Felton runs historic narrow-gauge steam trains through ancient redwood forests, and its special holiday trains are seasonal favorites that sell out fast, so book early. Check Roaring Camp&apos;s website for this season&apos;s holiday train dates.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Cross-link to other guides */}
 
       <section className="mt-12 rounded-2xl border border-gray-100 bg-gray-50 p-6 dark:border-gray-700 dark:bg-gray-800/50">
@@ -655,6 +701,7 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
               { slug: "indoor-playgrounds", label: "🧸 Indoor Play", zhLabel: "🧸 室内游乐" },
               { slug: "free", label: "🆓 Free", zhLabel: "🆓 免费" },
               { slug: "birthday-party", label: "🎂 Birthdays", zhLabel: "🎂 生日派对" },
+              { slug: "winter", label: "❄️ Winter", zhLabel: "❄️ 冬季活动" },
             ] as const
           )
             .filter((g) => g.slug !== guideSlug)

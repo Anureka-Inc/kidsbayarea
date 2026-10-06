@@ -18,6 +18,7 @@ const validGuides = [
   "museums",
   "fall",
   "field-trips",
+  "winter",
 ] as const;
 
 type GuideSlug = (typeof validGuides)[number];
@@ -26,6 +27,14 @@ const guideMeta: Record<
   GuideSlug,
   { titleEn: string; titleZh: string; descEn: string; descZh: string }
 > = {
+  "winter": {
+    titleEn: "Winter Activities for Kids in the Bay Area \u2014 Ice Skating, Whales & Holiday Trains",
+    titleZh: "湾区冬季亲子活动：溜冰、观鲸、象海豹与节日火车",
+    descEn:
+      "Bay Area winter fun for families: ice skating at Winter Lodge and Sharks Ice, elephant seals at A\u00f1o Nuevo, whale watching from Point Reyes and Pigeon Point, monarch butterflies, rainy-season waterfalls, and Roaring Camp holiday trains.",
+    descZh:
+      "湾区冬季亲子活动：Winter Lodge 和 Sharks Ice 溜冰、Año Nuevo 看象海豹、Point Reyes 和 Pigeon Point 观鲸、帝王蝶、雨季瀑布，以及 Roaring Camp 节日火车。",
+  },
   "babies-0-2": {
     titleEn: "Best Bay Area Activities for Babies (0-2 Years)",
     titleZh: "湾区宝宝活动推荐（0-2岁）",
@@ -170,6 +179,47 @@ export async function generateMetadata({
       : { robots: { index: false, follow: true } }),
   };
 }
+
+// FAQPage JSON-LD for winter guide. Targets "winter activities for kids bay area" / "ice skating bay area" — seasonal peak Nov–Jan.
+// Venues and facts sourced from places.ts only; mirrors the visible FAQ.
+const winterFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Where can kids go ice skating in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Winter Lodge in Palo Alto is the only permanent outdoor ice skating rink west of the Sierras, open mid-October through mid-April with twinkling lights. Year-round indoor rinks include Oakland Ice Center in downtown Oakland (two rinks, classes for kids 3 and up, and skating aids for beginners), Sharks Ice at San Jose (six NHL-sized rinks, the largest ice rink facility west of the Mississippi), Sharks Ice at Fremont, and Nazareth Ice Oasis in San Mateo's Bridgepointe Shopping Center. In Santa Rosa, Snoopy's Home Ice was built by Peanuts creator Charles Schulz in 1969 and has the Warm Puppy Cafe rink-side. Check each rink's website for public session times.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where can families see elephant seals and whales in winter?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Elephant seals breed at A\u00f1o Nuevo State Park in Pescadero from December to March, and Point Reyes National Seashore has elephant seal viewing from December through March. Whale watching season runs December through May: Point Reyes Lighthouse is one of the best whale watching spots on the California coast (its 308 steps are not suitable for strollers), and you can also look for passing whales from Pigeon Point Lighthouse and Muir Beach Overlook. Dress warmly, because the coast is windy and cold.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What nature activities are best in the Bay Area in winter?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Monarch butterflies stay at Natural Bridges State Beach in Santa Cruz through January, with the peak in November and December. At Samuel P. Taylor State Park, kids can spot spawning salmon in Lagunitas Creek during winter. Palo Alto Baylands is best at high tide in winter for migratory birds. Winter rains also bring the waterfalls to life: the Waterfall Loop at Uvas Canyon County Park passes five waterfalls (reservation required), Cascade Falls in Fairfax is best in winter and early spring, and Tiptoe Falls at Portola Redwoods State Park is best in winter and spring.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are there holiday train rides for kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Roaring Camp Railroads in Felton runs historic narrow-gauge steam trains through ancient redwood forests, and its special holiday trains are seasonal favorites that sell out fast, so book early. Check Roaring Camp's website for this season's holiday train dates.",
+      },
+    },
+  ],
+};
 
 // FAQPage JSON-LD for birthday-party guide. Targets "birthday party places for kids bay area".
 // Venues and facts sourced from places.ts only; mirrors the visible FAQ in GuideContent.
@@ -687,6 +737,12 @@ export default async function GuidePage({
 
   return (
     <>
+      {guideSlug === "winter" && locale === "en" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(winterFaqJsonLd) }}
+        />
+      )}
       {guideSlug === "birthday-party" && locale === "en" && (
         <script
           type="application/ld+json"
