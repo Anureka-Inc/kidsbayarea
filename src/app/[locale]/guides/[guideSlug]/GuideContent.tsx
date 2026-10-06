@@ -19,7 +19,8 @@ type GuideSlug =
   | "free"
   | "indoor-playgrounds"
   | "museums"
-  | "fall";
+  | "fall"
+  | "field-trips";
 
 interface GuideMeta {
   titleEn: string;
@@ -60,6 +61,8 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
       result = result.filter(
         (p) => p.priceLevel === "free" || p.tags.includes("free")
       );
+    } else if (guideSlug === "field-trips") {
+      result = result.filter((p) => p.tags.includes("field-trip") || p.tags.includes("museum"));
     } else if (guideSlug === "fall") {
       result = result.filter((p) => p.tags.includes("fall"));
     } else if (guideSlug === "museums") {
@@ -289,6 +292,49 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
               </h3>
               <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
                 Top Bay Area family day trips include the <strong>Monterey Bay Aquarium</strong> (about two hours south of San Francisco), the <strong>Santa Cruz Beach Boardwalk</strong> (ocean-side rides and free beach), <strong>Roaring Camp Railroads</strong> in Felton (steam train through redwoods), <strong>Muir Woods National Monument</strong> in Mill Valley (old-growth redwoods just north of San Francisco), and <strong>Gilroy Gardens Family Theme Park</strong>. Check each venue&apos;s website for current hours, tickets, and parking reservation requirements.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Field trips FAQ — targets "bay area field trip ideas" */}
+      {guideSlug === "field-trips" && locale === "en" && (
+        <section className="mt-12 rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
+          <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
+            Bay Area Field Trip FAQ
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What are the best field trip ideas in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Strong Bay Area field trip picks span four themes. Science: the Exploratorium on Pier 15, the California Academy of Sciences in Golden Gate Park, The Tech Interactive in San Jose, Chabot Space &amp; Science Center in Oakland, and the Lawrence Hall of Science in Berkeley. History: John Muir National Historic Site in Martinez, Sanchez Adobe Historic Site in Pacifica, Fort Point under the Golden Gate Bridge, and Black Diamond Mines in Antioch. Farms: Ardenwood Historic Farm in Fremont, Hidden Villa in Los Altos Hills, and Slide Ranch near Muir Beach. Nature: tide pools at Fitzgerald Marine Reserve and rescued animals at Lindsay Wildlife Experience. For school or group visits, contact each venue in advance to arrange a booking.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Which Bay Area farms are good for field trips?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Ardenwood Historic Farm in Fremont is a working Victorian-era farm with horse-drawn train rides and seasonal programs such as corn harvest and wool spinning. Hidden Villa in Los Altos Hills is a 1,600-acre organic farm and wilderness preserve. At Slide Ranch near Muir Beach, kids can milk goats, collect eggs, and explore tidepools. Loma Vista Farm in Vallejo is an educational farm with hands-on programs on sustainable farming; book farm tours in advance. Deer Hollow Farm in Los Altos and Emma Prusch Farm Park in San Jose are free to visit.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Where can kids learn about Bay Area history on a field trip?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                John Muir National Historic Site in Martinez has free admission to the naturalist&apos;s Victorian mansion, orchards, and a 20-minute film, plus Junior Ranger booklets. Sanchez Adobe Historic Site in Pacifica spans the Ohlone, Spanish, and Mexican eras, with hands-on activities like grinding corn, making candles, and creating adobe bricks. Fort Point is a Civil War-era fort under the Golden Gate Bridge with free ranger-led tours on weekends. Black Diamond Mines Regional Preserve in Antioch explores 19th-century coal mining, with seasonal guided mine tunnel tours, and San Francisco Maritime National Historical Park has a free Maritime Museum.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What are free field trip options in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Free options include the Randall Museum in San Francisco (live animals, art studios, and a woodworking shop), John Muir National Historic Site, Sanchez Adobe Historic Site, Fort Point National Historic Site, the San Francisco Maritime National Historical Park museum, Deer Hollow Farm, Emma Prusch Farm Park, and self-guided visits to Slide Ranch. Fitzgerald Marine Reserve in Moss Beach is free; visit at a zero or minus tide, when rangers and docents are often on site. Edgewood Park in Redwood City offers free docent-led wildflower hikes from March through May.
               </p>
             </div>
           </div>
@@ -605,6 +651,7 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
               { slug: "family-favorites", label: "⭐ Top Rated", zhLabel: "⭐ 最佳" },
               { slug: "museums", label: "🏛️ Museums", zhLabel: "🏛️ 博物馆" },
               { slug: "fall", label: "🎃 Fall & Pumpkins", zhLabel: "🎃 秋季南瓜田" },
+              { slug: "field-trips", label: "🚌 Field Trips", zhLabel: "🚌 校外参观" },
               { slug: "indoor-playgrounds", label: "🧸 Indoor Play", zhLabel: "🧸 室内游乐" },
               { slug: "free", label: "🆓 Free", zhLabel: "🆓 免费" },
               { slug: "birthday-party", label: "🎂 Birthdays", zhLabel: "🎂 生日派对" },
