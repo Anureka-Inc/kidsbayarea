@@ -83,11 +83,11 @@ const FAQ: Record<Category, CategoryFaqContent> = {
       },
       {
         q: "Where can I take toddlers and babies to eat in the Bay Area?",
-        a: "Toddler-friendly Bay Area spots include Rigolo Cafe in San Francisco's Laurel Heights (play area with a play kitchen, chalkboard, and books), Shalala Ramen in Japantown (room for strollers, high chairs, and kid-size bowls), Denica's Real Food Kitchen in Castro Valley, Walnut Creek, and Dublin (a train table for kids), and Taqueria Talavera in Berkeley (right next to a tot lot). An early dinner seating usually means shorter waits.",
+        a: "Toddler-friendly Bay Area spots include Mendocino Farms in Palo Alto (a play area for little ones at select locations), Sam's for Play Cafe in Santa Rosa (an indoor play area), Denica's Real Food Kitchen in Castro Valley, Walnut Creek, and Dublin (a train table for kids), and Taqueria Talavera in Berkeley (right next to a tot lot). An early dinner seating usually means shorter waits.",
       },
       {
         q: "Are there family-friendly restaurants in Oakland and the East Bay?",
-        a: "Family favorites in Oakland and the East Bay include Homeroom in Oakland (a restaurant devoted to mac and cheese), Fentons Creamery in Oakland (ice cream parlor since 1894, featured in Pixar's Up), Cactus Taqueria on Solano Ave and in Rockridge (tiny bean-and-cheese burritos on the kids' menu), Ramen Shop in Rockridge (a dedicated kid's ramen), Legendary Palace in Oakland Chinatown (dim sum from pushcarts), and Arthur Mac's Tap & Snack near MacArthur BART (outdoor play area).",
+        a: "Family favorites in Oakland and the East Bay include Homeroom in Oakland (a restaurant devoted to mac and cheese), Fentons Creamery in Oakland (ice cream parlor since 1894, featured in Pixar's Up), Cactus Taqueria on Solano Ave and in Rockridge (tiny bean-and-cheese burritos on the kids' menu), Ramen Shop in Rockridge (a dedicated kid's ramen), Kura Revolving Sushi Bar on University Ave in Berkeley (conveyor-belt sushi with capsule-toy prizes), and Arthur Mac's Tap & Snack near MacArthur BART (outdoor play area).",
       },
     ],
     zh: [
@@ -101,11 +101,11 @@ const FAQ: Record<Category, CategoryFaqContent> = {
       },
       {
         q: "湾区带宝宝和幼儿可以去哪些餐厅吃饭？",
-        a: "湾区适合带宝宝和幼儿的餐厅：旧金山 Laurel Heights 的 Rigolo Cafe（有玩具厨房、黑板和绘本的游戏区）、日本城的 Shalala Ramen（空间宽敞能放推车，有儿童椅和儿童碗）、Castro Valley / Walnut Creek / Dublin 的 Denica's Real Food Kitchen（有儿童火车桌）、Berkeley 的 Taqueria Talavera（紧挨幼儿游乐场）。早点去吃晚饭通常不用排队。",
+        a: "湾区适合带宝宝和幼儿的餐厅：Palo Alto 的 Mendocino Farms（部分门店有幼儿游乐区）、Santa Rosa 的 Sam's for Play Cafe（有室内游乐区）、Castro Valley / Walnut Creek / Dublin 的 Denica's Real Food Kitchen（有儿童火车桌）、Berkeley 的 Taqueria Talavera（紧挨幼儿游乐场）。早点去吃晚饭通常不用排队。",
       },
       {
         q: "奥克兰和东湾有哪些亲子餐厅？",
-        a: "奥克兰和东湾亲子餐厅推荐：Oakland 的 Homeroom（芝士通心粉专门店）、Oakland 的 Fentons Creamery（1894 年开业的冰淇淋店，出现在皮克斯电影《飞屋环游记》里）、Solano Ave 和 Rockridge 的 Cactus Taqueria（儿童菜单有迷你豆子芝士卷饼）、Rockridge 的 Ramen Shop（有专门的儿童拉面）、Oakland 唐人街的 Legendary Palace（推车点心）、MacArthur BART 附近的 Arthur Mac's Tap & Snack（户外游乐区）。",
+        a: "奥克兰和东湾亲子餐厅推荐：Oakland 的 Homeroom（芝士通心粉专门店）、Oakland 的 Fentons Creamery（1894 年开业的冰淇淋店，出现在皮克斯电影《飞屋环游记》里）、Solano Ave 和 Rockridge 的 Cactus Taqueria（儿童菜单有迷你豆子芝士卷饼）、Rockridge 的 Ramen Shop（有专门的儿童拉面）、Berkeley University Ave 的 Kura Revolving Sushi Bar（回转寿司，集盘子换扭蛋玩具）、MacArthur BART 附近的 Arthur Mac's Tap & Snack（户外游乐区）。",
       },
     ],
   },
@@ -151,7 +151,7 @@ const FAQ: Record<Category, CategoryFaqContent> = {
     en: [
       {
         q: "What are the best toy stores in the Bay Area?",
-        a: "Independent Bay Area toy stores include TANTRUM on Clement Street in San Francisco (also in Mill Valley), Mr. Mopps' Toy Shop in Berkeley (open since 1962, skips TV and movie-licensed toys), Montclair Toyhouse (the oldest independently owned toy store in Oakland), Toy Go Round in Albany (new and recycled toys since 1976), Five Little Monkeys on Burlingame Avenue and in downtown Novato, Cheeky Monkey Toys in downtown Menlo Park, The Wooden Horse in Los Gatos, and Toy Crazy at Marin Country Mart in Larkspur.",
+        a: "Independent Bay Area toy stores include TANTRUM on Clement Street in San Francisco (also in Mill Valley), Mr. Mopps' Toy Shop in Berkeley (open since 1962, skips TV and movie-licensed toys), Montclair Toyhouse (the oldest independently owned toy store in Oakland), Toy Go Round in Albany (new and recycled toys since 1976), Five Little Monkeys on Burlingame Avenue and in downtown Novato, Cheeky Monkey Toys in downtown Menlo Park, and The Wooden Horse in Los Gatos.",
       },
       {
         q: "Where can I find Japanese bookstores and shops for kids in the Bay Area?",
@@ -163,13 +163,13 @@ const FAQ: Record<Category, CategoryFaqContent> = {
       },
       {
         q: "Where are the educational toy and learning supply stores in the Bay Area?",
-        a: "Lakeshore Learning Store in San Jose stocks educational toys, STEM toys, games, and classroom supplies, and runs a Saturday craft station from 11am to 3pm with no purchase required. Reach And Teach in San Carlos specializes in multicultural toys and diverse children's books. Toy Crazy in Larkspur focuses on developmental toys and science kits. For craft materials, East Bay Depot for Creative Reuse in Oakland and SCRAP Creative Reuse in San Francisco (the nation's oldest creative reuse center, founded in 1976) sell reused art and craft materials at low prices.",
+        a: "Lakeshore Learning Store in San Jose stocks educational toys, STEM toys, games, and classroom supplies, and runs a Saturday craft station from 11am to 3pm with no purchase required. Reach And Teach in San Carlos specializes in multicultural toys and diverse children's books. For craft materials, East Bay Depot for Creative Reuse in Oakland and SCRAP Creative Reuse in San Francisco (the nation's oldest creative reuse center, founded in 1976) sell reused art and craft materials at low prices.",
       },
     ],
     zh: [
       {
         q: "湾区最棒的玩具店有哪些？",
-        a: "湾区独立玩具店推荐：旧金山 Clement Street 的 TANTRUM（Mill Valley 也有分店）、Berkeley 的 Mr. Mopps' Toy Shop（1962 年开业，不卖电视和电影授权玩具）、Montclair Toyhouse（Oakland 历史最久的独立玩具店）、Albany 的 Toy Go Round（1976 年开业，卖新玩具和二手回收玩具）、Burlingame Avenue 和 Novato 市中心的 Five Little Monkeys、Menlo Park 市中心的 Cheeky Monkey Toys、Los Gatos 的 The Wooden Horse、Larkspur Marin Country Mart 里的 Toy Crazy。",
+        a: "湾区独立玩具店推荐：旧金山 Clement Street 的 TANTRUM（Mill Valley 也有分店）、Berkeley 的 Mr. Mopps' Toy Shop（1962 年开业，不卖电视和电影授权玩具）、Montclair Toyhouse（Oakland 历史最久的独立玩具店）、Albany 的 Toy Go Round（1976 年开业，卖新玩具和二手回收玩具）、Burlingame Avenue 和 Novato 市中心的 Five Little Monkeys、Menlo Park 市中心的 Cheeky Monkey Toys、Los Gatos 的 The Wooden Horse。",
       },
       {
         q: "湾区有哪些日本书店和适合孩子的店？",
@@ -181,7 +181,7 @@ const FAQ: Record<Category, CategoryFaqContent> = {
       },
       {
         q: "湾区有哪些教育玩具和学习用品店？",
-        a: "San Jose 的 Lakeshore Learning Store 有教育玩具、STEM 玩具、游戏和教学用品，每周六 11am 到 3pm 有手工台，不购物也能参加。San Carlos 的 Reach And Teach 专卖多元文化玩具和多元包容的童书。Larkspur 的 Toy Crazy 主打益智发展类玩具和科学套装。买手工材料可以去 Oakland 的 East Bay Depot for Creative Reuse 和旧金山的 SCRAP Creative Reuse（1976 年成立，全美历史最久的创意再利用中心），两家都以低价出售回收再利用的美术和手工材料。",
+        a: "San Jose 的 Lakeshore Learning Store 有教育玩具、STEM 玩具、游戏和教学用品，每周六 11am 到 3pm 有手工台，不购物也能参加。San Carlos 的 Reach And Teach 专卖多元文化玩具和多元包容的童书。买手工材料可以去 Oakland 的 East Bay Depot for Creative Reuse 和旧金山的 SCRAP Creative Reuse（1976 年成立，全美历史最久的创意再利用中心），两家都以低价出售回收再利用的美术和手工材料。",
       },
     ],
   },
