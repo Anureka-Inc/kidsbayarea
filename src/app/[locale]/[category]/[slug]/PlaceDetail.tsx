@@ -23,6 +23,7 @@ import {
   Tag,
   Sun,
   Accessibility,
+  Phone,
 } from "lucide-react";
 import type { Place, Category } from "@/data/places";
 import { getSimilarPlaces, categoryNames, regionNames } from "@/data/places";
@@ -408,13 +409,26 @@ export default function PlaceDetail({ place }: PlaceDetailProps) {
               locale={locale}
             />
           </div>
-          <div className="mt-3 flex items-center gap-3">
+          <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2">
             <span className="text-sm text-gray-600 dark:text-gray-400">
               <MapPin className="mr-1 inline h-4 w-4" />
-              {place.city}, {regionLabel}
+              {place.address ?? `${place.city}, ${regionLabel}`}
             </span>
+            {place.phone && (
+              <a
+                href={`tel:${place.phone}`}
+                className="inline-flex items-center gap-1 text-sm text-gray-600 hover:text-teal-700 dark:text-gray-400 dark:hover:text-teal-300"
+              >
+                <Phone className="h-3.5 w-3.5" />
+                {place.phone.replace(/^\+1(\d{3})(\d{3})(\d{4})$/, "($1) $2-$3")}
+              </a>
+            )}
             <a
-              href={`https://www.google.com/maps/search/?api=1&query=${place.lat},${place.lng}`}
+              href={
+                place.address
+                  ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name}, ${place.address}`)}`
+                  : `https://www.google.com/maps/search/?api=1&query=${place.lat},${place.lng}`
+              }
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-sm font-medium text-teal-600 transition-colors hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-300"
