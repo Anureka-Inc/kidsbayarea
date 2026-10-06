@@ -1215,7 +1215,7 @@ export const places: Place[] = [
     diningOnSite: true,
     needsReservation: false,
     bestTime: "Weekday mornings for shorter lines; fall for pumpkin patch",
-    tags: ["farm","petting-zoo","pony-rides","pumpkin-patch","train-ride"],
+    tags: ["fall","farm","petting-zoo","pony-rides","pumpkin-patch","train-ride"],
     website: "https://www.lemosfarm.com/",
     hours: [
       { days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "09:30", closes: "17:00" },
@@ -2780,7 +2780,7 @@ export const places: Place[] = [
     diningOnSite: true,
     needsReservation: true,
     bestTime: "Weekday afternoons or evening sessions for magical atmosphere",
-    tags: ["outdoor","ice-skating","seasonal","romantic","classes"],
+    tags: ["fall","outdoor","ice-skating","seasonal","romantic","classes"],
     website: "https://winterlodge.com/",
   },
   {
@@ -8030,7 +8030,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Tuesday-Sunday, 10am-4:30pm",
-    tags: ["nature","farm","outdoor-education","hiking","free"],
+    tags: ["fall","nature","farm","outdoor-education","hiking","free"],
     website: "https://www.ebparks.org/parks/visitor-centers/tilden-nature-area-eec",
   },
   {
@@ -8265,7 +8265,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Weekdays; busy before Halloween and major holidays",
-    tags: ["party-supplies","toys","costumes","balloons","affordable"],
+    tags: ["fall","party-supplies","toys","costumes","balloons","affordable"],
     website: "https://affordabletreasures.com/",
   },
   {
@@ -9134,7 +9134,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Weekdays; extremely busy in October",
-    tags: ["costumes","halloween","dress-up","wigs","accessories"],
+    tags: ["fall","costumes","halloween","dress-up","wigs","accessories"],
     website: "https://thehouseofhumor.net/",
   },
   {
@@ -9368,7 +9368,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Weekday afternoons",
-    tags: ["fabric","art-supplies","costumes","diy","craft-materials"],
+    tags: ["fall","fabric","art-supplies","costumes","diy","craft-materials"],
     website: "https://www.mendels.com/",
   },
   {
@@ -10235,7 +10235,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Weekend afternoons, seasonal festival days",
-    tags: ["farm","historic","train","animals","seasonal"],
+    tags: ["fall","farm","historic","train","animals","seasonal"],
     website: "https://www.ebparks.org/parks/ardenwood",
   },
   {
@@ -10937,7 +10937,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Year-round; spring for baby animals; fall for pumpkin festival",
-    tags: ["farm","free","animals","playground","educational"],
+    tags: ["fall","farm","free","animals","playground","educational"],
     website: "https://pruschfarmpark.org/",
   },
   {
@@ -11119,7 +11119,7 @@ export const places: Place[] = [
     diningOnSite: true,
     needsReservation: false,
     bestTime: "May-Jun for strawberries; Sep-Nov for apple picking",
-    tags: ["farm","u-pick","berries","apples","pie"],
+    tags: ["fall","farm","u-pick","berries","apples","pie"],
     website: "https://www.gizdich-ranch.com/",
   },
   {
@@ -12003,7 +12003,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Oct-Jan for monarchs; spring-summer for tide pools",
-    tags: ["tide-pools","butterflies","beach","state-park","nature"],
+    tags: ["fall","tide-pools","butterflies","beach","state-park","nature"],
     website: "https://www.parks.ca.gov/?page_id=541",
   },
   {
@@ -13225,7 +13225,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "May-Jun for cherries; Oct for pumpkin patch",
-    tags: ["farm","u-pick","strawberries","cherries","seasonal"],
+    tags: ["fall","farm","u-pick","strawberries","cherries","seasonal"],
     website: "https://threenunns.com/",
   },
   {

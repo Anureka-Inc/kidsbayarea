@@ -16,6 +16,7 @@ const validGuides = [
   "free",
   "indoor-playgrounds",
   "museums",
+  "fall",
 ] as const;
 
 type GuideSlug = (typeof validGuides)[number];
@@ -86,6 +87,14 @@ const guideMeta: Record<
       "Free family activities in the Bay Area that won't cost a thing: parks, beaches, free-admission museums, nature trails, and budget-friendly fun for kids of all ages.",
     descZh:
       "湾区不花钱的亲子好去处：公园、海滩、免费博物馆、自然步道，适合各年龄段孩子的省钱活动。",
+  },
+  fall: {
+    titleEn: "Fall Activities & Pumpkin Patches for Kids in the Bay Area",
+    titleZh: "湾区秋季亲子活动与南瓜田推荐",
+    descEn:
+      "Bay Area fall fun for families: Half Moon Bay pumpkin patches, Lemos Farm hay rides, corn mazes, apple picking at Gizdich Ranch, harvest festivals, monarch butterflies, and where to buy Halloween costumes.",
+    descZh:
+      "湾区秋季亲子活动：Half Moon Bay 南瓜田、Lemos Farm 干草车、玉米迷宫、Gizdich Ranch 摘苹果、丰收节、帝王蝶，以及万圣节服装店推荐。",
   },
   museums: {
     titleEn: "Best Children's Museums & Science Centers in the Bay Area",
@@ -316,6 +325,48 @@ const babies02FaqJsonLd = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "The best Bay Area indoor play spaces for babies under 2 include the Bay Area Discovery Museum in Sausalito (indoor exhibits for very young children), La Petite Playhouse in Redwood City (soft-play area for infants and toddlers), and the Children's Discovery Museum of San Jose (infant and toddler-friendly exhibits). Many YMCA branches across the Bay Area also offer infant and parent-and-me swim classes. Check each venue's website for current hours and age guidelines.",
+      },
+    },
+  ],
+};
+
+// FAQPage JSON-LD for fall guide. Targets "pumpkin patches bay area" /
+// "fall activities for kids bay area" — seasonal peak is October.
+// Venues and facts sourced from places.ts only; mirrors the visible FAQ.
+const fallFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Where are the best pumpkin patches for kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Half Moon Bay is the Bay Area's pumpkin patch capital: farms along Highway 92 such as Lemos Farm offer hay rides, corn mazes, pony rides, and pumpkin picking, and the annual Art & Pumpkin Festival draws thousands. Lemos Farm also has a train ride, a petting zoo with baby goats and bunnies, and a farm slide. In the East Bay, Three Nunns Farm in Brentwood has pumpkins in October, free tractor rides, and a corn maze. In San Jose, Emma Prusch Farm Park hosts an annual pumpkin festival in the fall. Go on a weekday if you can, because Highway 92 gets extremely congested on fall weekends.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where can kids go apple picking or see a harvest festival near the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Gizdich Ranch in Watsonville has U-pick apples from September through November, antique apple press demonstrations on fall weekends, and a Pie Shop with homemade pies. Ardenwood Historic Farm in Fremont runs seasonal programs such as the corn harvest and a Harvest Festival, plus horse-drawn train rides. Tilden Nature Area in Berkeley offers naturalist-led programs that include apple cider pressing, and its weekend programs are free and drop-in.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where can I buy Halloween costumes for kids in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "House of Humor in Redwood City is Northern California's largest costume retailer, with costumes for toddlers through adults; go early in October for the best selection. Affordable Treasures in Los Gatos carries an extensive costume selection along with party supplies. For DIY costumes, Mendel's Far Out Fabrics on Haight Street in San Francisco sells faux fur, face paint, masks, and costume-making supplies.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What other fall activities can Bay Area families do?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Fall is monarch butterfly season at Natural Bridges State Beach in Santa Cruz, California's only State Monarch Butterfly Preserve: the butterflies arrive October through January, peaking in November and December, and the boardwalk is stroller and wheelchair accessible. Winter Lodge in Palo Alto, the only permanent outdoor ice skating rink west of the Sierras, opens in mid-October and runs through mid-April, with group classes for kids 5 and up.",
       },
     },
   ],
@@ -607,6 +658,12 @@ export default async function GuidePage({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(babies02FaqJsonLd) }}
+        />
+      )}
+      {guideSlug === "fall" && locale === "en" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(fallFaqJsonLd) }}
         />
       )}
       {guideSlug === "museums" && locale === "en" && (

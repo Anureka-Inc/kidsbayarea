@@ -18,7 +18,8 @@ type GuideSlug =
   | "birthday-party"
   | "free"
   | "indoor-playgrounds"
-  | "museums";
+  | "museums"
+  | "fall";
 
 interface GuideMeta {
   titleEn: string;
@@ -59,6 +60,8 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
       result = result.filter(
         (p) => p.priceLevel === "free" || p.tags.includes("free")
       );
+    } else if (guideSlug === "fall") {
+      result = result.filter((p) => p.tags.includes("fall"));
     } else if (guideSlug === "museums") {
       result = result.filter((p) => p.tags.includes("museum"));
     } else if (guideSlug === "indoor-playgrounds") {
@@ -286,6 +289,49 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
               </h3>
               <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
                 Top Bay Area family day trips include the <strong>Monterey Bay Aquarium</strong> (about two hours south of San Francisco), the <strong>Santa Cruz Beach Boardwalk</strong> (ocean-side rides and free beach), <strong>Roaring Camp Railroads</strong> in Felton (steam train through redwoods), <strong>Muir Woods National Monument</strong> in Mill Valley (old-growth redwoods just north of San Francisco), and <strong>Gilroy Gardens Family Theme Park</strong>. Check each venue&apos;s website for current hours, tickets, and parking reservation requirements.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Fall FAQ — targets "pumpkin patches bay area" / "fall activities for kids" */}
+      {guideSlug === "fall" && locale === "en" && (
+        <section className="mt-12 rounded-2xl border border-teal-100 bg-teal-50 p-6 dark:border-teal-800 dark:bg-teal-900/20">
+          <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
+            Bay Area Fall &amp; Pumpkin Patch FAQ
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Where are the best pumpkin patches for kids in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Half Moon Bay is the Bay Area&apos;s pumpkin patch capital: farms along Highway 92 such as Lemos Farm offer hay rides, corn mazes, pony rides, and pumpkin picking, and the annual Art &amp; Pumpkin Festival draws thousands. Lemos Farm also has a train ride, a petting zoo with baby goats and bunnies, and a farm slide. In the East Bay, Three Nunns Farm in Brentwood has pumpkins in October, free tractor rides, and a corn maze. In San Jose, Emma Prusch Farm Park hosts an annual pumpkin festival in the fall. Go on a weekday if you can, because Highway 92 gets extremely congested on fall weekends.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Where can kids go apple picking or see a harvest festival near the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Gizdich Ranch in Watsonville has U-pick apples from September through November, antique apple press demonstrations on fall weekends, and a Pie Shop with homemade pies. Ardenwood Historic Farm in Fremont runs seasonal programs such as the corn harvest and a Harvest Festival, plus horse-drawn train rides. Tilden Nature Area in Berkeley offers naturalist-led programs that include apple cider pressing, and its weekend programs are free and drop-in.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                Where can I buy Halloween costumes for kids in the Bay Area?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                House of Humor in Redwood City is Northern California&apos;s largest costume retailer, with costumes for toddlers through adults; go early in October for the best selection. Affordable Treasures in Los Gatos carries an extensive costume selection along with party supplies. For DIY costumes, Mendel&apos;s Far Out Fabrics on Haight Street in San Francisco sells faux fur, face paint, masks, and costume-making supplies.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                What other fall activities can Bay Area families do?
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                Fall is monarch butterfly season at Natural Bridges State Beach in Santa Cruz, California&apos;s only State Monarch Butterfly Preserve: the butterflies arrive October through January, peaking in November and December, and the boardwalk is stroller and wheelchair accessible. Winter Lodge in Palo Alto, the only permanent outdoor ice skating rink west of the Sierras, opens in mid-October and runs through mid-April, with group classes for kids 5 and up.
               </p>
             </div>
           </div>
@@ -558,6 +604,7 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
               { slug: "rainy-day", label: "🌧️ Rainy Day", zhLabel: "🌧️ 雨天" },
               { slug: "family-favorites", label: "⭐ Top Rated", zhLabel: "⭐ 最佳" },
               { slug: "museums", label: "🏛️ Museums", zhLabel: "🏛️ 博物馆" },
+              { slug: "fall", label: "🎃 Fall & Pumpkins", zhLabel: "🎃 秋季南瓜田" },
               { slug: "indoor-playgrounds", label: "🧸 Indoor Play", zhLabel: "🧸 室内游乐" },
               { slug: "free", label: "🆓 Free", zhLabel: "🆓 免费" },
               { slug: "birthday-party", label: "🎂 Birthdays", zhLabel: "🎂 生日派对" },
