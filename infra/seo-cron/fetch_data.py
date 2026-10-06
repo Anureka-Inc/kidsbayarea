@@ -16,6 +16,7 @@ Output shape (seo_snapshot.json):
 import datetime as dt
 import json
 import os
+import subprocess
 import sys
 import tempfile
 
@@ -26,6 +27,7 @@ SITE = "https://www.kidsbayarea.com/"
 DOMAIN = "kidsbayarea.com"
 SSM_PREFIX = "/seo-cron/kidsbayarea"
 OUT_DIR = os.environ.get("SEO_OUT_DIR", "out")
+SEO_BRANCH = "seo-cron/auto"   # the fixed branch run.sh pushes every week
 
 ssm = boto3.client("ssm", region_name="us-east-1")
 
@@ -294,6 +296,53 @@ def fetch_dataforseo() -> dict:
     }
 
 
+
+def fetch_pending_pr() -> dict:
+    """Did the previous run's edits ever land, or are they still in a PR?
+
+    run.sh resets the fixed branch to main every week, so a blocked run's work
+    disappears from the optimizer's view entirely: history/changes.jsonl only
+    records what merged, and the diff itself is force-overwritten. The next run
+    then re-derives the same diagnosis from the same untouched metrics and edits
+    the same pages again, on top of edits it cannot see.
+
+    Ported from Anureka-Inc/pickfromvideo-web, where it was written after two
+    consecutive runs edited the same page and the second could not see that the
+    first was sitting unmerged. Anureka-Inc/kidsbayarea then lost a run the same
+    way: PR #19 was opened 2026-08-27 and labelled for human review, and the
+    09-03 run force-pushed over the branch. That week's work exists nowhere now.
+    """
+    proc = subprocess.run(
+        ["gh", "pr", "view", SEO_BRANCH, "--json", "number,url,createdAt,labels,body,state"],
+        capture_output=True,
+        text=True,
+        timeout=60,
+    )
+    if proc.returncode != 0:
+        # No PR on the branch at all — the normal, healthy case.
+        return {"open": False}
+
+    pr = json.loads(proc.stdout)
+    # `gh pr view <branch>` returns the branch's most recent PR whatever its
+    # state, so the state has to be checked. Without this, a healthy run that
+    # merged last week reads as "still unmerged" and the next run skips the very
+    # pages it should be measuring — forever, since the merged PR never changes.
+    if pr.get("state") != "OPEN":
+        return {"open": False}
+    labels = {l.get("name") for l in pr.get("labels") or []}
+    body = (pr.get("body") or "").strip()
+    first_line = body.splitlines()[0].strip() if body else ""
+    return {
+        "open": True,
+        "number": pr.get("number"),
+        "url": pr.get("url"),
+        "opened": pr.get("createdAt"),
+        "blocked_by_gate": "needs-human" in labels,
+        # run.sh prepends a "## ..." banner when a gate blocks; empty otherwise.
+        "gate_banner": first_line if first_line.startswith("## ") else "",
+    }
+
+
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     snapshot = {
@@ -314,6 +363,11 @@ def main():
         snapshot["dataforseo"] = {"error": f"{type(e).__name__}: {e}"}
 
     path = os.path.join(OUT_DIR, "seo_snapshot.json")
+    try:
+        snapshot["pending_pr"] = fetch_pending_pr()
+    except Exception as e:  # noqa: BLE001
+        snapshot["pending_pr"] = {"error": f"{type(e).__name__}: {e}"}
+
     with open(path, "w") as f:
         json.dump(snapshot, f, indent=1, default=str)
     gsc_state = "error" if "error" in snapshot["gsc"] else "ok"

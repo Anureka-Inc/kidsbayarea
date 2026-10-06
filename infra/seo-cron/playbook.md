@@ -30,6 +30,17 @@ competitors). A data source may carry an `error` key — work with what's presen
 
 ## Your job
 
+0a. **Check whether last week's work ever landed.** `out/seo_snapshot.json`
+   carries `pending_pr`. If `open` is true, a previous run's edits are still
+   sitting in an unmerged PR — this branch was reset to main, so those edits are
+   NOT in your working tree and NOT in `past_changes_effect`, and the pages
+   involved will still look untouched in the metrics. Do not re-diagnose them as
+   a crawl or content problem, and do not edit those pages: pushing over that
+   branch destroys the earlier run's work, which has already happened once.
+   If `blocked_by_gate` is true, read `gate_banner` — a gate refused those
+   edits, and repeating the same claim will get you refused the same way. Say so
+   under `## Past changes scoreboard` and spend this run's budget elsewhere.
+
 0. **Evaluate your past changes first.** `out/seo_snapshot.json` carries
    `gsc.past_changes_effect`: pages edited by previous runs, each with the
    metrics recorded at change time (`baseline`) vs now (`current`). For each:
