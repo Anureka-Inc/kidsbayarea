@@ -17,6 +17,7 @@ const validGuides = [
   "indoor-playgrounds",
   "museums",
   "fall",
+  "field-trips",
 ] as const;
 
 type GuideSlug = (typeof validGuides)[number];
@@ -87,6 +88,14 @@ const guideMeta: Record<
       "Free family activities in the Bay Area that won't cost a thing: parks, beaches, free-admission museums, nature trails, and budget-friendly fun for kids of all ages.",
     descZh:
       "湾区不花钱的亲子好去处：公园、海滩、免费博物馆、自然步道，适合各年龄段孩子的省钱活动。",
+  },
+  "field-trips": {
+    titleEn: "Bay Area Field Trip Ideas for Kids — Museums, Farms & History",
+    titleZh: "湾区亲子校外参观推荐：博物馆、农场与历史遗址",
+    descEn:
+      "Bay Area field trip ideas for kids and groups: science museums, working farms like Ardenwood and Hidden Villa, history sites like John Muir National Historic Site and Fort Point, tide pools, and free options.",
+    descZh:
+      "湾区亲子和团体校外参观推荐：科学博物馆、Ardenwood 和 Hidden Villa 等农场、John Muir 故居和 Fort Point 等历史遗址、潮池，以及免费去处。",
   },
   fall: {
     titleEn: "Fall Activities & Pumpkin Patches for Kids in the Bay Area",
@@ -325,6 +334,48 @@ const babies02FaqJsonLd = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "The best Bay Area indoor play spaces for babies under 2 include the Bay Area Discovery Museum in Sausalito (indoor exhibits for very young children), La Petite Playhouse in Redwood City (soft-play area for infants and toddlers), and the Children's Discovery Museum of San Jose (infant and toddler-friendly exhibits). Many YMCA branches across the Bay Area also offer infant and parent-and-me swim classes. Check each venue's website for current hours and age guidelines.",
+      },
+    },
+  ],
+};
+
+// FAQPage JSON-LD for field-trips guide. Targets "bay area field trip ideas" /
+// "bay area field trips" (GSC: 156 impressions at pos 50+, no dedicated page).
+// Venues and facts sourced from places.ts only; mirrors the visible FAQ.
+const fieldTripsFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are the best field trip ideas in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Strong Bay Area field trip picks span four themes. Science: the Exploratorium on Pier 15, the California Academy of Sciences in Golden Gate Park, The Tech Interactive in San Jose, Chabot Space & Science Center in Oakland, and the Lawrence Hall of Science in Berkeley. History: John Muir National Historic Site in Martinez, Sanchez Adobe Historic Site in Pacifica, Fort Point under the Golden Gate Bridge, and Black Diamond Mines in Antioch. Farms: Ardenwood Historic Farm in Fremont, Hidden Villa in Los Altos Hills, and Slide Ranch near Muir Beach. Nature: tide pools at Fitzgerald Marine Reserve and rescued animals at Lindsay Wildlife Experience. For school or group visits, contact each venue in advance to arrange a booking.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Which Bay Area farms are good for field trips?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ardenwood Historic Farm in Fremont is a working Victorian-era farm with horse-drawn train rides and seasonal programs such as corn harvest and wool spinning. Hidden Villa in Los Altos Hills is a 1,600-acre organic farm and wilderness preserve. At Slide Ranch near Muir Beach, kids can milk goats, collect eggs, and explore tidepools. Loma Vista Farm in Vallejo is an educational farm with hands-on programs on sustainable farming; book farm tours in advance. Deer Hollow Farm in Los Altos and Emma Prusch Farm Park in San Jose are free to visit.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where can kids learn about Bay Area history on a field trip?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "John Muir National Historic Site in Martinez has free admission to the naturalist's Victorian mansion, orchards, and a 20-minute film, plus Junior Ranger booklets. Sanchez Adobe Historic Site in Pacifica spans the Ohlone, Spanish, and Mexican eras, with hands-on activities like grinding corn, making candles, and creating adobe bricks. Fort Point is a Civil War-era fort under the Golden Gate Bridge with free ranger-led tours on weekends. Black Diamond Mines Regional Preserve in Antioch explores 19th-century coal mining, with seasonal guided mine tunnel tours, and San Francisco Maritime National Historical Park has a free Maritime Museum.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are free field trip options in the Bay Area?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Free options include the Randall Museum in San Francisco (live animals, art studios, and a woodworking shop), John Muir National Historic Site, Sanchez Adobe Historic Site, Fort Point National Historic Site, the San Francisco Maritime National Historical Park museum, Deer Hollow Farm, Emma Prusch Farm Park, and self-guided visits to Slide Ranch. Fitzgerald Marine Reserve in Moss Beach is free; visit at a zero or minus tide, when rangers and docents are often on site. Edgewood Park in Redwood City offers free docent-led wildflower hikes from March through May.",
       },
     },
   ],
@@ -658,6 +709,12 @@ export default async function GuidePage({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(babies02FaqJsonLd) }}
+        />
+      )}
+      {guideSlug === "field-trips" && locale === "en" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(fieldTripsFaqJsonLd) }}
         />
       )}
       {guideSlug === "fall" && locale === "en" && (

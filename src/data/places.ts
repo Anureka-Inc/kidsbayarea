@@ -600,7 +600,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Weekday mornings for a peaceful farm experience",
-    tags: ["farm","free","farm-animals","hiking","nature"],
+    tags: ["field-trip","farm","free","farm-animals","hiking","nature"],
     website: "https://www.deerhollowfarm.org/",
     hours: [
       { days: ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "08:00", closes: "16:00" },
@@ -7042,7 +7042,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Weekday mornings, check feeding schedule",
-    tags: ["wildlife","rehabilitation","animals","conservation","educational"],
+    tags: ["field-trip","wildlife","rehabilitation","animals","conservation","educational"],
     website: "https://lindsaywildlife.org",
   },
   {
@@ -10235,7 +10235,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Weekend afternoons, seasonal festival days",
-    tags: ["fall","farm","historic","train","animals","seasonal"],
+    tags: ["field-trip","fall","farm","historic","train","animals","seasonal"],
     website: "https://www.ebparks.org/parks/ardenwood",
   },
   {
@@ -10443,7 +10443,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Spring for wildflowers; weekends for mine tours",
-    tags: ["mining-history","caves","hiking","historic","nature"],
+    tags: ["field-trip","mining-history","caves","hiking","historic","nature"],
     website: "https://www.ebparks.org/parks/black-diamond-mines",
   },
   {
@@ -10885,7 +10885,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "March-May for spectacular wildflower blooms",
-    tags: ["wildflowers","hiking","nature-preserve","guided-hikes","free"],
+    tags: ["field-trip","wildflowers","hiking","nature-preserve","guided-hikes","free"],
     website: "https://www.smcgov.org/parks/edgewood-park-natural-preserve",
   },
   {
@@ -10911,7 +10911,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: true,
     bestTime: "Year-round for sea otters; spring for bird migration",
-    tags: ["boat-tour","wildlife","sea-otters","wetlands","nature"],
+    tags: ["field-trip","boat-tour","wildlife","sea-otters","wetlands","nature"],
     website: "https://elkhornslough.com/",
   },
   {
@@ -10937,7 +10937,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Year-round; spring for baby animals; fall for pumpkin festival",
-    tags: ["fall","farm","free","animals","playground","educational"],
+    tags: ["field-trip","fall","farm","free","animals","playground","educational"],
     website: "https://pruschfarmpark.org/",
   },
   {
@@ -10989,7 +10989,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Low tide days (check tide charts); spring-summer for best conditions",
-    tags: ["tide-pools","marine-life","nature","educational","free"],
+    tags: ["field-trip","tide-pools","marine-life","nature","educational","free"],
     website: "https://www.smcgov.org/parks/fitzgerald-marine-reserve",
   },
   {
@@ -11275,7 +11275,7 @@ export const places: Place[] = [
     diningOnSite: true,
     needsReservation: false,
     bestTime: "Feb-April for baby goats; year-round for visits",
-    tags: ["farm","goats","baby-animals","cheese","coastal"],
+    tags: ["field-trip","farm","goats","baby-animals","cheese","coastal"],
     website: "https://www.harleyfarms.com/",
   },
   {
@@ -11327,7 +11327,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Spring for baby animals and wildflowers; fall for harvest season",
-    tags: ["farm","organic","hiking","nature","educational"],
+    tags: ["field-trip","farm","organic","hiking","nature","educational"],
     website: "https://www.hiddenvilla.org/",
   },
   {
@@ -11379,7 +11379,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Spring for blooming orchards; year-round",
-    tags: ["historic","national-park","free","nature","junior-ranger"],
+    tags: ["field-trip","historic","national-park","free","nature","junior-ranger"],
     website: "https://www.nps.gov/jomu/index.htm",
   },
   {
@@ -11613,7 +11613,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: true,
     bestTime: "Spring for baby animals; check program schedule",
-    tags: ["farm","educational","animals","sustainable","nature"],
+    tags: ["field-trip","farm","educational","animals","sustainable","nature"],
     website: "https://lomavistafarm.com/",
   },
   {
@@ -12731,7 +12731,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "September for Rancho Day; year-round",
-    tags: ["historic","ohlone","hands-on","free","educational"],
+    tags: ["field-trip","historic","ohlone","hands-on","free","educational"],
     website: "https://www.smcgov.org/parks/sanchez-adobe",
   },
   {
@@ -13017,7 +13017,7 @@ export const places: Place[] = [
     diningOnSite: false,
     needsReservation: false,
     bestTime: "Spring for baby animals; summer for best weather",
-    tags: ["farm","animals","coastal","educational","free"],
+    tags: ["field-trip","farm","animals","coastal","educational","free"],
     website: "https://www.slideranch.org/",
   },
   {
