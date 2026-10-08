@@ -529,6 +529,46 @@ export const guideFaq: Record<string, GuideFaq> = {
       },
     ],
   },
+  "holiday-lights": {
+    headingEn: "Bay Area Holiday Lights FAQ",
+    headingZh: "湾区圣诞灯光常见问题",
+    en: [
+      {
+        q: "What are the best Christmas light displays for kids in the Bay Area?",
+        a: "Top family holiday light experiences include Christmas in the Park in downtown San Jose (free, with an enchanted forest of decorated trees and a 50-foot Christmas tree), Fantasy of Lights at Vasona Lake County Park in Los Gatos (a tradition since 1999 with more than 50 animated displays), Glowfari at Oakland Zoo (giant LED animal lanterns), Lightscape at the San Francisco Botanical Garden (a mile-long trail of lights and music), and North Pole Nights at Gilroy Gardens (a 100-foot light tunnel synchronized to music). Dates change every year, so check each event's website for this season's schedule.",
+      },
+      {
+        q: "Are there free holiday light displays in the Bay Area?",
+        a: "Yes. Christmas in the Park at Plaza de César Chávez in downtown San Jose is free and open nightly from late November through New Year's Day, with more than 40 animated displays, live entertainment, and photos with Santa. Most other big light events, including Fantasy of Lights, Glowfari, Lightscape, and North Pole Nights, are ticketed.",
+      },
+      {
+        q: "Where can kids ride a holiday train in the Bay Area?",
+        a: "The Niles Canyon Railway Train of Lights runs through Niles Canyon between Fremont's Niles district and Sunol in late November and December; the 13-mile round trip takes a little over an hour, and tickets usually go on sale in October and sell out. Roaring Camp Railroads in Felton also runs special holiday trains through the redwoods that are seasonal favorites, so book early.",
+      },
+      {
+        q: "Where can kids see Santa and holiday events in the Bay Area?",
+        a: "Christmas in the Park in San Jose offers photos with Santa, and Oakland Zoo's Glowfari has Santa visits on select nights. Children's Fairyland in Oakland hosts Fairy Winterland, a 20-year Oakland tradition with holiday lights, crafts, and holiday displays on the final weekends of December. For more winter fun, see our winter guide for ice skating rinks and seasonal wildlife.",
+      },
+    ],
+    zh: [
+      {
+        q: "湾区有哪些适合带孩子看的圣诞灯光？",
+        a: "适合全家的节日灯光推荐：圣何塞市中心的 Christmas in the Park（免费，有装饰圣诞树组成的魔法森林和 50 英尺高的圣诞树）、Los Gatos 的 Vasona Lake County Park 举办的 Fantasy of Lights（1999 年起的传统，有 50 多个动态灯光装置）、Oakland Zoo 的 Glowfari（巨型 LED 动物灯笼）、San Francisco Botanical Garden 的 Lightscape（一英里长的灯光与音乐步道），以及 Gilroy Gardens 的 North Pole Nights（随音乐同步闪烁的 100 英尺灯光隧道）。每年日期不同，请到各活动官网查看当季安排。",
+      },
+      {
+        q: "湾区有免费的圣诞灯光吗？",
+        a: "有。圣何塞市中心 Plaza de César Chávez 的 Christmas in the Park 免费入场，每年 11 月下旬到元旦每晚开放，有 40 多个动态装饰、现场表演，还能和圣诞老人合影。Fantasy of Lights、Glowfari、Lightscape 和 North Pole Nights 等大型灯光活动都需要购票。",
+      },
+      {
+        q: "湾区哪里可以带孩子坐节日火车？",
+        a: "Niles Canyon Railway 的 Train of Lights 灯光火车在 11 月下旬到 12 月，于 Fremont 的 Niles 和 Sunol 之间穿越 Niles Canyon，往返 13 英里约一个多小时；车票通常 10 月开卖，很快售罄。Felton 的 Roaring Camp Railroads 也有穿越红杉林的节日特别列车，很受欢迎，建议尽早预订。",
+      },
+      {
+        q: "湾区哪里可以带孩子见圣诞老人、参加节日活动？",
+        a: "圣何塞的 Christmas in the Park 可以和圣诞老人合影，Oakland Zoo 的 Glowfari 在部分晚上也有圣诞老人见面活动。Oakland 的 Children's Fairyland 在 12 月最后几个周末举办 Fairy Winterland，这是延续 20 年的 Oakland 传统，有节日灯光、手工和节日展示。更多冬季活动（溜冰场、冬季野生动物）可以看我们的冬季指南。",
+      },
+    ],
+  },
 };
 
 /** FAQ entries for a guide in the given locale (EN fallback only for EN). */

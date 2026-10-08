@@ -22,7 +22,8 @@ type GuideSlug =
   | "museums"
   | "fall"
   | "field-trips"
-  | "winter";
+  | "winter"
+  | "holiday-lights";
 
 interface GuideMeta {
   titleEn: string;
@@ -52,7 +53,9 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
   const filteredPlaces = useMemo(() => {
     let result = [...places];
 
-    if (guideSlug === "winter") {
+    if (guideSlug === "holiday-lights") {
+      result = result.filter((p) => p.tags.includes("holiday"));
+    } else if (guideSlug === "winter") {
       result = result.filter((p) => p.tags.includes("winter"));
     } else if (guideSlug === "rainy-day") {
       result = result.filter(
@@ -222,6 +225,7 @@ export default function GuideContent({ guideSlug, meta }: GuideContentProps) {
               { slug: "free", label: "🆓 Free", zhLabel: "🆓 免费" },
               { slug: "birthday-party", label: "🎂 Birthdays", zhLabel: "🎂 生日派对" },
               { slug: "winter", label: "❄️ Winter", zhLabel: "❄️ 冬季活动" },
+              { slug: "holiday-lights", label: "🎄 Holiday Lights", zhLabel: "🎄 圣诞灯光" },
             ] as const
           )
             .filter((g) => g.slug !== guideSlug)

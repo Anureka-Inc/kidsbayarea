@@ -20,6 +20,7 @@ const validGuides = [
   "fall",
   "field-trips",
   "winter",
+  "holiday-lights",
 ] as const;
 
 type GuideSlug = (typeof validGuides)[number];
@@ -35,6 +36,14 @@ const guideMeta: Record<
       "Bay Area winter fun for families: ice skating at Winter Lodge and Sharks Ice, elephant seals at A\u00f1o Nuevo, whale watching from Point Reyes and Pigeon Point, monarch butterflies, rainy-season waterfalls, and Roaring Camp holiday trains.",
     descZh:
       "湾区冬季亲子活动：Winter Lodge 和 Sharks Ice 溜冰、Año Nuevo 看象海豹、Point Reyes 和 Pigeon Point 观鲸、帝王蝶、雨季瀑布，以及 Roaring Camp 节日火车。",
+  },
+  "holiday-lights": {
+    titleEn: "Christmas Lights & Holiday Events for Kids in the Bay Area",
+    titleZh: "湾区圣诞灯光与节日亲子活动",
+    descEn:
+      "Bay Area holiday lights for families: free Christmas in the Park in San Jose, Fantasy of Lights at Vasona Lake, Glowfari at Oakland Zoo, Lightscape at SF Botanical Garden, the Niles Canyon Train of Lights, and where to see Santa.",
+    descZh:
+      "湾区节日灯光亲子推荐：圣何塞免费的 Christmas in the Park、Vasona Lake 的 Fantasy of Lights、Oakland Zoo 的 Glowfari、SF Botanical Garden 的 Lightscape、Niles Canyon 灯光火车，以及和圣诞老人见面的地方。",
   },
   "babies-0-2": {
     titleEn: "Best Bay Area Activities for Babies (0-2 Years)",
