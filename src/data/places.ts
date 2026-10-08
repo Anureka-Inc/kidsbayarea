@@ -1555,7 +1555,7 @@ export const places: Place[] = [
     priceLevel: "free",
     rating: 4.4,
     description: {
-      en: "Free pirate-themed spray park with play areas for tots, tweens, and teens. Features water sprays, splash zones, and picnic areas. Open Memorial Day through September.",
+      en: "Meadow Homes Spray Park in Concord is a free pirate-themed spray park with water features for tots through teens, open Memorial Day through September. The park includes spray zones, picnic areas, and play areas themed around pirate ships and sea creatures.",
       zh: "免费海盗主题喷水公园，设有幼儿、少年和青少年游乐区。配有喷水装置、戏水区和野餐区。阵亡将士纪念日至9月开放。",
     },
     tips: "Free admission! Open 12pm-6pm daily in summer. Located at 1351 Detroit Ave. Bring towels and sunscreen.",
@@ -5691,7 +5691,7 @@ export const places: Place[] = [
     priceLevel: "$",
     rating: 3.9,
     description: {
-      en: "A classic American steakhouse chain with an all-you-can-eat salad bar. Kids love the cheese toast and the variety of options. Kids eat free on select days, making it a budget-friendly family dinner choice.",
+      en: "Sizzler in Milpitas is a classic American steakhouse with an all-you-can-eat salad bar, cheese toast, and a family-friendly menu. Kids love the variety at the salad bar, and the chain offers kids-eat-free promotions on select days — check the website for current schedules.",
       zh: "经典美式牛排连锁餐厅，有自助沙拉吧。孩子们喜欢芝士吐司和多样化的选择。特定日子儿童免费用餐，是经济实惠的家庭晚餐选择。",
     },
     tips: "Check website for kids-eat-free promotions. The salad bar is the real star for families.",
@@ -11452,7 +11452,7 @@ export const places: Place[] = [
     priceLevel: "$",
     rating: 4.3,
     description: {
-      en: "A family-friendly East Bay park with a chlorinated swim lagoon, sandy beach, fishing lake, and short hiking trails in the Hayward hills. The swim lagoon has gradual depth for waders and toddlers. Seasonal lifeguards and a bathhouse with showers.",
+      en: "Don Castro Regional Recreation Area in Hayward is an East Bay family park with a chlorinated swim lagoon, a sandy beach, a fishing lake stocked year-round with trout, and short trails in the Hayward hills. The swim lagoon has a gradual entry ideal for toddlers and waders, with seasonal lifeguards and a bathhouse on site.",
       zh: "东湾家庭友好型公园，有消毒游泳湖、沙滩、钓鱼湖和海沃德山短途步道。游泳湖缓缓入水，适合涉水和幼儿。季节性救生员和配有淋浴的浴室。",
     },
     tips: "Swim lagoon open May-September. Fishing year-round — stocked with trout. Short loop trail around the lake. Paid parking on weekends.",
