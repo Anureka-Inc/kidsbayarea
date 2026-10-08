@@ -145,10 +145,23 @@ competitors). A data source may carry an `error` key — work with what's presen
   harms the site. When a specific is needed, write "check the venue's website
   for current hours and pricing" instead. Do not name a venue as currently
   open unless it's in `places.ts`.
-- **Locale-gate any English-only block you inject.** New FAQ HTML or JSON-LD
-  written in English must be gated on `locale === "en"` (not on the slug alone,
-  and not `locale !== "zh"`) so English content/structured-data never renders
-  on the other 29 locales.
+- **FAQs are data, not page code.** Never hand-write FAQ JSX or FAQPage
+  JSON-LD into a page file — one renderer produces both the visible section and
+  the JSON-LD from these modules:
+  - Guide FAQs → `src/lib/guideFaq.ts` (`en` and `zh` arrays per guide slug).
+  - Category-page FAQs → `src/lib/categoryFaq.ts` (`en` and `zh` per category).
+  - City hub FAQs (`/cities/[city]`) are generated from `places.ts` — don't edit.
+  When you add or change an EN entry, make the same change to the matching `zh`
+  entry (same order and count; natural Simplified Chinese; venue names stay in
+  English), or the Chinese page silently goes stale.
+- **Only name venues that exist in `src/data/places.ts`.** The orchestrator's
+  venue gate lists every added proper noun not found anywhere in places.ts and
+  flags the PR for review; closed, renamed, and out-of-area venues have all
+  slipped in this way before. Put each venue in its correct city (use the
+  entry's `city` field).
+- **Locale-gate any other English-only block you inject** (non-FAQ copy) on
+  `locale === "en"` (not on the slug alone, and not `locale !== "zh"`) so
+  English text never renders on the other 29 locales.
 - After editing, run `npx tsc --noEmit` and fix any errors you introduced.
 - If the snapshot has no actionable signal (sources errored, or nothing
   meets the thresholds), make NO code changes, still write `out/report.md`
