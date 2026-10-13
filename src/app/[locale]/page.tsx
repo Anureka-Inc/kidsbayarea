@@ -52,17 +52,17 @@ const faqItems = [
   {
     question: "What are the best things to do with kids in the Bay Area?",
     answer:
-      "Top family destinations in the SF Bay Area include the Exploratorium and Children's Creativity Museum (San Francisco), Bay Area Discovery Museum (Sausalito), Children's Discovery Museum (San Jose), Oakland Zoo, Happy Hollow Park & Zoo, Tilden Park Steam Trains and Little Farm, the Lawrence Hall of Science (Berkeley), and Bay Area Discovery Museum in Sausalito. Browse 500+ kid-friendly places by category, age range, and region.",
+      "Top family destinations in the SF Bay Area include the Exploratorium and Children's Creativity Museum (San Francisco), Bay Area Discovery Museum (Sausalito), Children's Discovery Museum (San Jose), Oakland Zoo, Happy Hollow Park & Zoo, Tilden Park Steam Trains and Little Farm, and the Lawrence Hall of Science (Berkeley). Browse 500+ kid-friendly places by category, age range, and region.",
   },
   {
     question: "What can toddlers (ages 2-5) do in the Bay Area?",
     answer:
-      "Great toddler activities in the Bay Area include splash pads and playgrounds (24th & York Mini Park, Yerba Buena Gardens, Magical Bridge Playground), the Bay Area Discovery Museum, Tilden Little Farm, the Randall Museum's toddler storytime, and indoor play spaces. Filter our site by age 2-5 to see all toddler-friendly options including stroller accessibility and changing stations.",
+      "Great toddler activities in the Bay Area include splash pads and playgrounds (24th & York Mini Park, Yerba Buena Gardens, Magical Bridge Playground), the Bay Area Discovery Museum, Tilden Little Farm, the Randall Museum, and indoor play spaces. Filter our site by age 2-5 to see all toddler-friendly options including stroller accessibility and changing stations.",
   },
   {
     question: "What are fun things to do for 12-year-olds in the Bay Area?",
     answer:
-      "Tweens (ages 8-12) love Raging Waters San Jose, Six Flags Discovery Kingdom, the Exploratorium, Santa Cruz Beach Boardwalk, Sky Zone Trampoline Park (Fremont/Dublin), Berkeley's Adventure Playground, Roaring Camp Railroads, escape rooms, and coding classes at Code Ninjas. Many of these also work for older teens.",
+      "Tweens (ages 8-12) love Raging Waters San Jose, the Exploratorium, Santa Cruz Beach Boardwalk, Sky Zone Trampoline Park (Fremont/Dublin), Adventure Playground in Berkeley, Roaring Camp Railroads, escape rooms, and coding classes at Code Ninjas (Cupertino). Many of these also work for older teens.",
   },
   {
     question: "What are the best Bay Area day trips with kids?",
@@ -72,7 +72,7 @@ const faqItems = [
   {
     question: "Are there kid-friendly restaurants in San Francisco and the Bay Area?",
     answer:
-      "Yes — kid-friendly Bay Area restaurants include Mel's Drive-In (San Francisco), Benihana (Cupertino, Santa Clara, Millbrae, San Jose), Spaghetti Factory (downtown San Jose), Homeroom (Oakland mac & cheese), Super Duper Burgers, Lazy Dog Restaurant & Bar, In-N-Out Burger, Sizzler (Milpitas), and Din Tai Fung (Santa Clara). Many feature kids' menus, high chairs, and family-friendly atmospheres.",
+      "Yes — kid-friendly Bay Area restaurants include Mel's Drive-In (San Francisco), Benihana (Cupertino), The Old Spaghetti Factory (downtown San Jose), Homeroom (Oakland mac & cheese), Super Duper Burgers, Lazy Dog Restaurant & Bar, In-N-Out Burger, and Din Tai Fung (Santa Clara). Many feature kids' menus, high chairs, and family-friendly atmospheres.",
   },
   {
     question: "What are fun indoor activities for kids on a rainy day in the Bay Area?",
@@ -82,7 +82,7 @@ const faqItems = [
   {
     question: "Are there free things to do with kids in the Bay Area?",
     answer:
-      "Yes — Bay Area free family activities include Tilden Park Little Farm (Berkeley), Golden Gate Park playgrounds (Koret Children's Quarter), Crissy Field, Yerba Buena Gardens playground, Magical Bridge Playgrounds (Palo Alto, Sunnyvale), the Berkeley Marina Adventure Playground (free entrance), the East Bay Depot for Creative Reuse, Shoreline Park playground (Mountain View), and most regional parks and beaches. Filter our site by price = free to see all options.",
+      "Yes — Bay Area free family activities include Tilden Little Farm (Berkeley), Golden Gate Park playgrounds (Koret Children's Quarter), Crissy Field, Yerba Buena Gardens playground, Magical Bridge Playground (Palo Alto), Adventure Playground (Berkeley), Shoreline Park at Mountain View, and most regional parks and beaches. Filter our site by price = free to see all options.",
   },
   {
     question: "How do I find activities for my child's specific age?",
