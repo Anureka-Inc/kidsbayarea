@@ -39,6 +39,10 @@ const nextConfig: NextConfig = {
       { source: "/:locale/eat/tomatina", destination: "/:locale/eat", permanent: true },
       { source: "/:locale/eat/mas-fuego", destination: "/:locale/eat", permanent: true },
       { source: "/:locale/eat/tacolicious", destination: "/:locale/eat", permanent: true },
+      // No Sizzler steakhouse exists in Milpitas per Google Places / web search
+      // (the pinned address is Milan Sweet Center, which serves Indian
+      // "sizzlers") — entry removed 2026-10-12.
+      { source: "/:locale/eat/sizzler-milpitas", destination: "/:locale/eat", permanent: true },
       // Duplicate entries merged into their twins.
       {
         source: "/:locale/play/tilden-park-little-farm",
