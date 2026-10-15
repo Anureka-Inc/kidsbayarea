@@ -125,12 +125,12 @@ const guideMeta: Record<
       "湾区秋季亲子活动：Half Moon Bay 南瓜田、Lemos Farm 干草车、玉米迷宫、Gizdich Ranch 摘苹果、丰收节、帝王蝶，以及万圣节服装店推荐。",
   },
   museums: {
-    titleEn: "Best Children's Museums & Science Centers in the Bay Area",
+    titleEn: "Bay Area Children's Museums & Science Centers — Exploratorium, Cal Academy & More",
     titleZh: "湾区儿童博物馆与科学馆推荐",
     descEn:
-      "Bay Area children's and science museums for kids: the Exploratorium, California Academy of Sciences, Children's Discovery Museum of San Jose, Bay Area Discovery Museum, The Tech Interactive, plus free museums and resident free days.",
+      "Best children's museums and science centers in the Bay Area: the Exploratorium (SF), California Academy of Sciences (Golden Gate Park), Children's Discovery Museum of San Jose, Bay Area Discovery Museum (Sausalito), The Tech Interactive (San Jose), Chabot Space & Science Center, Lawrence Hall of Science — plus free museums and resident free days.",
     descZh:
-      "湾区适合孩子的儿童博物馆和科学馆：Exploratorium、California Academy of Sciences、圣何塞儿童探索博物馆、Bay Area Discovery Museum、The Tech Interactive，以及免费博物馆和居民免费日。",
+      "湾区适合孩子的儿童博物馆和科学馆：旧金山的 Exploratorium、金门公园的 California Academy of Sciences、圣何塞儿童探索博物馆、Sausalito 的 Bay Area Discovery Museum、San Jose 的 The Tech Interactive、Chabot Space & Science Center、Lawrence Hall of Science，以及免费博物馆和居民免费日。",
   },
   "indoor-playgrounds": {
     titleEn: "Best Indoor Playgrounds for Kids in the Bay Area",
