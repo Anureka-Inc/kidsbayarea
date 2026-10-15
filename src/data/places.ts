@@ -880,8 +880,8 @@ export const places: Place[] = [
     priceLevel: "$$$",
     rating: 4.2,
     description: {
-      en: "A major theme park with roller coasters, water rides, and Planet Snoopy kids' area. Features rides for all thrill levels, from gentle carousel rides for little ones to intense coasters for older kids. South Bay's go-to for amusement park fun.",
-      zh: "大型主题公园，有过山车、水上游乐设施和史努比乐园儿童区。有适合所有刺激级别的游乐设施，从适合小朋友的旋转木马到适合大孩子的刺激过山车。南湾游乐园首选。",
+      en: "California's Great America in Santa Clara is the South Bay's largest theme park, with roller coasters, water rides, and the Planet Snoopy kids' area. Features rides for all thrill levels — from gentle carousel rides for little ones to intense coasters for older kids. Great America is the go-to South Bay amusement park for Bay Area families.",
+      zh: "Santa Clara 的 California's Great America 是南湾最大的主题公园，有过山车、水上游乐设施和史努比乐园儿童区。设有适合所有刺激级别的游乐设施，从适合小朋友的旋转木马到适合大孩子的刺激过山车。南湾游乐园首选。",
     },
     tips: "Visit on weekdays for shorter lines. Get the meal pass for better value. The water park area is great in summer.",
     parking: "Large paid parking lot. Arrive early for closer spots.",
@@ -4483,8 +4483,8 @@ export const places: Place[] = [
     priceLevel: "$",
     rating: 4.6,
     description: {
-      en: "California's beloved burger chain with a secret menu, fresh-never-frozen beef, and hand-cut fries. The kids' meal comes with a simple cheeseburger and fries. Always consistently good, fast, and affordable for families.",
-      zh: "加州最受欢迎的汉堡连锁店，有隐藏菜单、新鲜不冷冻的牛肉和手切薯条。儿童餐有简单的芝士汉堡和薯条。品质始终如一，快速且实惠。",
+      en: "In-N-Out Burger is a California institution with a secret menu, fresh-never-frozen beef, and hand-cut fries — a consistently affordable choice for families with kids. The children's meal comes with a simple cheeseburger and fries, and all Bay Area locations have stroller-friendly spaces and changing stations.",
+      zh: "In-N-Out Burger 是加州经典，有隐藏菜单、新鲜不冷冻的牛肉和手切薯条，是家庭出行性价比极高的选择。儿童餐有简单的芝士汉堡和薯条，湾区各门店均有方便推车的空间和母婴室。",
     },
     tips: "Kids' meals are a great deal. If kids are picky, order 'plain' for just meat and bun. Animal-style fries are a must for parents.",
     parking: "Drive-through or parking lot at all locations.",
