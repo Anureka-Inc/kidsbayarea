@@ -1528,8 +1528,8 @@ export const places: Place[] = [
     priceLevel: "$",
     rating: 4.3,
     description: {
-      en: "A charming 18-hole artist-designed outdoor mini golf course in San Rafael with a waterfall, windmill, and lush landscaping on tiered hillside terrain. Kids under 5 play free with a paying adult. Open daily, weather permitting.",
-      zh: "位于San Rafael的迷人18洞户外迷你高尔夫球场，由艺术家设计，设有瀑布、风车和层叠山坡上的茂密景观。5岁以下儿童在付费成人陪同下免费游玩。每天开放，视天气情况而定。",
+      en: "McInnis Park Mini Golf in San Rafael is an 18-hole artist-designed outdoor course on the Marin County waterfront, with a waterfall, windmill, and lush landscaping on tiered hillside terrain. Kids under 5 play free with a paying adult. Open daily, weather permitting.",
+      zh: "San Rafael 的 McInnis Park Mini Golf 是一座18洞艺术家设计的户外迷你高尔夫球场，紧邻 Marin County 海滨，设有瀑布、风车和层叠山坡上的茂密景观。5岁以下儿童在付费成人陪同下免费游玩。每天开放，视天气情况而定。",
     },
     tips: "Admission charged for adults and kids 5-12; under 5 free. Call (415) 491-5995 for reservations during busy times.",
     parking: "Free parking at 350 Smith Ranch Rd, San Rafael.",
@@ -10857,8 +10857,8 @@ export const places: Place[] = [
     priceLevel: "free",
     rating: 4.6,
     description: {
-      en: "A stunning mile-long sandy beach with iconic Golden Gate Bridge views. Families can enjoy picnic areas with grills, explore tidepools, and build sandcastles. The south end is family-friendly with picnic tables and restrooms tucked in a cypress grove.",
-      zh: "壮观的一英里长沙滩，可欣赏金门大桥标志性景观。家庭可以在烧烤野餐区享用美食，探索潮池，堆沙堡。南端适合家庭，柏树林中设有野餐桌和洗手间。",
+      en: "Baker Beach is a mile-long sandy beach in San Francisco's Presidio with iconic close-up Golden Gate Bridge views from the shoreline. Families enjoy picnic areas with grills, explore tidepools, and build sandcastles at the family-friendly south end, which has picnic tables and restrooms tucked in a cypress grove.",
+      zh: "Baker Beach 是旧金山 Presidio 内一处一英里长的沙滩，可在岸边近距离欣赏金门大桥标志性景色。家庭可在适合带孩子的南端享用烧烤野餐、探索潮池、堆沙堡，南端柏树林中设有野餐桌和洗手间。",
     },
     tips: "Stick to the south end for family-friendly areas. The north end is clothing-optional. Strong riptides make swimming dangerous.",
     parking: "Two free parking lots. Arrive early on sunny weekends as lots fill quickly.",
@@ -14264,8 +14264,8 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.7,
     description: {
-      en: "A holiday train decorated with lights that runs through Niles Canyon between Niles in Fremont and Sunol in late November and December. The 13-mile round trip takes a little over an hour; one departure leaves Niles at dusk and another leaves Sunol after dark.",
-      zh: "节日期间装饰满灯光的火车，11 月下旬到 12 月在 Fremont 的 Niles 和 Sunol 之间穿越 Niles Canyon。往返 13 英里，约一个多小时；一班在黄昏从 Niles 出发，另一班天黑后从 Sunol 出发。",
+      en: "The Niles Canyon Railway Train of Lights is a family holiday train that runs through Niles Canyon between Niles in Fremont and Sunol in late November and December. The 13-mile round-trip takes a little over an hour; one departure leaves Niles at dusk and another leaves Sunol after dark.",
+      zh: "Niles Canyon Railway Train of Lights 是一列节日灯光火车，11 月下旬到 12 月在 Fremont 的 Niles 和 Sunol 之间穿越 Niles Canyon。往返 13 英里，约一个多小时；一班在黄昏从 Niles 出发，另一班天黑后从 Sunol 出发。",
     },
     tips: "Tickets usually go on sale in October and sell out \u2014 book early. Check ncry.org for this season's dates and departures.",
     parking: "Free parking at the Sunol depot; the Niles depot is in Fremont's Niles district.",
