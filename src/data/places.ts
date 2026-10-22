@@ -1528,8 +1528,8 @@ export const places: Place[] = [
     priceLevel: "$",
     rating: 4.3,
     description: {
-      en: "McInnis Park Mini Golf in San Rafael is an 18-hole artist-designed outdoor course on the Marin County waterfront, with a waterfall, windmill, and lush landscaping on tiered hillside terrain. Kids under 5 play free with a paying adult. Open daily, weather permitting.",
-      zh: "San Rafael 的 McInnis Park Mini Golf 是一座18洞艺术家设计的户外迷你高尔夫球场，紧邻 Marin County 海滨，设有瀑布、风车和层叠山坡上的茂密景观。5岁以下儿童在付费成人陪同下免费游玩。每天开放，视天气情况而定。",
+      en: "McInnis Park Mini Golf in San Rafael is an 18-hole artist-designed outdoor course with a waterfall, windmill, and lush landscaping on tiered hillside terrain. Kids under 5 play free with a paying adult. Open daily, weather permitting.",
+      zh: "San Rafael 的 McInnis Park Mini Golf 是一座18洞艺术家设计的户外迷你高尔夫球场，设有瀑布、风车和层叠山坡上的茂密景观。5岁以下儿童在付费成人陪同下免费游玩。每天开放，视天气情况而定。",
     },
     tips: "Admission charged for adults and kids 5-12; under 5 free. Call (415) 491-5995 for reservations during busy times.",
     parking: "Free parking at 350 Smith Ranch Rd, San Rafael.",
@@ -4483,8 +4483,8 @@ export const places: Place[] = [
     priceLevel: "$",
     rating: 4.6,
     description: {
-      en: "In-N-Out Burger is a California institution with a secret menu, fresh-never-frozen beef, and hand-cut fries — a consistently affordable choice for families with kids. The children's meal comes with a simple cheeseburger and fries, and all Bay Area locations have stroller-friendly spaces and changing stations.",
-      zh: "In-N-Out Burger 是加州经典，有隐藏菜单、新鲜不冷冻的牛肉和手切薯条，是家庭出行性价比极高的选择。儿童餐有简单的芝士汉堡和薯条，湾区各门店均有方便推车的空间和母婴室。",
+      en: "In-N-Out Burger is a California institution with a secret menu, fresh-never-frozen beef, and hand-cut fries — a consistently affordable choice for families with kids. The children's meal comes with a simple cheeseburger and fries.",
+      zh: "In-N-Out Burger 是加州经典，有隐藏菜单、新鲜不冷冻的牛肉和手切薯条，是家庭出行性价比极高的选择。儿童餐有简单的芝士汉堡和薯条。",
     },
     tips: "Kids' meals are a great deal. If kids are picky, order 'plain' for just meat and bun. Animal-style fries are a must for parents.",
     parking: "Drive-through or parking lot at all locations.",
