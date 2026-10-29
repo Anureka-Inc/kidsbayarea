@@ -156,8 +156,8 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4,
     description: {
-      en: "A fun-filled trampoline park at 5502 Monterey Rd in South San Jose offering wall-to-wall trampolines, dodgeball, a ninja warrior course, performance trampolines, and a dedicated kids zone. Popular for birthday parties and group events.",
-      zh: "位于南圣何塞Monterey路5502号的蹦床公园，提供满墙蹦床、躲避球、忍者战士挑战、表演蹦床和专属儿童区。深受生日派对和团体活动欢迎。",
+      en: "Altitude Trampoline Park in San Jose is a South Bay indoor adventure park at 5502 Monterey Rd with wall-to-wall trampolines, a ninja warrior obstacle course, dodgeball courts, performance trampolines, and a dedicated kids zone for younger children. Popular for birthday parties and group events.",
+      zh: "Altitude Trampoline Park是南湾San Jose的室内冒险乐园，位于Monterey路5502号，设有满墙蹦床、忍者战士障碍挑战、躲避球场、表演蹦床和专属儿童区。深受生日派对和团体活动欢迎。",
     },
     tips: "Open daily with extended weekend hours. Check their website for special pricing on Mondays and Tuesdays.",
     parking: "Free parking at Monterey Plaza shopping center.",
@@ -1278,8 +1278,8 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.3,
     description: {
-      en: "A working family farm in Half Moon Bay offering pony rides, train rides, hay rides, petting zoo with baby goats and bunnies, farm slide, barn jumpers, and goat yoga. Especially popular during the fall pumpkin patch season.",
-      zh: "位于Half Moon Bay的家庭经营农场，提供骑小马、小火车、干草车、与小山羊和兔子互动的动物园、农场滑梯、谷仓弹跳和山羊瑜伽。在秋季南瓜采摘季节特别受欢迎。",
+      en: "Lemos Farm in Half Moon Bay is a Peninsula family farm along Highway 92 with pony rides, a narrow-gauge train ride, hay rides, a petting zoo with baby goats and bunnies, a farm slide, barn jumpers, and goat yoga. Especially popular during the fall pumpkin patch season, Lemos Farm is easy to combine with a Half Moon Bay beach day.",
+      zh: "Lemos Farm是Half Moon Bay沿92号公路的半岛家庭农场，提供骑小马、窄轨小火车、干草车、与小山羊和兔子互动的动物园、农场滑梯、谷仓弹跳和山羊瑜伽。秋季南瓜采摘季节特别受欢迎，Lemos Farm非常适合与Half Moon Bay海滩一日游结合。",
     },
     tips: "Buy Gold Pass for all activities including pony rides. Kids under 14 months don't need a pass. Open daily 9:30am-5pm.",
     parking: "Free parking at 12320 San Mateo Rd, Half Moon Bay.",
@@ -10527,8 +10527,8 @@ export const places: Place[] = [
     priceLevel: "$",
     rating: 4.6,
     description: {
-      en: "A family-run Alameda institution for over 25 years, Toy Safari buys, sells, and trades new and vintage toys. The store features displays of Transformers, LEGO bricks, and other collectibles alongside the latest toys for kids.",
-      zh: "已有超过25年历史的Alameda家庭经营玩具店，Toy Safari买卖和交换新旧玩具。店内展示变形金刚、乐高积木和其他收藏品，以及最新的儿童玩具。",
+      en: "Toy Safari on Park Street in Alameda is a family-run East Bay toy shop with over 25 years buying, selling, and trading new and vintage toys. Toy Safari's shelves feature LEGO bricks, Transformers, and other collectibles alongside current toys, making it a go-to for Bay Area families hunting something you won't find at a chain store.",
+      zh: "Toy Safari位于Alameda的Park Street，是一家拥有超过25年历史的东湾家庭经营玩具店，专做新旧玩具的买卖和交换。店内陈列乐高积木、变形金刚和其他收藏品，以及当季新款玩具，是湾区家庭寻找连锁店找不到的好物的好去处。",
     },
     tips: "Great place to find vintage and collectible toys. Bring old toys to trade!",
     parking: "Street parking on Park St; public lot nearby.",
