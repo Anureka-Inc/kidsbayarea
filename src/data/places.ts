@@ -1278,8 +1278,8 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.3,
     description: {
-      en: "Lemos Farm in Half Moon Bay is a Peninsula family farm along Highway 92 with pony rides, a narrow-gauge train ride, hay rides, a petting zoo with baby goats and bunnies, a farm slide, barn jumpers, and goat yoga. Especially popular during the fall pumpkin patch season, Lemos Farm is easy to combine with a Half Moon Bay beach day.",
-      zh: "Lemos Farm是Half Moon Bay沿92号公路的半岛家庭农场，提供骑小马、窄轨小火车、干草车、与小山羊和兔子互动的动物园、农场滑梯、谷仓弹跳和山羊瑜伽。秋季南瓜采摘季节特别受欢迎，Lemos Farm非常适合与Half Moon Bay海滩一日游结合。",
+      en: "Lemos Farm in Half Moon Bay is a Peninsula family farm along Highway 92 with pony rides, a train ride, hay rides, a petting zoo with baby goats and bunnies, a farm slide, barn jumpers, and goat yoga. Especially popular during the fall pumpkin patch season, Lemos Farm is easy to combine with a Half Moon Bay beach day.",
+      zh: "Lemos Farm是Half Moon Bay沿92号公路的半岛家庭农场，提供骑小马、小火车、干草车、与小山羊和兔子互动的动物园、农场滑梯、谷仓弹跳和山羊瑜伽。秋季南瓜采摘季节特别受欢迎，Lemos Farm非常适合与Half Moon Bay海滩一日游结合。",
     },
     tips: "Buy Gold Pass for all activities including pony rides. Kids under 14 months don't need a pass. Open daily 9:30am-5pm.",
     parking: "Free parking at 12320 San Mateo Rd, Half Moon Bay.",
