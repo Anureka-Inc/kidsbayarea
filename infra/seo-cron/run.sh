@@ -76,6 +76,17 @@ if [ "$CUR_SHA" != "$(cat "$LOCK_STAMP" 2>/dev/null)" ]; then
   npm ci --no-audit --no-fund && echo "$CUR_SHA" > "$LOCK_STAMP"
 fi
 
+# GitHub occasionally answers a push with a 5xx; retry before giving up.
+push_with_retry() {
+  local i
+  for i in 1 2 3; do
+    git push -f origin "$BRANCH" && return 0
+    echo "$LOG_PREFIX push attempt $i failed; retrying in 30s"
+    sleep 30
+  done
+  return 1
+}
+
 # --- 3. Claude Code optimizer -------------------------------------------
 # Fixed branch: at most ONE open seo-cron PR. If the previous PR is still
 # unmerged, build ON TOP of it (carry-forward) instead of re-branching from
@@ -247,8 +258,19 @@ Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" || COMMIT_OK=0
         echo "git commit produced no new HEAD${OWN_HINT}. This run did NOT modify the site;"
         echo "do not trust any PR link above — there is none for this run."
       } >> "$SEO_OUT_DIR/report.md"
+    elif ! push_with_retry; then
+      # 2026-10-29: GitHub answered the push with a 500, the old code ignored
+      # the exit status, and #50 was opened on a stale branch that held none
+      # of this run's edits. Keep the commit on the box and say so instead.
+      git format-patch -1 "$RUN_SHA" --stdout > "$SEO_OUT_DIR/unpushed-$(date +%F).patch" 2>/dev/null || true
+      echo "$LOG_PREFIX FATAL: push failed 3 times — NOT opening/updating a PR (commit $RUN_SHA kept locally)"
+      {
+        echo ""
+        echo "## ⚠️ push to GitHub failed — NO PR opened/updated, nothing changed this run"
+        echo "Commit \`$RUN_SHA\` exists only on the cron box; a patch was saved as"
+        echo "\`$SEO_OUT_DIR/unpushed-$(date +%F).patch\`. Any PR link you see is from an earlier run."
+      } >> "$SEO_OUT_DIR/report.md"
     else
-      git push -f origin "$BRANCH"
       # gh pr create fails when an open PR already exists on the branch; in
       # that case the force-push updated the diff but NOT the PR body, so the
       # body must be refreshed explicitly or it forever shows the first run's
