@@ -28,6 +28,15 @@ GH_TOKEN=$(aws ssm get-parameter --name /seo-cron/kidsbayarea/github-token \
   --with-decryption --query Parameter.Value --output text --region us-east-1)
 export GH_TOKEN
 
+# The token has to be real before it is spliced into a URL below. A secret
+# scrub, a rotated-away parameter or an SSM miss all produce a string that
+# looks fine and fails only at git auth -- and nothing here checked git auth.
+case "${GH_TOKEN:-}" in
+  ""|None|REDACTED*)
+    echo "$LOG_PREFIX FATAL: GH_TOKEN from SSM is empty or a placeholder -- refusing to run" >&2
+    exit 1 ;;
+esac
+
 # --- 1. repo checkout (also self-updates this script's source of truth) ---
 if [ ! -d "$REPO_DIR/.git" ]; then
   echo "$LOG_PREFIX cloning repo"
@@ -35,7 +44,17 @@ if [ ! -d "$REPO_DIR/.git" ]; then
 fi
 cd "$REPO_DIR"
 git remote set-url origin "https://oauth2:${GH_TOKEN}@github.com/Anureka-Inc/kidsbayarea.git"
-git fetch origin main
+# A failed fetch is fatal, not a warning. Nothing here runs with `set -e`, so
+# an unchecked `git fetch` that fails leaves `git reset --hard origin/main`
+# resetting to a STALE ref: the re-exec below then runs the old script and the
+# whole run proceeds as if nothing were wrong. On eurkart-web that exact hole
+# cost four weekly runs, three of which were only recoverable from the reflog.
+if ! git fetch origin main; then
+  echo "$LOG_PREFIX FATAL: cannot fetch origin/main -- this script may be stale," >&2
+  echo "$LOG_PREFIX   so nothing downstream can be trusted. Refusing to run." >&2
+  echo "$LOG_PREFIX   Check the token at /seo-cron/kidsbayarea/github-token." >&2
+  exit 1
+fi
 git checkout -f main >/dev/null 2>&1
 git reset --hard origin/main
 git clean -fd src/app src/components src/data src/lib >/dev/null 2>&1 || true
