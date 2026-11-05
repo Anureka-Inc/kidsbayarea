@@ -1047,8 +1047,8 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.1,
     description: {
-      en: "A pirate-themed indoor playground at Westfield Oakridge Mall filled with nautical-themed slides, climbing sections, and play areas for children under 10. Engaging pirate decor makes every visit an adventure on the high seas.",
-      zh: "位于Westfield Oakridge购物中心的海盗主题室内游乐场，设有航海主题滑梯、攀爬区和游戏区，适合10岁以下儿童。引人入胜的海盗装饰让每次游玩都是一次海上冒险。",
+      en: "Jolly Roger Land in San Jose is a pirate-themed indoor playground inside Westfield Oakridge Mall, with nautical-themed slides, climbing sections, and play areas for children under 10. The swashbuckling pirate decor makes every visit a high-seas adventure, and the mall location means food and shopping are steps away. A second Jolly Roger Land location is in Union City.",
+      zh: "San Jose 的 Jolly Roger Land 是 Westfield Oakridge 购物中心内的海盗主题室内游乐场，设有航海主题滑梯、攀爬区和适合10岁以下儿童的游乐区。生动的海盗装饰让每次游玩都像是一次海上冒险，购物中心里的餐厅和商店触手可及。Union City 另有一家分店。",
     },
     tips: "Also has a location in Union City. Conveniently located inside the mall with easy access to food and shopping.",
     parking: "Free parking at Westfield Oakridge Mall.",
@@ -2852,8 +2852,8 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4,
     description: {
-      en: "A massive indoor adventure park with trampolines, a warrior obstacle course, indoor zip line, ropes course, climbing walls, laser tag, and a Kid Zone for ages 7 and under. All-day passes mean no rush — kids can play at their own pace.",
-      zh: "大型室内冒险乐园，设有蹦床、战士障碍挑战、室内滑索、绳索挑战、攀岩墙、激光枪战，以及7岁以下专属儿童区。全天通行证意味着不用赶时间，孩子可以按自己的节奏游玩。",
+      en: "Urban Air Adventure Park in Concord is a massive indoor adventure park in the East Bay with trampolines, a warrior obstacle course, indoor zip line, ropes course, climbing walls, and laser tag. The Kid Zone is designed for ages 7 and under. All-day passes mean no rush — kids can work through every attraction at their own pace.",
+      zh: "Concord 的 Urban Air Adventure Park 是东湾一座大型室内冒险乐园，设有蹦床、战士障碍挑战、室内滑索、绳索挑战、攀岩墙和激光枪战。Kid Zone 专为7岁及以下儿童设计，全天通行证让孩子按自己的节奏尽情玩遍每个项目。",
     },
     tips: "All-day pass prices depend on attraction access. Socks required (sold on site). Check website for current hours and prices.",
     parking: "Free parking at 1695 Willow Pass Rd, Concord.",
@@ -13938,8 +13938,8 @@ export const places: Place[] = [
     priceLevel: "$",
     rating: 4.6,
     description: {
-      en: "Ride a real miniature steam train through the redwood groves of Tilden Park. The trains run on 15-inch gauge tracks and are powered by real steam engines. A Bay Area tradition since 1952 that kids of all ages absolutely love.",
-      zh: "在蒂尔登公园的红杉林中乘坐真正的微型蒸汽火车。火车在15英寸轨距的铁轨上运行，由真正的蒸汽机驱动。自1952年以来的湾区传统，各年龄段的孩子都非常喜欢。",
+      en: "Tilden Park Steam Trains in Berkeley are a miniature steam railway operating through the redwood groves of Tilden Regional Park since 1952. The Redwood Valley Railway runs on 15-inch gauge tracks with real steam engines, making it one of the Bay Area's most beloved family traditions. Combine a visit with the free Tilden Little Farm and the Merry-Go-Round nearby.",
+      zh: "Berkeley Tilden Regional Park 的 Tilden Park Steam Trains 是一条穿行于红杉林的迷你蒸汽小铁路，自1952年起运营，已成为湾区最受喜爱的家庭传统之一。Redwood Valley Railway 采用15英寸轨距和真正的蒸汽机，全年龄段的孩子都爱。参观前后还可以顺带去附近免费的 Tilden Little Farm 和旋转木马。",
     },
     tips: "Pay-per-ride at an affordable price. Cash or card accepted. Combine with a visit to the Little Farm and Merry-Go-Round nearby.",
     parking: "Free parking along Grizzly Peak Boulevard near the train station.",

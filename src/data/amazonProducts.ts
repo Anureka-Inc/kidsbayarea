@@ -1,17 +1,17 @@
 // GENERATED FILE — do not edit by hand.
 // Refreshed by scripts/refresh-amazon-picks.mjs via the Amazon Creators API.
-// Last refresh: 2026-10-22T03:36:55.767Z
+// Last refresh: 2026-11-05T03:38:48.783Z
 import type { AmazonPicksData } from "./amazonPicks";
 
 export const amazonProducts: Record<string, AmazonPicksData> = {
   "babies-0-2": {
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
-      "baby carrier for hiking",
+      "baby carrier hiking",
       "diaper bag backpack",
-      "portable baby changing mat",
-      "collapsible baby bottle warmer"
+      "stroller fan clip on",
+      "portable white noise machine"
     ],
     "items": [
       {
@@ -19,7 +19,7 @@ export const amazonProducts: Record<string, AmazonPicksData> = {
         "title": "besrey Toddler Hiking Backpack Carrier-Adjustable Padded Shoulder Straps | Baby Backpack Carrier with Large Storage Space, Sunshade and Raincover, Safety 3-Height Seat, Comfortable and Lightweight",
         "image": "https://m.media-amazon.com/images/I/41HG3sKDz7L._SL160_.jpg",
         "url": "https://www.amazon.com/dp/B0BZC1VKKQ?tag=kidsbayarea0d-20&ascsubtag=kba-babies-0-2",
-        "price": "$159.99"
+        "price": "$149.99"
       },
       {
         "asin": "B0C86S6GLQ",
@@ -29,229 +29,229 @@ export const amazonProducts: Record<string, AmazonPicksData> = {
         "price": "$38.99"
       },
       {
-        "asin": "B07RX5BD32",
-        "title": "Kopi Baby Portable Diaper Changing Pad with Wipes Pocket, Classic Grey | 22-In Waterproof Pad, Smart Wipes Pocket, 2 Inner Mesh Pockets, Outer Pocket, Detachable Storage, Straps, Newborn Essentials",
-        "image": "https://m.media-amazon.com/images/I/41p16YTuexL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B07RX5BD32?tag=kidsbayarea0d-20&ascsubtag=kba-babies-0-2",
-        "price": "$22.98"
+        "asin": "B0BKQ7MY3L",
+        "title": "Gaiatop Portable Clip on Fan, Mini Personal Quiet Rechargeable Fan | Battery Operated, Small 3 Speed 360° Rotate, Cooling for Desk Table Home Office Stroller Camping Women Gifts Black Blue",
+        "image": "https://m.media-amazon.com/images/I/411dYxyUMyL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0BKQ7MY3L?tag=kidsbayarea0d-20&ascsubtag=kba-babies-0-2",
+        "price": "$12.99"
       },
       {
-        "asin": "B0FX3W964S",
-        "title": "Portable Milk Warmer for Travel, On The Go Baby Bottle Warmer, Waterless Bottle Warmering with Battery-Powered for Home Outdoor, Fast Heating & Precise Temperature Control with LCD Display",
-        "image": "https://m.media-amazon.com/images/I/415ParFqo4L._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0FX3W964S?tag=kidsbayarea0d-20&ascsubtag=kba-babies-0-2",
-        "price": "$24.99"
+        "asin": "B0BBQX7P5J",
+        "title": "Dreamegg Portable Noise Machine for Baby Adult, Features Powerful Battery, 21 Soothing Sound, Noise Canceling for Office & Sleeping, Sound Therapy for Home, Travel, Registry Gift, Classic White",
+        "image": "https://m.media-amazon.com/images/I/51QG3iZBvGL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0BBQX7P5J?tag=kidsbayarea0d-20&ascsubtag=kba-babies-0-2",
+        "price": "$20.99"
       }
     ]
   },
   "toddlers-2-5": {
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
-      "toddler splash boots",
-      "toddler hydration pack straw",
-      "toddler diaper pail bag",
-      "toddler emergency bandages"
+      "toddler water shoes",
+      "toddler sun hat upf 50",
+      "toddler mess apron bib",
+      "toddler first aid kit"
     ],
     "items": [
       {
-        "asin": "B08VH5H6VJ",
-        "title": "EUXTERPA Kids Toddler Waterproof Rain Boots, Blue, Little Kid Size 11 | Solid & Two-Tone Color, Easy-On Handles, Non-Slip Sole, Lightweight, Puddle Play, Outdoor, Unisex Kids, Girls Boys",
-        "image": "https://m.media-amazon.com/images/I/31w3i0mdZFL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B08VH5H6VJ?tag=kidsbayarea0d-20&ascsubtag=kba-toddlers-2-5",
-        "price": "$19.99"
+        "asin": "B0974GYJY7",
+        "title": "Toddler Water Shoes Toddler Swim Shoes Quick Dry Slip On Sneakers for Beach Pool Mesh Grey 12-18 Months Infant",
+        "image": "https://m.media-amazon.com/images/I/51Tq0Ys5d2S._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0974GYJY7?tag=kidsbayarea0d-20&ascsubtag=kba-toddlers-2-5",
+        "price": "$14.89"
       },
       {
-        "asin": "B07D86TDV4",
-        "title": "Nuby No-Spill Flex Straw Easy Grip Sippy Cup, 3 Pack, 10 oz, 12M+, Neutral | Spill-Proof Active Toddler Sippy Cup with Soft Silicone Straw, Touch-Flo Valve, Ergonomic Design, For Independent Drinking",
-        "image": "https://m.media-amazon.com/images/I/41RQvdRLZhL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B07D86TDV4?tag=kidsbayarea0d-20&ascsubtag=kba-toddlers-2-5",
-        "price": "$7.99"
+        "asin": "B0DTDCW4N4",
+        "title": "FURTALK Toddler Kids Sun Hat UPF 50+ Sun Protective Bucket Hat for Baby Summer Beach Hats",
+        "image": "https://m.media-amazon.com/images/I/41WQ6tikSLL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0DTDCW4N4?tag=kidsbayarea0d-20&ascsubtag=kba-toddlers-2-5",
+        "price": "$14.99"
       },
       {
-        "asin": "B001QKDI48",
-        "title": "Munchkin Diaper Bag Dispenser with Arm & Hammer, 24 Disposable Diaper Bags",
-        "image": "https://m.media-amazon.com/images/I/41pdwaQ8dnL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B001QKDI48?tag=kidsbayarea0d-20&ascsubtag=kba-toddlers-2-5",
-        "price": "$4.99"
-      },
-      {
-        "asin": "B0F8B3SY73",
-        "title": "Mini First Aid Kit for Kids - 160 Pcs Hard Shell Emergency Kit, Blue | Waterproof. Flexible fabric bandages. High-visibility for outdoors. Compact for travel, school, car, camping, hiking & home.",
-        "image": "https://m.media-amazon.com/images/I/41plE0ih0fL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0F8B3SY73?tag=kidsbayarea0d-20&ascsubtag=kba-toddlers-2-5",
-        "price": "$19.99"
-      }
-    ]
-  },
-  "kids-5-8": {
-    "updatedAt": "2026-10-22",
-    "source": "qwen",
-    "queries": [
-      "kids waterproof compass",
-      "child safety headlamp",
-      "kids reflective armband",
-      "reusable snack bags kids"
-    ],
-    "items": [
-      {
-        "asin": "B0DS236ZB7",
-        "title": "Outdoor Compass with Adjustable Declination, Magnifier, Ruler, Scale, Multifunctional Kids Waterproof Compass for Map Reading, Hiking, Camping, Navigation and Survival.",
-        "image": "https://m.media-amazon.com/images/I/51GAzR79SeL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0DS236ZB7?tag=kidsbayarea0d-20&ascsubtag=kba-kids-5-8",
-        "price": "$3.99"
-      },
-      {
-        "asin": "B0H7KQNHDK",
-        "title": "ChicLumen Kids Headlamp 1200mAh Boys Head Light Camping/Christmas/Halloween | USB-C Charging,4 Lighting Modes, Waterproof Shockproof, Hiking, Reading, Emergency. Camping Essentials (Green-headlamp)",
-        "image": "https://m.media-amazon.com/images/I/41+vFiYmzCL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0H7KQNHDK?tag=kidsbayarea0d-20&ascsubtag=kba-kids-5-8",
-        "price": "$15.99"
-      },
-      {
-        "asin": "B0DT9R168M",
-        "title": "Tlence 50 Pack Reflective Bands, High Visibility Safety Reflector Armband, Security Tape Strip Bracelets, Cycling Warning Fluorescent Sash, Night Walking Cycling Gear for Wrist Arm Ankle Leg",
-        "image": "https://m.media-amazon.com/images/I/51HyrzUqVLL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0DT9R168M?tag=kidsbayarea0d-20&ascsubtag=kba-kids-5-8",
-        "price": "$18.99"
-      },
-      {
-        "asin": "B0B2C1K45V",
-        "title": "Lerine 10 Pack Reusable Freezer Bags Dishwasher Safe, Food Storage Bags | BPA-Free, Food-Grade Material, Leakproof, Extra Thick, Double-Seal, for Marinating Meats, Lunch, Sandwich, Snack, Travel",
-        "image": "https://m.media-amazon.com/images/I/51RPJTexfOL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0B2C1K45V?tag=kidsbayarea0d-20&ascsubtag=kba-kids-5-8",
-        "price": "$9.98"
-      }
-    ]
-  },
-  "tweens-8-12": {
-    "updatedAt": "2026-10-22",
-    "source": "qwen",
-    "queries": [
-      "kids action camera",
-      "tween hydration vest",
-      "kids headlamp night hike",
-      "kids first aid kit"
-    ],
-    "items": [
-      {
-        "asin": "B01HGM33HG",
-        "title": "AKASO EK7000 4K30FPS 20MP WiFi Action Camera with EIS Ultra HD 131FT Waterproof Underwater Camera Remote Control 4X Zoom Support External Microphone Black",
-        "image": "https://m.media-amazon.com/images/I/514d5uUmZqL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B01HGM33HG?tag=kidsbayarea0d-20&ascsubtag=kba-tweens-8-12",
-        "price": "$69.99"
-      },
-      {
-        "asin": "B0CGPYLG6H",
-        "title": "SWIFTVEST Running Vest for Women & Men with Water Bottle | Lightweight Hydration Vest | Reflective Running Gear | Adjustable Fit | 6 Pockets | Phone Holder for Runners",
-        "image": "https://m.media-amazon.com/images/I/4179PdMeg-L._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CGPYLG6H?tag=kidsbayarea0d-20&ascsubtag=kba-tweens-8-12",
-        "price": "$37.99"
-      },
-      {
-        "asin": "B0C5DDBY5C",
-        "title": "FANT.LUX Headlamp for Kids, Battery Powered LED Headlamps, Owl Frog Giraff Dog Fox Raccoon Theme Gift for Children's Day, Birthday, Toddlers - 6 PCS",
-        "image": "https://m.media-amazon.com/images/I/51OPMxjegsL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0C5DDBY5C?tag=kidsbayarea0d-20&ascsubtag=kba-tweens-8-12",
-        "price": "$24.99"
+        "asin": "B091CLB23B",
+        "title": "Joyo roy Mess Proof Baby Bibs for Eating Waterproof Toddler Bibs 2-4 Years Soft Machine Washable Sleeveless Smock Bib for Baby Girl Travel Reusable Led Weaning Apron for Feeding Bib with Food Catcher",
+        "image": "https://m.media-amazon.com/images/I/61gOXB5jCIL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B091CLB23B?tag=kidsbayarea0d-20&ascsubtag=kba-toddlers-2-5",
+        "price": "$21.99"
       },
       {
         "asin": "B0BLNRCQ3T",
         "title": "KeepGoing Travel First Aid Kit for Kids, 130 Pc. TSA-Approved Travel Size | Toddler First Aid Kit, Mini First Aid Kit for Car, Home, Purse, Diaper Bag & Backpack, Latex-Free Bandages",
         "image": "https://m.media-amazon.com/images/I/51Zzc2-QVkL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0BLNRCQ3T?tag=kidsbayarea0d-20&ascsubtag=kba-tweens-8-12",
+        "url": "https://www.amazon.com/dp/B0BLNRCQ3T?tag=kidsbayarea0d-20&ascsubtag=kba-toddlers-2-5",
         "price": "$39.95"
       }
     ]
   },
-  "rainy-day": {
-    "updatedAt": "2026-10-22",
+  "kids-5-8": {
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
-      "indoor obstacle course kit",
-      "magnetic wall art set",
-      "reusable window clings",
-      "sensory bin filling kit"
+      "kids binoculars explorer kit",
+      "kids insulated water bottle",
+      "kids headlamp with flashlight",
+      "kids emergency whistle with lanyard"
     ],
     "items": [
       {
-        "asin": "B087X74DK3",
-        "title": "Ninja Warrior Obstacle Course for Kids Backyard - 2×50ft Slackline Kit with 10 Most Complete Accessories for Boys & Girls, Swing, Rope Ladder, Gymnastic Ring, Climbing Net, Arm Trainer and Monkey Fist",
-        "image": "https://m.media-amazon.com/images/I/51xA4je27gL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B087X74DK3?tag=kidsbayarea0d-20&ascsubtag=kba-rainy-day",
-        "price": "$149.98"
-      },
-      {
-        "asin": "B0DXBNB3S4",
-        "title": "Ninyoon Magnetic Picture Hanger for Wall Frame Poster Hanging System 12Pack | Magnetic Picture Strong Wall Magnets Anti-Slip Design 1.7x0.5 inch (12 Pack)",
-        "image": "https://m.media-amazon.com/images/I/41suGYtqkjL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0DXBNB3S4?tag=kidsbayarea0d-20&ascsubtag=kba-rainy-day",
+        "asin": "B0C8H681JY",
+        "title": "ESSENSON Kids Explorer Kit - Adventure Kit for Kids, Outdoor Explorer Kit with Binoculars, Summer Outdoor Toys for Kids Ages 4-8",
+        "image": "https://m.media-amazon.com/images/I/510nipSgUsL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0C8H681JY?tag=kidsbayarea0d-20&ascsubtag=kba-kids-5-8",
         "price": "$14.99"
       },
       {
-        "asin": "B0CSJVJFHH",
-        "title": "42PCS Marine Animal Jelly Stickers, Thick Window Door Clings Removable Reusable Gel Clings Decals for Kids Toddlers Adults Home Classroom Nursery Animal Party Supplies Decorations (Not Edible)",
-        "image": "https://m.media-amazon.com/images/I/51s1w5ijnwL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CSJVJFHH?tag=kidsbayarea0d-20&ascsubtag=kba-rainy-day",
-        "price": "$6.99"
-      },
-      {
-        "asin": "B0GZ2JRJHZ",
-        "title": "46 PCS Sensory Bin Filler Tools – Fine Motor Skills Development Kit with Scoops, Tweezers, Tongs, Shovels, Funnel,Sensory Bin Accessories for Sorting Counting",
-        "image": "https://m.media-amazon.com/images/I/51xSqPlDf0L._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0GZ2JRJHZ?tag=kidsbayarea0d-20&ascsubtag=kba-rainy-day",
-        "price": "$30.99"
-      }
-    ]
-  },
-  "birthday-party": {
-    "updatedAt": "2026-10-22",
-    "source": "qwen",
-    "queries": [
-      "birthday party tablecloths kids",
-      "disposable party plates kids",
-      "party favor stickers kids",
-      "photo booth props kids"
-    ],
-    "items": [
-      {
-        "asin": "B0FZQKS1KX",
-        "title": "WNINK 2 Pack Happy Birthday Plastic Tablecloths, 54×108 Inch Disposable Waterproof Birthday Party Table Covers, Colorful Polka Dot Rectangle Tablecloths for Kids Boys Girls Birthday Decorations",
-        "image": "https://m.media-amazon.com/images/I/517fU2PoZ4L._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0FZQKS1KX?tag=kidsbayarea0d-20&ascsubtag=kba-birthday-party",
-        "price": "$5.98"
-      },
-      {
-        "asin": "B0CBVVPRR7",
-        "title": "Hefty Zoo Pals Kids Paper Plates, Party Edition, 7.75 inches, 20ct | Assorted Animal Designs, Two Dipping Compartments On Every Plate, Great for Birthday Parties, Playdates, Snacks, and Meals",
-        "image": "https://m.media-amazon.com/images/I/51EFsqahazL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CBVVPRR7?tag=kidsbayarea0d-20&ascsubtag=kba-birthday-party",
-        "price": "$6.99"
-      },
-      {
-        "asin": "B0F2FGJRG9",
-        "title": "300 Pcs Stickers for Kids, Cute Vinyl Waterproof Stickers for Water Bottle | Treasure Box Toys for Classroom Prizes, Teacher Back to School Supplies Gifts, Sticker Pack for Girls Teens, Party Favors",
-        "image": "https://m.media-amazon.com/images/I/514a5fNWhjL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0F2FGJRG9?tag=kidsbayarea0d-20&ascsubtag=kba-birthday-party",
+        "asin": "B0D9LY1PFN",
+        "title": "Fijinhom 12oz Kids Water Bottle for School, Toddler Bottles with Straws, Stainless Steel Vacuum Insulated Water Bottle for Boys&Girls, Leak-Proof, BPA-Free, Purple",
+        "image": "https://m.media-amazon.com/images/I/31D4IfcZ3mL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0D9LY1PFN?tag=kidsbayarea0d-20&ascsubtag=kba-kids-5-8",
         "price": "$9.99"
       },
       {
-        "asin": "B0DK5F311L",
-        "title": "Photo Booth Props - 66 Piece Multicolor Kit - Fun Selfie Party Accessories - Mustaches, Hats, Lips & More - by PixiPy",
-        "image": "https://m.media-amazon.com/images/I/51SK13nDIpL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0DK5F311L?tag=kidsbayarea0d-20&ascsubtag=kba-birthday-party",
+        "asin": "B0B7B1VQKT",
+        "title": "BORUIT LED Headlamp Red White Light Head Lamp [2-Pack] AAA Battery Super Bright Headlight 4 Mode Head Flashlight for Kids Adult Camping Running Hunting Fishing Gear",
+        "image": "https://m.media-amazon.com/images/I/41X9T+XEs3L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0B7B1VQKT?tag=kidsbayarea0d-20&ascsubtag=kba-kids-5-8",
+        "price": "$19.99"
+      },
+      {
+        "asin": "B0DZWSJCX6",
+        "title": "Seakii 8-Pack Colorful Plastic Whistles with Lanyards - 120dB Loud Sports Whistles for Coaches, Teachers, Emergency Kits & Events",
+        "image": "https://m.media-amazon.com/images/I/51RdXX411yL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0DZWSJCX6?tag=kidsbayarea0d-20&ascsubtag=kba-kids-5-8",
         "price": "$7.99"
       }
     ]
   },
-  "indoor-playgrounds": {
-    "updatedAt": "2026-10-22",
+  "tweens-8-12": {
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
-      "non slip kids socks",
-      "reusable silicone water bottle",
-      "portable kids hand sanitizer",
-      "foldable travel mat"
+      "kids headlamp",
+      "tween water bottle",
+      "kids compass",
+      "emergency blanket kids"
+    ],
+    "items": [
+      {
+        "asin": "B09WDGNHCY",
+        "title": "EverBrite Headlamp, 5 Pack LED Head Lamp for Kids & Adults, Red Light | Batteries Included, 300 Lumens, White Red & Green Light Modes, Memory Function, Adjustable Beam, Camping, Hiking, Emergency",
+        "image": "https://m.media-amazon.com/images/I/51HD8XXqIPL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B09WDGNHCY?tag=kidsbayarea0d-20&ascsubtag=kba-tweens-8-12",
+        "price": "$21.99"
+      },
+      {
+        "asin": "B0FFTLNC5S",
+        "title": "Owala FreeSip Stainless Steel Water Bottle 24 oz Daybreak",
+        "image": "https://m.media-amazon.com/images/I/21kJHoAdCmL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0FFTLNC5S?tag=kidsbayarea0d-20&ascsubtag=kba-tweens-8-12",
+        "price": "$24.00"
+      },
+      {
+        "asin": "B0D5LG17LW",
+        "title": "1 PCS Camping Survival Metal Compass for Hiking Camping | Compact&portable, Clear luminous dial, Multi-scene use",
+        "image": "https://m.media-amazon.com/images/I/41RlzD8T17L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0D5LG17LW?tag=kidsbayarea0d-20&ascsubtag=kba-tweens-8-12",
+        "price": "$7.99"
+      },
+      {
+        "asin": "B07GLCYR5S",
+        "title": "QIO CHUANG Emergency Mylar Thermal Blankets 4 Packs Survival Kit 84''x55'' | Space Blanket for Outdoor Activities First Aid Car Kit for Camping Hiking Survival, Bug Out Bag, Marathons Essentials",
+        "image": "https://m.media-amazon.com/images/I/51bDmCsA04L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B07GLCYR5S?tag=kidsbayarea0d-20&ascsubtag=kba-tweens-8-12",
+        "price": "$14.99"
+      }
+    ]
+  },
+  "rainy-day": {
+    "updatedAt": "2026-11-05",
+    "source": "qwen",
+    "queries": [
+      "indoor climbing wall kids",
+      "magnetic play mat floor",
+      "glow in the dark stickers",
+      "portable projector kids movies"
+    ],
+    "items": [
+      {
+        "asin": "B0GHNLKZ3S",
+        "title": "Cofiyard 9-in-1 Swedish Ladder Wall Gym & Climber, 94.5'' Wooden Wall-Mounted Climbing Set with Double-Sided Slide, Swing, Rope, Rings, Monkey Bars, Kids Indoor Playset, Wooden Climbing Jungle Gym",
+        "image": "https://m.media-amazon.com/images/I/41XbxiassjL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0GHNLKZ3S?tag=kidsbayarea0d-20&ascsubtag=kba-rainy-day",
+        "price": "$419.99"
+      },
+      {
+        "asin": "B0BY1SK7PG",
+        "title": "Taika 43x28 World Map Felt Board Set, Educational World Map Flannel Toy | Felt Set, World Map Floor Mat, Felt World Map with World Famous Sights, Preschool Learning Toy, Kids World Country Area Rug",
+        "image": "https://m.media-amazon.com/images/I/51LKo6gP6EL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0BY1SK7PG?tag=kidsbayarea0d-20&ascsubtag=kba-rainy-day",
+        "price": "$19.99"
+      },
+      {
+        "asin": "B0CN42ZRX8",
+        "title": "SWRT Glow in The Dark Tape 33FT x 0.5Inch, Long-Lasting Bright Fluorescent Glow Tape for Halloween Decorations, Strong Adhesive Waterproof Glow in The Dark Stickers for Night Decor, Stairs,Exit Sign",
+        "image": "https://m.media-amazon.com/images/I/41UFmXpsSwL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0CN42ZRX8?tag=kidsbayarea0d-20&ascsubtag=kba-rainy-day",
+        "price": "$6.59"
+      },
+      {
+        "asin": "B0HH8YNN7F",
+        "title": "Mini Projector, Full HD 1080P Video Projector, Portable Outdoor Projector | Projector with Tripod, Kids Gift, Home Theater Movie Phone Projector Compatible with Android/iOS/Windows",
+        "image": "https://m.media-amazon.com/images/I/31VCmUL+cDL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0HH8YNN7F?tag=kidsbayarea0d-20&ascsubtag=kba-rainy-day",
+        "price": "$59.98"
+      }
+    ]
+  },
+  "birthday-party": {
+    "updatedAt": "2026-11-05",
+    "source": "qwen",
+    "queries": [
+      "birthday party tableware set",
+      "kids party hat bulk",
+      "disposable party tablecloth",
+      "photo booth props kids"
+    ],
+    "items": [
+      {
+        "asin": "B0DKFQK45W",
+        "title": "Nkaiso 161 Pcs Pink and Rosegold Birthday Plates and Napkins Set -20 Serves | Party Supplies Set with Paper Plates Cups Napkins & Silverware, for Birthday Party Decorations",
+        "image": "https://m.media-amazon.com/images/I/51N2vAB0VYL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0DKFQK45W?tag=kidsbayarea0d-20&ascsubtag=kba-birthday-party",
+        "price": "$23.99"
+      },
+      {
+        "asin": "B0FFN5K24S",
+        "title": "SGBETTER 24 Pcs Neon Party Hats Bulk Plastic Fedora Party Hats Glitter Party Gangster Hats for Adult Kids Party Supplies (Color Set 2)",
+        "image": "https://m.media-amazon.com/images/I/51vx3d2vWRL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0FFN5K24S?tag=kidsbayarea0d-20&ascsubtag=kba-birthday-party",
+        "price": "$24.98"
+      },
+      {
+        "asin": "B0CPF1Q1MQ",
+        "title": "Pureegg Plastic Table Cloth Disposable 10 Pack, 54 x 108 Inch Table Cloths, Halloween Party Decorations, Summerween Decor, Halloween Tablecloths, Rectangle, Plastic Cover, Leakproof & Sturdy, Black",
+        "image": "https://m.media-amazon.com/images/I/412GTqvyU3L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0CPF1Q1MQ?tag=kidsbayarea0d-20&ascsubtag=kba-birthday-party",
+        "price": "$14.99"
+      },
+      {
+        "asin": "B01F3288OE",
+        "title": "Joyin Toy Photo Booth Props 66 Pieces，Multicolor Kit for Graduation Wedding Party Supplies Favors，with Stick, Hats, Glasses, Mouth, Bowler, Bowties",
+        "image": "https://m.media-amazon.com/images/I/61q27LSus+L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B01F3288OE?tag=kidsbayarea0d-20&ascsubtag=kba-birthday-party",
+        "price": "$9.99"
+      }
+    ]
+  },
+  "indoor-playgrounds": {
+    "updatedAt": "2026-11-05",
+    "source": "qwen",
+    "queries": [
+      "kids grip socks",
+      "spill proof kids water bottle",
+      "portable wet wipe dispenser",
+      "kids sweatband headband"
     ],
     "items": [
       {
@@ -259,119 +259,119 @@ export const amazonProducts: Record<string, AmazonPicksData> = {
         "title": "GRPSKCOS Non Slip Toddler Socks 15 Pairs Toddler Grip Anti Skid Low Cut Socks for Boys Girls（#1 Black + White + Light grey, 1-3T）",
         "image": "https://m.media-amazon.com/images/I/41p04bPWg0L._SL160_.jpg",
         "url": "https://www.amazon.com/dp/B0DB8YG2TW?tag=kidsbayarea0d-20&ascsubtag=kba-indoor-playgrounds",
-        "price": "$9.45"
+        "price": "$8.99"
       },
       {
-        "asin": "B0D63MZQ97",
-        "title": "SWIFTER 2x Soft Flask 500ml | Running, Hiking, Cycling Hydration Flask | Collapsible, Leakproof, Reusable | Matt Finish, Sky Blue",
-        "image": "https://m.media-amazon.com/images/I/313OVOqWJwL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0D63MZQ97?tag=kidsbayarea0d-20&ascsubtag=kba-indoor-playgrounds",
-        "price": "$16.99"
+        "asin": "B0CRC8MQZL",
+        "title": "Owala FreeSip Kids Stainless Steel Water Bottle 16 oz Blue Citrus",
+        "image": "https://m.media-amazon.com/images/I/21XA0cYUSzL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0CRC8MQZL?tag=kidsbayarea0d-20&ascsubtag=kba-indoor-playgrounds",
+        "price": "$20.00"
       },
       {
-        "asin": "B0FHX1PTYY",
-        "title": "Impossibly Compact Travel Antibacterial Wipes Hand Sanitizer - 99% Water and Aloe - Safe for Sensitive Skin, Hand Wipes - Travel Essentials For Adults & Kids, 10 Pack Total 60 Wipes",
-        "image": "https://m.media-amazon.com/images/I/513OrTjLvOL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0FHX1PTYY?tag=kidsbayarea0d-20&ascsubtag=kba-indoor-playgrounds",
-        "price": "$7.19"
+        "asin": "B01APOEVV4",
+        "title": "Skip Hop On-The-Go Wipes Dispenser, Grab & Go, Grey",
+        "image": "https://m.media-amazon.com/images/I/314Ml6GmDPL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B01APOEVV4?tag=kidsbayarea0d-20&ascsubtag=kba-indoor-playgrounds",
+        "price": "$7.59"
       },
       {
-        "asin": "B0GHYM3LVN",
-        "title": "HAPBEAR Foldable Yoga Mat - 72\"x24\"x0.24\" (6mm), Non-Slip TPE Exercise Mat | Ideal for Home Workout, Yoga, Pilates, Stretching & Travel, Durable & Eco-Friendly, Includes Carry Bag",
-        "image": "https://m.media-amazon.com/images/I/41RvrzHmrKL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0GHYM3LVN?tag=kidsbayarea0d-20&ascsubtag=kba-indoor-playgrounds",
-        "price": "$21.37"
+        "asin": "B09XH2V745",
+        "title": "Zhanmai 12 Pieces Boys Headbands 16 Inch Kids Sweatbands, Soft Athletic Sports Head Sweatband for Kids Toddler, Wicking Elastic Hairband for Girls and Boys (Assorted Colors), Running",
+        "image": "https://m.media-amazon.com/images/I/51H66OWmmbL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B09XH2V745?tag=kidsbayarea0d-20&ascsubtag=kba-indoor-playgrounds",
+        "price": "$14.99"
       }
     ]
   },
   "family-favorites": {
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
-      "reusable snack bags kids",
-      "collapsible water bottle toddler",
-      "silicone travel bib toddler",
-      "mini first aid kit travel"
+      "reusable snack containers kids",
+      "insulated kids water bottle",
+      "car window sun shades",
+      "portable potty bag travel"
     ],
     "items": [
       {
-        "asin": "B0FPQSFZFT",
-        "title": "Chumia 6 Pack Reusable Snack Bags for Kids, Washable Sandwich & Food Storage Pouches, Dual-layer Silicone Lined Lunch Bags with Zipper for School & Travel(Bees,6.9 x 3.7 Inches)",
-        "image": "https://m.media-amazon.com/images/I/51aeFYk6s1L._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0FPQSFZFT?tag=kidsbayarea0d-20&ascsubtag=kba-family-favorites",
-        "price": "$13.99"
+        "asin": "B0F4CWHVXF",
+        "title": "Munchpods Reusable Snack Containers with Lids 20 Pack (40 Pieces) Portion control, Snack Pack Containers 2 Double Compartment Snack Containers for Kids On the Go Meals, Camping Snack Tray Prep",
+        "image": "https://m.media-amazon.com/images/I/51WD62EkjAL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0F4CWHVXF?tag=kidsbayarea0d-20&ascsubtag=kba-family-favorites",
+        "price": "$9.49"
       },
       {
-        "asin": "B0CKMRK5MD",
-        "title": "JSHYGOUP Silicone Collapsible Travel Mug Purple 15oz / 450ml - Leak-Proof Reusable Silicone Water Bottle for Hot and Cold Beverages - Travel Office and Home - Dishwasher Safe - Straw Included",
-        "image": "https://m.media-amazon.com/images/I/31EK-pfwWdL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CKMRK5MD?tag=kidsbayarea0d-20&ascsubtag=kba-family-favorites",
-        "price": "$8.99"
+        "asin": "B00ZOKJVAG",
+        "title": "Car Window Shades - Certified 99.79% UVA & 99.95% UVB Sun Protection | Award Winning Car sun shade for side windows. 4 Pack (2 Transparency options) 20\" x 12\" -Window Shade for car baby",
+        "image": "https://m.media-amazon.com/images/I/51AlBYasFZL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B00ZOKJVAG?tag=kidsbayarea0d-20&ascsubtag=kba-family-favorites",
+        "price": "$14.90"
       },
       {
-        "asin": "B0CTD95TXY",
-        "title": "Olababy Waterproof Silicone Baby Bib w/Travel Case (Kiwi), Fold N Go | Lightweight, Foldable Design for Infants & Toddlers 6-36 Mo. BPA-Free Food-Grade Silicone. Eases Pressure Points & Bruising.",
-        "image": "https://m.media-amazon.com/images/I/31Kj8VrE7sL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CTD95TXY?tag=kidsbayarea0d-20&ascsubtag=kba-family-favorites",
+        "asin": "B0BCKQKQ8W",
+        "title": "Portable Travel Potty Chair Liners Bags with Drawstring 90 PCS (18×20 INCH) | Toilet Refill Bags for Toddler Travel Universal Potty Bags Compatible With Oxo Tot 2-in-1 Go Potty Fit Most Potty Chairs",
+        "image": "https://m.media-amazon.com/images/I/412AbDjm0TL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0BCKQKQ8W?tag=kidsbayarea0d-20&ascsubtag=kba-family-favorites",
         "price": "$9.99"
       },
       {
-        "asin": "B0DB794BKQ",
-        "title": "Mini First Aid Kit - 150 Piece Small Waterproof EVA Hard Shell Case | Compact First Aid Kit with Comprehensive Supplies for Home, Car, Travel, Camping, Truck, Hiking, Sports, Office, Outdoor(Red)",
-        "image": "https://m.media-amazon.com/images/I/411tLyA56aL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0DB794BKQ?tag=kidsbayarea0d-20&ascsubtag=kba-family-favorites",
-        "price": "$9.99"
+        "asin": "B0F8QDG6ZD",
+        "title": "Tanjiae 8oz (1 CUP) Small Stainless Steel Snack Containers for Kids (4pack) | Reusable Easy Open Toddler Snack Containers with Silicone Lids | Stackable Toddler Lunch Box for Daycare, School and Travel",
+        "image": "https://m.media-amazon.com/images/I/41SebZptVIL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0F8QDG6ZD?tag=kidsbayarea0d-20&ascsubtag=kba-family-favorites",
+        "price": "$12.91"
       }
     ]
   },
   "free": {
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
-      "waterproof picnic blanket family",
-      "bubble machine kids outdoor",
-      "portable kite repair kit",
-      "reusable snack bags kids"
+      "portable picnic table folding",
+      "reusable snack containers leak proof",
+      "silicone sun visor kids no hair",
+      "reusable water bottle with straw"
     ],
     "items": [
       {
-        "asin": "B08HGY1Q4K",
-        "title": "ZAZE Extra Large Picnic Outdoor Blanket, 80''x80'' Waterproof Foldable Blankets Gingham Picnic Mat for Beach, Camping Grass Lawn Park Accessories Cute Couple Gifts Ideas Wedding Registry(Green White)",
-        "image": "https://m.media-amazon.com/images/I/51k133WJ0ZL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B08HGY1Q4K?tag=kidsbayarea0d-20&ascsubtag=kba-free",
-        "price": "$29.99"
+        "asin": "B0002U3V72",
+        "title": "LIFETIME 6‑Foot Folding Picnic Table, Outdoor Portable Bench Seating for 8, UV‑Protected HDPE, Powder‑Coated Steel Frame, Stain‑Resistant, Folds Flat for Storage",
+        "image": "https://m.media-amazon.com/images/I/319olBJm7CL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0002U3V72?tag=kidsbayarea0d-20&ascsubtag=kba-free",
+        "price": "$249.00"
       },
       {
-        "asin": "B0DPQBS27W",
-        "title": "Upgraded Bubble Machine Outdoor Toys for Kids & Wedding Party | Auto Rotation,Type-C Rechargeable,Remote Control,RGB Lights",
-        "image": "https://m.media-amazon.com/images/I/51auWKOPBgL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0DPQBS27W?tag=kidsbayarea0d-20&ascsubtag=kba-free",
-        "price": "$34.99"
+        "asin": "B0F7J1314F",
+        "title": "blacksof Reusable Snack Containers with Lids 20 Pack, 2 Compartment Leakproof Snackle Box Container, Portion Control Lunch Box Food Containers for Travel",
+        "image": "https://m.media-amazon.com/images/I/41FuRxE0R1L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0F7J1314F?tag=kidsbayarea0d-20&ascsubtag=kba-free",
+        "price": "$9.99"
       },
       {
-        "asin": "B07GZVYRC1",
-        "title": "FixMyKite.com ER Fix Kite Repair Kit for Kiteboarding, Kitesurfing Kite",
-        "image": "https://m.media-amazon.com/images/I/51vFJlZtDfL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B07GZVYRC1?tag=kidsbayarea0d-20&ascsubtag=kba-free",
-        "price": "$64.95"
+        "asin": "B00A7W0VLY",
+        "title": "Kair Bath Visor for Babies, Silicone Air Cushioned Shower Cap for kids, Shower Water Guard for 1-9 Years Children bath and Toddler Bath (Head Circumference Greater Than 15 Inches)",
+        "image": "https://m.media-amazon.com/images/I/41RfSYv3k4L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B00A7W0VLY?tag=kidsbayarea0d-20&ascsubtag=kba-free",
+        "price": "$22.99"
       },
       {
-        "asin": "B0FC2HQHQ4",
-        "title": "Genovega Waterproof Picnic Blanket Beach Outdoor Camping Mat Rug Extra Large Foldable Cute Big Travel Essential Accessories Gift Park Patio Lawn Garden Grass Play Music Festival Concert Must Have",
-        "image": "https://m.media-amazon.com/images/I/71zV61HfDmL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0FC2HQHQ4?tag=kidsbayarea0d-20&ascsubtag=kba-free",
-        "price": "$28.99"
+        "asin": "B0D8J37DHP",
+        "title": "POWCAN 26 oz Insulated Water Bottle with 2-in-1 Straw and Spout Lid, Keep Cold 24H, Leak-Proof, Fits in Car Cup Holder, Stainless Steel Water Bottle for Sports, Travel, and School (Cotton Candy)",
+        "image": "https://m.media-amazon.com/images/I/21yL5hVoOaL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0D8J37DHP?tag=kidsbayarea0d-20&ascsubtag=kba-free",
+        "price": "$13.99"
       }
     ]
   },
   "water-outing": {
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
       "kids water shoes",
       "swim diapers toddler",
-      "collapsible water bottle",
-      "waterproof ziplock bag"
+      "kids quick dry hooded towel",
+      "waterproof phone case"
     ],
     "items": [
       {
@@ -379,7 +379,7 @@ export const amazonProducts: Record<string, AmazonPicksData> = {
         "title": "SEEKWAY Barefoot Water Shoes for Kids - Wide Toe Box and Quick-Dry Sand Shoes Toddler for Hiking Swim Beach Pool Kayak Sport Accessories, Camping Essentials Non-Slip for Boys Girls Sizes",
         "image": "https://m.media-amazon.com/images/I/517UD1r6AlL._SL160_.jpg",
         "url": "https://www.amazon.com/dp/B0D6GMXZ6X?tag=kidsbayarea0d-20&ascsubtag=kba-water-outing",
-        "price": "$12.43"
+        "price": "$13.98"
       },
       {
         "asin": "B0GMS6LJ93",
@@ -389,109 +389,109 @@ export const amazonProducts: Record<string, AmazonPicksData> = {
         "price": "$9.97"
       },
       {
-        "asin": "B09DYLKWDV",
-        "title": "20 PCS 10\"x13\" 5 Mil Large Clear Zip Seal Lock Poly Plastic Reclosable Bags | Thick Heavy-Duty,Durable Resealable Zipper Bags Waterproof Gallon Storage Bag for Clothing T-Shirts Toys",
-        "image": "https://m.media-amazon.com/images/I/414xYrXebTL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B09DYLKWDV?tag=kidsbayarea0d-20&ascsubtag=kba-water-outing",
-        "price": "$9.99"
+        "asin": "B0F1S8V8J1",
+        "title": "Joiedomi Kids Beach Towels with Hood for 3-10 Years Boys Girls Unicorn Hooded Toddler Bath Towel Poncho Absorbent Quick Dry Soft Microfiber Swim Robe with Backpack Lightweight 30\"x30\" for Beach Pool",
+        "image": "https://m.media-amazon.com/images/I/41r4Z+VW2xL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0F1S8V8J1?tag=kidsbayarea0d-20&ascsubtag=kba-water-outing",
+        "price": "$14.99"
       },
       {
-        "asin": "B0D2R48M1J",
-        "title": "VIFUUR Kids Water Shoes Girls Boys Quick Dry Aqua Socks for Beach Swim Outdoor Sports M Black-32/33",
-        "image": "https://m.media-amazon.com/images/I/31WYF+qLIXL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0D2R48M1J?tag=kidsbayarea0d-20&ascsubtag=kba-water-outing",
-        "price": "$6.99"
+        "asin": "B079HV3TC9",
+        "title": "Hiearcool Waterproof Phone Pouch, Waterproof Phone Case, Black&Green 2-Pack | Durable multilayer IPX8 protection; touchscreen access and fit up to 8.9 inches; cruise essentials 2026 for beach and pool",
+        "image": "https://m.media-amazon.com/images/I/51+k2TQ28hL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B079HV3TC9?tag=kidsbayarea0d-20&ascsubtag=kba-water-outing",
+        "price": "$9.99"
       }
     ]
   },
   "trail-day": {
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
-      "kids hiking backpack with water bladder",
-      "kids binoculars",
-      "kids insect repellent spray",
-      "kids portable water filter straw"
+      "kids hiking shoes grippy",
+      "kids hydration vest",
+      "kids trail gaiters",
+      "kids headlamp"
     ],
     "items": [
       {
-        "asin": "B09TZZ7BF1",
-        "title": "Ivygreen Kids Hydration Backpack for Hiking, 1.5L Water Bladder, Blue S | Small Size, Lightweight, Great for Boys or Girls on Hikes, Walks, and Bike Rides",
-        "image": "https://m.media-amazon.com/images/I/41d0QzXRbAL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B09TZZ7BF1?tag=kidsbayarea0d-20&ascsubtag=kba-trail-day",
-        "price": "$30.99"
+        "asin": "B08CXYHYYT",
+        "title": "Mishansha Boys Girls Hiking Shoes Kids Low Top Sneakers, 8 Toddler Green | Protective Toe, Breathable Upper, Adjustable Strapes, Non-Slip Sole for Outdoor Trekking, Walking, Climbing, Running, School",
+        "image": "https://m.media-amazon.com/images/I/518Y1un6A2L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B08CXYHYYT?tag=kidsbayarea0d-20&ascsubtag=kba-trail-day",
+        "price": "$32.28"
       },
       {
-        "asin": "B071WP41M2",
-        "title": "Scotamalone Kids Binoculars Shock Proof Toy Binoculars Set for Age 3-12 Years Old Boys Girls Bird Watching Educational Learning Hunting Hiking Birthday Presents",
-        "image": "https://m.media-amazon.com/images/I/41-iD6Ygh4L._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B071WP41M2?tag=kidsbayarea0d-20&ascsubtag=kba-trail-day",
-        "price": "$7.99"
+        "asin": "B0HBPB5CCD",
+        "title": "Zelvot Kids Hydration Backpack with Water Bladder, Running Vest for Kids | 8 Pockets, Adjustable Fit, BPA-Free, Lightweight, Safety Whistle, Reflective Strips, for Boys & Girls, for Hiking, Cycling",
+        "image": "https://m.media-amazon.com/images/I/51Ztc7OzwRL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0HBPB5CCD?tag=kidsbayarea0d-20&ascsubtag=kba-trail-day",
+        "price": "$38.99"
       },
       {
-        "asin": "B09GDB6K8Q",
-        "title": "OFF! Kids Plant-Based Insect & Mosquito Repellent Bug Spray, 4 oz | Pump Spray, Plant-Based & Botanically Inspired Formula, Protects Against Mosquitoes",
-        "image": "https://m.media-amazon.com/images/I/41iMnfYNzhL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B09GDB6K8Q?tag=kidsbayarea0d-20&ascsubtag=kba-trail-day",
-        "price": "$7.99"
+        "asin": "B07RQSFQNL",
+        "title": "Luwint Waterproof Kids Leg Boot Gaiters - Hiking Hunting Climbing Gear for 6-12 Yrs Old Girls Boys (Blue)",
+        "image": "https://m.media-amazon.com/images/I/41njy0xW0IL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B07RQSFQNL?tag=kidsbayarea0d-20&ascsubtag=kba-trail-day",
+        "price": "$9.99"
       },
       {
-        "asin": "B0DM71YBM8",
-        "title": "Portable Water Filter Straw 2-Pack for Camping & Emergency Prep | Survival Water Straw | 0.1 Micron Personal Filter | BPA-Free Hollow Fiber for Hiking, Travel & Disaster Preparedness Kits",
-        "image": "https://m.media-amazon.com/images/I/41vXmfPyMML._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0DM71YBM8?tag=kidsbayarea0d-20&ascsubtag=kba-trail-day",
-        "price": "$19.99"
+        "asin": "B0FWBB3X4H",
+        "title": "Amazon Essentials Unisex Kids' Hook and Loop Hiking Shoes, Outdoor Trail Sneakers for Boys and Girls, Black, 13 Little Kid",
+        "image": "https://m.media-amazon.com/images/I/31-0Ap2-tlL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0FWBB3X4H?tag=kidsbayarea0d-20&ascsubtag=kba-trail-day",
+        "price": "$35.90"
       }
     ]
   },
   "animal-encounter": {
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
       "kids binoculars",
-      "kids insect observation kit",
-      "reusable snack bags",
-      "portable hand sanitizer"
+      "kids animal field guide",
+      "insect viewing magnifier",
+      "kids mud boots"
     ],
     "items": [
       {
-        "asin": "B0FR1P1MF9",
-        "title": "Wooden Insect Observation Kit for Kids,10Pcs Outdoor Nature Explorer Set, Insect Habitat Cage,Butterfly Net,Magnifying Glass,Compass STEM Education Toy, Birthday Backyard Gift for 3+ Boys & Girls",
-        "image": "https://m.media-amazon.com/images/I/41+8Mmhr6BL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0FR1P1MF9?tag=kidsbayarea0d-20&ascsubtag=kba-animal-encounter",
-        "price": "$15.99"
+        "asin": "B071WP41M2",
+        "title": "Scotamalone Kids Binoculars Shock Proof Toy Binoculars Set for Age 3-12 Years Old Boys Girls Bird Watching Educational Learning Hunting Hiking Birthday Presents",
+        "image": "https://m.media-amazon.com/images/I/41-iD6Ygh4L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B071WP41M2?tag=kidsbayarea0d-20&ascsubtag=kba-animal-encounter",
+        "price": "$7.99"
       },
       {
-        "asin": "B01BOWFQTW",
-        "title": "Purell Advanced Hand Sanitizer Variety Pack, Naturals and Refreshing Gel, 1 Fl Oz Travel Size Flip-Cap Bottle with Jelly Wrap Carrier (Pack of 8) - 3900-09-ECSC",
-        "image": "https://m.media-amazon.com/images/I/517McwJvNWL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B01BOWFQTW?tag=kidsbayarea0d-20&ascsubtag=kba-animal-encounter",
-        "price": "$17.36"
+        "asin": "B0F1TRD6NW",
+        "title": "A Kid’s Guide to 50 Backyard Animals: An Introduction to North American Animals with Full-Color Illustrations, Glossary, Timeline, and More (Book ... 6-9) (A Kid's Guide to the Natural World)",
+        "image": "https://m.media-amazon.com/images/I/51fZOjJsqML._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0F1TRD6NW?tag=kidsbayarea0d-20&ascsubtag=kba-animal-encounter",
+        "price": "$13.99"
       },
       {
-        "asin": "B00B1Z6EPS",
-        "title": "Educational Insights GeoSafari Kidnoculars - Toy Binoculars for Kids, Outdoor Toys for Kids Ages 4-8, Toddler Camping and Nature Toys, Lightweight Binoculars with Neck Strap, Bird Watching Gear",
-        "image": "https://m.media-amazon.com/images/I/41j1ICV3bzL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B00B1Z6EPS?tag=kidsbayarea0d-20&ascsubtag=kba-animal-encounter",
-        "price": "$11.44"
+        "asin": "B0BGPG3DWJ",
+        "title": "Lewtemi 12 Pack Kids Magnifying Glass with Built in Stand, Multicolor | Science Learning Toys, Comfortable Grasp Jumbo Magnifier, 3x Wide View Magnification Exploration for Reading Book Map Insect",
+        "image": "https://m.media-amazon.com/images/I/41z23cugEcL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0BGPG3DWJ?tag=kidsbayarea0d-20&ascsubtag=kba-animal-encounter",
+        "price": "$38.99"
       },
       {
-        "asin": "B0FHH1D997",
-        "title": "Insect Observation Kit for Kids, Multi-Magnification Rotating Viewer with Color Filters, Wooden STEM Nature Exploration Science Toy with Tweezers, Petri Dish and 6 Insect Models, Gift for Ages 4-8",
-        "image": "https://m.media-amazon.com/images/I/41+RaNVUIUL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0FHH1D997?tag=kidsbayarea0d-20&ascsubtag=kba-animal-encounter",
-        "price": "$16.99"
+        "asin": "B0FHPTS8CC",
+        "title": "DREAM PAIRS Boys Waterproof Boots Outdoor Shoes,Black,4 Big Kid | Warm Faux Fur Lining with Handles Easy Wear Secure Grip Anti Slip Outsole Comfort for Rain Snow Winter Muck Mud Cold Weather",
+        "image": "https://m.media-amazon.com/images/I/31veT36-4PL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0FHPTS8CC?tag=kidsbayarea0d-20&ascsubtag=kba-animal-encounter",
+        "price": "$34.39"
       }
     ]
   },
   "museum-day": {
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
       "kids museum scavenger hunt book",
-      "toddler quiet time activity kit",
-      "kids name tag lanyard",
-      "portable mini fan handheld"
+      "toddler portable water bottle",
+      "reusable snack bags kids",
+      "kids museum headband pointer"
     ],
     "items": [
       {
@@ -502,85 +502,78 @@ export const amazonProducts: Record<string, AmazonPicksData> = {
         "price": "$10.67"
       },
       {
-        "asin": "B0DKZTSB3K",
-        "title": "My First Busy Book Screen Free Activities for Toddlers 3-5 Activity Books | Toddler Busy Book, Preschool Learning Activities, Quiet Time Travel Airplane Car Ride Road Trip Essentials Kids 4-8",
-        "image": "https://m.media-amazon.com/images/I/51UL-UAYYUL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0DKZTSB3K?tag=kidsbayarea0d-20&ascsubtag=kba-museum-day",
-        "price": "$26.99"
+        "asin": "B0CCVG1GPF",
+        "title": "Kerilyn 12oz Kids Water Bottle, Stainless Steel Insulated Water Bottle, Toddler Cup with Straws Leak-Proof, Kids Water Bottles for School Boys Girls, BPA Free, Blue",
+        "image": "https://m.media-amazon.com/images/I/41RrTIy8G-L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0CCVG1GPF?tag=kidsbayarea0d-20&ascsubtag=kba-museum-day",
+        "price": "$9.99"
       },
       {
-        "asin": "B0CQRHL16P",
-        "title": "100 Pack Lanyards for ID Badges with Clear Name Tags, Reusable Lanyards Horizontal ID Card Badge Holders Plastic Name Badges for Men Women Kids Business School and Office Supplies (Green)",
-        "image": "https://m.media-amazon.com/images/I/51KRZVzRuXL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CQRHL16P?tag=kidsbayarea0d-20&ascsubtag=kba-museum-day",
-        "price": "$22.99"
+        "asin": "B0BYZZXW8Y",
+        "title": "10 Pack Dishwasher Safe Reusable PEVA Food Storage Bags, Leak proof Reusable Freezer Bags for Food Storage Home Organization Traval & Make-up BPA FREE for Food Storage Home BPA FREE for Salad Fruit",
+        "image": "https://m.media-amazon.com/images/I/51eu8RPnR6L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0BYZZXW8Y?tag=kidsbayarea0d-20&ascsubtag=kba-museum-day",
+        "price": "$12.96"
       },
       {
-        "asin": "B0F4DMYF67",
-        "title": "Gaiatop Portable Handheld Mini Fan, 6 Speeds 16900 RPM High Velocity Personal Fan with LED Display, USB Rechargeable, Mini Fan with Lanyard for Makeup, Travel, Outdoor Fan for Women Girl Gift, Pink",
-        "image": "https://m.media-amazon.com/images/I/41hbcHGTqAL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0F4DMYF67?tag=kidsbayarea0d-20&ascsubtag=kba-museum-day",
-        "price": "$13.29"
+        "asin": "B0FWKJ26J4",
+        "title": "KAOPET 20 Pcs Finger Pointers for Kids Reading, Classroom Pointer Stick for Teachers, Hand Pointer for Children to Improve Focus, Teacher Supplies for Kindergarten & Elementary",
+        "image": "https://m.media-amazon.com/images/I/51iZSeaC0NL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0FWKJ26J4?tag=kidsbayarea0d-20&ascsubtag=kba-museum-day",
+        "price": "$6.99"
       }
     ]
   },
   "eat-out": {
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
-      "silicone placemat toddler",
-      "toddler travel utensils set",
-      "spill proof toddler cup",
-      "portable nap time pillow"
+      "toddler travel plate set",
+      "portable silicone bib",
+      "washable placemat toddler",
+      "collapsible cup toddler"
     ],
     "items": [
       {
-        "asin": "B09MTH5QL8",
-        "title": "Moonkie Silicone Placemats for Baby & Kid, Stain-Proof Non-Slip Toddler Food Mats Eating Table Mat with 2 Packs",
-        "image": "https://m.media-amazon.com/images/I/21LV8pydTkL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B09MTH5QL8?tag=kidsbayarea0d-20&ascsubtag=kba-eat-out",
+        "asin": "B0D8V3C3Z2",
+        "title": "KATORI KIDS Suction Plate for Baby To Go | 5pc Travel Silicone Baby Plate Feeding Set with Travel Bag | Toddler Plate | Baby Travel Essential | Baby Bowl | Platos para Bebes (Boho Grey)",
+        "image": "https://m.media-amazon.com/images/I/41MKscuORTL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0D8V3C3Z2?tag=kidsbayarea0d-20&ascsubtag=kba-eat-out",
         "price": "$9.99"
       },
       {
-        "asin": "B0CQPKRXSC",
-        "title": "OXO Tot On-The-Go Fork and Spoon Set, Opal | Utensils for Toddlers, Baby Food Utensils, Compact Travel Case, Stainless Steel, On-the-Go, Baby Registry, Dishwasher Safe",
-        "image": "https://m.media-amazon.com/images/I/31F9n7rmWvL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CQPKRXSC?tag=kidsbayarea0d-20&ascsubtag=kba-eat-out",
-        "price": "$8.39"
+        "asin": "B08GFCX964",
+        "title": "PandaEar Set of 3 Silicone Baby Bibs Waterproof, Soft, Unisex, 10-72 Months (Brown/Blue/Green)",
+        "image": "https://m.media-amazon.com/images/I/41WRO-OeUjL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B08GFCX964?tag=kidsbayarea0d-20&ascsubtag=kba-eat-out",
+        "price": "$7.95"
       },
       {
-        "asin": "B0BTYQ7Q5Y",
-        "title": "Zak Designs Kelso Toddler Cups For Travel or At Home, 15oz 2-Pack Durable Plastic Sippy Cups With Leak-Proof Design is Perfect For Kids (DinoRoar, Zaksaurus)",
-        "image": "https://m.media-amazon.com/images/I/41le3FH0IML._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0BTYQ7Q5Y?tag=kidsbayarea0d-20&ascsubtag=kba-eat-out",
-        "price": "$13.99"
+        "asin": "B0G1B79YNG",
+        "title": "4 Pack Placemats for Kids, Non-Slip Washable Table Mats, Double-Sided Reusable Universe, Alphabet, Numbers, Map of USA & World Educational Placemats for Home, Kindergarten, Classroom, Nursery",
+        "image": "https://m.media-amazon.com/images/I/51+Fc7kb4TL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0G1B79YNG?tag=kidsbayarea0d-20&ascsubtag=kba-eat-out",
+        "price": "$9.99"
       },
       {
-        "asin": "B0CSMDRML2",
-        "title": "MORAIS Toddler Nap Mat with Pillow and Blanket - 52\" x 20\" Lightweight and Soft Nap Mats for Preschool, Daycare, Travel Sleeping Bags",
-        "image": "https://m.media-amazon.com/images/I/51v7o61lANL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CSMDRML2?tag=kidsbayarea0d-20&ascsubtag=kba-eat-out",
-        "price": "$21.59"
+        "asin": "B08NFZH35F",
+        "title": "Nanaborn Silicone Collapsible Cups for Camping Travel, Small Portable Drinking Cup with Lids Reusable for Outdoor Hiking 270ml (Blue/Gray, 2 Pack)",
+        "image": "https://m.media-amazon.com/images/I/41jCE-fT-nL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B08NFZH35F?tag=kidsbayarea0d-20&ascsubtag=kba-eat-out",
+        "price": "$7.99"
       }
     ]
   },
   "learn-enrich": {
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
-      "stem building blocks set",
-      "kids science experiment kit",
-      "magnetic coding robot for kids",
-      "montessori busy board toddler"
+      "science experiment kit kids",
+      "kids art supplies set",
+      "tactile learning board",
+      "sensory play fidget toys"
     ],
     "items": [
-      {
-        "asin": "B0CZQWG7ZC",
-        "title": "Qirptey Kids STEM Building Toys for 3 4 5 6 7 8+ Year Old Boy Birthday Gift | 125 Pcs Preschool Classroom STEM Activities, Portable Storage Box, Educational Engineering Creative Games, Gift for Ages 3+",
-        "image": "https://m.media-amazon.com/images/I/51IVZxaG10L._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CZQWG7ZC?tag=kidsbayarea0d-20&ascsubtag=kba-learn-enrich",
-        "price": "$30.99"
-      },
       {
         "asin": "B0C5MMYRJ3",
         "title": "UNGLINGA 150 Experiments Science Kits for Kids Chemistry Lab S.T.E.MToys | Volcano, Crystal, Magic, Dig, Reation, Physics, Scientist Tools Set, Educational Project for Boys Girls Birthday Gifts Ideas",
@@ -589,138 +582,145 @@ export const amazonProducts: Record<string, AmazonPicksData> = {
         "price": "$28.99"
       },
       {
-        "asin": "B0CSQN41DZ",
-        "title": "Ozobot Color Code Magnets Base Kit: Interactive Coding Learning Tool for Kids Ages 5+, Enhances Logic & Problem-Solving Skills, Classroom Education, 36 Tiles, Evo Required Not Included",
-        "image": "https://m.media-amazon.com/images/I/41DWGo4Z1tL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CSQN41DZ?tag=kidsbayarea0d-20&ascsubtag=kba-learn-enrich",
-        "price": "$30.00"
+        "asin": "B0C1N6W1BH",
+        "title": "iBayam Art Supplies, 149-Pack Drawing Kit Painting Art Set Art Kits Gifts | Arts and Crafts for Kids Girls Boys Adult Artist, with Coloring Book, Crayons, Pastels, Pencils, Watercolor Pens & Cakes",
+        "image": "https://m.media-amazon.com/images/I/610fDGeYrhL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0C1N6W1BH?tag=kidsbayarea0d-20&ascsubtag=kba-learn-enrich",
+        "price": "$14.99"
       },
       {
-        "asin": "B0DZ65RJSP",
-        "title": "Busy Board with LED Light Switches, Montessori Toys for 1 2 3 Years Old, Toddlers Wooden Toy Sensory Activity Board, Travel Toys for 1+ Year Old Boy & Girl Birthday Gift",
-        "image": "https://m.media-amazon.com/images/I/51xtVi8pqiL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0DZ65RJSP?tag=kidsbayarea0d-20&ascsubtag=kba-learn-enrich",
-        "price": "$22.99"
+        "asin": "B0H44MZLL4",
+        "title": "LILXIU 3 PCS Roof Shape Sensory Wall Panel for Kids Sensory Room Must Haves",
+        "image": "https://m.media-amazon.com/images/I/51TaEJdQlcL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0H44MZLL4?tag=kidsbayarea0d-20&ascsubtag=kba-learn-enrich",
+        "price": "$29.99"
+      },
+      {
+        "asin": "B00ZY6JHU4",
+        "title": "Super Z Outlet Liquid Motion Bubbler for Sensory Play, Fidget Toy, Children Activity, Desk Top, Assorted Colors (1 Piece)",
+        "image": "https://m.media-amazon.com/images/I/51m0i3ySoZL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B00ZY6JHU4?tag=kidsbayarea0d-20&ascsubtag=kba-learn-enrich",
+        "price": "$7.99"
       }
     ]
   },
   "shop": {
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
-      "magnetic tiles construction set",
-      "portable wooden activity board",
-      "reusable snack storage containers",
-      "portable mini fan"
+      "magnetic building blocks",
+      "kids science experiment kit",
+      "portable tablet stand",
+      "silicone snack tray"
     ],
     "items": [
       {
-        "asin": "B0CRKXR23G",
-        "title": "Magnetic Tiles with 2 Cranes, Magnetic Construction Toys STEM Building Toys | 2-in-1 Transportation Magnetic Building Blocks Boys Toys Gifts for Ages 3-12 STEM Learning Toy Develops Creativity",
-        "image": "https://m.media-amazon.com/images/I/61O+ygNcnoL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CRKXR23G?tag=kidsbayarea0d-20&ascsubtag=kba-shop",
-        "price": "$27.97"
+        "asin": "B0F9KGPV3W",
+        "title": "Fitrobust 200PCS Magnetic Building Blocks Set, Magnetic Tiles Kids Build Cubes STEM Game Toys, Build Forest World Set, Christmas Birthday Gifts for Boys & Girls Age 3 4 5 6 7 8 9 10, 0.78 in Size",
+        "image": "https://m.media-amazon.com/images/I/51poar63P7L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0F9KGPV3W?tag=kidsbayarea0d-20&ascsubtag=kba-shop",
+        "price": "$23.99"
       },
       {
-        "asin": "B0C81GG3LP",
-        "title": "Busy Board with LED Light Switches,Montessori Toys for 1 2 3 Year Old | Toddlers Wooden Portable Sensory Activity Board,Car & Airplane Travel toys Boy&Girl First Birthday Gift",
-        "image": "https://m.media-amazon.com/images/I/41xh6qqWTkL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0C81GG3LP?tag=kidsbayarea0d-20&ascsubtag=kba-shop",
-        "price": "$22.98"
+        "asin": "B0BTDHQJ6X",
+        "title": "LISEN iPad Stand Tablet Holder for Desk, iPad Holder Accessories Foldable | iPad Accessories for Apple, Office Desk Accessories Home Essentials, Kindle Stand Gifts for Men, Portable Monitor Stand",
+        "image": "https://m.media-amazon.com/images/I/31S4ahGZHqL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0BTDHQJ6X?tag=kidsbayarea0d-20&ascsubtag=kba-shop",
+        "price": "$9.99"
       },
       {
-        "asin": "B0CJ92X9VX",
-        "title": "HTEVW 6 Pack Stainless Steel Snack Containers for Kids, 6 oz Food Container | Reusable leak resistant silicone lids food containers . Perfect for school lunch, daycare, travel and portion control.",
-        "image": "https://m.media-amazon.com/images/I/41st7EXcjPL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CJ92X9VX?tag=kidsbayarea0d-20&ascsubtag=kba-shop",
-        "price": "$14.25"
+        "asin": "B0DQ42LYNJ",
+        "title": "PandaEar 3 Pack Snack Containers, 4 Compartment Silicone Bento Lunch Snack Box with Lids, Reusable Divided Meal Snack Containers for Adults, Food Storage Containers for Work Travel",
+        "image": "https://m.media-amazon.com/images/I/31dzYmcD1vL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0DQ42LYNJ?tag=kidsbayarea0d-20&ascsubtag=kba-shop",
+        "price": "$12.95"
       },
       {
-        "asin": "B0F43SPZCY",
-        "title": "Bearwind Portable Handheld Turbo Fan - 5 Gear High Speed 4000mAh Rechargeable Mini Personal Hand Fan Blow Cold Air, Battery Operated Travel Essentials, Beach Vacation, Gifts for Women, Men (Black)",
-        "image": "https://m.media-amazon.com/images/I/41ZOUboG7ZL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0F43SPZCY?tag=kidsbayarea0d-20&ascsubtag=kba-shop",
-        "price": "$17.99"
+        "asin": "B0G4CS3GV9",
+        "title": "EchoPlan Magnetic Blocks, 200PCS Magnetic Building Blocks for Kids Ages 3+ | Magnetic Cubes Educational Stacking Magnet Toy for Kids Ages 3 4 5 6 7 8 9 10 11, Gifts for Boys and Girls, 1\" Large Size",
+        "image": "https://m.media-amazon.com/images/I/61s1Aw5qRyL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0G4CS3GV9?tag=kidsbayarea0d-20&ascsubtag=kba-shop",
+        "price": "$59.99"
       }
     ]
   },
   "explore": {
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
-      "kids hiking backpack",
-      "kids digital camera nature",
-      "kids collapsible water bottle",
-      "kids trail gaiters"
+      "kids hiking hydration pack",
+      "kids trail walking sticks",
+      "kids trail camera",
+      "kids magnifying glass set"
     ],
     "items": [
       {
-        "asin": "B0CKQTDLV8",
-        "title": "IVYGREEN Small Kids Hiking Backpack for Camping or Short Trip, Green, S | Size: 15.0\" H x 9.0\" W x 5.0\" D. Made of Water-resistant Polyester Fabric",
-        "image": "https://m.media-amazon.com/images/I/41q2npclyYL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CKQTDLV8?tag=kidsbayarea0d-20&ascsubtag=kba-explore",
-        "price": "$25.99"
+        "asin": "B09TZZ7BF1",
+        "title": "Ivygreen Kids Hydration Backpack for Hiking, 1.5L Water Bladder, Blue S | Small Size, Lightweight, Great for Boys or Girls on Hikes, Walks, and Bike Rides",
+        "image": "https://m.media-amazon.com/images/I/41d0QzXRbAL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B09TZZ7BF1?tag=kidsbayarea0d-20&ascsubtag=kba-explore",
+        "price": "$30.99"
       },
       {
-        "asin": "B0F8BNZCJG",
-        "title": "Borescope Camera with Light for Kids, Ashfly STEM Science Educational Toy for 3 4 5 6 7 8 Years Old Boys & Girls, 2.4\" Screen Snake Scope Camera for Birthday Outdoor Camping Nature Exploration-Green",
-        "image": "https://m.media-amazon.com/images/I/51ap3WIY6KL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0F8BNZCJG?tag=kidsbayarea0d-20&ascsubtag=kba-explore",
-        "price": "$29.99"
+        "asin": "B0D6W3GLWH",
+        "title": "Kids Hiking Poles, Kids Walking Stick, Lightweight Aluminum Adjustable | 2 Pack, Telescoping, Retractable, Children, Youth Size, Kids Trekking Poles, Hiking Stick for Kids, Ski Poles",
+        "image": "https://m.media-amazon.com/images/I/41mAEXSk4QL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0D6W3GLWH?tag=kidsbayarea0d-20&ascsubtag=kba-explore",
+        "price": "$26.99"
       },
       {
-        "asin": "B09NQ9CYBB",
-        "title": "WATMHHJQ Silicone Collapsible Water Bottles, 16oz(500ml) Portable Foldable Expandable Water Bottle Sports Cups, Leak Proof Reusable BPA Free, for Outdoor Activities (Blue-A)",
-        "image": "https://m.media-amazon.com/images/I/51IKfdMwa+L._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B09NQ9CYBB?tag=kidsbayarea0d-20&ascsubtag=kba-explore",
-        "price": "$9.99"
+        "asin": "B081ZYLZSX",
+        "title": "WOSPORTS Mini Trail Camera,30MP 1080P HD Game Camera Motion Activated with IR Night Vision Waterproof Video Deer Cam for Outdoor Wildlife Monitoring",
+        "image": "https://m.media-amazon.com/images/I/511p7iR1S2L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B081ZYLZSX?tag=kidsbayarea0d-20&ascsubtag=kba-explore",
+        "price": "$23.99"
       },
       {
-        "asin": "B07MR6PFH3",
-        "title": "HomDSim Children Leg Gaiters Outdoor Waterproof Snow Gaiter for Kids Hiking Climbing Hunting Leg Cover Shoes Gaiters",
-        "image": "https://m.media-amazon.com/images/I/41wPFqNSrgL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B07MR6PFH3?tag=kidsbayarea0d-20&ascsubtag=kba-explore",
-        "price": "$18.96"
+        "asin": "B0D66TDHS2",
+        "title": "SenseYo 10 PCS Mini Magnifying Glass for Kids, 5X Small Kid Magnifier for Hobbies and Science",
+        "image": "https://m.media-amazon.com/images/I/41u5T2tJA8L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0D66TDHS2?tag=kidsbayarea0d-20&ascsubtag=kba-explore",
+        "price": "$9.49"
       }
     ]
   },
   "play": {
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-05",
     "source": "qwen",
     "queries": [
-      "kids water bottle no spill",
-      "toddler playground safety shoes",
-      "portable pop up tent",
-      "kids insect repellent spray"
+      "kids splash zone water shoes",
+      "portable pop up shade tent",
+      "reusable mini water bottle kids",
+      "kids insect repellent patch"
     ],
     "items": [
       {
-        "asin": "B0CRC8MQZL",
-        "title": "Owala FreeSip Kids Stainless Steel Water Bottle 16 oz Blue Citrus",
-        "image": "https://m.media-amazon.com/images/I/21XA0cYUSzL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0CRC8MQZL?tag=kidsbayarea0d-20&ascsubtag=kba-play",
-        "price": "$24.99"
+        "asin": "B0FBRWMVN2",
+        "title": "SEEKWAY Barefoot Water Shoes for Kids - Wide Toe Box and Quick-Dry Sand Shoes Toddler for Hiking Swim Beach Pool Kayak Sport Accessories, Camping Essentials Non-Slip for Boys Girls Sizes",
+        "image": "https://m.media-amazon.com/images/I/517UD1r6AlL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0FBRWMVN2?tag=kidsbayarea0d-20&ascsubtag=kba-play",
+        "price": "$16.18"
       },
       {
-        "asin": "B0GXTSV8RL",
-        "title": "Scurtain Toddler Shoes Slip on Shoes Wide Toe Barefoot Walking Shoe Beige | Comfy Easter Athletic Gym Tennis Sneakers Indoor House Outdoor Boat Shoes Size",
-        "image": "https://m.media-amazon.com/images/I/41Ar2g-zx-L._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0GXTSV8RL?tag=kidsbayarea0d-20&ascsubtag=kba-play",
-        "price": "$9.99"
+        "asin": "B06XWRLDML",
+        "title": "Wolfwise Pop Up Beach Tent, Easy Setup Sun Shade Shelter Foldable 3 Person | Instant Beach Sunshade Umbrella for Sand Popup, UPF 50+ UV Protection, Portable Carry Bag Carpa para Playa, 57L×87D×47H\" Blue",
+        "image": "https://m.media-amazon.com/images/I/41aPqSBnWoL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B06XWRLDML?tag=kidsbayarea0d-20&ascsubtag=kba-play",
+        "price": "$49.99"
       },
       {
-        "asin": "B0G4CSRLHV",
-        "title": "WolfWise Pop Up Shower Tent for Camping Essentials, Compact & Lightweight | Portable Instant Changing Tent with Window & Carry Bag, Privacy Dressing Room Bathroom for Outdoor, 6'3\" H, 39.4 \"W, Black",
-        "image": "https://m.media-amazon.com/images/I/41VAAtUK6dL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0G4CSRLHV?tag=kidsbayarea0d-20&ascsubtag=kba-play",
-        "price": "$37.99"
+        "asin": "B0BVP6CM2Q",
+        "title": "MILTON 8 pack 6 oz Kids Water Bottle for School Leak Free Flip Lid- Portable Small Sports Water Bottle for Adults Carry Strap Party Favors for Kids Treats Prizes Gifts Goodie Bag Stuffers Bulk Pack",
+        "image": "https://m.media-amazon.com/images/I/41OaEJV35-L._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B0BVP6CM2Q?tag=kidsbayarea0d-20&ascsubtag=kba-play",
+        "price": "$16.99"
       },
       {
-        "asin": "B0BZJSRF4V",
-        "title": "Contigo Kids Water Bottles, Cleanable Straw, BPA-Free, 20oz, 2-Count | Leak-Proof, Spill-Proof Lid, Easy One-Hand Use, Dishwasher Safe, BPA-Free, For Ages 3+, Two 20oz Bottles",
-        "image": "https://m.media-amazon.com/images/I/41CH2LgrlgL._SL160_.jpg",
-        "url": "https://www.amazon.com/dp/B0BZJSRF4V?tag=kidsbayarea0d-20&ascsubtag=kba-play",
-        "price": "$28.99"
+        "asin": "B09745CSRV",
+        "title": "NATPAT Buzz Patch Mosquito Patch Stickers for Kids (48 Pack) - All Natural Citronella Essential Oil Insect Patch, Plant Based Ingredients, Non-Toxic, DEET Free, for Toddlers, Kids",
+        "image": "https://m.media-amazon.com/images/I/517k2-bDxgL._SL160_.jpg",
+        "url": "https://www.amazon.com/dp/B09745CSRV?tag=kidsbayarea0d-20&ascsubtag=kba-play",
+        "price": "$14.90"
       }
     ]
   }
