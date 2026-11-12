@@ -136,9 +136,9 @@ const guideMeta: Record<
     titleEn: "Best Indoor Playgrounds for Kids in the Bay Area",
     titleZh: "湾区室内游乐场推荐",
     descEn:
-      "The best indoor playgrounds and play spaces in the Bay Area: soft-play areas, climbing structures, trampoline parks, and indoor fun perfect for any weather.",
+      "Best indoor playgrounds in the Bay Area: KidTopia in Fremont (East Bay's largest soft-play), WOW Kids on Polk St in San Francisco, La Petite Playhouse in Redwood City (10,000 sq ft), Lemon Tree Play Cafe in Santa Clara (ages 6 months–3.5 yrs), plus trampoline parks (Sky Zone, House of Air, Altitude). Covers all ages, regions, and budgets.",
     descZh:
-      "湾区最棒的室内游乐场和游玩空间：软体游乐区、攀爬设施、蹦床公园，任何天气都能玩。",
+      "湾区最棒的室内游乐场：Fremont 的 KidTopia（东湾最大软体游乐场）、旧金山 Polk St 的 WOW Kids、Redwood City 的 La Petite Playhouse（10,000 平方英尺）、Santa Clara 的 Lemon Tree Play Cafe（6 个月至3.5岁），以及蹦床公园（Sky Zone、House of Air、Altitude）。覆盖各年龄、各地区和各预算。",
   },
 };
 

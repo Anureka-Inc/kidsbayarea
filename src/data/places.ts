@@ -322,8 +322,8 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4,
     description: {
-      en: "A premier family entertainment center in Livermore featuring go-karts, mini golf, bumper boats, laser tag, and a full arcade. Offers unlimited day passes for go-karts and laser tag. Also has a cafe, bar, and free parking.",
-      zh: "位于Livermore的顶级家庭娱乐中心，拥有卡丁车、迷你高尔夫、碰碰船、激光枪战和完整的游戏机厅。提供卡丁车和激光枪战的无限日票，另有咖啡厅、酒吧和免费停车。",
+      en: "Boomers Livermore is a family entertainment center in the East Bay with go-karts, mini golf, bumper boats, laser tag, and a full arcade. Boomers Livermore offers unlimited day passes for go-karts and laser tag, with a cafe and free parking at 2400 Kitty Hawk Rd.",
+      zh: "Boomers Livermore 是东湾的一家家庭娱乐中心，设有卡丁车、迷你高尔夫、碰碰船、激光枪战和游戏机厅。提供卡丁车和激光枪战的无限日票，另有咖啡厅和免费停车。",
     },
     tips: "Buy unlimited day passes online for best value. Go-karts and bumper boats are weather-dependent on rainy days.",
     parking: "Free parking at 2400 Kitty Hawk Rd, Livermore.",
@@ -12243,8 +12243,8 @@ export const places: Place[] = [
     priceLevel: "$",
     rating: 4.5,
     description: {
-      en: "A 5-acre educational farm in Vallejo where children spend time with farm animals and learn about plants native to the area. Goats, chickens, rabbits, and more. Hands-on programs teach sustainable farming and environmental stewardship.",
-      zh: "瓦列霍5英亩教育农场，孩子们与农场动物互动并了解当地原生植物。山羊、鸡、兔子等。动手项目教授可持续农业和环境管理。",
+      en: "Loma Vista Farm in Vallejo is a 5-acre educational farm in the North Bay where children spend time with goats, chickens, and rabbits while learning about plants native to the area. Hands-on programs at Loma Vista Farm teach sustainable farming and environmental stewardship for children ages 2 and up.",
+      zh: "Loma Vista Farm 是瓦列霍一座5英亩的教育农场，孩子们可以与山羊、鸡和兔子互动，同时了解北湾原生植物。动手项目教授可持续农业和环境管理，适合2岁及以上的孩子。",
     },
     tips: "Check website for open hours and programs. Book farm tours in advance.",
     parking: "Free on-site parking.",
