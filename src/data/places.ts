@@ -1701,8 +1701,8 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.5,
     description: {
-      en: "The Bay Area's premier ninja warrior gym with over 6,000 sq ft of American Ninja Warrior-style obstacles including warped walls, rope swings, monkey bars, and more. Designed for all skill levels with classes, open gym, camps, and birthday parties.",
-      zh: "湾区顶级忍者战士训练馆，拥有超过6,000平方英尺的美国忍者战士风格障碍设施，包括弯曲墙、绳索秋千、猴子杠等。适合各技能水平，提供课程、开放训练、营地和生日派对。",
+      en: "Ninja Republic in San Mateo is the Bay Area's premier ninja warrior gym, with over 6,000 sq ft of American Ninja Warrior-style obstacles including warped walls, rope swings, and monkey bars. Classes, open gym sessions, camps, and birthday parties are available for all skill levels.",
+      zh: "Ninja Republic位于San Mateo，是湾区顶级忍者战士训练馆，拥有超过6,000平方英尺的美国忍者战士风格障碍设施，包括弯曲墙、绳索秋千和猴子杠。提供适合各技能水平的课程、开放训练、营地和生日派对。",
     },
     tips: "10% sibling discount available. Near the Hwy 92 & El Camino Real interchange. CalTrain stops right nearby.",
     parking: "Free parking at 1701 Leslie St, San Mateo.",
@@ -2203,8 +2203,8 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4,
     description: {
-      en: "Multi-entertainment facility at Southland Mall with bowling, arcade games, claw machines, karaoke, and party rooms. Features authentic Japanese arcade games not found elsewhere.",
-      zh: "位于Southland购物中心的多功能娱乐设施，设有保龄球、街机游戏、抓娃娃机、卡拉OK和派对房间。拥有其他地方找不到的正宗日本街机游戏。",
+      en: "Round1 Hayward is a Japanese-style entertainment center at Southland Mall in Hayward, combining bowling, karaoke, and an arcade floor packed with authentic Japanese claw machines and rhythm games. Party rooms and group packages are available for birthdays and celebrations.",
+      zh: "Round1 Hayward是Hayward Southland购物中心内的日式娱乐中心，融合了保龄球、卡拉OK和满是正宗日本抓娃娃机和音乐游戏的街机厅。设有派对房间，提供生日和庆典团体套餐。",
     },
     tips: "Located at Southland Mall. Family-friendly during all hours.",
     parking: "Free parking at Southland Mall",
@@ -8407,8 +8407,8 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.5,
     description: {
-      en: "A Silicon Valley STEM museum where kids design roller coasters, code robots, and explore biotech. Features an IMAX theater and rotating exhibits focused on innovation, engineering, and solving real-world problems.",
-      zh: "硅谷STEM博物馆，孩子们可以设计过山车、给机器人编程、探索生物科技。有IMAX影院和以创新、工程和解决现实问题为主题的轮展。",
+      en: "The Tech Interactive in San Jose is a hands-on STEM museum in downtown San Jose where kids design roller coasters, code robots, and explore biotech. The museum features an IMAX theater and rotating exhibits focused on real-world innovation and engineering challenges.",
+      zh: "The Tech Interactive位于San Jose市中心，是一座动手型STEM博物馆，孩子们可以设计过山车、给机器人编程、探索生物科技。博物馆设有IMAX影院和以现实世界创新与工程挑战为主题的轮展。",
     },
     tips: "The Body Worlds exhibit is fascinating but check age appropriateness. Robot building workshops fill up fast.",
     parking: "Convention Center parking garage next door.",
