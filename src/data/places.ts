@@ -12243,8 +12243,8 @@ export const places: Place[] = [
     priceLevel: "$",
     rating: 4.5,
     description: {
-      en: "Loma Vista Farm in Vallejo is a 5-acre educational farm in the North Bay where children spend time with goats, chickens, and rabbits while learning about plants native to the area. Hands-on programs at Loma Vista Farm teach sustainable farming and environmental stewardship for children ages 2 and up.",
-      zh: "Loma Vista Farm 是瓦列霍一座5英亩的教育农场，孩子们可以与山羊、鸡和兔子互动，同时了解北湾原生植物。动手项目教授可持续农业和环境管理，适合2岁及以上的孩子。",
+      en: "Loma Vista Farm in Vallejo is a 5-acre educational farm in the North Bay where children spend time with goats, chickens, and rabbits while learning about plants native to the area. Hands-on programs at Loma Vista Farm teach sustainable farming and environmental stewardship.",
+      zh: "Loma Vista Farm 是瓦列霍一座5英亩的教育农场，孩子们可以与山羊、鸡和兔子互动，同时了解北湾原生植物。动手项目教授可持续农业和环境管理。",
     },
     tips: "Check website for open hours and programs. Book farm tours in advance.",
     parking: "Free on-site parking.",
