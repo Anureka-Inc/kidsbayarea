@@ -91,11 +91,24 @@ def ping_indexnow():
     # file only reaches origin/main when a PR merges, so every entry there IS
     # deployed. A local ledger keeps each entry from being pinged twice, and a
     # liveness probe (HTTP 200) guards against pinging a URL that 404s.
+    #
+    # Read it from origin/main, NOT the working tree: run.sh calls this with
+    # seo-cron/auto checked out, where record_history.py has just appended
+    # (and committed) this run's unmerged entry. Reading the working-tree copy
+    # pinged 2026-11-19's URLs while PR #53 was still open.
     import datetime as dt
+    import subprocess
 
-    history_path = os.path.join(
-        os.path.dirname(os.path.abspath(__file__)), "history", "changes.jsonl"
-    )
+    repo_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    try:
+        history_lines = subprocess.run(
+            ["git", "-C", repo_root, "show",
+             "origin/main:infra/seo-cron/history/changes.jsonl"],
+            capture_output=True, text=True, check=True,
+        ).stdout.splitlines()
+    except (OSError, subprocess.CalledProcessError) as e:
+        log(f"IndexNow SKIPPED: cannot read history from origin/main ({e})")
+        return
     ledger_path = os.path.join(os.path.dirname(OUT_DIR) or ".", ".indexnow-pinged")
     try:
         pinged = set(open(ledger_path).read().split())
@@ -104,27 +117,26 @@ def ping_indexnow():
 
     urls, dates = [], []
     cutoff = (dt.date.today() - dt.timedelta(days=21)).isoformat()
-    if os.path.exists(history_path):
-        for line in open(history_path):
+    for line in history_lines:
+        try:
+            entry = json.loads(line)
+        except ValueError:
+            continue
+        date = entry.get("date", "")
+        if pinged is None:
+            dates.append(date)  # seed ledger without pinging
+            continue
+        if date in pinged or date < cutoff:
+            continue
+        dates.append(date)
+        for u in entry.get("urls", {}):
             try:
-                entry = json.loads(line)
-            except ValueError:
-                continue
-            date = entry.get("date", "")
-            if pinged is None:
-                dates.append(date)  # seed ledger without pinging
-                continue
-            if date in pinged or date < cutoff:
-                continue
-            dates.append(date)
-            for u in entry.get("urls", {}):
-                try:
-                    if requests.get(u, timeout=15).status_code == 200:
-                        urls.append(u)
-                    else:
-                        log(f"IndexNow: skipped {u} (not serving 200)")
-                except Exception:  # noqa: BLE001
-                    log(f"IndexNow: skipped {u} (liveness probe failed)")
+                if requests.get(u, timeout=15).status_code == 200:
+                    urls.append(u)
+                else:
+                    log(f"IndexNow: skipped {u} (not serving 200)")
+            except Exception:  # noqa: BLE001
+                log(f"IndexNow: skipped {u} (liveness probe failed)")
 
     def _write_ledger():
         if dates:
