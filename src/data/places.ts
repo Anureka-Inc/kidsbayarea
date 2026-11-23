@@ -696,7 +696,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "After school hours or weekend mornings",
     tags: ["indoor","rock-climbing","youth-programs","camps","fitness"],
-    website: "https://touchstoneclimbing.com/diablo-rock-gym/",
+    website: "https://touchstoneclimbing.com/diablorock/",
   },
   {
     slug: "dublin-wave-waterpark",
@@ -1513,7 +1513,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Weekday mornings or late afternoons",
     tags: ["playground","inclusive","accessible","free","outdoor"],
-    website: "https://magicalbridgeplayground.org",
+    website: "https://www.magicalbridge.org/paloalto",
   },
   {
     slug: "mcinnis-park-mini-golf",
@@ -2102,7 +2102,6 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Summer weekdays, arrive at park opening",
     tags: ["water-park","slides","summer","swimming","thrills"],
-    website: "https://ragingwaters.com/sanjose",
   },
   {
     slug: "rockin-jump-concord",
@@ -4274,7 +4273,7 @@ export const places: Place[] = [
     needsReservation: true,
     bestTime: "Weekday dinner",
     tags: ["hot-pot","chinese","interactive","cook-yourself","family-style"],
-    website: "https://www.happylambusa.com",
+    website: "https://happylambhotpot.com/locations/",
   },
   {
     slug: "harmony-restaurant",
@@ -4712,7 +4711,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Weekend morning breakfast",
     tags: ["breakfast","cafe","waterfront","sausalito","american"],
-    website: "https://lighthousecafesausalito.com",
+    website: "https://lighthouse-restaurants.com/lighthouse-cafe-sausalito",
   },
   {
     slug: "little-original-joes",
@@ -4796,7 +4795,7 @@ export const places: Place[] = [
     needsReservation: true,
     bestTime: "Weekend brunch or early dinner",
     tags: ["italian","garden-patio","tuscan","family-run","presidio-heights"],
-    website: "https://www.magicfluterestaurant.com",
+    website: "https://www.magicfluteristorante.com/",
   },
   {
     slug: "marufuku-ramen",
@@ -5510,7 +5509,7 @@ export const places: Place[] = [
     needsReservation: true,
     bestTime: "Weekend dinner on the patio",
     tags: ["pizza","rotisserie","train-station","historic","san-mateo"],
-    website: "https://www.risesanmateo.com",
+    website: "https://risewoodfire.com/",
   },
   {
     slug: "round-table-pizza",
@@ -5868,7 +5867,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Weekend lunch",
     tags: ["brewpub","sunset","casual","comfort-food","loud-ok"],
-    website: "https://www.sunsetreservoirbrewing.com",
+    permanentlyClosed: true,
   },
   {
     slug: "super-duper-burgers",
@@ -5950,7 +5949,6 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Lunch with playground time after",
     tags: ["mexican","playground-adjacent","outdoor","burritos","family"],
-    website: "https://taqueriatalaveraca.com",
   },
   {
     slug: "teaspoon-santa-clara",
@@ -9478,7 +9476,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Saturday afternoons for game demos",
     tags: ["board-games","toys","puzzles","family-games","independent"],
-    website: "https://gamescape-sf.com",
+    website: "https://www.gamescapesf.com/",
   },
   {
     slug: "grand-lake-farmers-market",
@@ -9593,7 +9591,6 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Weekday afternoons",
     tags: ["toys","arcade","fidget-toys","japanese-games","puzzles"],
-    website: "https://www.hazestoys.com/",
   },
   {
     slug: "hicklebees-bookstore",
@@ -9871,7 +9868,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Weekday afternoons",
     tags: ["stationery","japanese","kawaii","pens","gifts"],
-    website: "https://usa.kinokuniya.com/stores-maido-san-francisco",
+    website: "https://usa.kinokuniya.com/pages/stores",
   },
   {
     slug: "mendels-haight-sf",
@@ -10920,7 +10917,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Year-round; mornings for calmest wind",
     tags: ["biking","bay-trail","flat-trail","stroller-friendly","free"],
-    website: "https://www.fostercity.org/publicworks/page/levee-trail",
+    website: "https://www.fostercity.org/1025/Levee",
   },
   {
     slug: "benicia-state-recreation-area",
@@ -11030,7 +11027,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Spring for wildflowers; weekends for mine tours",
     tags: ["field-trip","mining-history","caves","hiking","historic","nature"],
-    website: "https://www.ebparks.org/parks/black-diamond-mines",
+    website: "https://www.ebparks.org/parks/black-diamond",
   },
   {
     slug: "bothe-napa-valley-state-park",
@@ -11164,7 +11161,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Winter and early spring after rainfall for best waterfall flow",
     tags: ["winter","waterfall","hiking","redwoods","nature","easy-hike"],
-    website: "https://www.marinwater.org/cascade-falls",
+    website: "https://parks.marincounty.gov/parkspreserves/preserves/cascade-canyon",
   },
   {
     slug: "castle-rock-state-park",
@@ -11218,7 +11215,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Low tide for tide pools; September-October for warmest weather",
     tags: ["beach","hidden-gem","tide-pools","scenic","family-friendly"],
-    website: "https://www.nps.gov/goga/planyourvisit/china-beach.htm",
+    website: "https://www.nps.gov/goga/planyourvisit/chinabeach.htm",
   },
   {
     slug: "china-camp-state-park",
@@ -11550,7 +11547,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Year-round; spring for baby animals; fall for pumpkin festival",
     tags: ["field-trip","fall","farm","free","animals","playground","educational"],
-    website: "https://pruschfarmpark.org/",
+    website: "https://www.sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2180/2028",
   },
   {
     slug: "filoli-gardens",
@@ -11633,7 +11630,7 @@ export const places: Place[] = [
     needsReservation: true,
     bestTime: "Year-round; spring and fall for best weather",
     tags: ["horseback-riding","pony-rides","ranch","nature","adventure"],
-    website: "https://fivebrooksranch.com/",
+    website: "https://fivebrooks.com/",
   },
   {
     slug: "fort-point-national-historic-site",
@@ -11849,7 +11846,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Year-round; fall for warmest coastal weather; spring for wildflowers",
     tags: ["biking","coastal-trail","beach","scenic","stroller-friendly"],
-    website: "https://www.smcgov.org/parks/half-moon-bay-coastside-trail",
+    website: "https://www.parks.ca.gov/?page_id=531",
   },
   {
     slug: "half-moon-bay-pumpkin-patches",
@@ -12200,7 +12197,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Summer for swimming; year-round for trail walking and playgrounds",
     tags: ["lake","swimming","playground","urban-nature","easy-access"],
-    website: "https://www.ebparks.org/parks/lake-temescal",
+    website: "https://www.ebparks.org/parks/temescal",
   },
   {
     slug: "lands-end-trail",
@@ -12254,7 +12251,7 @@ export const places: Place[] = [
     needsReservation: true,
     bestTime: "Spring for baby animals; check program schedule",
     tags: ["field-trip","farm","educational","animals","sustainable","nature"],
-    website: "https://lomavistafarm.com/",
+    website: "https://lomavistafarm.org/",
   },
   {
     slug: "los-gatos-creek-trail",
@@ -12280,7 +12277,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Year-round; spring for greenest scenery",
     tags: ["biking","creek-trail","stroller-friendly","playground","free"],
-    website: "https://www.losgatosca.gov/1458/Los-Gatos-Creek-Trail",
+    website: "https://www.sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2999/2028",
   },
   {
     slug: "marin-headlands",
@@ -12550,7 +12547,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Clear days for views; Dec-May for whale watching; sunset for photos",
     tags: ["winter","viewpoint","scenic","wwii-history","whale-watching","free"],
-    website: "https://www.nps.gov/goga/planyourvisit/muir-beach-overlook.htm",
+    website: "https://www.nps.gov/places/000/muir-beach-overlook.htm",
   },
   {
     slug: "muir-woods",
@@ -12685,7 +12682,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Fall for warmest weather; sunset for bonfires",
     tags: ["beach","bonfire","kite-flying","dog-friendly","free"],
-    website: "https://www.nps.gov/goga/planyourvisit/ocean-beach.htm",
+    website: "https://www.nps.gov/goga/planyourvisit/oceanbeach.htm",
   },
   {
     slug: "ocean-view-stables-sf",
@@ -13787,7 +13784,7 @@ export const places: Place[] = [
     needsReservation: false,
     bestTime: "Sunny summer and fall days, arrive early",
     tags: ["beach","ocean","scenic-drive","sand","day-trip"],
-    website: "https://nps.gov/goga/stinson-beach.htm",
+    website: "https://www.nps.gov/goga/stbe.htm",
   },
   {
     slug: "stow-lake-golden-gate-park",
