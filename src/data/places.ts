@@ -2256,8 +2256,8 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.2,
     description: {
-      en: "SF's largest arcade at Stonestown Galleria featuring Japanese arcade games, claw machines, rhythm games, bowling, billiards, karaoke, and a kids play area. Authentic Japanese snacks available.",
-      zh: "位于Stonestown Galleria的旧金山最大游戏厅，设有日本街机游戏、抓娃娃机、音乐节拍游戏、保龄球、台球、卡拉OK和儿童游乐区。提供正宗日本小吃。",
+      en: "Round1 at Stonestown Galleria in San Francisco is the city's largest arcade, featuring authentic Japanese claw machines, rhythm games, bowling, billiards, karaoke, and a dedicated kids play area. Located in the former Nordstrom basement at Stonestown Galleria, Round1 also serves authentic Japanese snacks on-site.",
+      zh: "Round1位于旧金山Stonestown Galleria的前Nordstrom地下室，是全市最大的日式游戏厅，设有抓娃娃机、音乐节拍游戏、保龄球、台球、卡拉OK和儿童游乐区，并供应正宗日本小吃。",
     },
     tips: "Located in former Nordstrom basement at Stonestown Galleria. Open daily.",
     parking: "Free parking at Stonestown Galleria",
@@ -2738,8 +2738,8 @@ export const places: Place[] = [
     priceLevel: "free",
     rating: 4.6,
     description: {
-      en: "A beloved free petting farm in Tilden Regional Park where children can feed goats, cows, pigs, sheep, and chickens. Bring celery and lettuce to feed the animals. Clean bathrooms and a small playground nearby. Open 365 days a year. The Tilden Merry-Go-Round, steam trains, and Lake Anza (swimming in summer) are nearby.",
-      zh: "位于Tilden地区公园内深受喜爱的免费动物农场，孩子们可以喂山羊、奶牛、猪、绵羊和鸡。带上芹菜和生菜来喂动物。附近有干净的洗手间和小型游乐场。全年365天开放。附近还有旋转木马、蒸汽小火车和夏季可游泳的安扎湖。",
+      en: "Tilden Little Farm in Berkeley is a beloved free petting farm in Tilden Regional Park in the East Bay where children can feed goats, cows, pigs, sheep, and chickens. Tilden Little Farm is open 365 days a year, and the Tilden Merry-Go-Round, Redwood Valley Railway steam trains, and Lake Anza are all nearby in the same park.",
+      zh: "Tilden Little Farm位于伯克利东湾Tilden地区公园，是一处深受家庭喜爱的免费动物农场，孩子们可以喂山羊、奶牛、猪、绵羊和鸡。全年365天开放，同一公园内还有旋转木马、红木谷铁路蒸汽小火车和夏季可游泳的安扎湖。",
     },
     tips: "Bring celery and lettuce — the animals love it! Free admission, open daily 8:30am-4pm. Combine with a ride on the Tilden Steam Trains nearby.",
     parking: "Free parking along Central Park Drive. Can fill up on weekends — arrive early.",
@@ -2879,8 +2879,8 @@ export const places: Place[] = [
     priceLevel: "$$",
     rating: 4.3,
     description: {
-      en: "A creative 18-hole indoor miniature golf course in downtown San Jose inspired by the South Bay, combined with a full restaurant and bar. Each hole features distinctive, high-tech designs. Families welcome before 8pm, 21+ after 8pm.",
-      zh: "位于圣何塞市中心的创意18洞室内迷你高尔夫球场，灵感来自南湾，配有完整的餐厅和酒吧。每个球洞都有独特的高科技设计。晚8点前欢迎家庭，8点后仅限21岁以上。",
+      en: "Urban Putt San Jose is a creative 18-hole indoor miniature golf course in downtown San Jose where each hole is inspired by the culture and history of the South Bay, with high-tech interactive designs. Urban Putt combines full restaurant dining with mini golf, and is family-friendly before 8pm on most nights.",
+      zh: "Urban Putt San Jose是圣何塞市中心的创意室内迷你高尔夫，共18洞，每洞以南湾文化与历史为灵感，配有高科技互动设计。场内设有完整餐厅，晚8点前欢迎家庭入场。",
     },
     tips: "Family-friendly hours are before 8pm. Entrance is on First Street even though address says 2nd St. Weekend brunch hours start at noon.",
     parking: "Multiple downtown San Jose parking garages nearby. Street metered parking on 1st and 2nd Streets.",
